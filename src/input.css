@@ -1,0 +1,53 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  @font-face {
+    font-family: 'Grifter';
+    src: url(/build/fonts/grifterbold.otf);
+  }
+
+  html {
+    font-family: 'Plus Jakarta Sans', sans-serif;
+  }
+
+  h1,
+  h3,
+  h4 {
+    font-family: 'Grifter', 'Poppins', sans-serif;
+  }
+
+  .main-nav-link {
+    position: relative;
+  }
+
+  .main-nav-link:hover,
+  .main-nav-link:active {
+    opacity: 1;
+    visibility: visible;
+  }
+
+  .main-nav-link::after {
+    content: '';
+    left: 0;
+    bottom: -4px;
+    position: absolute;
+    background: hsl(167, 100%, 38%);
+    height: 2px;
+    width: 100%;
+    transform: scaleX(0);
+    transform-origin: right;
+    transition: transform 300ms ease-in-out;
+  }
+
+  .main-nav-link--dark::after {
+    background: hsl(165, 100%, 59%);
+  }
+
+  .main-nav-link:hover::after,
+  .main-nav-link:active::after {
+    transform: scaleX(1);
+    transform-origin: left;
+  }
+}

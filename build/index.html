@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Patricio Mena</title>
+  <!--------------------- Fonts --------------------->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600&family=Poppins:wght@700&display=swap" rel="stylesheet">
+
+
+  <link rel="stylesheet" href="/build/output.css">
+</head>
+<body>
+  <!--------------------- Navbar --------------------->
+  <header class="w-full sticky top-0 z-10 backdrop-blur duration-500 ease-in bg-whiteOnSecondary dark:bg-darkBg dark:text-textWhite">
+    <nav class="mx-auto max-w-7xl flex items-center justify-between text-sm px-5  md:px-20 md:h-20" aria-label="Global">
+
+      <!-- Logo -->
+      <div>
+        <a href="#">
+          <span class="hidden sr-only">Patricio Mena</span>
+          <img src="./assets/logos/Light-main-nav-logo.svg" alt="logo">
+        </a>
+      </div>
+      <!-- Nav links -->
+      <ul class="hidden text-onWhiteBg dark:text-onDarkBg md:flex md:gap-x-8">
+        <li><a href="#Home" class="main-nav-link | hover:text-primaryLight dark:hover:text-primaryDark dark:after:bg-primaryDark">Home</a></li>
+        <li><a href="#RecentWork" class="main-nav-link | hover:text-primaryLight dark:hover:text-primaryDark dark:after:bg-primaryDark">Projects</a></li>
+        <li><a href="#About" class="main-nav-link | hover:text-primaryLight dark:hover:text-primaryDark dark:after:bg-primaryDark">About</a></li>
+        <li><a href="" class="main-nav-link | hover:text-primaryLight dark:hover:text-primaryDark dark:after:bg-primaryDark">Resume</a></li>
+      </ul>
+      <!-- Button -->
+      <a href="#" class="text-sm baseline hidden rounded-lg bg-primaryLight dark:bg-primaryDark text-whiteOnPrimary dark:text-onPrimaryDark py-2 px-6 shadow-md hover:bg-onHoverLight dark:hover:bg-onHoverDark hover:duration-200 hover:ease-in md:block">Contact Me</a>
+    </nav>
+  </header>
+
+  <main>
+    <section id="#hero" class="bg-whiteOnSecondary dark:bg-darkBg">
+      <div class="mx-auto max-w-7xl flex flex-col items-center px-5 pt-20 md:px-32 md:pt-32">
+        <h1 class=" text-onWhiteBg dark:text-onDarkBg text-5xl md:text-6xl text-center dark:text-textWhite"><span class="text-primaryLight dark:text-primaryDark">Innovative</span> web solutions tailored to grow your business </h1>
+        <p class="text-lg text-center mt-6 max-w-2xl mx-auto dark:text-onDarkBg">I’m Patricio Mena. A creative full-stack developer committed to delivering products that delight your users and drive results</p>
+        <div class="w-full flex flex-col justify-center mt-6 gap-4 md:flex-row md:items-center	">
+          <a href="#recent-work" class="baseline rounded-lg text-whiteOnPrimary bg-primaryLight h-12 px-6 flex items-center justify-center shadow-md hover:bg-onHoverLight dark:bg-primaryDark dark:text-onPrimaryDark dark:hover:bg-onHoverDark hover:duration-200 hover:ease-in md:w-44 ">Browse Projects</a>
+          <button href="#recent-work" class="baseline rounded-lg text-textBlack bg-whiteOnSecondary border border-secondary dark:border-onDarkBg dark:bg-darkBg dark:text-onDarkBg h-12 px-6 flex items-center justify-center shadow-md hover:bg-secondary10 dark:hover:bg-accentSecondary hover:duration-200 hover:ease-in md:w-44">Contact Me</button>
+        </div>
+      </div>
+      <div class="w-full mt-20 md:mt-24">
+        <div class="flex gap-6">
+          <div>
+            <img src="./assets/screenshot-placeholder.png" alt="" class="max-w-48 md:w-96">
+          </div>
+          <div>
+            <img src="./assets/screenshot-placeholder.png" alt="" class="max-w-48 md:w-96">
+          </div>
+          <div>
+            <img src="./assets/screenshot-placeholder.png" alt="" class="max-w-48 md:w-96">
+          </div>
+          <div>
+            <img src="./assets/screenshot-placeholder.png" alt="" class="max-w-48 md:w-96">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--------------------- Section Benefits --------------------->
+    <section class="bg-whiteOnPrimary dark:bg-darkBg">
+      <div class="container mx-auto max-w-7xl px-5 md:px-20">
+        <!-- Optimized -->
+        <section class="mt-20 md:mt-40">
+          <!-- Header -->
+          <div class="pt-16">
+            <h2 class="text-center text-primaryLight dark:text-primaryDark text-semibold uppercase tracking-widest">Optimized</h2>
+            <h3 class="mx-auto text-center text-secondary text-5xl mt-4 max-w-2xl">Seamless User Experience</h3>
+            <p class="mx-auto text-center text-xl mt-4 max-w-lg">Deliver fast and high-performing solutions that impress your visitors</p>
+          </div>
+          <!-- Benefits Cards -->
+          <section class="flex flex-col justify-between mt-20 gap-12 md:flex-row">
+            <article class="p-4 flex flex-col justify-center md:w-1/3">
+              <picture class="flex justify-center">
+                <source srcset="#" type="video/webp">
+                <source srcset="#" type="video/mp4">
+                <img src="./assets/icons/RocketLaunch.svg" alt="Fast load speed icon" class="w-{100px}">
+                <source>
+              </picture>
+              <h4 class="text-center text-2xl text-secondary dark:text-onDarkBg mt-2.5">Fast Load Speed</h4>
+              <p class="text-center mt-2.5">Improve user experience and reduce bounce rate. Your visitor will stay longer in your site and engage with your content</p>
+            </article>
+            <article class="p-4 flex flex-col justify-center md:w-1/3">
+              <picture class="flex justify-center">
+                <source srcset="#" type="video/webp">
+                <source srcset="#" type="video/mp4">
+                <img src="./assets/icons/RocketLaunch.svg" alt="Fast load speed icon" class="w-{100px}">
+                <source>
+              </picture>
+              <h4 class="text-center text-secondary text-2xl mt-2.5">Increase Conversions</h4>
+              <p class="text-center mt-2.5">With smooth browsing experience. Your visitors will be more likely to make a purchase or fill out a form</p>
+            </article>
+            <article class="p-4 flex flex-col justify-center md:w-1/3">
+              <picture class="flex justify-center">
+                <source srcset="#" type="video/webp">
+                <source srcset="#" type="video/mp4">
+                <img src="./assets/icons/RocketLaunch.svg" alt="Fast load speed icon" class="w-{100px}">
+                <source>
+              </picture>
+              <h4 class="text-center text-secondary text-2xl mt-2.5">Organic Traffic</h4>
+              <p class="text-center mt-2.5">Improve your search engine rankings. Search engines like Google take speed into account when ranking a website </p>
+            </article>
+
+          </section>
+        </section>
+
+        <!-- Creative Design -->
+        <section class="mt-32 md:mt-32">
+          <!-- Header -->
+          <div class="pt-16">
+            <h2 class="text-center text-primaryLight text-semibold uppercase tracking-widest">Creative design</h2>
+            <h3 class="mx-auto text-center text-5xl mt-4 max-w-2xl">Attract more. Retain More.
+              Stand Out</h3>
+            <p class="mx-auto text-center text-xl mt-4 max-w-lg">Transform your online presence with designs
+              that captivate your audience</p>
+          </div>
+          <!-- Benefits Cards -->
+          <section class="flex flex-col justify-between mt-20  gap-12 md:flex-row">
+            <article class="p-4 flex flex-col justify-center md:w-1/3">
+              <picture class="flex justify-center">
+                <source srcset="#" type="video/webp">
+                <source srcset="#" type="video/mp4">
+                <img src="./assets/icons/RocketLaunch.svg" alt="Fast load speed icon" class="w-{100px}">
+                <source>
+              </picture>
+              <h4 class="text-center text-2xl mt-2.5">Visually Appealing</h4>
+              <p class="text-center mt-2.5">Improve user engagement, capture the attention of visitors, and encourage them to stay longer</p>
+            </article>
+            <article class="p-4 flex flex-col justify-center md:w-1/3">
+              <picture class="flex justify-center">
+                <source srcset="#" type="video/webp">
+                <source srcset="#" type="video/mp4">
+                <img src="./assets/icons/RocketLaunch.svg" alt="Fast load speed icon" class="w-{100px}">
+                <source>
+              </picture>
+              <h4 class="text-center text-2xl mt-2.5">Intuitive</h4>
+              <p class="text-center mt-2.5">Easy to navigate, clear call to action, tailored user interface elements, and user experience</p>
+            </article>
+            <article class="p-6 flex flex-col justify-center md:w-1/3">
+              <picture class="flex justify-center">
+                <source srcset="#" type="video/webp">
+                <source srcset="#" type="video/mp4">
+                <img src="./assets/icons/RocketLaunch.svg" alt="Fast load speed icon" class="w-{100px}">
+                <source>
+              </picture>
+              <h4 class="text-center text-2xl mt-2.5">Brand Perception</h4>
+              <p class="text-center mt-2.5 ">Create a positive impression, increase credibility, and reflect your brand values and personality</p>
+            </article>
+
+          </section>
+
+        </section>
+      </div>
+    </section>
+
+  </main>
+
+</body>
+</html>

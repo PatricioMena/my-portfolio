@@ -1,0 +1,35 @@
+/** @type {import('tailwindcss').Config} */
+module.exports = {
+  content: ['./build/*.html', './build/js/*.js'],
+  theme: {
+    screens: {
+      sm: '480px',
+      md: '768px',
+      lg: '976px',
+      xl: '1440px'
+    },
+    extend: {
+      colors: {
+        primaryLight: 'hsl(167, 100%, 38%)',
+        onHoverLight: 'hsl(167, 50%, 48%)',
+        primaryDark: 'hsl(165, 100%, 59%)',
+        onHoverDark: 'hsl(165, 100%, 69%)',
+        onPrimaryDark: 'hsl(162, 100%, 6%)',
+        secondary: 'hsl(238, 45%, 13%)',
+        secondary10: 'hsl(242, 100%, 94%)',
+        onWhiteBg: 'hsl(238, 45%, 13%)',
+        onDarkBg: 'hsl(276, 9%, 89%)',
+        bodyLight: 'hsl(255, 3%, 28%)',
+        bodyDark: 'hsl(0, 0%, 85%)',
+        whiteOnPrimary: '#FAFAFB',
+        whiteOnSecondary: 'hsl(240, 11%, 98%)',
+        darkBg: 'hsl(240, 7%, 11%)',
+        darkSurface: 'hsl(240, 7%, 8%)',
+        accentLight: 'hsl(167, 100%, 38%)',
+        accentDark: 'hsl(165, 100%, 59%)',
+        accentSecondary: 'hsl(238, 59%, 70%)'
+      }
+    }
+  },
+  plugins: []
+};
