@@ -50,4 +50,15 @@
     transform: scaleX(1);
     transform-origin: left;
   }
+
+  #benefits {
+    background-image: url(/build/assets/backgrounds/endless-constellation.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+  }
+
+  .swiper-pagination {
+    --swiper-theme-color: hsl(167, 100%, 38%);
+  }
 }

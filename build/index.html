@@ -11,14 +11,14 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600&family=Poppins:wght@700&display=swap" rel="stylesheet">
-
-
+  <!--------------------- Swiper --------------------->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
   <link rel="stylesheet" href="/build/output.css">
 </head>
 <body>
   <!--------------------- Navbar --------------------->
   <header class="w-full sticky top-0 z-10 backdrop-blur duration-500 ease-in bg-whiteOnSecondary dark:bg-darkBg dark:text-textWhite">
-    <nav class="mx-auto max-w-7xl flex items-center justify-between text-sm px-5  md:px-20 md:h-20" aria-label="Global">
+    <nav class="container mx-auto max-w-7xl flex items-center justify-between text-sm px-6  md:px-20 md:h-20" aria-label="Global">
 
       <!-- Logo -->
       <div>
@@ -40,43 +40,47 @@
   </header>
 
   <main>
-    <section id="#hero" class="bg-whiteOnSecondary dark:bg-darkBg">
-      <div class="mx-auto max-w-7xl flex flex-col items-center px-5 pt-20 md:px-32 md:pt-32">
-        <h1 class=" text-onWhiteBg dark:text-onDarkBg text-5xl md:text-6xl text-center dark:text-textWhite"><span class="text-primaryLight dark:text-primaryDark">Innovative</span> web solutions tailored to grow your business </h1>
-        <p class="text-lg text-center mt-6 max-w-2xl mx-auto dark:text-onDarkBg">I’m Patricio Mena. A creative full-stack developer committed to delivering products that delight your users and drive results</p>
-        <div class="w-full flex flex-col justify-center mt-6 gap-4 md:flex-row md:items-center	">
-          <a href="#recent-work" class="baseline rounded-lg text-whiteOnPrimary bg-primaryLight h-12 px-6 flex items-center justify-center shadow-md hover:bg-onHoverLight dark:bg-primaryDark dark:text-onPrimaryDark dark:hover:bg-onHoverDark hover:duration-200 hover:ease-in md:w-44 ">Browse Projects</a>
-          <button href="#recent-work" class="baseline rounded-lg text-textBlack bg-whiteOnSecondary border border-secondary dark:border-onDarkBg dark:bg-darkBg dark:text-onDarkBg h-12 px-6 flex items-center justify-center shadow-md hover:bg-secondary10 dark:hover:bg-accentSecondary hover:duration-200 hover:ease-in md:w-44">Contact Me</button>
-        </div>
-      </div>
-      <div class="w-full mt-20 md:mt-24">
-        <div class="flex gap-6">
-          <div>
-            <img src="./assets/screenshot-placeholder.png" alt="" class="max-w-48 md:w-96">
-          </div>
-          <div>
-            <img src="./assets/screenshot-placeholder.png" alt="" class="max-w-48 md:w-96">
-          </div>
-          <div>
-            <img src="./assets/screenshot-placeholder.png" alt="" class="max-w-48 md:w-96">
-          </div>
-          <div>
-            <img src="./assets/screenshot-placeholder.png" alt="" class="max-w-48 md:w-96">
+    <!--------------------- Hero Section --------------------->
+    <section id="hero" class="bg-whiteOnSecondary bg-im dark:bg-darkBg">
+      <div class="container mx-auto max-w-7xl px-6 md:px-10">
+        <div class="flex flex-col items-center pt-20 md:pt-32 md:pb-10">
+          <h1 class=" text-onWhiteBg dark:text-onDarkBg text-5xl leading-tight md:text-6xl text-center dark:text-textWhite"><span class="text-primaryLight dark:text-primaryDark">Innovative</span> web solutions tailored to grow your business </h1>
+          <p class="text-lg text-center mt-6 max-w-2xl mx-auto text-bodyLight dark:text-bodyDark">I’m Patricio Mena. A creative full-stack developer committed to delivering products that delight your users and drive results</p>
+          <div class="w-full flex flex-col justify-center mt-10 gap-4 md:flex-row md:items-center	">
+            <a href="#recent-work" class="baseline rounded-lg text-whiteOnPrimary bg-primaryLight h-12 px-6 flex items-center justify-center shadow-md hover:bg-onHoverLight dark:bg-primaryDark dark:text-onPrimaryDark dark:hover:bg-onHoverDark hover:duration-200 hover:ease-in md:w-44 ">Browse Projects</a>
+            <button href="#recent-work" class="baseline rounded-lg text-textBlack bg-whiteOnSecondary border border-secondary dark:border-onDarkBg dark:bg-darkBg dark:text-onDarkBg h-12 px-6 flex items-center justify-center shadow-md hover:bg-secondary10 dark:hover:bg-accentSecondary hover:duration-200 hover:ease-in md:w-44">Contact Me</button>
           </div>
         </div>
       </div>
     </section>
 
-    <!--------------------- Section Benefits --------------------->
-    <section class="bg-whiteOnPrimary dark:bg-darkBg">
-      <div class="container mx-auto max-w-7xl px-5 md:px-20">
-        <!-- Optimized -->
-        <section class="mt-20 md:mt-40">
+
+    <!--------------------- Screenshots Section --------------------->
+    <section class="pt-16 bg-gradient-to-b from-whiteOnSecondary to-whiteOnPrimary">
+      <div class="w-full">
+        <div class="flex gap-6">
+          <img src="./assets/screenshot-placeholder.png" alt="" class="rounded-2xl border border-outlineLight shadow-md hover:scale-110 duration-300 ease-in w-52 md:w-96">
+          <img src="./assets/screenshot-placeholder.png" alt="" class="rounded-2xl border border-outlineLight shadow-md hover:scale-110 duration-300 ease-in w-52 md:w-96">
+          <img src="./assets/screenshot-placeholder.png" alt="" class="rounded-2xl border border-outlineLight shadow-md hover:scale-110 duration-300 ease-in w-52 md:w-96">
+          <img src="./assets/screenshot-placeholder.png" alt="" class="rounded-2xl border border-outlineLight shadow-md hover:scale-110 duration-300 ease-in w-52 md:w-96">
+          <img src="./assets/screenshot-placeholder.png" alt="" class="rounded-2xl border border-outlineLight shadow-md hover:scale-110 duration-300 ease-in w-52 md:w-96">
+
+        </div>
+      </div>
+    </section>
+
+
+
+    <!--------------------- Benefits Section --------------------->
+    <section id="benefits" class="benefits bg-whiteOnPrimary dark:bg-darkBg pt-32 pb-32">
+      <div class="container mx-auto max-w-7xl px-6 md:px-10">
+        <!--- Optimized --->
+        <section>
           <!-- Header -->
-          <div class="pt-16">
-            <h2 class="text-center text-primaryLight dark:text-primaryDark text-semibold uppercase tracking-widest">Optimized</h2>
-            <h3 class="mx-auto text-center text-secondary text-5xl mt-4 max-w-2xl">Seamless User Experience</h3>
-            <p class="mx-auto text-center text-xl mt-4 max-w-lg">Deliver fast and high-performing solutions that impress your visitors</p>
+          <div>
+            <h2 class="text-center text-primaryLight dark:text-primaryDark text-semibold uppercase tracking-wider">Optimized</h2>
+            <h3 class="mx-auto text-center tracking-widexs text-secondary dark:text-onDarkBg text-5xl mt-4 max-w-2xl">Seamless User Experience</h3>
+            <p class="mx-auto text-center text-bodyLight dark:text-bodyDark text-xl mt-4 max-w-lg">Deliver fast and high-performing solutions that impress your visitors</p>
           </div>
           <!-- Benefits Cards -->
           <section class="flex flex-col justify-between mt-20 gap-12 md:flex-row">
@@ -87,8 +91,8 @@
                 <img src="./assets/icons/RocketLaunch.svg" alt="Fast load speed icon" class="w-{100px}">
                 <source>
               </picture>
-              <h4 class="text-center text-2xl text-secondary dark:text-onDarkBg mt-2.5">Fast Load Speed</h4>
-              <p class="text-center mt-2.5">Improve user experience and reduce bounce rate. Your visitor will stay longer in your site and engage with your content</p>
+              <h4 class="text-center text-2xl tracking-wide text-secondary dark:text-onDarkBg mt-2.5">Fast Load Speed</h4>
+              <p class="text-center text-bodyLight dark:text-bodyDark mt-2.5">Improve user experience and reduce bounce rate. Your visitor will stay longer in your site and engage with your content</p>
             </article>
             <article class="p-4 flex flex-col justify-center md:w-1/3">
               <picture class="flex justify-center">
@@ -97,8 +101,8 @@
                 <img src="./assets/icons/RocketLaunch.svg" alt="Fast load speed icon" class="w-{100px}">
                 <source>
               </picture>
-              <h4 class="text-center text-secondary text-2xl mt-2.5">Increase Conversions</h4>
-              <p class="text-center mt-2.5">With smooth browsing experience. Your visitors will be more likely to make a purchase or fill out a form</p>
+              <h4 class="text-center tracking-wide text-secondary dark:text-onDarkBg text-2xl mt-2.5">Increase Conversions</h4>
+              <p class="text-center text-bodyLight dark:text-bodyDark mt-2.5">With smooth browsing experience. Your visitors will be more likely to make a purchase or fill out a form</p>
             </article>
             <article class="p-4 flex flex-col justify-center md:w-1/3">
               <picture class="flex justify-center">
@@ -107,22 +111,65 @@
                 <img src="./assets/icons/RocketLaunch.svg" alt="Fast load speed icon" class="w-{100px}">
                 <source>
               </picture>
-              <h4 class="text-center text-secondary text-2xl mt-2.5">Organic Traffic</h4>
-              <p class="text-center mt-2.5">Improve your search engine rankings. Search engines like Google take speed into account when ranking a website </p>
+              <h4 class="text-center tracking-wide text-secondary dark:text-onDarkBg text-2xl mt-2.5">Organic Traffic</h4>
+              <p class="text-center text-bodyLight dark:text-bodyDark mt-2.5">Improve your search engine rankings. Search engines like Google take speed into account when ranking a website </p>
             </article>
 
           </section>
         </section>
 
-        <!-- Creative Design -->
-        <section class="mt-32 md:mt-32">
+        <!--- Creative Design --->
+        <section class="mt-24">
           <!-- Header -->
           <div class="pt-16">
-            <h2 class="text-center text-primaryLight text-semibold uppercase tracking-widest">Creative design</h2>
-            <h3 class="mx-auto text-center text-5xl mt-4 max-w-2xl">Attract more. Retain More.
-              Stand Out</h3>
-            <p class="mx-auto text-center text-xl mt-4 max-w-lg">Transform your online presence with designs
-              that captivate your audience</p>
+            <h2 class="text-center text-primaryLight dark:text-primaryDark  text-semibold uppercase tracking-wider">Creative design</h2>
+            <h3 class="mx-auto text-center tracking-widexs dark:text-onDarkBg text-5xl mt-4 max-w-2xl">Attract more. Retain More. Stand Out</h3>
+            <p class="mx-auto text-center text-bodyLight dark:text-bodyDark text-xl mt-4 max-w-lg">Transform your online presence with designs that captivate your audience</p>
+          </div>
+          <!-- Benefits Cards -->
+          <section class="flex flex-col justify-between mt-20 gap-12 md:flex-row">
+            <article class="p-4 flex flex-col justify-center md:w-1/3">
+              <picture class="flex justify-center">
+                <source srcset="#" type="video/webp">
+                <source srcset="#" type="video/mp4">
+                <img src="./assets/icons/RocketLaunch.svg" alt="Fast load speed icon" class="w-{100px}">
+                <source>
+              </picture>
+              <h4 class="text-center tracking-wide dark:text-onDarkBg text-2xl mt-2.5">Visually Appealing</h4>
+              <p class="text-center text-bodyLight dark:text-bodyDark mt-2.5">Improve user engagement, capture the attention of visitors, and encourage them to stay longer</p>
+            </article>
+            <article class="p-4 flex flex-col justify-center md:w-1/3">
+              <picture class="flex justify-center">
+                <source srcset="#" type="video/webp">
+                <source srcset="#" type="video/mp4">
+                <img src="./assets/icons/RocketLaunch.svg" alt="Fast load speed icon" class="w-{100px}">
+                <source>
+              </picture>
+              <h4 class="text-center tracking-wide dark:text-onDarkBg text-2xl mt-2.5">Intuitive</h4>
+              <p class="text-center text-bodyLight dark:text-bodyDark mt-2.5">Easy to navigate, clear call to action, tailored user interface elements, and user experience</p>
+            </article>
+            <article class="p-4 flex flex-col justify-center md:w-1/3">
+              <picture class="flex justify-center">
+                <source srcset="#" type="video/webp">
+                <source srcset="#" type="video/mp4">
+                <img src="./assets/icons/RocketLaunch.svg" alt="Fast load speed icon" class="w-{100px}">
+                <source>
+              </picture>
+              <h4 class="text-center tracking-wide dark:text-onDarkBg text-2xl mt-2.5">Brand Perception</h4>
+              <p class="text-center text-bodyLight dark:text-bodyDark mt-2.5 ">Create a positive impression, increase credibility, and reflect your brand values and personality</p>
+            </article>
+
+          </section>
+
+        </section>
+
+        <!--- Inclusive & Private --->
+        <section class="mt-24">
+          <!-- Header -->
+          <div class="pt-16">
+            <h2 class="text-center text-primaryLight dark:text-primaryDark  text-semibold uppercase tracking-wider">Inclusive &amp; Private</h2>
+            <h3 class="mx-auto text-center tracking-widexs dark:text-onDarkBg text-5xl mt-4 max-w-2xl">From everywhere. For everyone</h3>
+            <p class="mx-auto text-center text-bodyLight dark:text-bodyDark text-xl mt-4 max-w-lg">Create a visually engaging experience for all users</p>
           </div>
           <!-- Benefits Cards -->
           <section class="flex flex-col justify-between mt-20  gap-12 md:flex-row">
@@ -133,8 +180,8 @@
                 <img src="./assets/icons/RocketLaunch.svg" alt="Fast load speed icon" class="w-{100px}">
                 <source>
               </picture>
-              <h4 class="text-center text-2xl mt-2.5">Visually Appealing</h4>
-              <p class="text-center mt-2.5">Improve user engagement, capture the attention of visitors, and encourage them to stay longer</p>
+              <h4 class="text-center tracking-wide dark:text-onDarkBg text-2xl mt-2.5">All Devices</h4>
+              <p class="text-center text-bodyLight dark:text-bodyDark mt-2.5">Adaptable to any screen. Deliver consistent experience on all devices to attract more visitors and traffic</p>
             </article>
             <article class="p-4 flex flex-col justify-center md:w-1/3">
               <picture class="flex justify-center">
@@ -143,27 +190,229 @@
                 <img src="./assets/icons/RocketLaunch.svg" alt="Fast load speed icon" class="w-{100px}">
                 <source>
               </picture>
-              <h4 class="text-center text-2xl mt-2.5">Intuitive</h4>
-              <p class="text-center mt-2.5">Easy to navigate, clear call to action, tailored user interface elements, and user experience</p>
+              <h4 class="text-center tracking-wide dark:text-onDarkBg text-2xl mt-2.5">Accessible</h4>
+              <p class="text-center text-bodyLight dark:text-bodyDark mt-2.5">Following accessibility guidelines to provide equal access and opportunity to people with diverse abilities</p>
             </article>
-            <article class="p-6 flex flex-col justify-center md:w-1/3">
+            <article class="p-4 flex flex-col justify-center md:w-1/3">
               <picture class="flex justify-center">
                 <source srcset="#" type="video/webp">
                 <source srcset="#" type="video/mp4">
                 <img src="./assets/icons/RocketLaunch.svg" alt="Fast load speed icon" class="w-{100px}">
                 <source>
               </picture>
-              <h4 class="text-center text-2xl mt-2.5">Brand Perception</h4>
-              <p class="text-center mt-2.5 ">Create a positive impression, increase credibility, and reflect your brand values and personality</p>
+              <h4 class="text-center tracking-wide dark:text-onDarkBg text-2xl mt-2.5">Secure</h4>
+              <p class="text-center text-bodyLight dark:text-bodyDark mt-2.5 ">Sensitive data is protected from unauthorized access. Increase user trust and improve search engine rankings</p>
             </article>
 
           </section>
 
         </section>
+
       </div>
     </section>
 
+
+    <!--------------------- Recent Work Section --------------------->
+    <section class="bg-whiteOnSecondary dark:bg-darkBg pt-32 pb-32">
+      <div class="container mx-auto max-w-7xl px-6 md:px-10 relative ">
+        <div>
+          <h2 class="text-center text-primaryLight dark:text-primaryDark text-semibold uppercase tracking-wider">Recent Work</h2>
+          <h3 class="mx-auto text-center tracking-widexs text-secondary dark:text-onDarkBg text-5xl mt-4 max-w-2xl">Elevate your brand</h3>
+          <p class="mx-auto text-center text-bodyLight dark:text-bodyDark text-xl mt-4 max-w-lg">Browse my projects and get inspired</p>
+        </div>
+
+
+        <!-- Projects Carousel -->
+        <div class="relative mt-20">
+          <div class="swiper">
+            <div class="swiper-wrapper mb-12">
+
+              <!-- Project 1-->
+              <div class="swiper-slide rounded-2xl border border-outlineLight shadow-md dark:border-outlineDark ">
+
+                <figure class="overflow-hidden rounded-t-2xl">
+                  <img src="./assets/projects/ConstruMax.png" alt="" class="rounded-t-2xl w-full duration-500 ease-in hover:scale-110" loading="lazy">
+                </figure>
+
+                <div class="p-6">
+
+                  <div>
+                    <span class="bg-orange-100 text-orange-800 px-2.5 py-0.5 text-xs font-medium mr-2 rounded-full inline-flex justify-center items-center dark:bg-orange-900 dark:text-orange-300">HTML</span>
+                    <span class="bg-blue-100 text-blue-800 px-2.5 py-0.5 text-xs font-medium mr-2 rounded-full inline-flex justify-center items-center dark:bg-blue-900 dark:text-blue-300">CSS</span>
+                    <span class="bg-yellow-100 text-yellow-800 px-2.5 py-0.5 text-xs font-medium mr-2 rounded-full inline-flex justify-center items-center dark:bg-yellow-900 dark:text-yellow-300">JavaScript</span>
+                    <!-- <span class="bg-sky-100 text-sky-800 px-2.5 py-0.5 text-xs font-medium mr-2 rounded-full inline-flex justify-center items-center dark:bg-sky-900 dark:text-sky-300">Tailwind</span>
+                                <span class="bg-pink-100 text-pink-800 px-2.5 py-0.5 text-xs font-medium mr-2 rounded-full inline-flex justify-center items-center dark:bg-pink-900 dark:text-pink-300">Saas</span> -->
+                  </div>
+
+                  <div class="mt-8">
+
+                    <h5 class="mb-1 text-2xl font-bold tracking-tight text-secondary dark:text-onDarkBg">ConstruMax</h5>
+                    <p class="text-xs text-bodyLight dark:text-bodyDark">Web Development</p>
+
+                    <div class="mt-6">
+                      <p class="text-base text-bodyLight dark:text-bodyDark">Streamlined the process of looking for a property, the customers are happy</p>
+                    </div>
+
+                    <div class="mt-8 flex flex-row gap-2 justify-end">
+                      <a href="#" class="text-sm baseline text-secondary dark:text-primaryDark transparent px-6 py-2.5 flex items-center justify-center hover:text-primaryLight duration-200 ease-in dark:hover:text-onHoverDark">
+                        <svg class="w-3 h-3 mr-2 hover:text-primaryLight dark:hover:text-onHoverDark hover:duration-200 hover:ease-in" aria-hidden="true" focusable="false" role="img" viewBox="0 0 12 12" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                          <path d="M12 6C12 6.13261 11.9473 6.25979 11.8536 6.35355C11.7598 6.44732 11.6326 6.5 11.5 6.5H6.5V11.5C6.5 11.6326 6.44732 11.7598 6.35355 11.8536C6.25979 11.9473 6.13261 12 6 12C5.86739 12 5.74021 11.9473 5.64645 11.8536C5.55268 11.7598 5.5 11.6326 5.5 11.5V6.5H0.5C0.367392 6.5 0.240215 6.44732 0.146447 6.35355C0.0526785 6.25979 0 6.13261 0 6C0 5.86739 0.0526785 5.74021 0.146447 5.64645C0.240215 5.55268 0.367392 5.5 0.5 5.5H5.5V0.5C5.5 0.367392 5.55268 0.240215 5.64645 0.146447C5.74021 0.0526785 5.86739 0 6 0C6.13261 0 6.25979 0.0526785 6.35355 0.146447C6.44732 0.240215 6.5 0.367392 6.5 0.5V5.5H11.5C11.6326 5.5 11.7598 5.55268 11.8536 5.64645C11.9473 5.74021 12 5.86739 12 6Z" fill="inherit" />
+                        </svg>
+                        Learn More
+                      </a>
+                      <a href="" class="text-sm baseline rounded-lg text-whiteOnPrimary bg-primaryLight px-6 py-2.5 inline-flex items-center justify-center shadow-md hover:bg-onHoverLight dark:bg-primaryDark dark:text-onPrimaryDark dark:hover:bg-onHoverDark hover:duration-200 ease-in">Live Demo</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Project 2-->
+              <div class="swiper-slide  rounded-2xl border border-outlineLight shadow-md hover:duration-200 hover:ease-in dark:border-outlineDark ">
+
+                <figure class="overflow-hidden rounded-t-2xl">
+                  <img src="./assets/projects/ConstruMax.png" alt="" class="rounded-t-2xl w-full duration-500 ease-in hover:scale-110" loading="lazy">
+                </figure>
+
+                <div class="p-6">
+
+                  <div>
+                    <span class="bg-orange-100 text-orange-800 px-2.5 py-0.5 text-xs font-medium mr-2 rounded-full inline-flex justify-center items-center dark:bg-orange-900 dark:text-orange-300">HTML</span>
+                    <span class="bg-blue-100 text-blue-800 px-2.5 py-0.5 text-xs font-medium mr-2 rounded-full inline-flex justify-center items-center dark:bg-blue-900 dark:text-blue-300">CSS</span>
+                    <span class="bg-yellow-100 text-yellow-800 px-2.5 py-0.5 text-xs font-medium mr-2 rounded-full inline-flex justify-center items-center dark:bg-yellow-900 dark:text-yellow-300">JavaScript</span>
+                    <!-- <span class="bg-sky-100 text-sky-800 px-2.5 py-0.5 text-xs font-medium mr-2 rounded-full inline-flex justify-center items-center dark:bg-sky-900 dark:text-sky-300">Tailwind</span>
+                                <span class="bg-pink-100 text-pink-800 px-2.5 py-0.5 text-xs font-medium mr-2 rounded-full inline-flex justify-center items-center dark:bg-pink-900 dark:text-pink-300">Saas</span> -->
+                  </div>
+                  <!-- Card Content -->
+                  <div class="mt-8">
+                    <!-- Card Header/Title -->
+                    <h5 class="mb-1 text-2xl font-bold tracking-tight text-secondary dark:text-onDarkBg">ConstruMax</h5>
+                    <p class="text-xs text-bodyLight dark:text-bodyDark">Web Development</p>
+                    <!-- Card Description -->
+                    <div class="mt-6">
+                      <p class="text-base text-bodyLight dark:text-bodyDark">Streamlined the process of looking for a property, the customers are happy</p>
+                    </div>
+                    <!-- Card Buttons -->
+                    <div class="mt-8 flex flex-row gap-2 justify-end">
+                      <a href="#" class="text-sm baseline text-secondary dark:text-primaryDark transparent px-6 py-2.5 flex items-center justify-center hover:text-primaryLight duration-200 ease-in dark:hover:text-onHoverDark">
+                        <svg class="w-3 h-3 mr-2 hover:text-primaryLight dark:hover:text-onHoverDark hover:duration-200 hover:ease-in" aria-hidden="true" focusable="false" role="img" viewBox="0 0 12 12" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                          <path d="M12 6C12 6.13261 11.9473 6.25979 11.8536 6.35355C11.7598 6.44732 11.6326 6.5 11.5 6.5H6.5V11.5C6.5 11.6326 6.44732 11.7598 6.35355 11.8536C6.25979 11.9473 6.13261 12 6 12C5.86739 12 5.74021 11.9473 5.64645 11.8536C5.55268 11.7598 5.5 11.6326 5.5 11.5V6.5H0.5C0.367392 6.5 0.240215 6.44732 0.146447 6.35355C0.0526785 6.25979 0 6.13261 0 6C0 5.86739 0.0526785 5.74021 0.146447 5.64645C0.240215 5.55268 0.367392 5.5 0.5 5.5H5.5V0.5C5.5 0.367392 5.55268 0.240215 5.64645 0.146447C5.74021 0.0526785 5.86739 0 6 0C6.13261 0 6.25979 0.0526785 6.35355 0.146447C6.44732 0.240215 6.5 0.367392 6.5 0.5V5.5H11.5C11.6326 5.5 11.7598 5.55268 11.8536 5.64645C11.9473 5.74021 12 5.86739 12 6Z" fill="inherit" />
+                        </svg>
+                        Learn More
+                      </a>
+                      <a href="" class="text-sm baseline rounded-lg text-whiteOnPrimary bg-primaryLight px-6 py-2.5 inline-flex items-center justify-center shadow-md hover:bg-onHoverLight dark:bg-primaryDark dark:text-onPrimaryDark dark:hover:bg-onHoverDark hover:duration-200 ease-in">Live Demo</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Project 3-->
+              <div class="swiper-slide  rounded-2xl border border-outlineLight shadow-md hover:duration-200 hover:easdivin dark:border-outlineDark ">
+                <figure class="overflow-hidden rounded-t-2xl">
+                  <img src="./assets/projects/ConstruMax.png" alt="" class="rounded-t-2xl w-full duration-500 ease-in hover:scale-110" loading="lazy">
+                </figure>
+                <div class="p-6">
+
+                  <div>
+                    <span class="bg-orange-100 text-orange-800 px-2.5 py-0.5 text-xs font-medium mr-2 rounded-full inline-flex justify-center items-center dark:bg-orange-900 dark:text-orange-300">HTML</span>
+                    <span class="bg-blue-100 text-blue-800 px-2.5 py-0.5 text-xs font-medium mr-2 rounded-full inline-flex justify-center items-center dark:bg-blue-900 dark:text-blue-300">CSS</span>
+                    <span class="bg-yellow-100 text-yellow-800 px-2.5 py-0.5 text-xs font-medium mr-2 rounded-full inline-flex justify-center items-center dark:bg-yellow-900 dark:text-yellow-300">JavaScript</span>
+                    <!-- <span class="bg-sky-100 text-sky-800 px-2.5 py-0.5 text-xs font-medium mr-2 rounded-full inline-flex justify-center items-center dark:bg-sky-900 dark:text-sky-300">Tailwind</span>
+                                <span class="bg-pink-100 text-pink-800 px-2.5 py-0.5 text-xs font-medium mr-2 rounded-full inline-flex justify-center items-center dark:bg-pink-900 dark:text-pink-300">Saas</span> -->
+                  </div>
+                  <!-- Card Content -->
+                  <div class="mt-8">
+                    <!-- Card Header/Title -->
+                    <h5 class="mb-1 text-2xl font-bold tracking-tight text-secondary dark:text-onDarkBg">ConstruMax</h5>
+                    <p class="text-xs text-bodyLight dark:text-bodyDark">Web Development</p>
+                    <!-- Card Description -->
+                    <div class="mt-6">
+                      <p class="text-base text-bodyLight dark:text-bodyDark">Streamlined the process of looking for a property, the customers are happy</p>
+                    </div>
+                    <!-- Card Buttons -->
+                    <div class="mt-8 flex flex-row gap-2 justify-end">
+                      <a href="#" class="text-sm baseline text-secondary dark:text-primaryDark transparent px-6 py-2.5 flex items-center justify-center hover:text-primaryLight duration-200 ease-in dark:hover:text-onHoverDark">
+                        <svg class="w-3 h-3 mr-2 hover:text-primaryLight dark:hover:text-onHoverDark hover:duration-200 hover:ease-in" aria-hidden="true" focusable="false" role="img" viewBox="0 0 12 12" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                          <path d="M12 6C12 6.13261 11.9473 6.25979 11.8536 6.35355C11.7598 6.44732 11.6326 6.5 11.5 6.5H6.5V11.5C6.5 11.6326 6.44732 11.7598 6.35355 11.8536C6.25979 11.9473 6.13261 12 6 12C5.86739 12 5.74021 11.9473 5.64645 11.8536C5.55268 11.7598 5.5 11.6326 5.5 11.5V6.5H0.5C0.367392 6.5 0.240215 6.44732 0.146447 6.35355C0.0526785 6.25979 0 6.13261 0 6C0 5.86739 0.0526785 5.74021 0.146447 5.64645C0.240215 5.55268 0.367392 5.5 0.5 5.5H5.5V0.5C5.5 0.367392 5.55268 0.240215 5.64645 0.146447C5.74021 0.0526785 5.86739 0 6 0C6.13261 0 6.25979 0.0526785 6.35355 0.146447C6.44732 0.240215 6.5 0.367392 6.5 0.5V5.5H11.5C11.6326 5.5 11.7598 5.55268 11.8536 5.64645C11.9473 5.74021 12 5.86739 12 6Z" fill="inherit" />
+                        </svg>
+                        Learn More
+                      </a>
+                      <a href="" class="text-sm baseline rounded-lg text-whiteOnPrimary bg-primaryLight px-6 py-2.5 inline-flex items-center justify-center shadow-md hover:bg-onHoverLight dark:bg-primaryDark dark:text-onPrimaryDark dark:hover:bg-onHoverDark hover:duration-200 ease-in">Live Demo</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Project 4-->
+              <div class="swiper-slide  rounded-2xl border border-outlineLight shadow-md hover:duration-200 hover:ease-in dark:border-outlineDark ">
+
+                <figure class="overflow-hidden rounded-t-2xl">
+                  <img src="./assets/projects/ConstruMax.png" alt="" class="rounded-t-2xl w-full duration-500 ease-in hover:scale-110" loading="lazy">
+                </figure>
+
+                <div class="p-6">
+
+                  <div>
+                    <span class="bg-orange-100 text-orange-800 px-2.5 py-0.5 text-xs font-medium mr-2 rounded-full inline-flex justify-center items-center dark:bg-orange-900 dark:text-orange-300">HTML</span>
+                    <span class="bg-blue-100 text-blue-800 px-2.5 py-0.5 text-xs font-medium mr-2 rounded-full inline-flex justify-center items-center dark:bg-blue-900 dark:text-blue-300">CSS</span>
+                    <span class="bg-yellow-100 text-yellow-800 px-2.5 py-0.5 text-xs font-medium mr-2 rounded-full inline-flex justify-center items-center dark:bg-yellow-900 dark:text-yellow-300">JavaScript</span>
+                    <!-- <span class="bg-sky-100 text-sky-800 px-2.5 py-0.5 text-xs font-medium mr-2 rounded-full inline-flex justify-center items-center dark:bg-sky-900 dark:text-sky-300">Tailwind</span>
+                                <span class="bg-pink-100 text-pink-800 px-2.5 py-0.5 text-xs font-medium mr-2 rounded-full inline-flex justify-center items-center dark:bg-pink-900 dark:text-pink-300">Saas</span> -->
+                  </div>
+                  <!-- Card Content -->
+                  <div class="mt-8">
+                    <!-- Card Header/Title -->
+                    <h5 class="mb-1 text-2xl font-bold tracking-tight text-secondary dark:text-onDarkBg">ConstruMax</h5>
+                    <p class="text-xs text-bodyLight dark:text-bodyDark">Web Development</p>
+                    <!-- Card Description -->
+                    <div class="mt-6">
+                      <p class="text-base text-bodyLight dark:text-bodyDark">Streamlined the process of looking for a property, the customers are happy</p>
+                    </div>
+                    <!-- Card Buttons -->
+                    <div class="mt-8 flex flex-row gap-2 justify-end">
+                      <a href="#" class="text-sm baseline text-secondary dark:text-primaryDark transparent px-6 py-2.5 flex items-center justify-center hover:text-primaryLight duration-200 ease-in dark:hover:text-onHoverDark">
+                        <svg class="w-3 h-3 mr-2 hover:text-primaryLight dark:hover:text-onHoverDark hover:duration-200 hover:ease-in" aria-hidden="true" focusable="false" role="img" viewBox="0 0 12 12" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                          <path d="M12 6C12 6.13261 11.9473 6.25979 11.8536 6.35355C11.7598 6.44732 11.6326 6.5 11.5 6.5H6.5V11.5C6.5 11.6326 6.44732 11.7598 6.35355 11.8536C6.25979 11.9473 6.13261 12 6 12C5.86739 12 5.74021 11.9473 5.64645 11.8536C5.55268 11.7598 5.5 11.6326 5.5 11.5V6.5H0.5C0.367392 6.5 0.240215 6.44732 0.146447 6.35355C0.0526785 6.25979 0 6.13261 0 6C0 5.86739 0.0526785 5.74021 0.146447 5.64645C0.240215 5.55268 0.367392 5.5 0.5 5.5H5.5V0.5C5.5 0.367392 5.55268 0.240215 5.64645 0.146447C5.74021 0.0526785 5.86739 0 6 0C6.13261 0 6.25979 0.0526785 6.35355 0.146447C6.44732 0.240215 6.5 0.367392 6.5 0.5V5.5H11.5C11.6326 5.5 11.7598 5.55268 11.8536 5.64645C11.9473 5.74021 12 5.86739 12 6Z" fill="inherit" />
+                        </svg>
+                        Learn More
+                      </a>
+                      <a href="" class="text-sm baseline rounded-lg text-whiteOnPrimary bg-primaryLight px-6 py-2.5 inline-flex items-center justify-center shadow-md hover:bg-onHoverLight dark:bg-primaryDark dark:text-onPrimaryDark dark:hover:bg-onHoverDark hover:duration-200 ease-in">Live Demo</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+            <div class="swiper-pagination "></div>
+          </div>
+
+          <div>
+            <div class="swiper-button-prev-unique hidden md:flex items-center justify-center h-10 w-10  text-whiteOnPrimary dark:text-primaryDark  bg-primaryLight rounded-full bg-opacity-60 hover:bg-opacity-80 duration-100 ease-in absolute top-60 -left-5 z-10"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 256 256">
+                <path d="M168.49,199.51a12,12,0,0,1-17,17l-80-80a12,12,0,0,1,0-17l80-80a12,12,0,0,1,17,17L97,128Z"></path>
+              </svg></div>
+            <div class="swiper-button-next-unique hidden md:flex items-center justify-center h-10 w-10  text-whiteOnPrimary dark:text-primaryDark  bg-primaryLight rounded-full bg-opacity-60 hover:bg-opacity-80 duration-100 ease-in absolute top-60 -right-5 z-10"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 256 256">
+                <path d="M184.49,136.49l-80,80a12,12,0,0,1-17-17L159,128,87.51,56.49a12,12,0,1,1,17-17l80,80A12,12,0,0,1,184.49,136.49Z"></path>
+              </svg></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--------------------- How It Works Section --------------------->
+    <section class="pt-32 pb-32">
+      <div class="container mx-auto max-w-7xl px-6 md:px-10 relative ">
+        <div class="mb-24">
+          <h2 class="text-center text-primaryLight dark:text-primaryDark text-semibold uppercase tracking-wider">How It Works</h2>
+          <h3 class="mx-auto text-center tracking-widexs text-secondary dark:text-onDarkBg text-5xl mt-4 max-w-2xl">From concept to launch</h3>
+          <p class="mx-auto text-center text-bodyLight dark:text-bodyDark text-xl mt-4 max-w-lg">Discover our streamlined process</p>
+        </div>
+      </div>
+      <section>
+
+      </section>
+    </section>
   </main>
 
+  <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+  <script src="/./build/js/main.js"></script>
 </body>
 </html>
