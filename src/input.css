@@ -14,7 +14,9 @@
 
   h1,
   h3,
-  h4 {
+  h4,
+  h5,
+  h6 {
     font-family: 'Grifter', 'Poppins', sans-serif;
   }
 
@@ -51,12 +53,18 @@
     transform-origin: left;
   }
 
-  #benefits {
+  /* #benefits {
     background-image: url(/build/assets/backgrounds/endless-constellation.svg);
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
   }
+  #portfolio {
+    background-image: url(/build/assets/backgrounds/animated.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+  } */
 
   .swiper-pagination {
     --swiper-theme-color: hsl(167, 100%, 38%);

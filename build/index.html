@@ -11,11 +11,13 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600&family=Poppins:wght@700&display=swap" rel="stylesheet">
+  <!--------------------- Icons--------------------->
+  <script src="https://unpkg.com/@phosphor-icons/web"></script>
   <!--------------------- Swiper --------------------->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
   <link rel="stylesheet" href="/build/output.css">
 </head>
-<body>
+<body class="overflow-x-hidden">
   <!--------------------- Navbar --------------------->
   <header class="w-full sticky top-0 z-10 backdrop-blur duration-500 ease-in bg-whiteOnSecondary dark:bg-darkBg dark:text-textWhite">
     <nav class="container mx-auto max-w-7xl flex items-center justify-between text-sm px-6  md:px-20 md:h-20" aria-label="Global">
@@ -48,7 +50,7 @@
           <p class="text-lg text-center mt-6 max-w-2xl mx-auto text-bodyLight dark:text-bodyDark">I’m Patricio Mena. A creative full-stack developer committed to delivering products that delight your users and drive results</p>
           <div class="w-full flex flex-col justify-center mt-10 gap-4 md:flex-row md:items-center	">
             <a href="#recent-work" class="baseline rounded-lg text-whiteOnPrimary bg-primaryLight h-12 px-6 flex items-center justify-center shadow-md hover:bg-onHoverLight dark:bg-primaryDark dark:text-onPrimaryDark dark:hover:bg-onHoverDark hover:duration-200 hover:ease-in md:w-44 ">Browse Projects</a>
-            <button href="#recent-work" class="baseline rounded-lg text-textBlack bg-whiteOnSecondary border border-secondary dark:border-onDarkBg dark:bg-darkBg dark:text-onDarkBg h-12 px-6 flex items-center justify-center shadow-md hover:bg-secondary10 dark:hover:bg-accentSecondary hover:duration-200 hover:ease-in md:w-44">Contact Me</button>
+            <button href="#recent-work" class="baseline rounded-lg text-textBlack bg-whiteOnSecondary border border-secondary dark:border-onDarkBg dark:bg-darkBg dark:text-onDarkBg h-12 px-6 flex items-center justify-center shadow-md hover:duration-200 hover:ease-in md:w-44">Contact Me</button>
           </div>
         </div>
       </div>
@@ -56,7 +58,7 @@
 
 
     <!--------------------- Screenshots Section --------------------->
-    <section class="pt-16 bg-gradient-to-b from-whiteOnSecondary to-whiteOnPrimary">
+    <section class="pt-16 bg-gradient-to-b from-whiteOnSecondary to-whiteOnPrimary dark:bg-darkBg overflow-hidden">
       <div class="w-full">
         <div class="flex gap-6">
           <img src="./assets/screenshot-placeholder.png" alt="" class="rounded-2xl border border-outlineLight shadow-md hover:scale-110 duration-300 ease-in w-52 md:w-96">
@@ -213,7 +215,7 @@
 
 
     <!--------------------- Recent Work Section --------------------->
-    <section class="bg-whiteOnSecondary dark:bg-darkBg pt-32 pb-32">
+    <section id="portfolio" class="bg-whiteOnSecondary dark:bg-darkBg pt-32 pb-32">
       <div class="container mx-auto max-w-7xl px-6 md:px-10 relative ">
         <div>
           <h2 class="text-center text-primaryLight dark:text-primaryDark text-semibold uppercase tracking-wider">Recent Work</h2>
@@ -228,7 +230,7 @@
             <div class="swiper-wrapper mb-12">
 
               <!-- Project 1-->
-              <div class="swiper-slide rounded-2xl border border-outlineLight shadow-md dark:border-outlineDark ">
+              <div class="swiper-slide bg-surface bg-opacity-50  dark:bg-surfaceBlack backdrop-blur-md rounded-2xl shadow-lighter  hover:shadow-light dark:border dark:border-outlineDark r">
 
                 <figure class="overflow-hidden rounded-t-2xl">
                   <img src="./assets/projects/ConstruMax.png" alt="" class="rounded-t-2xl w-full duration-500 ease-in hover:scale-110" loading="lazy">
@@ -246,8 +248,8 @@
 
                   <div class="mt-8">
 
-                    <h5 class="mb-1 text-2xl font-bold tracking-tight text-secondary dark:text-onDarkBg">ConstruMax</h5>
-                    <p class="text-xs text-bodyLight dark:text-bodyDark">Web Development</p>
+                    <h5 class="mb-0.5 text-2xl font-bold tracking-wide text-secondary dark:text-onDarkBg">ConstruMax</h5>
+                    <p class="text-xs uppercase tracking-wide text-bodyGray dark:text-bodyDark">Web Development</p>
 
                     <div class="mt-6">
                       <p class="text-base text-bodyLight dark:text-bodyDark">Streamlined the process of looking for a property, the customers are happy</p>
@@ -267,7 +269,7 @@
               </div>
 
               <!-- Project 2-->
-              <div class="swiper-slide  rounded-2xl border border-outlineLight shadow-md hover:duration-200 hover:ease-in dark:border-outlineDark ">
+              <div class="swiper-slide bg-surface bg-opacity-50  dark:bg-surfaceBlack backdrop-blur-md rounded-2xl shadow-lighter hover:shadow-light  dark:border-outlineDark ">
 
                 <figure class="overflow-hidden rounded-t-2xl">
                   <img src="./assets/projects/ConstruMax.png" alt="" class="rounded-t-2xl w-full duration-500 ease-in hover:scale-110" loading="lazy">
@@ -285,8 +287,8 @@
                   <!-- Card Content -->
                   <div class="mt-8">
                     <!-- Card Header/Title -->
-                    <h5 class="mb-1 text-2xl font-bold tracking-tight text-secondary dark:text-onDarkBg">ConstruMax</h5>
-                    <p class="text-xs text-bodyLight dark:text-bodyDark">Web Development</p>
+                    <h5 class="mb-1 text-2xl font-bold tracking-wide text-secondary dark:text-onDarkBg">ConstruMax</h5>
+                    <p class="text-xs uppercase tracking-wide text-bodyGray dark:text-bodyDark">Web Development</p>
                     <!-- Card Description -->
                     <div class="mt-6">
                       <p class="text-base text-bodyLight dark:text-bodyDark">Streamlined the process of looking for a property, the customers are happy</p>
@@ -306,7 +308,7 @@
               </div>
 
               <!-- Project 3-->
-              <div class="swiper-slide  rounded-2xl border border-outlineLight shadow-md hover:duration-200 hover:easdivin dark:border-outlineDark ">
+              <div class="swiper-slide  bg-surface bg-opacity-50  dark:bg-surfaceBlack backdrop-blur-md rounded-2xl shadow-lighter hover:shadow-light  dark:border-outlineDark ">
                 <figure class="overflow-hidden rounded-t-2xl">
                   <img src="./assets/projects/ConstruMax.png" alt="" class="rounded-t-2xl w-full duration-500 ease-in hover:scale-110" loading="lazy">
                 </figure>
@@ -322,8 +324,8 @@
                   <!-- Card Content -->
                   <div class="mt-8">
                     <!-- Card Header/Title -->
-                    <h5 class="mb-1 text-2xl font-bold tracking-tight text-secondary dark:text-onDarkBg">ConstruMax</h5>
-                    <p class="text-xs text-bodyLight dark:text-bodyDark">Web Development</p>
+                    <h5 class="mb-1 text-2xl font-bold tracking-wide text-secondary dark:text-onDarkBg">ConstruMax</h5>
+                    <p class="text-xs uppercase tracking-wide text-bodyGray dark:text-bodyDark">Web Development</p>
                     <!-- Card Description -->
                     <div class="mt-6">
                       <p class="text-base text-bodyLight dark:text-bodyDark">Streamlined the process of looking for a property, the customers are happy</p>
@@ -343,7 +345,7 @@
               </div>
 
               <!-- Project 4-->
-              <div class="swiper-slide  rounded-2xl border border-outlineLight shadow-md hover:duration-200 hover:ease-in dark:border-outlineDark ">
+              <div class="swiper-slide  bg-surface bg-opacity-50  dark:bg-surfaceBlack backdrop-blur-md rounded-2xl shadow-lighter hover:shadow-light  dark:border-outlineDark ">
 
                 <figure class="overflow-hidden rounded-t-2xl">
                   <img src="./assets/projects/ConstruMax.png" alt="" class="rounded-t-2xl w-full duration-500 ease-in hover:scale-110" loading="lazy">
@@ -361,8 +363,8 @@
                   <!-- Card Content -->
                   <div class="mt-8">
                     <!-- Card Header/Title -->
-                    <h5 class="mb-1 text-2xl font-bold tracking-tight text-secondary dark:text-onDarkBg">ConstruMax</h5>
-                    <p class="text-xs text-bodyLight dark:text-bodyDark">Web Development</p>
+                    <h5 class="mb-1 text-2xl font-bold tracking-wide text-secondary dark:text-onDarkBg">ConstruMax</h5>
+                    <p class="text-xs uppercase tracking-wide text-bodyGray dark:text-bodyDark">Web Development</p>
                     <!-- Card Description -->
                     <div class="mt-6">
                       <p class="text-base text-bodyLight dark:text-bodyDark">Streamlined the process of looking for a property, the customers are happy</p>
@@ -398,18 +400,251 @@
     </section>
 
     <!--------------------- How It Works Section --------------------->
-    <section class="pt-32 pb-32">
+    <section class="pt-32 pb-32 dark:bg-darkBg">
       <div class="container mx-auto max-w-7xl px-6 md:px-10 relative ">
-        <div class="mb-24">
-          <h2 class="text-center text-primaryLight dark:text-primaryDark text-semibold uppercase tracking-wider">How It Works</h2>
-          <h3 class="mx-auto text-center tracking-widexs text-secondary dark:text-onDarkBg text-5xl mt-4 max-w-2xl">From concept to launch</h3>
-          <p class="mx-auto text-center text-bodyLight dark:text-bodyDark text-xl mt-4 max-w-lg">Discover our streamlined process</p>
-        </div>
-      </div>
-      <section>
+        <h2 class="text-center text-primaryLight dark:text-primaryDark text-semibold uppercase tracking-wider">How It Works</h2>
+        <h3 class="mx-auto text-center tracking-widexs text-secondary dark:text-onDarkBg text-5xl mt-4 max-w-2xl">From concept to launch</h3>
+        <p class="mx-auto text-center text-bodyLight dark:text-bodyDark text-xl mt-4 max-w-lg">Discover our streamlined process</p>
 
-      </section>
+        <section>
+          <!-- Research -->
+          <article class="mt-20 flex flex-col md:flex-row md:rounded-2xl shadow-md overflow-y-hidden">
+            <div class="h-48 rounded-t-2xl md:h-auto md:w-1/2 md:rounded-none flex justify-center items-center md:order-2 bg-gradient-to-r from-secondary90 to-secondary70 dark:bg-gradient-to-r dark:from-secondary30 dark:to-secondary50">
+              <img src="./assets/steps-images/research-transparent.svg" alt="Setting goals and purpose illustration" width="400" height="400" class="aspect-video md:aspect-square">
+            </div>
+            <div class="p-6 rounded-b-2xl flex flex-col justify-center  md:w-1/2 md:rounded-none bg-gradient-to-r from-secondary100 to-secondary90  dark:bg-gradient-to-r dark:from-secondary20 dark:to-secondary30">
+              <p class="text-xs md:text-sm text-primaryLight dark:text-primaryDark uppercase tracking-widest mb-6">
+                Research
+              </p>
+              <h5 class="text-onWhiteBg dark:text-onDarkBg text-2xl md:text-4xl mb-8 tracking-wide">Setting goals and purpose</h5>
+              <p class="text-bodyLight dark:text-bodyDark mb-6">Unlocking the potential of your business and creating a plan to help you reach your goals</p>
+              <ul role="list" class=" flex flex-col gap-4 justify-center ">
+                <li class="flex gap-3 items-center ">
+                  <i class="ph ph-check-circle text-primaryLight  dark:text-primaryDark"></i>
+                  <p class="text-bodyLight dark:text-bodyDark">Outline the project's needs and objectives</p>
+                </li>
+                <li class="flex gap-3 items-center">
+                  <i class="ph ph-check-circle text-primaryLight dark:text-primaryDark"></i>
+                  <p class="text-bodyLight dark:text-bodyDark">Define the purpose and set achievable goals</p>
+                </li>
+                <li class="flex gap-3 items-center">
+                  <i class="ph ph-check-circle text-primaryLight dark:text-primaryDark"></i>
+                  <p class="text-bodyLight dark:text-bodyDark">Examine competitors and identify target audience</p>
+                </li>
+                <li class="flex gap-3 items-center">
+                  <i class="ph ph-check-circle text-primaryLight dark:text-primaryDark"></i>
+                  <p class="text-bodyLight dark:text-bodyDark">Define technical requirements and desired features</p>
+                </li>
+                <li class="flex gap-3 items-center">
+                  <i class="ph ph-check-circle text-primaryLight dark:text-primaryDark"></i>
+                  <p class="text-bodyLight dark:text-bodyDark">Establish communication channels</p>
+                </li>
+                <li class="flex gap-3 items-center">
+                  <i class="ph ph-check-circle text-primaryLight dark:text-primaryDark"></i>
+                  <p class="text-bodyLight dark:text-bodyDark">Define the scope, timeline, budget and expected outcomes of the project</p>
+                </li>
+              </ul>
+
+            </div>
+          </article>
+
+          <!-- Design -->
+          <article class="mt-20 flex flex-col md:flex-row md:rounded-2xl shadow-md overflow-y-hidden">
+            <div class="h-48 md:h-auto rounded-t-2xl md:w-1/2 md:rounded-none flex justify-center items-center bg-gradient-to-r from-primary90 to-primary95 dark:bg-gradient-to-r dark:from-primary50 dark:to-primary30">
+              <img src="./assets/steps-images/design-image.svg" alt="Setting goals and purpose illustration" class="aspect-video">
+            </div>
+            <div class="p-6 rounded-b-2xl flex flex-col justify-center md:w-1/2 md:rounded-none bg-gradient-to-r from-primary95 to-primary100  dark:bg-gradient-to-r dark:from-primary30 dark:to-primary20">
+              <p class="text-xs md:text-sm text-primaryLight dark:text-primaryDark uppercase tracking-widest mb-6">
+                Design
+              </p>
+              <h5 class="text-onWhiteBg dark:text-onDarkBg text-2xl md:text-4xl mb-8 tracking-wide">Measure twice, cut once</h5>
+              <p class="text-bodyLight dark:text-bodyDark mb-6">Crafting the visual and functional components, collaborating with you to reflect your brand identity</p>
+              <ul role="list" class=" flex flex-col gap-4 justify-center ">
+                <li class="flex gap-3 items-center ">
+                  <i class="ph ph-check-circle text-primaryLight  dark:text-primaryDark"></i>
+                  <p class="text-bodyLight dark:text-bodyDark">Wireframe design</p>
+                </li>
+                <li class="flex gap-3 items-center">
+                  <i class="ph ph-check-circle text-primaryLight dark:text-primaryDark"></i>
+                  <p class="text-bodyLight dark:text-bodyDark">Design system creation</p>
+                </li>
+                <li class="flex gap-3 items-center">
+                  <i class="ph ph-check-circle text-primaryLight dark:text-primaryDark"></i>
+                  <p class="text-bodyLight dark:text-bodyDark">User-friendly interface </p>
+                </li>
+                <li class="flex gap-3 items-center">
+                  <i class="ph ph-check-circle text-primaryLight dark:text-primaryDark"></i>
+                  <p class="text-bodyLight dark:text-bodyDark">Prototypes to test ideas and concepts quickly and efficiently</p>
+                </li>
+                <li class="flex gap-3 items-center">
+                  <i class="ph ph-check-circle text-primaryLight dark:text-primaryDark"></i>
+                  <p class="text-bodyLight dark:text-bodyDark">Visual content creation</p>
+                </li>
+                <li class="flex gap-3 items-center">
+                  <i class="ph ph-check-circle text-primaryLight dark:text-primaryDark"></i>
+                  <p class="text-bodyLight dark:text-bodyDark">Review and feedback</p>
+                </li>
+              </ul>
+
+            </div>
+
+          </article>
+
+          <!-- Development -->
+          <article class="mt-20 h-min flex flex-col md:flex-row rounded-2xl shadow-md overflow-hidden">
+            <div class="h-48 rounded-t-2xl md:h-auto md:w-1/2 md:rounded-none flex justify-center items-center md:order-2 bg-gradient-to-r from-secondary90 to-secondary70 dark:bg-gradient-to-r dark:from-secondary30 dark:to-secondary50">
+              <img src="./assets/steps-images/coding-image.svg" alt="Setting goals and purpose illustration" class="aspect-video md:h-full">
+            </div>
+            <div class="p-6 flex flex-col justify-center rounded-b-2xl md:w-1/2 md:rounded-none bg-gradient-to-r from-secondary100 to-secondary90  dark:bg-gradient-to-r dark:from-secondary20 dark:to-secondary30">
+              <p class="text-xs md:text-sm text-primaryLight dark:text-primaryDark uppercase tracking-widest mb-6">
+                Development
+              </p>
+              <h5 class="text-onWhiteBg dark:text-onDarkBg text-2xl md:text-4xl mb-8 tracking-wide">Coffee. Code. Repeat</h5>
+              <p class="text-bodyLight dark:text-bodyDark mb-6">Now your project is taking shape! You'll be kept up-to-date with regular progress reports.</p>
+              <ul role="list" class=" flex flex-col gap-4 justify-center ">
+                <li class="flex gap-3 items-center ">
+                  <i class="ph ph-check-circle text-primaryLight  dark:text-primaryDark"></i>
+                  <p class="text-bodyLight dark:text-bodyDark">Front-end and back-end development</p>
+                </li>
+                <li class="flex gap-3 items-center">
+                  <i class="ph ph-check-circle text-primaryLight dark:text-primaryDark"></i>
+                  <p class="text-bodyLight dark:text-bodyDark">Performance optimization</p>
+                </li>
+                <li class="flex gap-3 items-center">
+                  <i class="ph ph-check-circle text-primaryLight dark:text-primaryDark"></i>
+                  <p class="text-bodyLight dark:text-bodyDark">Minify code and compressing media</p>
+                </li>
+                <li class="flex gap-3 items-center">
+                  <i class="ph ph-check-circle text-primaryLight dark:text-primaryDark"></i>
+                  <p class="text-bodyLight dark:text-bodyDark">Version control implementation</p>
+                </li>
+                <li class="flex gap-3 items-center">
+                  <i class="ph ph-check-circle text-primaryLight dark:text-primaryDark"></i>
+                  <p class="text-bodyLight dark:text-bodyDark">Social media integration</p>
+                </li>
+                <li class="flex gap-3 items-center">
+                  <i class="ph ph-check-circle text-primaryLight dark:text-primaryDark"></i>
+                  <p class="text-bodyLight dark:text-bodyDark">Analytics tools installation </p>
+                </li>
+              </ul>
+
+            </div>
+          </article>
+
+          <!-- Testing -->
+          <article class="mt-20 flex flex-col md:flex-row md:rounded-2xl shadow-md overflow-y-hidden">
+            <div class="h-48 md:h-auto rounded-t-2xl md:w-1/2 md:rounded-none flex justify-center items-center bg-gradient-to-r from-primary90 to-primary95 dark:bg-gradient-to-r dark:from-primary50 dark:to-primary30">
+              <img src="./assets/steps-images/testing-image.svg" alt="Setting goals and purpose illustration" class="aspect-video md:h-full">
+            </div>
+            <div class="p-6 rounded-b-2xl flex flex-col justify-center md:w-1/2 md:rounded-none bg-gradient-to-r from-primary95 to-primary100  dark:bg-gradient-to-r dark:from-primary30 dark:to-primary20">
+              <p class="text-xs md:text-sm text-primaryLight dark:text-primaryDark uppercase tracking-widest mb-6">
+                Testing
+              </p>
+              <h5 class="text-onWhiteBg dark:text-onDarkBg text-2xl md:text-4xl mb-8 tracking-wide">Perform consistently</h5>
+              <p class="text-bodyLight dark:text-bodyDark mb-6">It's time to guarantee that your project performs as expected. Applying testing methods on:</p>
+              <ul role="list" class=" flex flex-col gap-4 justify-center ">
+                <li class="flex gap-3 items-center ">
+                  <i class="ph ph-check-circle text-primaryLight  dark:text-primaryDark"></i>
+                  <p class="text-bodyLight dark:text-bodyDark">Features and functionality</p>
+                </li>
+                <li class="flex gap-3 items-center">
+                  <i class="ph ph-check-circle text-primaryLight dark:text-primaryDark"></i>
+                  <p class="text-bodyLight dark:text-bodyDark">Responsiveness</p>
+                </li>
+                <li class="flex gap-3 items-center">
+                  <i class="ph ph-check-circle text-primaryLight dark:text-primaryDark"></i>
+                  <p class="text-bodyLight dark:text-bodyDark">Content: spelling, grammar, broken links, and design</p>
+                </li>
+                <li class="flex gap-3 items-center">
+                  <i class="ph ph-check-circle text-primaryLight dark:text-primaryDark"></i>
+                  <p class="text-bodyLight dark:text-bodyDark">Cross browser compatibility</p>
+                </li>
+                <li class="flex gap-3 items-center">
+                  <i class="ph ph-check-circle text-primaryLight dark:text-primaryDark"></i>
+                  <p class="text-bodyLight dark:text-bodyDark">Load times</p>
+                </li>
+              </ul>
+            </div>
+          </article>
+
+          <!-- Deployment -->
+          <article class="mt-20 flex flex-col md:flex-row rounded-2xl shadow-md overflow-hidden">
+            <div class="h-48 rounded-t-2xl md:h-auto md:w-1/2 md:rounded-none flex justify-center items-center md:order-2 bg-gradient-to-r from-secondary90 to-secondary70 dark:bg-gradient-to-r dark:from-secondary30 dark:to-secondary50">
+              <img src="./assets/steps-images/deployment-image.svg" alt="Setting goals and purpose illustration" class="aspect-video md:h-full">
+            </div>
+            <div class="p-6 flex flex-col justify-center   rounded-b-2xl md:w-1/2 md:rounded-none bg-gradient-to-r from-secondary100 to-secondary90 dark:bg-gradient-to-r dark:from-secondary20 dark:to-secondary30">
+              <p class="text-xs md:text-sm text-primaryLight dark:text-primaryDark uppercase tracking-widest mb-6">
+                Deployment
+              </p>
+              <h5 class="text-onWhiteBg dark:text-onDarkBg text-2xl md:text-4xl mb-8 tracking-wide">Booster. Ignition. Liftoff</h5>
+              <p class="text-bodyLight dark:text-bodyDark mb-6">Once all testing is complete and you're satisfied with the results, it's time to launch and bring your website or app to life!</p>
+              <ul role="list" class=" flex flex-col gap-4 justify-center ">
+                <li class="flex gap-3 items-center ">
+                  <i class="ph ph-check-circle text-primaryLight  dark:text-primaryDark"></i>
+                  <p class="text-bodyLight dark:text-bodyDark">Select the perfect domain name</p>
+                </li>
+                <li class="flex gap-3 items-center">
+                  <i class="ph ph-check-circle text-primaryLight dark:text-primaryDark"></i>
+                  <p class="text-bodyLight dark:text-bodyDark"> SSL certification installation</p>
+                </li>
+                <li class="flex gap-3 items-center">
+                  <i class="ph ph-check-circle text-primaryLight dark:text-primaryDark"></i>
+                  <p class="text-bodyLight dark:text-bodyDark">Publish to the web!</p>
+                </li>
+                <li class="flex gap-3 items-center">
+                  <i class="ph ph-check-circle text-primaryLight dark:text-primaryDark"></i>
+                  <p class="text-bodyLight dark:text-bodyDark">Run tests to ensure everything is working as planned</p>
+                </li>
+              </ul>
+
+            </div>
+
+          </article>
+
+          <!-- Maintenance -->
+          <article class="mt-20 flex flex-col md:flex-row md:rounded-2xl shadow-md overflow-y-hidden">
+            <div class="h-48 md:h-auto rounded-t-2xl md:w-1/2 md:rounded-none flex justify-center items-center bg-gradient-to-r from-primary90 to-primary95 dark:bg-gradient-to-r dark:from-primary50 dark:to-primary30">
+              <img src="./assets/steps-images/maintenance-image.svg" alt="Setting goals and purpose illustration" class="aspect-video md:h-full">
+            </div>
+            <div class="p-6 rounded-b-2xl flex flex-col justify-center md:w-1/2 md:rounded-none bg-gradient-to-r from-primary95 to-primary100  dark:bg-gradient-to-r dark:from-primary30 dark:to-primary20">
+              <p class="text-xs md:text-sm text-primaryLight dark:text-primaryDark uppercase tracking-widest mb-6">
+                Maintenance
+              </p>
+              <h5 class="text-onWhiteBg dark:text-onDarkBg text-2xl md:text-4xl mb-8 tracking-wide">Keep iterating</h5>
+              <p class="text-bodyLight dark:text-bodyDark mb-6">Now that your project is live, let's make sure it stays secure, functional, and up-to-date!</p>
+              <ul role="list" class=" flex flex-col gap-4 justify-center ">
+                <li class="flex gap-3 items-center ">
+                  <i class="ph ph-check-circle text-primaryLight  dark:text-primaryDark"></i>
+                  <p class="text-bodyLight dark:text-bodyDark">Monitor performance and traffic </p>
+                </li>
+                <li class="flex gap-3 items-center">
+                  <i class="ph ph-check-circle text-primaryLight dark:text-primaryDark"></i>
+                  <p class="text-bodyLight dark:text-bodyDark">Provide the latest improvements for optimal performance</p>
+                </li>
+                <li class="flex gap-3 items-center">
+                  <i class="ph ph-check-circle text-primaryLight dark:text-primaryDark"></i>
+                  <p class="text-bodyLight dark:text-bodyDark">Security verification</p>
+                </li>
+                <li class="flex gap-3 items-center">
+                  <i class="ph ph-check-circle text-primaryLight dark:text-primaryDark"></i>
+                  <p class="text-bodyLight dark:text-bodyDark">Content refreshment</p>
+                </li>
+                <li class="flex gap-3 items-center">
+                  <i class="ph ph-check-circle text-primaryLight dark:text-primaryDark"></i>
+                  <p class="text-bodyLight dark:text-bodyDark">Ensure regular backups to protect your data</p>
+                </li>
+              </ul>
+
+            </div>
+
+
+
+          </article>
+        </section>
+      </div>
     </section>
+
+
   </main>
 
   <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
