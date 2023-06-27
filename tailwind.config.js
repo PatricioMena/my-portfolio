@@ -21,6 +21,8 @@ module.exports = {
     boxShadow: {
       lighter: '0px 0px 0px 1px inset rgba(0,0,0, 0.1)',
       light: '0px 0px 0px 1px inset rgba(0,0,0, 0.2)',
+      dark: '0px 0px 0px 1px inset rgba(64,74,68, 0.5)',
+      darker: '0px 0px 0px 1px inset rgba(64,74,68, 0.8)',
       md: '0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1)'
     },
 
@@ -80,7 +82,8 @@ module.exports = {
         // Backgrounds
         darkBg: 'hsl(240, 7%, 11%)',
         whiteOnPrimary: '#EAEAEA',
-        surface: 'hsl(0, 0%, 100%)',
+        surface: 'hsl(60, 7%, 100%)',
+        surfaceTwo: 'hsl(288, 56%, 98%)',
         surfaceBlack: 'hsl(240,0%, 15%) ',
 
         // Accents

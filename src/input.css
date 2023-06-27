@@ -6,9 +6,11 @@
   @font-face {
     font-family: 'Grifter';
     src: url(/build/fonts/grifterbold.otf);
+    font-display: swap;
   }
 
-  html {
+  html,
+  input {
     font-family: 'Plus Jakarta Sans', sans-serif;
   }
 
@@ -68,5 +70,8 @@
 
   .swiper-pagination {
     --swiper-theme-color: hsl(167, 100%, 38%);
+    --swiper-pagination-bullet-inactive-color: hsl(167, 100%, 40%);
+    --swiper-pagination-bullet-width: 10px;
+    --swiper-pagination-bullet-height: 10px;
   }
 }
