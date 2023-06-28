@@ -79,3 +79,17 @@ const observer = new IntersectionObserver(stickyNav, {
 });
 
 observer.observe(hero);
+
+///////////////////////////////////////////////
+// Parallex Cards //
+//////////////////////////////////////////////
+let gallery = document.getElementById('screenshots-gallery');
+let moveVal = 0;
+
+moveGallery = () => {
+  moveVal = window.scrollY * 0.5;
+  gallery.style.transform = `translate3d(-${moveVal}px, 0, 0)`;
+  requestAnimationFrame(moveGallery);
+};
+
+requestAnimationFrame(moveGallery);
