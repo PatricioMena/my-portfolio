@@ -88,7 +88,21 @@ module.exports = {
 
         // Accents
         accentLight: 'hsl(167, 100%, 38%)',
-        accentDark: 'hsl(165, 100%, 59%)'
+        accentDark: 'hsl(165, 100%, 59%)',
+
+        error: 'hsl(4, 100%, 64%)'
+      },
+
+      keyframes: {
+        'open-menu': {
+          '0%': { transform: 'scaleY(0)' },
+          '80%': { transform: 'scaleY(1.2)' },
+          '100%': { transform: 'scaleY(1)' }
+        }
+      },
+
+      animation: {
+        'open-menu': 'open-menu 0.5s ease-out forwards'
       }
     }
   },

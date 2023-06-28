@@ -1,3 +1,19 @@
+const initApp = () => {
+  const hamburgerBtn = document.getElementById('hamburger-button');
+  const mobileMenu = document.getElementById('mobile-menu');
+
+  const toggleMenu = () => {
+    mobileMenu.classList.toggle('hidden');
+    mobileMenu.classList.toggle('flex');
+    hamburgerBtn.classList.toggle('toggle-btn');
+  };
+
+  hamburgerBtn.addEventListener('click', toggleMenu);
+  mobileMenu.addEventListener('click', toggleMenu);
+};
+
+document.addEventListener('DOMContentLoaded', initApp);
+
 // Swiper
 const swiper = new Swiper('.swiper', {
   loop: true,
@@ -41,3 +57,25 @@ const swiper = new Swiper('.swiper', {
     }
   }
 });
+
+///////////////////////////////////////////////
+// Sticky Navigation //
+//////////////////////////////////////////////
+const header = document.querySelector('header');
+const hero = document.getElementById('hero');
+
+const stickyNav = (entries) => {
+  entries.forEach((entry) => {
+    if (!entry.isIntersecting) {
+      header.classList.add('sticky-nav');
+    } else {
+      header.classList.remove('sticky-nav');
+    }
+  });
+};
+
+const observer = new IntersectionObserver(stickyNav, {
+  threshold: 0.75
+});
+
+observer.observe(hero);

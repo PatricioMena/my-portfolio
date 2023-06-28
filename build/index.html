@@ -11,16 +11,17 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600&family=Poppins:wght@700&display=swap" rel="stylesheet">
-  <!--------------------- Icons--------------------->
-  <script src="https://unpkg.com/@phosphor-icons/web"></script>
   <!--------------------- Swiper --------------------->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
   <link rel="stylesheet" href="/build/output.css">
+
+  <!--------------------- Icons--------------------->
+  <script src="https://unpkg.com/@phosphor-icons/web"></script>
 </head>
 <body class="overflow-x-hidden">
   <!--------------------- Navbar --------------------->
-  <header class="w-full sticky top-0 z-10 backdrop-blur duration-500 ease-in bg-whiteOnSecondary dark:bg-darkBg dark:text-textWhite">
-    <nav class="container mx-auto max-w-7xl flex items-center justify-between text-sm px-6  md:px-20 md:h-20" aria-label="Global">
+  <header class="w-full top-0 z-10 backdrop-blur duration-200 ease-in bg-whiteOnSecondary dark:bg-darkBg dark:text-textWhite border-b border-outlineLight dark:border-outlineDark">
+    <nav class="container mx-auto max-w-7xl flex items-center justify-between text-sm tracking-wide px-6  md:px-20 md:h-20" aria-label="Global">
 
       <!-- Logo -->
       <div>
@@ -31,26 +32,44 @@
       </div>
       <!-- Nav links -->
       <ul class="hidden text-onWhiteBg dark:text-onDarkBg md:flex md:gap-x-8">
-        <li><a href="#Home" class="main-nav-link | hover:text-primaryLight dark:hover:text-primaryDark dark:after:bg-primaryDark">Home</a></li>
-        <li><a href="#RecentWork" class="main-nav-link | hover:text-primaryLight dark:hover:text-primaryDark dark:after:bg-primaryDark">Projects</a></li>
-        <li><a href="#About" class="main-nav-link | hover:text-primaryLight dark:hover:text-primaryDark dark:after:bg-primaryDark">About</a></li>
+        <li><a href="#" class="main-nav-link | hover:text-primaryLight dark:hover:text-primaryDark dark:after:bg-primaryDark">Home</a></li>
+        <li><a href="#projects" class="main-nav-link | hover:text-primaryLight dark:hover:text-primaryDark dark:after:bg-primaryDark">Projects</a></li>
+        <li><a href="#about" class="main-nav-link | hover:text-primaryLight dark:hover:text-primaryDark dark:after:bg-primaryDark">About</a></li>
         <li><a href="" class="main-nav-link | hover:text-primaryLight dark:hover:text-primaryDark dark:after:bg-primaryDark">Resume</a></li>
       </ul>
+
       <!-- Button -->
-      <a href="#" class="text-sm baseline hidden rounded-lg bg-primaryLight dark:bg-primaryDark text-whiteOnPrimary dark:text-onPrimaryDark py-2 px-6 shadow-md hover:bg-onHoverLight dark:hover:bg-onHoverDark hover:duration-200 hover:ease-in md:block">Contact Me</a>
+      <a href="#contact" class="hidden text-sm baseline rounded-lg bg-primary70 dark:bg-primary90 text-primary100 dark:text-primary10 py-2 px-6 shadow-md tracking-wide hover:bg-opacity-80 dark:hover:bg-onHoverDark transition duration-200 ease-in hover:transition hover:duration-[250ms] hover:ease-out hover:-translate-y-[1px] active:translate-y-0 md:block">Contact Me</a>
+
+      <!-- Hamburger Icon -->
+      <button id="hamburger-button" class="h-8 w-8 cursor-pointer text-3xl relative md:hidden">
+        <div class="absolute top-4 w-8 h-1 rounded bg-primary70 transition-all duration-200 before:content-[''] before:absolute before:w-8 before:h-1 before:-translate-y-2 before:-translate-x-4 before:rounded before:bg-primary70 before:transition-all before:duration-500 after:content-[''] after:absolute after:w-8 after:h-1 after:translate-y-2 after:-translate-x-4 after:rounded after:bg-primary70 after:transition-all after:duration-500"></div>
+      </button>
     </nav>
+
+    <!---------------------  Mobile Menu --------------------->
+    <section id="mobile-menu" class="hidden w-full absolute origin-top bg-whiteOnSecondary text-2xl text-primary70 flex-col animate-open-menu">
+      <nav class="flex min-h-screen flex-col items-center py-20 gap-8" aria-label="mobile">
+        <a href="#" class="hover:text-primaryLight dark:hover:text-primaryDark dark:after:bg-primaryDark">Home</a>
+        <a href="#projects" class="hover:text-primaryLight dark:hover:text-primaryDark dark:after:bg-primaryDark">Projects</a>
+        <a href="#about" class="hover:text-primaryLight dark:hover:text-primaryDark dark:after:bg-primaryDark">About</a>
+        <a href="" class="hover:text-primaryLight dark:hover:text-primaryDark dark:after:bg-primaryDark">Resume</a>
+      </nav>
+    </section>
   </header>
 
   <main>
     <!--------------------- Hero Section --------------------->
-    <section id="hero" class="bg-whiteOnSecondary bg-im dark:bg-darkBg">
+    <section id="hero" class="bg-whiteOnSecondary dark:bg-darkBg ">
       <div class="container mx-auto max-w-7xl px-6 md:px-10">
         <div class="flex flex-col items-center pt-20 md:pt-32 md:pb-10">
-          <h1 class=" text-onWhiteBg dark:text-onDarkBg text-5xl leading-tight md:text-6xl text-center dark:text-textWhite"><span class="text-primaryLight dark:text-primaryDark">Innovative</span> web solutions tailored to grow your business </h1>
+
+          <h1 class=" text-primary10 dark:text-onDarkBg text-5xl leading-tight md:text-6xl text-center dark:text-textWhite"><span class="text-primaryLight dark:text-primaryDark">Innovative</span> web solutions tailored to grow your business </h1>
           <p class="text-lg text-center mt-6 max-w-2xl mx-auto text-bodyLight dark:text-bodyDark">I’m Patricio Mena. A creative full-stack developer committed to delivering products that delight your users and drive results</p>
-          <div class="w-full flex flex-col justify-center mt-10 gap-4 md:flex-row md:items-center	">
-            <a href="#portfolio" class="baseline rounded-lg text-whiteOnPrimary bg-primaryLight h-12 px-6 flex items-center justify-center shadow-md hover:bg-onHoverLight dark:bg-primaryDark dark:text-onPrimaryDark dark:hover:bg-onHoverDark hover:duration-200 hover:ease-in md:w-44 ">Browse Projects</a>
-            <button href="#recent-work" class="baseline rounded-lg text-textBlack bg-whiteOnSecondary border border-secondary dark:border-onDarkBg dark:bg-darkBg dark:text-onDarkBg h-12 px-6 flex items-center justify-center shadow-md hover:duration-200 hover:ease-in md:w-44">Contact Me</button>
+          <div class="w-full flex flex-col justify-center mt-10 gap-4 md:flex-row md:items-center">
+            <a href="#projects" class="baseline rounded-lg text-primary100 bg-primary70 h-12 px-6 flex items-center justify-center shadow-md tracking-wide hover:bg-opacity-80 transition-all duration-200 ease-in hover:transition hover:duration-[250ms] hover:ease-out hover:-translate-y-[1px] active:translate-y-0 md:min-w-[178px] dark:bg-primary90 dark:text-primary10 dark:hover:bg-onHoverDark">Browse Projects</a>
+
+            <a href="#contact" class="baseline rounded-lg text-primary70 border border-outlineLight h-12 px-6 flex items-center justify-center shadow-md tracking-wide hover:bg-primary70 hover:bg-opacity-10 transition duration-200 ease-in hover:transition hover:duration-[250ms] hover:ease-out hover:-translate-y-[1px] active:translate-y-0 dark:border-outlineDark dark:hover:bg-opacity-10 dark:text-primary90 md:min-w-[178px]">Contact Me</a>
           </div>
         </div>
       </div>
@@ -216,7 +235,7 @@
 
 
     <!--------------------- Recent Work Section --------------------->
-    <section id="portfolio" class="bg-whiteOnSecondary dark:bg-darkBg py-32">
+    <section id="projects" class="bg-whiteOnSecondary dark:bg-darkBg py-32">
       <div class="container mx-auto max-w-7xl px-6 md:px-10 relative ">
         <div>
           <h2 class="text-center text-primaryLight dark:text-primaryDark text-semibold uppercase tracking-wider">Recent Work</h2>
@@ -256,14 +275,14 @@
                       <p class="text-base text-bodyLight dark:text-bodyDark">Streamlined the process of looking for a property, the customers are happy</p>
                     </div>
 
-                    <div class="mt-8 flex flex-row gap-2 justify-end">
-                      <a href="#" class="text-sm baseline text-secondary dark:text-primaryDark transparent px-6 py-2.5 flex items-center justify-center hover:text-primaryLight duration-200 ease-in dark:hover:text-onHoverDark">
+                    <div class="mt-8 flex flex-row gap-1 justify-end md:gap-2">
+                      <a href="#" class="text-sm rounded-lg text-primary70 tracking-wide transparent px-6 py-2.5 inline-flex items-center justify-center transition-color duration-200 ease-in hover:duration-[250ms] hover:ease-out dark:hover:text-onHoverDark">
                         <svg class="w-3 h-3 mr-2 hover:text-primaryLight dark:hover:text-onHoverDark hover:duration-200 hover:ease-in" aria-hidden="true" focusable="false" role="img" viewBox="0 0 12 12" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
                           <path d="M12 6C12 6.13261 11.9473 6.25979 11.8536 6.35355C11.7598 6.44732 11.6326 6.5 11.5 6.5H6.5V11.5C6.5 11.6326 6.44732 11.7598 6.35355 11.8536C6.25979 11.9473 6.13261 12 6 12C5.86739 12 5.74021 11.9473 5.64645 11.8536C5.55268 11.7598 5.5 11.6326 5.5 11.5V6.5H0.5C0.367392 6.5 0.240215 6.44732 0.146447 6.35355C0.0526785 6.25979 0 6.13261 0 6C0 5.86739 0.0526785 5.74021 0.146447 5.64645C0.240215 5.55268 0.367392 5.5 0.5 5.5H5.5V0.5C5.5 0.367392 5.55268 0.240215 5.64645 0.146447C5.74021 0.0526785 5.86739 0 6 0C6.13261 0 6.25979 0.0526785 6.35355 0.146447C6.44732 0.240215 6.5 0.367392 6.5 0.5V5.5H11.5C11.6326 5.5 11.7598 5.55268 11.8536 5.64645C11.9473 5.74021 12 5.86739 12 6Z" fill="inherit" />
                         </svg>
                         Learn More
                       </a>
-                      <a href="" class="text-sm baseline rounded-lg text-whiteOnPrimary bg-primaryLight px-6 py-2.5 inline-flex items-center justify-center shadow-md hover:bg-onHoverLight dark:bg-primaryDark dark:text-onPrimaryDark dark:hover:bg-onHoverDark hover:duration-200 ease-in">Live Demo</a>
+                      <a href="" class="text-sm rounded-lg text-primary100 bg-primary70 tracking-wide px-6 py-2.5 inline-flex items-center justify-center shadow-md hover:bg-opacity-80 dark:bg-primaryDark transition-color duration-200 ease-in hover:duration-[250ms] hover:ease-out dark:text-onPrimaryDark dark:hover:bg-onHoverDark">Live Demo</a>
                     </div>
                   </div>
                 </div>
@@ -285,7 +304,7 @@
                     <!-- <span class="bg-sky-100 text-sky-800 px-2.5 py-0.5 text-xs font-medium mr-2 rounded-full inline-flex justify-center items-center dark:bg-sky-900 dark:text-sky-300">Tailwind</span>
                                 <span class="bg-pink-100 text-pink-800 px-2.5 py-0.5 text-xs font-medium mr-2 rounded-full inline-flex justify-center items-center dark:bg-pink-900 dark:text-pink-300">Saas</span> -->
                   </div>
-                  <!-- Card Content -->
+
                   <div class="mt-8">
                     <!-- Card Header/Title -->
                     <h5 class="mb-1 text-2xl font-bold tracking-wide text-secondary dark:text-onDarkBg">ConstruMax</h5>
@@ -295,14 +314,14 @@
                       <p class="text-base text-bodyLight dark:text-bodyDark">Streamlined the process of looking for a property, the customers are happy</p>
                     </div>
                     <!-- Card Buttons -->
-                    <div class="mt-8 flex flex-row gap-2 justify-end">
-                      <a href="#" class="text-sm baseline text-secondary dark:text-primaryDark transparent px-6 py-2.5 flex items-center justify-center hover:text-primaryLight duration-200 ease-in dark:hover:text-onHoverDark">
+                    <div class="mt-8 flex flex-row gap-1 justify-end md:gap-2">
+                      <a href="#" class="text-sm rounded-lg text-primary70 tracking-wide dark:text-primary90 transparent px-6 py-2.5 inline-flex items-center justify-center transition-color duration-200 ease-in hover:duration-[250ms] hover:ease-out hover:text-opacity-80 dark:hover:text-onHoverDark">
                         <svg class="w-3 h-3 mr-2 hover:text-primaryLight dark:hover:text-onHoverDark hover:duration-200 hover:ease-in" aria-hidden="true" focusable="false" role="img" viewBox="0 0 12 12" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
                           <path d="M12 6C12 6.13261 11.9473 6.25979 11.8536 6.35355C11.7598 6.44732 11.6326 6.5 11.5 6.5H6.5V11.5C6.5 11.6326 6.44732 11.7598 6.35355 11.8536C6.25979 11.9473 6.13261 12 6 12C5.86739 12 5.74021 11.9473 5.64645 11.8536C5.55268 11.7598 5.5 11.6326 5.5 11.5V6.5H0.5C0.367392 6.5 0.240215 6.44732 0.146447 6.35355C0.0526785 6.25979 0 6.13261 0 6C0 5.86739 0.0526785 5.74021 0.146447 5.64645C0.240215 5.55268 0.367392 5.5 0.5 5.5H5.5V0.5C5.5 0.367392 5.55268 0.240215 5.64645 0.146447C5.74021 0.0526785 5.86739 0 6 0C6.13261 0 6.25979 0.0526785 6.35355 0.146447C6.44732 0.240215 6.5 0.367392 6.5 0.5V5.5H11.5C11.6326 5.5 11.7598 5.55268 11.8536 5.64645C11.9473 5.74021 12 5.86739 12 6Z" fill="inherit" />
                         </svg>
                         Learn More
                       </a>
-                      <a href="" class="text-sm baseline rounded-lg text-whiteOnPrimary bg-primaryLight px-6 py-2.5 inline-flex items-center justify-center shadow-md hover:bg-onHoverLight dark:bg-primaryDark dark:text-onPrimaryDark dark:hover:bg-onHoverDark hover:duration-200 ease-in">Live Demo</a>
+                      <a href="" class="text-sm rounded-lg text-primary100 bg-primary70 tracking-wide px-6 py-2.5 inline-flex items-center justify-center shadow-md hover:bg-opacity-80 dark:bg-primaryDark transition-color duration-200 ease-in hover:duration-[250ms] hover:ease-out dark:text-onPrimaryDark dark:hover:bg-onHoverDark">Live Demo</a>
                     </div>
                   </div>
                 </div>
@@ -332,14 +351,14 @@
                       <p class="text-base text-bodyLight dark:text-bodyDark">Streamlined the process of looking for a property, the customers are happy</p>
                     </div>
                     <!-- Card Buttons -->
-                    <div class="mt-8 flex flex-row gap-2 justify-end">
-                      <a href="#" class="text-sm baseline text-secondary dark:text-primaryDark transparent px-6 py-2.5 flex items-center justify-center hover:text-primaryLight duration-200 ease-in dark:hover:text-onHoverDark">
+                    <div class="mt-8 flex flex-row gap-1 justify-end md:gap-2">
+                      <a href="#" class="text-sm rounded-lg text-primary70 tracking-wide dark:text-primary90 transparent px-6 py-2.5 inline-flex items-center justify-center transition-color duration-200 ease-in hover:duration-[250ms] hover:ease-out hover:text-opacity-80 dark:hover:text-onHoverDark">
                         <svg class="w-3 h-3 mr-2 hover:text-primaryLight dark:hover:text-onHoverDark hover:duration-200 hover:ease-in" aria-hidden="true" focusable="false" role="img" viewBox="0 0 12 12" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
                           <path d="M12 6C12 6.13261 11.9473 6.25979 11.8536 6.35355C11.7598 6.44732 11.6326 6.5 11.5 6.5H6.5V11.5C6.5 11.6326 6.44732 11.7598 6.35355 11.8536C6.25979 11.9473 6.13261 12 6 12C5.86739 12 5.74021 11.9473 5.64645 11.8536C5.55268 11.7598 5.5 11.6326 5.5 11.5V6.5H0.5C0.367392 6.5 0.240215 6.44732 0.146447 6.35355C0.0526785 6.25979 0 6.13261 0 6C0 5.86739 0.0526785 5.74021 0.146447 5.64645C0.240215 5.55268 0.367392 5.5 0.5 5.5H5.5V0.5C5.5 0.367392 5.55268 0.240215 5.64645 0.146447C5.74021 0.0526785 5.86739 0 6 0C6.13261 0 6.25979 0.0526785 6.35355 0.146447C6.44732 0.240215 6.5 0.367392 6.5 0.5V5.5H11.5C11.6326 5.5 11.7598 5.55268 11.8536 5.64645C11.9473 5.74021 12 5.86739 12 6Z" fill="inherit" />
                         </svg>
                         Learn More
                       </a>
-                      <a href="" class="text-sm baseline rounded-lg text-whiteOnPrimary bg-primaryLight px-6 py-2.5 inline-flex items-center justify-center shadow-md hover:bg-onHoverLight dark:bg-primaryDark dark:text-onPrimaryDark dark:hover:bg-onHoverDark hover:duration-200 ease-in">Live Demo</a>
+                      <a href="" class="text-sm rounded-lg text-primary100 bg-primary70 tracking-wide px-6 py-2.5 inline-flex items-center justify-center shadow-md hover:bg-opacity-80 dark:bg-primaryDark transition-color duration-200 ease-in hover:duration-[250ms] hover:ease-out dark:text-onPrimaryDark dark:hover:bg-onHoverDark">Live Demo</a>
                     </div>
                   </div>
                 </div>
@@ -371,14 +390,14 @@
                       <p class="text-base text-bodyLight dark:text-bodyDark">Streamlined the process of looking for a property, the customers are happy</p>
                     </div>
                     <!-- Card Buttons -->
-                    <div class="mt-8 flex flex-row gap-2 justify-end">
-                      <a href="#" class="text-sm baseline text-secondary dark:text-primaryDark transparent px-6 py-2.5 flex items-center justify-center hover:text-primaryLight duration-200 ease-in dark:hover:text-onHoverDark">
+                    <div class="mt-8 flex flex-row gap-1 justify-end md:gap-2">
+                      <a href="#" class="text-sm rounded-lg text-primary70 tracking-wide dark:text-primary90 transparent px-6 py-2.5 inline-flex items-center justify-center transition-color duration-200 ease-in hover:duration-[250ms] hover:ease-out hover:text-opacity-80 dark:hover:text-onHoverDark">
                         <svg class="w-3 h-3 mr-2 hover:text-primaryLight dark:hover:text-onHoverDark hover:duration-200 hover:ease-in" aria-hidden="true" focusable="false" role="img" viewBox="0 0 12 12" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
                           <path d="M12 6C12 6.13261 11.9473 6.25979 11.8536 6.35355C11.7598 6.44732 11.6326 6.5 11.5 6.5H6.5V11.5C6.5 11.6326 6.44732 11.7598 6.35355 11.8536C6.25979 11.9473 6.13261 12 6 12C5.86739 12 5.74021 11.9473 5.64645 11.8536C5.55268 11.7598 5.5 11.6326 5.5 11.5V6.5H0.5C0.367392 6.5 0.240215 6.44732 0.146447 6.35355C0.0526785 6.25979 0 6.13261 0 6C0 5.86739 0.0526785 5.74021 0.146447 5.64645C0.240215 5.55268 0.367392 5.5 0.5 5.5H5.5V0.5C5.5 0.367392 5.55268 0.240215 5.64645 0.146447C5.74021 0.0526785 5.86739 0 6 0C6.13261 0 6.25979 0.0526785 6.35355 0.146447C6.44732 0.240215 6.5 0.367392 6.5 0.5V5.5H11.5C11.6326 5.5 11.7598 5.55268 11.8536 5.64645C11.9473 5.74021 12 5.86739 12 6Z" fill="inherit" />
                         </svg>
                         Learn More
                       </a>
-                      <a href="" class="text-sm baseline rounded-lg text-whiteOnPrimary bg-primaryLight px-6 py-2.5 inline-flex items-center justify-center shadow-md hover:bg-onHoverLight dark:bg-primaryDark dark:text-onPrimaryDark dark:hover:bg-onHoverDark hover:duration-200 ease-in">Live Demo</a>
+                      <a href="" class="text-sm rounded-lg text-primary100 bg-primary70 tracking-wide px-6 py-2.5 inline-flex items-center justify-center shadow-md hover:bg-opacity-80 dark:bg-primaryDark transition-color duration-200 ease-in hover:duration-[250ms] hover:ease-out dark:text-onPrimaryDark dark:hover:bg-onHoverDark">Live Demo</a>
                     </div>
                   </div>
                 </div>
@@ -401,7 +420,7 @@
     </section>
 
     <!--------------------- How It Works Section --------------------->
-    <section class="py-32 dark:bg-darkBg">
+    <section id="how-it-works" class="py-32 dark:bg-darkBg">
       <div class="container mx-auto max-w-7xl px-6 md:px-10 relative ">
         <h2 class="text-center text-primaryLight dark:text-primaryDark text-semibold uppercase tracking-wider">How It Works</h2>
         <h3 class="mx-auto text-center tracking-widexs text-secondary dark:text-onDarkBg text-5xl mt-4 max-w-2xl">From concept to launch</h3>
@@ -677,29 +696,48 @@
       </div>
     </section>
 
-    <!--------------------- How It Works Section --------------------->
-    <section class="py-32 bg-gradient-to-b from-primary90 to-primary100 dark:to-darkBg">
-      <div class="container mx-auto max-w-7xl px-5 rounded-2xl  flex flex-col items-center justify-between gap-8 ">
+    <!--------------------- CTA Section --------------------->
+    <section id="contact" class="py-32 bg-gradient-to-b from-primary90 to-primary100 dark:to-darkBg">
+      <div class="container mx-auto max-w-7xl px-5 rounded-2xl flex flex-col items-center justify-between gap-8 md:px-10">
         <h6 class="text-4xl text-center text-primary10 md:text-6xl">Ready to bring your idea to life?</h6>
         <p class="text-bodyLight text-center md:text-xl max-w-lg ">Enter your email for a step-by-step guide to getting started or contact me directly</p>
-        <form action="" method="POST" class="flex w-full md:w-[448px] border-[1px] rounded-2xl  bg-white pl-6 pr-2 py-2 shadow-md">
+        <form action="" method="POST" class="flex w-full md:w-[448px] rounded-2xl bg-white pl-6 pr-2 py-2 shadow-md">
           <input type="email" id="email" name="email" placeholder="Email" class="grow-[2] text-xs md:text-sm text-bodyLight border-none focus:outline-none bg-none autofill:bg-white">
-          <button class="text-whiteOnSecondary text-xs md:text-sm rounded-lg py-2 px-4 bg-secondary shadow-md hover:bg-opacity-90 duration-200 ease-in hover:duration-200 hover:ease-out hover:-translate-y-[1px] active:translate-y-0">Start Project</button>
+          <button class="text-whiteOnSecondary text-xs tracking-wide md:text-sm rounded-lg py-2 px-4 bg-secondary shadow-md hover:bg-opacity-80 duration-200 ease-in hover:duration-200 hover:ease-out">Start Project</button>
         </form>
-        <div class="flex justify-between gap-8">
-          <a href="" class="bg-secondary10 p-3 rounded-full hover:bg-opacity-90 shadow-md duration-200 ease-in hover:duration-200 hover:ease-out hover:-translate-y-[1px] active:translate-y-0">
-            <img src="./assets/logos/whatsapp.svg" alt="Whatsapp icon" width="32" height="32">
-          </a>
-          <a href="" class="bg-secondary10 p-3 rounded-full hover:bg-opacity-90 shadow-md duration-200 ease-in hover:duration-200 hover:ease-out hover:-translate-y-[1px] active:translate-y-0">
-            <img src="./assets/logos/discord.svg" alt="Discord icon" width="32" height="32">
-          </a>
-        </div>
+
+        <ul role="list" class="flex justify-between gap-8" aria-label="Contact links">
+          <li>
+            <a href="" class="block bg-primary10 p-3 rounded-full shadow-md hover:bg-opacity-80 duration-200 ease-in hover:duration-[250ms] hover:ease-out hover:-translate-y-[1px] active:translate-y-0">
+              <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="fill-primary90" viewBox="0 0 256 256">
+                <path d="M152.58,145.23l23,11.48A24,24,0,0,1,152,176a72.08,72.08,0,0,1-72-72A24,24,0,0,1,99.29,80.46l11.48,23L101,118a8,8,0,0,0-.73,7.51,56.47,56.47,0,0,0,30.15,30.15A8,8,0,0,0,138,155ZM232,128A104,104,0,0,1,79.12,219.82L45.07,231.17a16,16,0,0,1-20.24-20.24l11.35-34.05A104,104,0,1,1,232,128Zm-40,24a8,8,0,0,0-4.42-7.16l-32-16a8,8,0,0,0-8,.5l-14.69,9.8a40.55,40.55,0,0,1-16-16l9.8-14.69a8,8,0,0,0,.5-8l-16-32A8,8,0,0,0,104,64a40,40,0,0,0-40,40,88.1,88.1,0,0,0,88,88A40,40,0,0,0,192,152Z"></path>
+              </svg>
+              <span class="sr-only">Whatsapp</span>
+            </a>
+          </li>
+          <li> <a href="" class="block bg-secondary10 p-3 rounded-full hover:bg-opacity-80 shadow-md duration-200 ease-in hover:duration-200 hover:ease-out hover:-translate-y-[1px] active:translate-y-0">
+              <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="fill-secondary70" viewBox="0 0 256 256">
+                <path d="M247.51,174.39,218,58a16.08,16.08,0,0,0-13-11.88l-36.06-5.92a16.22,16.22,0,0,0-18.26,11.88l-.21.85a4,4,0,0,0,3.27,4.93,155.62,155.62,0,0,1,24.41,5.62,8.2,8.2,0,0,1,5.62,9.7,8,8,0,0,1-10.19,5.64,155.4,155.4,0,0,0-90.8-.1,8.22,8.22,0,0,1-10.28-4.81,8,8,0,0,1,5.08-10.33,156.85,156.85,0,0,1,24.72-5.72,4,4,0,0,0,3.27-4.93l-.21-.85A16.21,16.21,0,0,0,87.08,40.21L51,46.13A16.08,16.08,0,0,0,38,58L8.49,174.39a15.94,15.94,0,0,0,9.06,18.51l67,29.71a16.17,16.17,0,0,0,21.71-9.1l3.49-9.45a4,4,0,0,0-3.27-5.35,158.13,158.13,0,0,1-28.63-6.2,8.2,8.2,0,0,1-5.61-9.67,8,8,0,0,1,10.2-5.66,155.59,155.59,0,0,0,91.12,0,8,8,0,0,1,10.19,5.65,8.19,8.19,0,0,1-5.61,9.68,157.84,157.84,0,0,1-28.62,6.2,4,4,0,0,0-3.27,5.35l3.49,9.45a16.18,16.18,0,0,0,21.71,9.1l67-29.71A15.94,15.94,0,0,0,247.51,174.39ZM92,152a12,12,0,1,1,12-12A12,12,0,0,1,92,152Zm72,0a12,12,0,1,1,12-12A12,12,0,0,1,164,152Z"></path>
+              </svg>
+              <span class="sr-only">Discord</span>
+            </a>
+          </li>
+          <li><a href="#" class="block bg-primary10 p-3 rounded-full hover:bg-opacity-80 shadow-md duration-200 ease-in hover:duration-200 hover:ease-out hover:-translate-y-[1px] active:translate-y-0">
+              <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="fill-primary90" viewBox="0 0 256 256">
+                <path d="M224,48H32a8,8,0,0,0-8,8V192a16,16,0,0,0,16,16H216a16,16,0,0,0,16-16V56A8,8,0,0,0,224,48ZM98.71,128,40,181.81V74.19Zm11.84,10.85,12,11.05a8,8,0,0,0,10.82,0l12-11.05,58,53.15H52.57ZM157.29,128,216,74.18V181.82Z"></path>
+              </svg>
+              <span class="sr-only">Email</span>
+            </a></li>
+
+
+
+        </ul>
       </div>
     </section>
 
     <!--------------------- About Me Section --------------------->
-    <section class="py-32 dark:bg-darkBg">
-      <section class="container mx-auto max-w-7wl px-5 md:px-10">
+    <section id="about" class="py-32 dark:bg-darkBg">
+      <section class="container mx-auto max-w-7xl px-5 md:px-10">
         <h2 class="text-center text-primaryLight dark:text-primaryDark text-semibold uppercase tracking-wider">About Me</h2>
         <h3 class="mx-auto text-center tracking-widexs text-secondary dark:text-onDarkBg text-5xl mt-4 max-w-2xl">From Blueprint to Coding</h3>
         <p class="mx-auto text-center text-bodyLight dark:text-bodyDark text-xl mt-4 max-w-lg">A Journey of Passion and Perseverance</p>
@@ -714,33 +752,92 @@
             <p class="text-center md:text-left text-bodyLight dark:text-bodyDark max-w-md">Today, I’m using my engineering background and programming skills to help companies thrive in the new digital landscape. I’m proud of my journey and where it has taken me, from civil to software engineer. I’m excited to see where my skills and expertise will take me in the future.</p>
           </section>
         </section>
-        <section class="flex justify-center w-full md:max-w-96 gap-6">
-          <a href="https://github.com/PatricioMena" class="text-center bg-primary70 p-3 rounded-full dark:bg-primary90 shadow-md duration-200 ease-in hover:duration-[250ms] hover:ease-out hover:-translate-y-[1px] active:translate-y-0">
-            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" class="fill-whiteOnPrimary dark:fill-primary10" viewBox="0 0 256 256">
-              <path d="M208.31,75.68A59.78,59.78,0,0,0,202.93,28,8,8,0,0,0,196,24a59.75,59.75,0,0,0-48,24H124A59.75,59.75,0,0,0,76,24a8,8,0,0,0-6.93,4,59.78,59.78,0,0,0-5.38,47.68A58.14,58.14,0,0,0,56,104v8a56.06,56.06,0,0,0,48.44,55.47A39.8,39.8,0,0,0,96,192v8H72a24,24,0,0,1-24-24A40,40,0,0,0,8,136a8,8,0,0,0,0,16,24,24,0,0,1,24,24,40,40,0,0,0,40,40H96v16a8,8,0,0,0,16,0V192a24,24,0,0,1,48,0v40a8,8,0,0,0,16,0V192a39.8,39.8,0,0,0-8.44-24.53A56.06,56.06,0,0,0,216,112v-8A58.14,58.14,0,0,0,208.31,75.68ZM200,112a40,40,0,0,1-40,40H112a40,40,0,0,1-40-40v-8a41.74,41.74,0,0,1,6.9-22.48A8,8,0,0,0,80,73.83a43.81,43.81,0,0,1,.79-33.58,43.88,43.88,0,0,1,32.32,20.06A8,8,0,0,0,119.82,64h32.35a8,8,0,0,0,6.74-3.69,43.87,43.87,0,0,1,32.32-20.06A43.81,43.81,0,0,1,192,73.83a8.09,8.09,0,0,0,1,7.65A41.72,41.72,0,0,1,200,104Z"></path>
-            </svg>
-          </a>
 
-          <a href="https://www.linkedin.com/in/patricio-mena-horn" class="text-center bg-primary70 p-3 rounded-full dark:bg-primary90 shadow-md duration-200 ease-in hover:duration-[250ms] hover:ease-out hover:-translate-y-[1px] active:translate-y-0">
-            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" class="fill-whiteOnPrimary dark:fill-primary10" viewBox="0 0 256 256">
-              <path d="M216,24H40A16,16,0,0,0,24,40V216a16,16,0,0,0,16,16H216a16,16,0,0,0,16-16V40A16,16,0,0,0,216,24Zm0,192H40V40H216V216ZM96,112v64a8,8,0,0,1-16,0V112a8,8,0,0,1,16,0Zm88,28v36a8,8,0,0,1-16,0V140a20,20,0,0,0-40,0v36a8,8,0,0,1-16,0V112a8,8,0,0,1,15.79-1.78A36,36,0,0,1,184,140ZM100,84A12,12,0,1,1,88,72,12,12,0,0,1,100,84Z"></path>
-            </svg>
-          </a>
+        <ul role="list" class="flex justify-center items-center gap-6" aria-label="Social media links">
+          <li>
+            <a href="https://github.com/PatricioMena" class="block text-center bg-primary70 p-3 rounded-full dark:bg-primary90  duration-200 ease-in hover:bg-opacity-80 hover:duration-[250ms] hover:ease-out hover:-translate-y-[1px] active:translate-y-0">
+              <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" class="fill-whiteOnPrimary dark:fill-primary10 w-8 h-8" viewBox="0 0 256 256">
+                <path d="M208.31,75.68A59.78,59.78,0,0,0,202.93,28,8,8,0,0,0,196,24a59.75,59.75,0,0,0-48,24H124A59.75,59.75,0,0,0,76,24a8,8,0,0,0-6.93,4,59.78,59.78,0,0,0-5.38,47.68A58.14,58.14,0,0,0,56,104v8a56.06,56.06,0,0,0,48.44,55.47A39.8,39.8,0,0,0,96,192v8H72a24,24,0,0,1-24-24A40,40,0,0,0,8,136a8,8,0,0,0,0,16,24,24,0,0,1,24,24,40,40,0,0,0,40,40H96v16a8,8,0,0,0,16,0V192a24,24,0,0,1,48,0v40a8,8,0,0,0,16,0V192a39.8,39.8,0,0,0-8.44-24.53A56.06,56.06,0,0,0,216,112v-8A58.14,58.14,0,0,0,208.31,75.68ZM200,112a40,40,0,0,1-40,40H112a40,40,0,0,1-40-40v-8a41.74,41.74,0,0,1,6.9-22.48A8,8,0,0,0,80,73.83a43.81,43.81,0,0,1,.79-33.58,43.88,43.88,0,0,1,32.32,20.06A8,8,0,0,0,119.82,64h32.35a8,8,0,0,0,6.74-3.69,43.87,43.87,0,0,1,32.32-20.06A43.81,43.81,0,0,1,192,73.83a8.09,8.09,0,0,0,1,7.65A41.72,41.72,0,0,1,200,104Z"></path>
+              </svg>
+              <span class="sr-only">Github</span>
+            </a>
+          </li>
 
-          <a href="#" class="text-center bg-primary70 p-3 rounded-full dark:bg-primary90 shadow-md duration-200 ease-in hover:duration-[250ms] hover:ease-out hover:-translate-y-[1px] active:translate-y-0">
-            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" class="fill-whiteOnPrimary dark:fill-primary10" viewBox="0 0 256 256">
-              <path d="M247.39,68.94A8,8,0,0,0,240,64H209.57A48.66,48.66,0,0,0,168.1,40a46.91,46.91,0,0,0-33.75,13.7A47.9,47.9,0,0,0,120,88v6.09C79.74,83.47,46.81,50.72,46.46,50.37a8,8,0,0,0-13.65,4.92c-4.31,47.79,9.57,79.77,22,98.18a110.93,110.93,0,0,0,21.88,24.2c-15.23,17.53-39.21,26.74-39.47,26.84a8,8,0,0,0-3.85,11.93c.75,1.12,3.75,5.05,11.08,8.72C53.51,229.7,65.48,232,80,232c70.67,0,129.72-54.42,135.75-124.44l29.91-29.9A8,8,0,0,0,247.39,68.94Zm-45,29.41a8,8,0,0,0-2.32,5.14C196,166.58,143.28,216,80,216c-10.56,0-18-1.4-23.22-3.08,11.51-6.25,27.56-17,37.88-32.48A8,8,0,0,0,92,169.08c-.47-.27-43.91-26.34-44-96,16,13,45.25,33.17,78.67,38.79A8,8,0,0,0,136,104V88a32,32,0,0,1,9.6-22.92A30.94,30.94,0,0,1,167.9,56c12.66.16,24.49,7.88,29.44,19.21A8,8,0,0,0,204.67,80h16Z"></path>
-            </svg>
-          </a>
-        </section>
+          <li>
+            <a href="https://www.linkedin.com/in/patricio-mena-horn" class="block text-center bg-primary70 p-3 rounded-full dark:bg-primary90 shadow-md duration-200 ease-in hover:bg-opacity-80 hover:duration-[250ms] hover:ease-out hover:-translate-y-[1px] active:translate-y-0">
+              <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" class="fill-whiteOnPrimary dark:fill-primary10 w-8 h-8" viewBox="0 0 256 256">
+                <path d="M216,24H40A16,16,0,0,0,24,40V216a16,16,0,0,0,16,16H216a16,16,0,0,0,16-16V40A16,16,0,0,0,216,24Zm0,192H40V40H216V216ZM96,112v64a8,8,0,0,1-16,0V112a8,8,0,0,1,16,0Zm88,28v36a8,8,0,0,1-16,0V140a20,20,0,0,0-40,0v36a8,8,0,0,1-16,0V112a8,8,0,0,1,15.79-1.78A36,36,0,0,1,184,140ZM100,84A12,12,0,1,1,88,72,12,12,0,0,1,100,84Z"></path>
+              </svg>
+              <span class="sr-only">Linkedin</span>
+            </a>
+          </li>
+
+          <li>
+            <a href="#" class="block text-center bg-primary70 p-3 rounded-full dark:bg-primary90 shadow-md duration-200 ease-in hover:bg-opacity-80 hover:duration-[250ms] hover:ease-out hover:-translate-y-[1px] active:translate-y-0">
+              <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" class="fill-whiteOnPrimary dark:fill-primary10 w-8 h-8" viewBox="0 0 256 256">
+                <path d="M247.39,68.94A8,8,0,0,0,240,64H209.57A48.66,48.66,0,0,0,168.1,40a46.91,46.91,0,0,0-33.75,13.7A47.9,47.9,0,0,0,120,88v6.09C79.74,83.47,46.81,50.72,46.46,50.37a8,8,0,0,0-13.65,4.92c-4.31,47.79,9.57,79.77,22,98.18a110.93,110.93,0,0,0,21.88,24.2c-15.23,17.53-39.21,26.74-39.47,26.84a8,8,0,0,0-3.85,11.93c.75,1.12,3.75,5.05,11.08,8.72C53.51,229.7,65.48,232,80,232c70.67,0,129.72-54.42,135.75-124.44l29.91-29.9A8,8,0,0,0,247.39,68.94Zm-45,29.41a8,8,0,0,0-2.32,5.14C196,166.58,143.28,216,80,216c-10.56,0-18-1.4-23.22-3.08,11.51-6.25,27.56-17,37.88-32.48A8,8,0,0,0,92,169.08c-.47-.27-43.91-26.34-44-96,16,13,45.25,33.17,78.67,38.79A8,8,0,0,0,136,104V88a32,32,0,0,1,9.6-22.92A30.94,30.94,0,0,1,167.9,56c12.66.16,24.49,7.88,29.44,19.21A8,8,0,0,0,204.67,80h16Z"></path>
+              </svg>
+              <span class="sr-only">Twitter</span>
+            </a>
+          </li>
+        </ul>
 
 
       </section>
     </section>
 
     <!--------------------- Footer --------------------->
-    <footer class="py-32">
-      <div class="container mx-auto max-w-7xl px-5 md:px-10"></div>
+    <footer class="py-20 bg-secondary10 dark:bg-darkSurface">
+      <div class="container mx-auto max-w-7xl px-5 md:px-10">
+        <section class="flex flex-col">
+          <nav class="flex flex-col items-center justify-between gap-8 md:flex-row">
+            <a href="#">
+              <img src="/build/assets/logos/Dark-logo.svg" alt="Patricio Mena Logo" class="fill-white dark:fill-primaryDark">
+            </a>
+            <ul class="flex items-center text-sm tracking-wide text-whiteOnSecondary gap-6">
+              <li><a href="#projects" class="duration-200 ease-in hover:text-primary70 hover:duration-[250ms] hover:ease-out">Projects</a></li>
+              <li><a href="#how-it-works" class="duration-200 ease-in hover:text-primary70 hover:duration-[250ms] hover:ease-out">How It works</a></li>
+              <li><a href="#contact" class="duration-200 ease-in hover:text-primary70 hover:duration-[250ms] hover:ease-out">Contact</a></li>
+              <li><a href="#" class="duration-200 ease-in hover:text-primary70 hover:duration-[250ms] hover:ease-out">Privacy</a></li>
+            </ul>
+          </nav>
+
+          <hr class="my-6 border-secondary30 dark:border-outlineDark md:my-8 " />
+
+
+          <div class="flex flex-col items-center justify-between gap-6 md:flex-row">
+            <ul role="list" class="flex items-center gap-4 md:order-2" aria-label="Social media links">
+              <li>
+                <a href="https://github.com/PatricioMena" class="block hover:fill-primary-90">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" class="fill-whiteOnPrimary h-6 w-6 duration-200 ease-in hover:fill-primary70 hover:duration-[250ms] hover:ease-out" viewBox="0 0 256 256">
+                    <path d="M208.31,75.68A59.78,59.78,0,0,0,202.93,28,8,8,0,0,0,196,24a59.75,59.75,0,0,0-48,24H124A59.75,59.75,0,0,0,76,24a8,8,0,0,0-6.93,4,59.78,59.78,0,0,0-5.38,47.68A58.14,58.14,0,0,0,56,104v8a56.06,56.06,0,0,0,48.44,55.47A39.8,39.8,0,0,0,96,192v8H72a24,24,0,0,1-24-24A40,40,0,0,0,8,136a8,8,0,0,0,0,16,24,24,0,0,1,24,24,40,40,0,0,0,40,40H96v16a8,8,0,0,0,16,0V192a24,24,0,0,1,48,0v40a8,8,0,0,0,16,0V192a39.8,39.8,0,0,0-8.44-24.53A56.06,56.06,0,0,0,216,112v-8A58.14,58.14,0,0,0,208.31,75.68ZM200,112a40,40,0,0,1-40,40H112a40,40,0,0,1-40-40v-8a41.74,41.74,0,0,1,6.9-22.48A8,8,0,0,0,80,73.83a43.81,43.81,0,0,1,.79-33.58,43.88,43.88,0,0,1,32.32,20.06A8,8,0,0,0,119.82,64h32.35a8,8,0,0,0,6.74-3.69,43.87,43.87,0,0,1,32.32-20.06A43.81,43.81,0,0,1,192,73.83a8.09,8.09,0,0,0,1,7.65A41.72,41.72,0,0,1,200,104Z"></path>
+                  </svg>
+                  <span class="sr-only">Github</span>
+                </a>
+              </li>
+              <li>
+                <a href="https://www.linkedin.com/in/patricio-mena-horn" class="block hover:fill-primary-90">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" class="fill-whiteOnPrimary h-6 w-6 duration-200 ease-in hover:fill-primary70 hover:dark:fill-primary-90 hover:duration-[250ms] hover:ease-out" viewBox="0 0 256 256">
+                    <path d="M216,24H40A16,16,0,0,0,24,40V216a16,16,0,0,0,16,16H216a16,16,0,0,0,16-16V40A16,16,0,0,0,216,24Zm0,192H40V40H216V216ZM96,112v64a8,8,0,0,1-16,0V112a8,8,0,0,1,16,0Zm88,28v36a8,8,0,0,1-16,0V140a20,20,0,0,0-40,0v36a8,8,0,0,1-16,0V112a8,8,0,0,1,15.79-1.78A36,36,0,0,1,184,140ZM100,84A12,12,0,1,1,88,72,12,12,0,0,1,100,84Z"></path>
+                  </svg>
+                  <span class="sr-only">Linkedin</span>
+                </a>
+              </li>
+              <li>
+                <a href="https://www.linkedin.com/in/patricio-mena-horn" class="block hover:fill-primary-90">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" class="fill-whiteOnPrimary h-6 w-6 duration-200 ease-in hover:fill-primary70 hover:dark:fill-primary-90 hover:duration-[250ms] hover:ease-out" viewBox="0 0 256 256">
+                    <path d="M247.39,68.94A8,8,0,0,0,240,64H209.57A48.66,48.66,0,0,0,168.1,40a46.91,46.91,0,0,0-33.75,13.7A47.9,47.9,0,0,0,120,88v6.09C79.74,83.47,46.81,50.72,46.46,50.37a8,8,0,0,0-13.65,4.92c-4.31,47.79,9.57,79.77,22,98.18a110.93,110.93,0,0,0,21.88,24.2c-15.23,17.53-39.21,26.74-39.47,26.84a8,8,0,0,0-3.85,11.93c.75,1.12,3.75,5.05,11.08,8.72C53.51,229.7,65.48,232,80,232c70.67,0,129.72-54.42,135.75-124.44l29.91-29.9A8,8,0,0,0,247.39,68.94Zm-45,29.41a8,8,0,0,0-2.32,5.14C196,166.58,143.28,216,80,216c-10.56,0-18-1.4-23.22-3.08,11.51-6.25,27.56-17,37.88-32.48A8,8,0,0,0,92,169.08c-.47-.27-43.91-26.34-44-96,16,13,45.25,33.17,78.67,38.79A8,8,0,0,0,136,104V88a32,32,0,0,1,9.6-22.92A30.94,30.94,0,0,1,167.9,56c12.66.16,24.49,7.88,29.44,19.21A8,8,0,0,0,204.67,80h16Z"></path>
+                  </svg>
+                  <span class="sr-only">Twitter</span>
+                </a>
+              </li>
+            </ul>
+            <p class="text-whiteOnSecondary text-sm tracking-wide">&copy; 2023 Patricio Mena. All Rights Reserved</p>
+
+          </div>
+
+        </section>
+      </div>
     </footer>
 
   </main>
