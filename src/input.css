@@ -62,17 +62,17 @@
     transform-origin: left;
   }
 
-  /* #benefits {
+  /* /* #benefits {
     background-image: url(/build/assets/backgrounds/endless-constellation.svg);
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
-  }
-  #portfolio {
-    background-image: url(/build/assets/backgrounds/animated.svg);
+  } */
+  /* #hero {
+    background-image: url(/build/assets/backgrounds/magicpattern-grid-pattern.png);
     background-repeat: no-repeat;
     background-size: cover;
-    
+    z-index: -2;
   } */
 
   .swiper-pagination {

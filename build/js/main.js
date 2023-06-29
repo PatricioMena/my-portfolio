@@ -75,7 +75,7 @@ const stickyNav = (entries) => {
 };
 
 const observer = new IntersectionObserver(stickyNav, {
-  threshold: 0.75
+  threshold: 0.5
 });
 
 observer.observe(hero);
@@ -93,3 +93,16 @@ moveGallery = () => {
 };
 
 requestAnimationFrame(moveGallery);
+
+///////////////////////////////////////////////
+// Lottie animations //
+//////////////////////////////////////////////
+// const fastIcon = document.getElementById('fast-icon');
+
+// const animItem = bodymovin.loadAnimation({
+//   wrapper: fastIcon,
+//   animType: 'svg',
+//   loop: true,
+//   autoplay: true,
+//   path: 'https://cdn.lordicon.com/ysbeyrrl.json'
+// });
