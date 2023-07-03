@@ -13,5 +13,7 @@
   "devDependencies": {
     "tailwindcss": "^3.3.2"
   },
-  "dependencies": {}
+  "dependencies": {
+    "pattern.css": "^1.0.0"
+  }
 }

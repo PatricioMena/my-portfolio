@@ -23,7 +23,7 @@ const swiper = new Swiper('.swiper', {
   grabCursor: 'true',
   slidesPerView: 3,
   effect: 'slide',
-  spaceBetween: 24,
+  spaceBetween: 32,
   fade: 'true',
   keyboard: {
     enabled: true
@@ -87,7 +87,7 @@ let gallery = document.getElementById('screenshots-gallery');
 let moveVal = 0;
 
 moveGallery = () => {
-  moveVal = window.scrollY * 0.5;
+  moveVal = window.scrollY * 0.3;
   gallery.style.transform = `translate3d(-${moveVal}px, 0, 0)`;
   requestAnimationFrame(moveGallery);
 };

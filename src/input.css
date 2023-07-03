@@ -3,10 +3,10 @@
 @tailwind utilities;
 
 .sticky-nav {
-  @apply bg-white;
-  @apply sticky;
-  @apply backdrop-blur-lg;
-  @apply shadow-md;
+  background: hsl(210, 20%, 98%);
+  position: sticky;
+  /* border-bottom: 1px solid hsl(0, 0%, 34%); */
+  box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
 }
 
 @layer base {
@@ -62,18 +62,42 @@
     transform-origin: left;
   }
 
-  /* /* #benefits {
-    background-image: url(/build/assets/backgrounds/endless-constellation.svg);
+  /* #hero {
+    background-image: url(/build/assets/backgrounds/Animated-shape.svg);
     background-repeat: no-repeat;
     background-size: cover;
+    background-position: center;
+  } */
+
+  #benefits {
+    background-image: url(/build/assets/backgrounds/scattered-forcefields.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: left;
+    background-attachment: fixed;
+  }
+
+  /* #screenshots {
+    background-image: url(/build/assets/backgrounds/Animated-corner.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    transform: background rotate(180deg);
+  } */
+
+  /* #projects {
+    background-image: url(/build/assets/backgrounds/rrrainbow.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: left;
     background-attachment: fixed;
   } */
-  /* #hero {
-    background-image: url(/build/assets/backgrounds/magicpattern-grid-pattern.png);
+
+  #contact {
+    background-image: url(/build/assets/backgrounds/rainbow-vortex.svg);
     background-repeat: no-repeat;
     background-size: cover;
-    z-index: -2;
-  } */
+    background-position: left;
+  }
 
   .swiper-pagination {
     --swiper-theme-color: hsl(167, 100%, 38%);
@@ -82,7 +106,6 @@
     --swiper-pagination-bullet-height: 10px;
   }
 }
-
 @layer utilities {
   .toggle-btn {
     @apply [&>div::before]:translate-y-0 [&>div::before]:rotate-45 [&>div::after]:translate-y-0 [&>div::after]:-rotate-45 [&>div]:bg-transparent;
