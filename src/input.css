@@ -62,35 +62,23 @@
     transform-origin: left;
   }
 
-  /* #hero {
-    background-image: url(/build/assets/backgrounds/Animated-shape.svg);
+  /* 
+  #hero {
+    background-image: url(/build/assets/backgrounds/bermuda-circle.svg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
   } */
 
-  #benefits {
-    background-image: url(/build/assets/backgrounds/scattered-forcefields.svg);
+  /* background by SVGBackgrounds.com */
+  #benefits,
+  #how-it-works {
+    background-image: url(/build/assets/backgrounds/bbblurry.svg);
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: left;
+    background-position: center;
     background-attachment: fixed;
   }
-
-  /* #screenshots {
-    background-image: url(/build/assets/backgrounds/Animated-corner.svg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    transform: background rotate(180deg);
-  } */
-
-  /* #projects {
-    background-image: url(/build/assets/backgrounds/rrrainbow.svg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: left;
-    background-attachment: fixed;
-  } */
 
   #contact {
     background-image: url(/build/assets/backgrounds/rainbow-vortex.svg);

@@ -28,54 +28,79 @@
 </head>
 <body class="text-base md:text-lg overflow-x-hidden">
   <!--------------------- Navbar --------------------->
-  <header class="w-full top-0 z-50 transition-color duration-200 ease-out bg-[#FBFCF8] dark:bg-darkBg">
-    <nav class="container mx-auto max-w-7xl flex items-center justify-between text-sm tracking-wide px-6 md:px-0" aria-label="Global">
-
-      <!-- Logo -->
-      <div>
-        <a href="#">
+  <header class=" min-h-16 bg-[#FBFCF8] dark:bg-darkBg">
+    <div class="container max-w-7xl mx-auto flex justify-between items-center px-6 md:px-10">
+      <!-- Logo and Mobile Button-->
+      <div class="flex justify-between items-center flex-1 md:flex-initial">
+        <button id="hamburger-button" class="md:hidden inline-block bg-transparent border-none text-primary70 dark:text-primary90 p-0 cursor-pointer">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 256 256" class="w-6 h-24 fill-current block">
+            <path d="M224,128a8,8,0,0,1-8,8H40a8,8,0,0,1,0-16H216A8,8,0,0,1,224,128ZM40,72H216a8,8,0,0,0,0-16H40a8,8,0,0,0,0,16ZM216,184H40a8,8,0,0,0,0,16H216a8,8,0,0,0,0-16Z"></path>
+          </svg>
+        </button>
+        <a href="/" class="">
           <span class="hidden sr-only">Patricio Mena</span>
-          <img src="./assets/logos/Light-main-nav-logo.svg" alt="logo" width="147" height="63">
+          <svg width="147" height="63" viewBox="0 0 147 63" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M17.6236 18.8255C15.5788 21.0556 15.5788 21.0556 15.5788 24.9451C15.5788 28.7828 15.5788 28.8347 13.6315 30.8572L11.6841 32.8798V37.0805V41.2813L13.7775 43.4594L15.8709 45.6376H21.6643H27.4578L29.5512 43.4594L31.6446 41.2813V37.0805V32.8798L29.6972 30.8572C27.7499 28.8347 27.7499 28.7828 27.7499 24.997C27.7499 21.3667 27.6525 21.0556 25.9972 18.8774C24.342 16.7511 24.0499 16.5955 21.9565 16.5955C19.9117 16.5955 19.4736 16.803 17.6236 18.8255ZM24.5854 19.1886L25.9972 20.7444H24.3907H22.7354L23.0275 23.0781C23.3196 25.2563 22.8815 26.1379 22.1512 24.8933C21.9078 24.4784 21.6157 24.5302 21.1288 24.9451C20.5446 25.4637 20.4472 25.1526 20.4472 23.13C20.4472 20.7963 20.3986 20.7444 18.8893 20.7444H17.3315L18.7433 19.1886C19.717 18.0995 20.5933 17.6327 21.6643 17.6327C22.7354 17.6327 23.6117 18.0995 24.5854 19.1886ZM19.4736 23.2856C19.4736 24.634 19.3275 24.7895 18.1591 24.6858C17.088 24.5821 16.7472 24.2191 16.6499 23.13C16.5038 21.9372 16.6499 21.7816 17.9643 21.7816C19.3275 21.7816 19.4736 21.9372 19.4736 23.2856ZM26.7762 23.2856C26.7762 24.634 26.5815 24.8414 25.5591 24.7377C24.8775 24.6858 24.342 24.4784 24.342 24.2191C24.342 24.0116 24.342 23.3893 24.342 22.8188C24.342 22.0409 24.6828 21.7816 25.5591 21.7816C26.5815 21.7816 26.7762 22.0409 26.7762 23.2856ZM18.4512 26.9158C16.9907 28.2642 16.5525 28.2642 16.5525 27.0196C16.5525 26.2935 16.942 25.9305 17.9157 25.8268C19.717 25.5674 19.8143 25.723 18.4512 26.9158ZM26.7762 27.0714C26.7762 28.0568 26.7275 28.0568 25.3157 26.9677C24.5367 26.3454 23.8551 25.7749 23.8551 25.723C23.8551 25.6712 24.5367 25.6712 25.3157 25.8268C26.3867 25.9823 26.7762 26.3454 26.7762 27.0714ZM23.8551 27.2789C26.0459 28.8347 25.9972 29.0421 23.4657 29.8719C22.0538 30.2868 21.1775 30.2349 19.5709 29.6644L17.4288 28.9384L19.5709 27.4344C20.7393 26.6047 21.713 25.9305 21.8104 25.9305C21.8591 25.9305 22.7841 26.5528 23.8551 27.2789ZM24.488 30.7017C28.3341 29.1458 28.7236 29.7163 28.7236 37.0805C28.7236 44.6004 28.7236 44.6004 21.9078 44.6004C14.9946 44.6004 14.9946 44.5485 14.9946 36.8212C14.9946 29.5089 15.1893 29.2496 18.9867 30.7017L21.8104 31.7907L24.488 30.7017ZM13.6315 37.1843C13.6315 39.6217 13.4854 41.5406 13.3393 41.385C13.1933 41.1775 13.0472 39.4661 13.0472 37.4954C13.0472 33.1391 13.0959 32.6724 13.388 32.6724C13.5341 32.6724 13.6315 34.6949 13.6315 37.1843ZM30.6709 37.0805C30.6709 39.2068 30.4762 41.0738 30.1841 41.2294C29.892 41.4368 29.6972 39.9329 29.6972 37.0805C29.6972 34.2282 29.892 32.7242 30.1841 32.9317C30.4762 33.0873 30.6709 34.9543 30.6709 37.0805Z" fill="#00C297" class="dark:fill-primary90" />
+            <path d="M68.3523 26.1897C68.1576 26.6564 68.2549 27.2788 68.547 27.5899C69.326 28.4197 70.8352 27.8492 70.8352 26.7083C70.8352 25.3599 68.7904 24.945 68.3523 26.1897Z" fill="#121330" class="dark:fill-gray-50" />
+            <path d="M80.0369 26.1897C79.8421 26.6564 79.9395 27.2788 80.2316 27.5899C81.0105 28.4197 82.5198 27.8492 82.5198 26.7083C82.5198 25.3599 80.475 24.945 80.0369 26.1897Z" fill="#121330" class="dark:fill-gray-50" />
+            <path d="M56.5224 30.183C56.6197 34.6949 57.4474 36.6656 59.4921 37.2361C61.3908 37.8066 61.8289 37.5991 61.8289 36.2508C61.8289 35.6284 61.4882 35.2654 60.9526 35.2654C59.7355 35.2654 58.9079 34.28 58.9079 32.8279C58.9079 31.8944 59.2 31.6351 60.125 31.6351C61.0987 31.6351 61.3421 31.3758 61.3421 30.2868C61.3421 29.094 61.196 28.9902 60.125 29.2495C59.0539 29.5607 58.9079 29.4051 58.9079 28.2642C58.9079 27.227 58.6645 26.9677 57.6421 26.9677C56.4737 26.9677 56.425 27.0714 56.5224 30.183Z" fill="#121330" class="dark:fill-gray-50" />
+            <path d="M93.4736 32.1538V37.3398H94.6907C95.9078 37.3398 95.9078 37.288 95.6157 34.3838C95.2263 31.2203 95.8105 30.9091 96.8815 33.7096C97.7092 35.8359 99.5105 35.8359 100.533 33.7614C101.701 31.2721 102.091 31.4796 101.847 34.4875C101.653 37.288 101.653 37.3398 102.918 37.3398H104.184V32.1538V26.9677H102.967C101.945 26.9677 101.507 27.4863 100.435 29.82C99.7052 31.3759 98.9749 32.6724 98.8289 32.6724C98.6828 32.6724 97.9526 31.3759 97.1249 29.82C96.0539 27.6419 95.421 26.9677 94.5934 26.9677C93.5223 26.9677 93.4736 27.1233 93.4736 32.1538Z" fill="#121330" class="dark:fill-gray-50" />
+            <path d="M39.1907 30.3386C38.071 31.4796 37.9736 31.9982 37.9736 36.3026V40.9701H39.2394C40.4078 40.9701 40.5052 40.8145 40.3105 38.9475L40.1644 36.9768L42.1605 37.2361C43.8644 37.4436 44.3026 37.288 45.1789 36.0433C47.4184 33.0354 45.6657 29.0421 42.1118 29.0421C40.8947 29.0421 39.9697 29.457 39.1907 30.3386ZM43.2315 31.5833C43.621 31.8426 43.8157 32.6724 43.7184 33.5021C43.5723 34.7987 43.3776 35.0061 42.1118 35.0061C40.846 35.0061 40.6513 34.7987 40.5052 33.5021C40.3592 32.1019 40.9921 31.1165 42.1118 31.1165C42.4039 31.1165 42.8907 31.324 43.2315 31.5833Z" fill="#121330" class="dark:fill-gray-50" />
+            <path d="M48.2946 30.2349C46.8828 31.7907 46.8341 34.8505 48.1973 36.3026C49.2683 37.4435 52.0433 37.7028 52.9683 36.7175C53.4065 36.2507 53.5525 36.2507 53.5525 36.7175C53.5525 37.0805 54.088 37.3398 54.7209 37.3398C55.938 37.3398 55.8894 37.4954 55.2565 33.0353C54.867 30.3386 53.5038 29.0421 51.2157 29.0421C49.9012 29.0421 49.0249 29.4051 48.2946 30.2349ZM52.7736 32.2574C53.8933 34.2281 51.0209 36.2507 49.6578 34.4874C49.1709 33.8651 49.1709 33.3984 49.6091 32.3612C50.242 30.8572 51.8973 30.8053 52.7736 32.2574Z" fill="#121330" class="dark:fill-gray-50" />
+            <path d="M64.0685 30.1312C62.9488 31.0647 62.8027 31.5833 62.8027 34.2801C62.8027 37.1843 62.8514 37.3398 64.0198 37.3398C65.1883 37.3398 65.2369 37.1843 65.2369 34.5394C65.2369 31.9982 65.3343 31.7389 66.4541 31.4277C67.233 31.2203 67.6712 30.7535 67.6712 30.0793C67.6712 28.6791 65.7725 28.731 64.0685 30.1312Z" fill="#121330" class="dark:fill-gray-50" />
+            <path d="M68.5474 33.191C68.4014 37.3398 68.4014 37.3398 69.6185 37.3398C70.8356 37.3398 70.8356 37.288 70.8356 33.191C70.8356 29.3014 70.7869 29.0421 69.7645 29.0421C68.7908 29.0421 68.6935 29.3533 68.5474 33.191Z" fill="#121330" class="dark:fill-gray-50" />
+            <path d="M73.2697 30.3386C71.7605 31.8945 71.7118 34.1245 73.075 35.9915C73.9026 37.1324 74.4381 37.3398 76.4829 37.3398C78.7223 37.3398 78.8684 37.2361 78.8684 36.0433C78.8684 34.9024 78.7223 34.7468 77.7 35.058C75.85 35.5247 74.4868 34.8505 74.4868 33.5021C74.4868 31.7907 75.5092 31.0647 77.3592 31.4277C78.7223 31.7389 78.8684 31.6352 78.8684 30.3905C78.8684 29.1458 78.7223 29.0421 76.6776 29.0421C74.9736 29.0421 74.146 29.3533 73.2697 30.3386Z" fill="#121330" class="dark:fill-gray-50" />
+            <path d="M80.0854 33.191C80.0854 37.288 80.0854 37.3398 81.3026 37.3398C82.5197 37.3398 82.5197 37.288 82.5197 33.191C82.5197 29.094 82.5197 29.0421 81.3026 29.0421C80.0854 29.0421 80.0854 29.094 80.0854 33.191Z" fill="#121330" class="dark:fill-gray-50" />
+            <path d="M84.9538 30.3386C83.4446 31.8944 83.3959 34.1244 84.759 35.9914C86.1709 37.9103 89.5788 37.9103 90.9906 35.9914C93.1814 33.0353 91.3801 29.0421 87.8748 29.0421C86.6577 29.0421 85.7327 29.4569 84.9538 30.3386ZM88.9946 31.5832C89.384 31.8425 89.5788 32.6723 89.4814 33.5021C89.3354 34.7986 89.1406 35.0061 87.8748 35.0061C86.7064 35.0061 86.3656 34.7467 86.2683 33.8133C85.9762 31.7907 87.4854 30.546 88.9946 31.5832Z" fill="#121330" class="dark:fill-gray-50" />
+            <path d="M106.716 30.2349C105.304 31.7907 105.255 34.8505 106.618 36.3026C107.348 37.0805 108.225 37.3398 110.026 37.3398C112.266 37.3398 112.46 37.2361 112.46 36.147C112.46 35.058 112.266 34.9024 110.464 34.9542C109.344 35.0061 108.322 34.7468 108.225 34.4356C108.127 34.0726 108.566 33.9689 109.491 34.1245C111.389 34.3838 112.947 33.4503 112.947 31.9463C112.947 29.094 108.712 27.953 106.716 30.2349ZM110.659 31.8945C110.513 32.5687 108.079 32.9317 108.079 32.2575C108.079 31.4796 108.712 31.0647 109.783 31.2203C110.318 31.324 110.708 31.5833 110.659 31.8945Z" fill="#121330" class="dark:fill-gray-50" />
+            <path d="M115.479 30.2349C114.651 31.1684 114.408 32.1019 114.408 34.3838C114.408 37.2361 114.456 37.3398 115.674 37.3398C116.842 37.3398 116.939 37.1843 116.745 35.3691C116.404 32.6205 117.085 31.0128 118.449 31.2203C119.374 31.3759 119.52 31.7389 119.666 34.3319C119.812 37.1324 119.909 37.3398 120.98 37.3398C122.1 37.3398 122.197 37.1843 122.197 34.5394C122.197 30.8572 120.931 29.0421 118.351 29.0421C117.085 29.0421 116.209 29.4051 115.479 30.2349Z" fill="#121330" class="dark:fill-gray-50" />
+            <path d="M124.972 29.6644C122.976 31.2202 123.269 36.147 125.362 37.0286C126.628 37.5472 128.283 37.3916 128.965 36.6656C129.5 36.147 129.646 36.147 129.841 36.6656C129.987 37.0286 130.571 37.3398 131.155 37.3398C132.372 37.3398 132.324 37.4435 131.691 33.0353C131.301 30.3385 129.938 29.042 127.65 29.042C126.628 29.042 125.411 29.3532 124.972 29.6644ZM129.013 31.8944C129.744 32.8279 129.5 34.2281 128.429 34.9542C126.725 36.0951 124.826 33.5539 126.092 31.8944C126.871 30.909 128.234 30.909 129.013 31.8944Z" fill="#121330" class="dark:fill-gray-50" />
+            <path d="M12.1709 49.0085C12.1709 49.6308 12.9498 49.7864 16.0656 49.7864C19.1814 49.7864 19.9604 49.6308 19.9604 49.0085C19.9604 48.3861 19.1814 48.2306 16.0656 48.2306C12.9498 48.2306 12.1709 48.3861 12.1709 49.0085Z" fill="#00C297" />
+            <path d="M23.3682 49.0085C23.3682 49.6308 24.1471 49.7864 27.2629 49.7864C30.3787 49.7864 31.1576 49.6308 31.1576 49.0085C31.1576 48.3861 30.3787 48.2306 27.2629 48.2306C24.1471 48.2306 23.3682 48.3861 23.3682 49.0085Z" fill="#00C297" />
+          </svg>
         </a>
       </div>
-      <!-- Nav links -->
-      <ul class="hidden md:flex md:gap-x-8 text-gray300 dark:text-gray-300">
-        <li><a href="#" class="main-nav-link | hover:text-primary70 dark:hover:text-primaryDark dark:after:bg-primaryDark">Home</a></li>
-        <li><a href="#projects" class="main-nav-link | hover:text-primary70 dark:hover:text-primaryDark dark:after:bg-primaryDark">Projects</a></li>
-        <li><a href="#about" class="main-nav-link | hover:text-primary70 dark:hover:text-primaryDark dark:after:bg-primaryDark">About</a></li>
-        <li><a href="" class="main-nav-link | hover:text-primary70 dark:hover:text-primaryDark dark:after:bg-primaryDark">Resume</a></li>
-      </ul>
 
-      <!-- Button -->
-      <a href="#contact" class="hidden text-sm text-primary100 px-6 py-2 bg-primary70 tracking-wide rounded-lg transition duration-200 ease-in hover:bg-opacity-80 hover:shadow-md hover:transition hover:duration-[250ms] hover:ease-out hover:-translate-y-[1px] active:translate-y-0 active:shadow-none active:bg-opacity-90 dark:text-primary10 dark:bg-primary90 dark:hover:bg-onHoverDark md:block">Contact Me</a>
+      <!-- Main Navigation links -->
+      <nav aria-label="main-navigation" class="block h-full w-full pointer-events-none fixed top-0 left-0 z-100 before:content-[''] before:bloc before:absolute before:left-0 before:top-0 before:w-full before:h-full before:bg-black before:bg-opacity-40 before:backdrop-blur-sm opacity-1">
+        <ul class="transition-transform duration-200 ease-out relative h-full w-fit min-w-[256px] top-0 left-0 pt-20 shadow-md bg-slate-200 dark:bg-surfaceBlack | text-base text-gray300 dark:text-slate-100 md:flex md:gap-x-8">
+          <li class="py-6 px-5"><a href="/" class="main-nav-link | hover:text-primary70 dark:hover:text-primaryDark dark:after:bg-primaryDark">Home</a></li>
+          <li class="py-6 px-5"><a href="#projects" class="main-nav-link | hover:text-primary70 dark:hover:text-primaryDark dark:after:bg-primaryDark">Projects</a></li>
+          <li class="py-6 px-5"><a href="#about" class="main-nav-link | hover:text-primary70 dark:hover:text-primaryDark dark:after:bg-primaryDark">About</a></li>
+          <li class="py-6 px-5"><a href="" class="main-nav-link | hover:text-primary70 dark:hover:text-primaryDark dark:after:bg-primaryDark">Resume</a></li>
+          <button class="inline-block bg-transparent border-none cursor-pointer absolute z-[1] top-5 right-8  text-gray-300 dark:text-slate-100 w-4 h-4">
 
-      <!-- Hamburger Icon -->
-      <button id="hamburger-button" class="h-8 w-8 cursor-pointer text-3xl relative md:hidden">
-        <div class="absolute top-4 w-8 h-1 rounded bg-primary70 transition-all duration-200 before:content-[''] before:absolute before:w-8 before:h-1 before:-translate-y-2 before:-translate-x-4 before:rounded before:bg-primary70 before:transition-all before:duration-500 after:content-[''] after:absolute after:w-8 after:h-1 after:translate-y-2 after:-translate-x-4 after:rounded after:bg-primary70 after:transition-all after:duration-500"></div>
-      </button>
-    </nav>
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 256 256" class="block w-6 h-6">
+              <path d=" M208.49,191.51a12,12,0,0,1-17,17L128,145,64.49,208.49a12,12,0,0,1-17-17L111,128,47.51,64.49a12,12,0,0,1,17-17L128,111l63.51-63.52a12,12,0,0,1,17,17L145,128Z"></path>
+            </svg></button>
+        </ul>
+      </nav>
+
+      <!-- Header Button  -->
+      <a href="#projects" class="hidden text-sm text-primary100 px-6 py-2 bg-primary70 tracking-wide rounded-lg transition duration-200 ease-in hover:bg-opacity-80 hover:shadow-md hover:transition hover:duration-[250ms] hover:ease-out hover:-translate-y-[1px] active:translate-y-0 active:shadow-none active:bg-opacity-90 dark:text-primary10 dark:bg-primary90 dark:hover:bg-onHoverDark md:block">Portfolio</a>
+    </div>
 
     <!---------------------  Mobile Menu --------------------->
-    <section id="mobile-menu" class="hidden w-full absolute origin-top bg-whiteOnSecondary text-2xl text-primary70 flex-col animate-open-menu ">
-      <nav class="flex min-h-screen flex-col items-center py-20 gap-8" aria-label="mobile">
-        <a href="#" class="hover:text-primary70 dark:hover:text-primaryDark dark:after:bg-primaryDark">Home</a>
-        <a href="#projects" class="hover:text-primary70 dark:hover:text-primaryDark dark:after:bg-primaryDark">Projects</a>
-        <a href="#about" class="hover:text-primary70 dark:hover:text-primaryDark dark:after:bg-primaryDark">About</a>
-        <a href="" class="hover:text-primary70 dark:hover:text-primaryDark dark:after:bg-primaryDark">Resume</a>
-      </nav>
-    </section>
+    <!-- <nav id="mobile-menu" class="hidden w-full absolute origin-top transition-all ease-in duration-700 bg-[#FBFCF8] text-2xl text-primary70 flex-col animate-open-menu">
+      <ul class="flex flex-col items-center py-20 min-h-screen">
+        <li class="border rounded-2xl py"><a href="#" class="flex items-center gap-4"><i class="ph ph-house "></i>Home</a></li>
+        <li><a href="#projects"><span></span>Portfolio</a></li>
+        <li><a href="#how-it-works"><span>How It Works</span></a></li>
+        <li><a href="#about"><span></span>About</a></li>
+        <li><a href=""><span></span></a></li>
+      </ul>
+    </nav> -->
   </header>
 
   <main>
     <!--------------------- Hero Section --------------------->
     <section id="hero" class=" bg-[#FBFCF8] dark:bg-darkBg">
-      <div class="container mx-auto max-w-7xl px-6 md:px-0">
-        <div class="flex flex-col items-center pt-20 md:pt-32 md:pb-24">
-          <h1 class=" text-gray500 dark:text-gray-50 text-5xl leading-tight md:text-7xl text-center dark:text-textWhite">Innovative solutions tailored to grow your business</h1>
-          <p class="text-xl text-center mt-8 max-w-2xl mx-auto text-gray400 dark:text-gray-300 ">I’m Patricio Mena. A creative full-stack developer committed to delivering products that delight your users and drive results</p>
+      <div class="container mx-auto max-w-7xl px-6 md:px-10">
+        <div class="flex flex-col items-center pt-20 md:pt-32">
+          <h1 class=" text-gray500 dark:text-slate-50 text-5xl leading-tight md:text-7xl text-center dark:text-textWhite">Innovative solutions tailored to grow your business</h1>
+          <p class="text-xl text-center mt-8 max-w-2xl mx-auto text-gray300 dark:text-slate-300 ">I’m Patricio Mena. A creative full-stack developer committed to delivering products that delight your users and drive results</p>
           <div class="w-full flex flex-col justify-center mt-10 gap-4 md:flex-row md:items-center">
             <a href="#projects" class="flex items-center justify-center text-primary100 bg-primary70 px-6 h-12 rounded-lg tracking-wide transition-color duration-200 ease-in hover:bg-opacity-80 hover:shadow-md hover:transition hover:duration-[250ms] hover:ease-out hover:-translate-y-[1px] active:translate-y-0 active:shadow-none active:bg-opacity-90 dark:bg-primary90 dark:text-primary10 dark:hover:bg-onHoverDark">Browse Projects</a>
-
 
             <a href="#contact" class="flex items-center justify-center text-primary70 bg-neutral-50 bg-opacity-70 px-6 h-12 border rounded-lg border-outlineLight tracking-wide transition duration-200 ease-in hover:shadow-md active:shadow-none hover:bg-primary100 hover:transition hover:duration-[250ms] hover:ease-out hover:-translate-y-[1px] active:border-primary70 active:bg-primary99 active:bg-opacity-90 dark:bg-darkBg dark:text-primary90 dark:bg-opacity-40 dark:active:border-primary90 active:translate-y-0  dark:border-outlineDark dark:hover:bg-opacity-10 dark:active:bg-opacity-20 md:min-w-[178px]">Contact Me</a>
           </div>
@@ -84,7 +109,7 @@
     </section>
 
     <!--------------------- Screenshots Section --------------------->
-    <section class="bg-gradient-to-b from-[#FBFCF8] to-[#FFFEFC] dark:from-darkBg dark:to-darkBg grid content-center overflow-hidden">
+    <section class="bg-gradient-to-b from-[#FBFCF8] to-[#FFFEFC] dark:from-darkBg dark:to-darkBg grid content-center overflow-hidden pt-16 lg:pt-36">
       <ul id="screenshots-gallery" class="flex gap-4 md:gap-6 relative md:left-[-6%]">
         <li class="w-52 md:w-96 md:h-96"><img src="./assets/screenshot-placeholder.png" alt="" class="rounded-2xl border border-outlineLight shadow-md w-full" width="384" height="384"></li>
         <li class="w-52 md:w-96 md:h-96"><img src="./assets/screenshot-placeholder.png" alt="" class="rounded-2xl border border-outlineLight shadow-md w-full" width="384" height="384"></li>
@@ -98,44 +123,44 @@
     </section>
 
     <!--------------------- Benefits Section --------------------->
-    <section id="benefits" class=" bg-[#FFFEFC] dark:bg-darkBg py-32 ">
-      <div class="container mx-auto max-w-7xl px-6 md:px-0">
+    <section id="benefits" class=" bg-[#FFFEFC] dark:bg-darkBg pt-24 pb-32">
+      <div class="container mx-auto max-w-7xl px-6 md:px-10">
 
         <!--- Optimized --->
         <section class="py-24">
           <div class="flex flex-col justify-center text-center">
             <h2 class="mx-auto px-2 rounded-sm text-sm text-primary70 bg-primary99 dark:text-primaryDark text-semibold uppercase tracking-wider dark:bg-transparent md:text-base">Optimized</h2>
-            <h3 class="mx-auto tracking-widexs text-gray500 dark:text-primary100 text-4xl md:text-5xl mt-4 max-w-2xl">Seamless User Experience</h3>
+            <h3 class="mx-auto tracking-widexs text-gray500 dark:text-slate-50 text-4xl md:text-5xl mt-4 max-w-2xl">Seamless User Experience</h3>
             <p class="mx-auto text-gray300 dark:text-slate-300 text-xl mt-5 max-w-lg">Deliver fast and high-performing solutions that impress your visitors</p>
           </div>
 
           <!--- Cards Row --->
-          <section class="flex flex-col justify-between mt-20 gap-12 md:flex-row">
-            <article class="p-4 flex flex-col justify-center text-center md:w-1/3 rounded-2xl bg-slate-300 bg-opacity-10 backdrop-blur-sm shadow-md border border-solid border-gray-200 dark:border-darkBg dark:bg-transparent dark:shadow-none">
+          <section class="flex flex-col justify-between mt-20 gap-6 md:flex-row xl:gap-12">
+            <article class="p-4 flex flex-col justify-center text-center md:w-1/3 rounded-2xl bg-slate-300 bg-opacity-10  shadow-md border border-solid border-gray-200 dark:bg-surfaceBlack dark:bg-opacity-50 dark:shadow-dark dark:hover:shadow-darker dark:border-none">
               <div class="mx-auto">
                 <lord-icon src="https://cdn.lordicon.com/ysbeyrrl.json" trigger="loop" colors="primary:#00c297,secondary:#00c297" style="width:100px;height:100px">
                 </lord-icon>
               </div>
-              <h4 class="text-xl md:text-2xl tracking-wide text-gray500 dark:text-primary100 mt-2.5">Fast Load Speed</h4>
+              <h4 class="text-xl md:text-2xl tracking-wide text-gray500 dark:text-slate-50 mt-2.5">Fast Load Speed</h4>
               <p class="text-gray300 dark:text-slate-300 mt-2.5">Improve user experience and reduce bounce rate. Your visitor will stay longer in your site and engage with your content</p>
             </article>
 
-            <article class="p-4 flex flex-col justify-center text-center md:w-1/3 rounded-2xl bg-slate-300 bg-opacity-10 backdrop-blur-sm shadow-md border border-solid border-gray-200 dark:border-darkBg dark:bg-transparent dark:shadow-none">
+            <article class="p-4 flex flex-col justify-center text-center md:w-1/3 rounded-2xl bg-slate-300 bg-opacity-10 shadow-md border border-solid border-gray-200 dark:bg-surfaceBlack dark:bg-opacity-50 dark:shadow-dark dark:hover:shadow-darker dark:border-none">
               <div class="mx-auto">
                 <lord-icon src="https://cdn.lordicon.com/urhcgqxz.json" trigger="loop" delay="500" colors="primary:#00c297,secondary:#00c297" style="width:100px;height:100px">
                 </lord-icon>
               </div>
-              <h4 class="text-xl md:text-2xl tracking-wide text-gray500 dark:text-primary100 mt-2.5">Increase Conversions</h4>
+              <h4 class="text-xl md:text-2xl tracking-wide text-gray500 dark:text-slate-50 mt-2.5">Increase Conversions</h4>
               <p class="text-gray300 dark:text-slate-300 mt-2.5">With smooth browsing experience. Your visitors will be more likely to make a purchase or fill out a form</p>
             </article>
 
-            <article class="p-4 flex flex-col justify-center text-center md:w-1/3 rounded-2xl bg-slate-300 bg-opacity-10 backdrop-blur-sm shadow-md border border-solid border-gray-200 dark:border-darkBg dark:bg-transparent dark:shadow-none">
+            <article class="p-4 flex flex-col justify-center text-center md:w-1/3 rounded-2xl bg-slate-300 bg-opacity-10 shadow-md border border-solid border-gray-200 dark:bg-surfaceBlack dark:bg-opacity-50 dark:shadow-dark dark:hover:shadow-darker dark:border-none">
               <div class="mx-auto">
                 <lord-icon src="https://cdn.lordicon.com/hbbeevsh.json" trigger="loop" delay="500" colors="primary:#00c297,secondary:#00c297" style="width:100px;height:100px">
                 </lord-icon>
               </div>
 
-              <h4 class="text-xl md:text-2xl tracking-wide text-gray500 dark:text-primary100 mt-2.5">Organic Traffic</h4>
+              <h4 class="text-xl md:text-2xl tracking-wide text-gray500 dark:text-slate-50 mt-2.5">Organic Traffic</h4>
               <p class="text-gray300 dark:text-slate-300 mt-2.5">Improve your search engine rankings. Search engines like Google take speed into account when ranking a website </p>
             </article>
 
@@ -146,36 +171,36 @@
         <section class="py-24">
           <div class="flex flex-col justify-center mx-auto text-center">
             <h2 class="mx-auto px-2 rounded-sm text-sm text-primary70 bg-primary99 dark:text-primaryDark text-semibold uppercase tracking-wider dark:bg-transparent md:text-base">Creative design</h2>
-            <h3 class="mx-auto tracking-widexs text-gray500 dark:text-onDarkBg text-4xl md:text-5xl mt-4 max-w-2xl">Attract more. Retain More. Stand Out</h3>
-            <p class="mx-auto text-gray300 dark:text-bodyDark text-xl mt-5 max-w-lg">Transform your online presence with designs that captivate your audience</p>
+            <h3 class="mx-auto tracking-widexs text-gray500 dark:text-slate-50 text-4xl md:text-5xl mt-4 max-w-2xl">Attract more. Retain More. Stand Out</h3>
+            <p class="mx-auto text-gray300 dark:text-slate-300 text-xl mt-5 max-w-lg">Transform your online presence with designs that captivate your audience</p>
           </div>
 
           <!--- Cards Row --->
-          <section class="flex flex-col justify-between mt-20 gap-12 md:flex-row">
-            <article class="p-4 flex flex-col justify-center text-center md:w-1/3 rounded-2xl bg-slate-300 bg-opacity-10 backdrop-blur-sm shadow-md border border-solid border-gray-200 dark:border-darkBg dark:bg-transparent dark:shadow-none">
+          <section class="flex flex-col justify-between mt-20 gap-6 md:flex-row xl:gap-12">
+            <article class="p-4 flex flex-col justify-center text-center md:w-1/3 rounded-2xl bg-slate-300 bg-opacity-10 shadow-md border border-solid border-gray-200 dark:bg-surfaceBlack dark:bg-opacity-50 dark:shadow-dark dark:hover:shadow-darker dark:border-none">
               <div class="mx-auto">
                 <lord-icon src="https://cdn.lordicon.com/gkeohday.json" trigger="loop" delay="500" colors="primary:#00c297,secondary:#00c297" style="width:100px;height:100px">
                 </lord-icon>
               </div>
-              <h4 class="text-xl md:text-2xl tracking-wide text-gray500 dark:text-primary100 mt-2.5">Visually Appealing</h4>
+              <h4 class="text-xl md:text-2xl tracking-wide text-gray500 dark:text-slate-50 mt-2.5">Visually Appealing</h4>
               <p class="text-gray300 dark:text-slate-300 mt-2.5">Improve user engagement, capture the attention of visitors, and encourage them to stay longer</p>
             </article>
 
-            <article class="p-4 flex flex-col justify-center text-center md:w-1/3 rounded-2xl bg-slate-300 bg-opacity-10 backdrop-blur-sm shadow-md border border-solid border-gray-200 dark:border-darkBg dark:bg-transparent dark:shadow-none">
+            <article class="p-4 flex flex-col justify-center text-center md:w-1/3 rounded-2xl bg-slate-300 bg-opacity-10 shadow-md border border-solid border-gray-200 dark:bg-surfaceBlack dark:bg-opacity-50 dark:shadow-dark dark:hover:shadow-darker dark:border-none">
               <div class="mx-auto">
                 <lord-icon src="https://cdn.lordicon.com/ngrsltok.json" trigger="loop" delay="500" colors="primary:#00c297,secondary:#00c297" style="width:100px;height:100px">
                 </lord-icon>
               </div>
-              <h4 class="text-xl md:text-2xl tracking-wide text-gray500 dark:text-primary100 mt-2.5">Intuitive</h4>
+              <h4 class="text-xl md:text-2xl tracking-wide text-gray500 dark:text-slate-50 mt-2.5">Intuitive</h4>
               <p class="text-gray300 dark:text-slate-300 mt-2.5">Easy to navigate, clear call to action, tailored user interface elements, and user experience</p>
             </article>
 
-            <article class="p-4 flex flex-col justify-center text-center md:w-1/3 rounded-2xl bg-slate-300 bg-opacity-10 backdrop-blur-sm shadow-md border border-solid border-gray-200 dark:border-darkBg dark:bg-transparent dark:shadow-none">
+            <article class="p-4 flex flex-col justify-center text-center md:w-1/3 rounded-2xl bg-slate-300 bg-opacity-10 shadow-md border border-solid border-gray-200 dark:bg-surfaceBlack dark:bg-opacity-50 dark:shadow-dark dark:hover:shadow-darker dark:border-none">
               <div class="mx-auto">
                 <lord-icon src="https://cdn.lordicon.com/ajnotayw.json" trigger="loop" delay="500" colors="primary:#00c297,secondary:#00c297" style="width:100px;height:100px">
                 </lord-icon>
               </div>
-              <h4 class="text-xl md:text-2xl tracking-wide text-gray500 dark:text-primary100 mt-2.5">Brand Perception</h4>
+              <h4 class="text-xl md:text-2xl tracking-wide text-gray500 dark:text-slate-50 mt-2.5">Brand Perception</h4>
               <p class="text-gray300 dark:text-slate-300 mt-2.5 ">Create a positive impression, increase credibility, and reflect your brand values and personality</p>
             </article>
           </section>
@@ -185,35 +210,35 @@
         <section class="pt-24">
           <div class="flex flex-col justify-center text-center">
             <h2 class="mx-auto px-2 rounded-sm text-sm text-primary70 bg-primary99 dark:text-primaryDark text-semibold uppercase tracking-wider dark:bg-transparent md:text-base">Inclusive &amp; Private</h2>
-            <h3 class="mx-auto tracking-widexs text-gray500 dark:text-primary100 text-4xl md:text-5xl mt-4 max-w-2xl">From everywhere. For everyone</h3>
-            <p class="mx-auto text-gray300 dark:text-bodyDark text-xl mt-5 max-w-lg">Create a visually engaging experience for all users</p>
+            <h3 class="mx-auto tracking-widexs text-gray500 dark:text-slate-50 text-4xl md:text-5xl mt-4 max-w-2xl">From everywhere. For everyone</h3>
+            <p class="mx-auto text-gray300 dark:text-slate-300 text-xl mt-5 max-w-lg">Create a visually engaging experience for all users</p>
           </div>
           <!-- Card Row -->
-          <section class="flex flex-col justify-between mt-20  gap-12 md:flex-row">
-            <article class="p-4 flex flex-col justify-center text-center md:w-1/3 rounded-2xl bg-slate-300 bg-opacity-10 backdrop-blur-sm shadow-md border border-solid border-gray-200 dark:border-darkBg dark:bg-transparent dark:shadow-none">
+          <section class="flex flex-col justify-between mt-20  gap-6 md:flex-row xl:gap-12">
+            <article class="p-4 flex flex-col justify-center text-center md:w-1/3 rounded-2xl bg-slate-300 bg-opacity-10 shadow-md border border-solid border-gray-200 dark:bg-surfaceBlack dark:bg-opacity-50 dark:shadow-dark dark:hover:shadow-darker dark:border-none">
               <div class="mx-auto">
                 <lord-icon src="https://cdn.lordicon.com/xqfngtiz.json" trigger="loop" delay="500" colors="primary:#00c297,secondary:#00c297" style="width:100px;height:100px">
                 </lord-icon>
               </div>
-              <h4 class="text-center text-xl md:text-2xl tracking-wide text-gray500 dark:text-primary100 mt-2.5">All Devices</h4>
+              <h4 class="text-center text-xl md:text-2xl tracking-wide text-gray500 dark:text-slate-50 mt-2.5">All Devices</h4>
               <p class="text-center text-gray300 dark:text-slate-300 mt-2.5">Adaptable to any screen. Deliver consistent experience on all devices to attract more visitors and traffic</p>
             </article>
 
-            <article class="p-4 flex flex-col justify-center text-center md:w-1/3 rounded-2xl bg-slate-300 bg-opacity-10 backdrop-blur-sm shadow-md border border-solid border-gray-200 dark:border-darkBg dark:bg-transparent dark:shadow-none">
+            <article class="p-4 flex flex-col justify-center text-center md:w-1/3 rounded-2xl bg-slate-300 bg-opacity-10 shadow-md border border-solid border-gray-200 dark:bg-surfaceBlack dark:bg-opacity-50 dark:shadow-dark dark:hover:shadow-darker dark:border-none">
               <div class="mx-auto">
                 <lord-icon src="https://cdn.lordicon.com/avyixiri.json" trigger="loop" delay="500" colors="primary:#00c297,secondary:#00c297" style="width:100px;height:100px">
                 </lord-icon>
               </div>
-              <h4 class="text-center text-xl md:text-2xl tracking-wide text-gray500 dark:text-primary100 mt-2.5">Accessible</h4>
+              <h4 class="text-center text-xl md:text-2xl tracking-wide text-gray500 dark:text-slate-50 mt-2.5">Accessible</h4>
               <p class="text-center text-gray300 dark:text-gray-300 mt-2.5">Following accessibility guidelines to provide equal access and opportunity to people with diverse abilities</p>
             </article>
 
-            <article class="p-4 flex flex-col justify-center text-center md:w-1/3 rounded-2xl bg-slate-300 bg-opacity-10 backdrop-blur-sm shadow-md border border-solid border-gray-200 dark:border-darkBg dark:bg-transparent dark:shadow-none">
+            <article class="p-4 flex flex-col justify-center text-center md:w-1/3 rounded-2xl bg-slate-300 bg-opacity-10 shadow-md border border-solid border-gray-200 dark:bg-surfaceBlack dark:bg-opacity-50 dark:shadow-dark dark:hover:shadow-darker dark:border-none">
               <div class="mx-auto">
                 <lord-icon src="https://cdn.lordicon.com/ncgnxmig.json" trigger="loop" delay="500" colors="primary:#00c297,secondary:#00c297" style="width:100px;height:100px">
                 </lord-icon>
               </div>
-              <h4 class="text-center text-xl md:text-2xl tracking-wide text-gray500 dark:text-primary100 mt-2.5">Secure</h4>
+              <h4 class="text-center text-xl md:text-2xl tracking-wide text-gray500 dark:text-slate-50 mt-2.5">Secure</h4>
               <p class="text-center text-gray300 dark:text-gray-300 mt-2.5 ">Sensitive data is protected from unauthorized access. Increase user trust and improve search engine rankings</p>
             </article>
 
@@ -226,12 +251,12 @@
 
 
     <!--------------------- Recent Work Section --------------------->
-    <section id="projects" class="bg-[#FBFCF8] dark:bg-darkBg py-32 pattern-dots-sm text-secondary70 dark:text-gray-500">
-      <div class="container mx-auto max-w-7xl px-6 relative md:px-0">
+    <section id="projects" class="bg-[#FBFCF8] dark:bg-darkBg py-32 pattern-grid-xl text-slate-200 dark:text-slate-800">
+      <div class="container mx-auto max-w-7xl px-6 relative md:px-10">
         <div class="flex flex-col justify-center text-center">
-          <h2 class="mx-auto px-2 rounded-sm text-sm text-secondary20 bg-secondary90 dark:text-primaryDark text-semibold uppercase tracking-wider dark:bg-transparent md:text-base">Recent Work</h2>
-          <h3 class="mx-auto text-center tracking-widexs text-gray500 dark:text-onDarkBg text-4xl md:text-5xl mt-4 max-w-2xl">Elevate your brand</h3>
-          <p class="mx-auto text-center text-gray300 dark:text-bodyDark text-xl mt-5 max-w-lg">Browse my projects and get inspired</p>
+          <h2 class="mx-auto px-2 rounded-sm text-sm text-secondary20 bg-secondary90 text-semibold uppercase tracking-wider dark:bg-secondary20 dark:text-secondary90 md:text-base">Recent Work</h2>
+          <h3 class="mx-auto text-center tracking-widexs text-gray500 dark:text-slate-50 text-4xl md:text-5xl mt-4 max-w-2xl">Elevate your brand</h3>
+          <p class="mx-auto text-center text-gray300 dark:text-slate-300 text-xl mt-5 max-w-lg">Browse my projects and get inspired</p>
         </div>
 
         <!-- Recent Work Carousel -->
@@ -240,7 +265,7 @@
             <div class="swiper-wrapper mb-16">
 
               <!-- Project 1-->
-              <div class="swiper-slide bg-surface bg-opacity-70 shadow-lighter backdrop-blur-md rounded-2xl transition-[background-color] duration-200 ease-in hover:duration-[250ms] hover:ease-out hover:bg-surface hover:shadow-light dark:bg-surfaceBlack dark:bg-opacity-90 hover:dark:bg-surfaceBlack dark:shadow-dark dark:hover:shadow-darker">
+              <div class="swiper-slide bg-surface bg-opacity-70 shadow-lighter rounded-2xl transition-[background-color] duration-200 ease-in hover:duration-[250ms] hover:ease-out hover:bg-surface hover:shadow-light dark:bg-surfaceBlack hover:dark:bg-surfaceBlack dark:shadow-dark dark:hover:shadow-darker">
 
                 <figure class="overflow-hidden rounded-t-2xl">
                   <img src="./assets/projects/ConstruMax.png" alt="" class="rounded-t-2xl w-full transition-transform duration-500 ease-in hover:duration-[550ms] hover:ease-out hover:scale-110" loading="lazy" width="368" height="192">
@@ -256,11 +281,11 @@
                   </div>
 
                   <div class="mt-10">
-                    <h5 class="mb-0.5 text-2xl font-bold tracking-wide text-gray500 dark:text-onDarkBg dark:tracking-wider">ConstruMax</h5>
-                    <p class="text-xs uppercase tracking-wider text-gray200">Web Development</p>
+                    <h5 class="mb-0.5 text-2xl font-bold tracking-wide text-gray500 dark:text-slate-50 dark:tracking-wider">ConstruMax</h5>
+                    <p class="text-xs uppercase tracking-wider text-gray200 dark:text-slate-400">Web Development</p>
 
                     <div class="mt-10">
-                      <p class="text-base md:text-lg text-gray300 dark:text-bodyDark">Streamlined the process of looking for a property, the customers are happy</p>
+                      <p class="text-base md:text-lg text-gray300 dark:text-slate-300">Streamlined the process of looking for a property, the customers are happy</p>
                     </div>
 
                     <div class="mt-10 flex flex-row gap-1 justify-end md:gap-2">
@@ -276,7 +301,7 @@
                 </div>
               </div>
               <!-- Project 2-->
-              <div class="swiper-slide bg-surface bg-opacity-70 shadow-lighter backdrop-blur-md rounded-2xl transition-[background-color] duration-200 ease-in hover:duration-[250ms] hover:ease-out hover:bg-surface hover:shadow-light dark:bg-surfaceBlack dark:bg-opacity-90 hover:dark:bg-surfaceBlack dark:shadow-dark dark:hover:shadow-darker">
+              <div class="swiper-slide bg-surface bg-opacity-70 shadow-lighter rounded-2xl transition-[background-color] duration-200 ease-in hover:duration-[250ms] hover:ease-out hover:bg-surface hover:shadow-light dark:bg-surfaceBlack hover:dark:bg-surfaceBlack dark:shadow-dark dark:hover:shadow-darker">
 
                 <figure class="overflow-hidden rounded-t-2xl">
                   <img src="./assets/projects/ConstruMax.png" alt="" class="rounded-t-2xl w-full transition-transform duration-500 ease-in hover:duration-[550ms] hover:ease-out hover:scale-110" loading="lazy" width="368" height="192">
@@ -292,11 +317,11 @@
                   </div>
 
                   <div class="mt-10">
-                    <h5 class="mb-0.5 text-2xl font-bold tracking-wide text-gray500 dark:text-onDarkBg dark:tracking-wider">ConstruMax</h5>
-                    <p class="text-xs uppercase tracking-wider text-gray200">Web Development</p>
+                    <h5 class="mb-0.5 text-2xl font-bold tracking-wide text-gray500 dark:text-slate-50 dark:tracking-wider">ConstruMax</h5>
+                    <p class="text-xs uppercase tracking-wider text-gray200 dark:text-slate-400">Web Development</p>
 
                     <div class="mt-10">
-                      <p class="text-base md:text-lg text-gray300 dark:text-bodyDark">Streamlined the process of looking for a property, the customers are happy</p>
+                      <p class="text-base md:text-lg text-gray300 dark:text-slate-300">Streamlined the process of looking for a property, the customers are happy</p>
                     </div>
 
                     <div class="mt-10 flex flex-row gap-1 justify-end md:gap-2">
@@ -312,7 +337,7 @@
                 </div>
               </div>
               <!-- Project 3-->
-              <div class="swiper-slide bg-surface bg-opacity-70 shadow-lighter backdrop-blur-md rounded-2xl transition-[background-color] duration-200 ease-in hover:duration-[250ms] hover:ease-out hover:bg-surface hover:shadow-light dark:bg-surfaceBlack dark:bg-opacity-90 hover:dark:bg-surfaceBlack dark:shadow-dark dark:hover:shadow-darker">
+              <div class="swiper-slide bg-surface bg-opacity-70 shadow-lighter rounded-2xl transition-[background-color] duration-200 ease-in hover:duration-[250ms] hover:ease-out hover:bg-surface hover:shadow-light dark:bg-surfaceBlack hover:dark:bg-surfaceBlack dark:shadow-dark dark:hover:shadow-darker">
 
                 <figure class="overflow-hidden rounded-t-2xl">
                   <img src="./assets/projects/ConstruMax.png" alt="" class="rounded-t-2xl w-full transition-transform duration-500 ease-in hover:duration-[550ms] hover:ease-out hover:scale-110" loading="lazy" width="368" height="192">
@@ -328,11 +353,11 @@
                   </div>
 
                   <div class="mt-10">
-                    <h5 class="mb-0.5 text-2xl font-bold tracking-wide text-gray500 dark:text-onDarkBg dark:tracking-wider">ConstruMax</h5>
-                    <p class="text-xs uppercase tracking-wider text-gray200">Web Development</p>
+                    <h5 class="mb-0.5 text-2xl font-bold tracking-wide text-gray500 dark:text-slate-50 dark:tracking-wider">ConstruMax</h5>
+                    <p class="text-xs uppercase tracking-wider text-gray200 dark:text-slate-400">Web Development</p>
 
                     <div class="mt-10">
-                      <p class="text-base md:text-lg text-gray300 dark:text-bodyDark">Streamlined the process of looking for a property, the customers are happy</p>
+                      <p class="text-base md:text-lg text-gray300 dark:text-slate-300">Streamlined the process of looking for a property, the customers are happy</p>
                     </div>
 
                     <div class="mt-10 flex flex-row gap-1 justify-end md:gap-2">
@@ -348,7 +373,7 @@
                 </div>
               </div>
               <!-- Project 4-->
-              <div class="swiper-slide bg-surface bg-opacity-70 shadow-lighter backdrop-blur-md rounded-2xl transition-[background-color] duration-200 ease-in hover:duration-[250ms] hover:ease-out hover:bg-surface hover:shadow-light dark:bg-surfaceBlack dark:bg-opacity-90 hover:dark:bg-surfaceBlack dark:shadow-dark dark:hover:shadow-darker">
+              <div class="swiper-slide bg-surface bg-opacity-70 shadow-lighter rounded-2xl transition-[background-color] duration-200 ease-in hover:duration-[250ms] hover:ease-out hover:bg-surface hover:shadow-light dark:bg-surfaceBlack hover:dark:bg-surfaceBlack dark:shadow-dark dark:hover:shadow-darker">
 
                 <figure class="overflow-hidden rounded-t-2xl">
                   <img src="./assets/projects/ConstruMax.png" alt="" class="rounded-t-2xl w-full transition-transform duration-500 ease-in hover:duration-[550ms] hover:ease-out hover:scale-110" loading="lazy" width="368" height="192">
@@ -364,11 +389,11 @@
                   </div>
 
                   <div class="mt-10">
-                    <h5 class="mb-0.5 text-2xl font-bold tracking-wide text-gray500 dark:text-onDarkBg dark:tracking-wider">ConstruMax</h5>
-                    <p class="text-xs uppercase tracking-wider text-gray200">Web Development</p>
+                    <h5 class="mb-0.5 text-2xl font-bold tracking-wide text-gray500 dark:text-slate-50 dark:tracking-wider">ConstruMax</h5>
+                    <p class="text-xs uppercase tracking-wider text-gray200 dark:text-slate-400">Web Development</p>
 
                     <div class="mt-10">
-                      <p class="text-base md:text-lg text-gray300 dark:text-bodyDark">Streamlined the process of looking for a property, the customers are happy</p>
+                      <p class="text-base md:text-lg text-gray300 dark:text-slate-300">Streamlined the process of looking for a property, the customers are happy</p>
                     </div>
 
                     <div class="mt-10 flex flex-row gap-1 justify-end md:gap-2">
@@ -383,9 +408,6 @@
                   </div>
                 </div>
               </div>
-
-
-
             </div>
             <div class="swiper-pagination"></div>
           </div>
@@ -404,11 +426,11 @@
 
     <!--------------------- How It Works Section --------------------->
     <section id="how-it-works" class="py-32 bg-[#FFFEFC] dark:bg-darkBg">
-      <div class="container mx-auto max-w-7xl px-6 md:px-0 relative ">
+      <div class="container mx-auto max-w-7xl px-6 md:px-10 relative ">
         <div class="flex flex-col justify-center text-center">
           <h2 class="mx-auto px-2 rounded-sm text-sm text-primary70 bg-primary99 dark:text-primaryDark text-semibold uppercase tracking-wider dark:bg-transparent md:text-base">How It Works</h2>
-          <h3 class="mx-auto text-center tracking-widexs text-gray500 dark:text-onDarkBg text-4xl md:text-5xl mt-4 max-w-2xl">From concept to launch</h3>
-          <p class="mx-auto text-center text-gray300 dark:text-bodyDark text-xl mt-5 max-w-lg">Discover our streamlined process</p>
+          <h3 class="mx-auto text-center tracking-widexs text-gray500 dark:text-slate-50 text-4xl md:text-5xl mt-4 max-w-2xl">From concept to launch</h3>
+          <p class="mx-auto text-center text-gray300 dark:text-slate-300 text-xl mt-5 max-w-lg">Discover our streamlined process</p>
         </div>
 
 
@@ -423,33 +445,33 @@
                 <p class="mb-4 text-xs md:text-sm text-primary70 dark:text-primaryDark uppercase tracking-widest ">
                   Research
                 </p>
-                <h5 class="mb-8 text-gray500 text-2xl tracking-wide dark:text-onDarkBg md:text-4xl">Setting goals and purpose</h5>
-                <p class="mb-6 text-gray300 dark:text-bodyDark">Unlocking the potential of your business and creating a plan to help you reach your goals</p>
+                <h5 class="mb-8 text-gray500 text-2xl tracking-wide dark:text-slate-50 md:text-4xl">Setting goals and purpose</h5>
+                <p class="mb-6 text-gray300 dark:text-slate-300">Unlocking the potential of your business and creating a plan to help you reach your goals</p>
 
                 <ul role="list" class=" flex flex-col gap-2 items justify-center">
                   <li class="flex gap-3 items-center ">
                     <i class="ph ph-check-circle text-primary70  dark:text-primaryDark"></i>
-                    <p class="text-gray300 dark:text-bodyDark">Outline the project's needs and objectives</p>
+                    <p class="text-gray300 dark:text-slate-300">Outline the project's needs and objectives</p>
                   </li>
                   <li class="flex gap-3 items-center">
                     <i class="ph ph-check-circle text-primary70 dark:text-primaryDark"></i>
-                    <p class="text-gray300 dark:text-bodyDark">Define the purpose and set achievable goals</p>
+                    <p class="text-gray300 dark:text-slate-300">Define the purpose and set achievable goals</p>
                   </li>
                   <li class="flex gap-3 items-center">
                     <i class="ph ph-check-circle text-primary70 dark:text-primaryDark"></i>
-                    <p class="text-gray300 dark:text-bodyDark">Examine competitors and identify target audience</p>
+                    <p class="text-gray300 dark:text-slate-300">Examine competitors and identify target audience</p>
                   </li>
                   <li class="flex gap-3 items-center">
                     <i class="ph ph-check-circle text-primary70 dark:text-primaryDark"></i>
-                    <p class="text-gray300 dark:text-bodyDark">Define technical requirements and desired features</p>
+                    <p class="text-gray300 dark:text-slate-300">Define technical requirements and desired features</p>
                   </li>
                   <li class="flex gap-3 items-center">
                     <i class="ph ph-check-circle text-primary70 dark:text-primaryDark"></i>
-                    <p class="text-gray300 dark:text-bodyDark">Establish communication channels</p>
+                    <p class="text-gray300 dark:text-slate-300">Establish communication channels</p>
                   </li>
                   <li class="flex gap-3 items-center">
                     <i class="ph ph-check-circle text-primary70 dark:text-primaryDark"></i>
-                    <p class="text-gray300 dark:text-bodyDark">Define the scope, timeline, budget and expected outcomes of the project</p>
+                    <p class="text-gray300 dark:text-slate-300">Define the scope, timeline, budget and expected outcomes of the project</p>
                   </li>
                 </ul>
               </section>
@@ -466,33 +488,33 @@
                 <p class="mb-4 text-xs md:text-sm text-primary70 dark:text-primaryDark uppercase tracking-widest ">
                   Design
                 </p>
-                <h5 class="mb-8 text-gray500 text-2xl tracking-wide dark:text-onDarkBg md:text-4xl">Measure twice, cut once</h5>
-                <p class="mb-6 text-gray300 dark:text-bodyDark">Crafting the visual and functional components, collaborating with you to reflect your brand identity</p>
+                <h5 class="mb-8 text-gray500 text-2xl tracking-wide dark:text-slate-50 md:text-4xl">Measure twice, cut once</h5>
+                <p class="mb-6 text-gray300 dark:text-slate-300">Crafting the visual and functional components, collaborating with you to reflect your brand identity</p>
 
                 <ul role="list" class=" flex flex-col gap-2  items justify-center">
                   <li class="flex gap-3 items-center ">
                     <i class="ph ph-check-circle text-primary70  dark:text-primaryDark"></i>
-                    <p class="text-gray300 dark:text-bodyDark">Wireframe design</p>
+                    <p class="text-gray300 dark:text-slate-300">Wireframe design</p>
                   </li>
                   <li class="flex gap-3 items-center">
                     <i class="ph ph-check-circle text-primary70 dark:text-primaryDark"></i>
-                    <p class="text-gray300 dark:text-bodyDark">Design system creation</p>
+                    <p class="text-gray300 dark:text-slate-300">Design system creation</p>
                   </li>
                   <li class="flex gap-3 items-center">
                     <i class="ph ph-check-circle text-primary70 dark:text-primaryDark"></i>
-                    <p class="text-gray300 dark:text-bodyDark">User-friendly interface </p>
+                    <p class="text-gray300 dark:text-slate-300">User-friendly interface </p>
                   </li>
                   <li class="flex gap-3 items-center">
                     <i class="ph ph-check-circle text-primary70 dark:text-primaryDark"></i>
-                    <p class="text-gray300 dark:text-bodyDark">Prototypes to test ideas and concepts quickly and efficiently</p>
+                    <p class="text-gray300 dark:text-slate-300">Prototypes to test ideas and concepts quickly and efficiently</p>
                   </li>
                   <li class="flex gap-3 items-center">
                     <i class="ph ph-check-circle text-primary70 dark:text-primaryDark"></i>
-                    <p class="text-gray300 dark:text-bodyDark">Visual content creation</p>
+                    <p class="text-gray300 dark:text-slate-300">Visual content creation</p>
                   </li>
                   <li class="flex gap-3 items-center">
                     <i class="ph ph-check-circle text-primary70 dark:text-primaryDark"></i>
-                    <p class="text-gray300 dark:text-bodyDark">Review and feedback</p>
+                    <p class="text-gray300 dark:text-slate-300">Review and feedback</p>
                   </li>
                 </ul>
               </section>
@@ -509,46 +531,46 @@
                 <p class="mb-4 text-xs md:text-sm text-primary70 dark:text-primaryDark uppercase tracking-widest ">
                   Development
                 </p>
-                <h5 class="mb-8 text-gray500 text-2xl tracking-wide dark:text-onDarkBg md:text-4xl">Coffee. Code. Repeat</h5>
-                <p class="mb-6 text-gray300 dark:text-bodyDark">Now your project is taking shape! You'll be kept up-to-date with regular progress reports</p>
+                <h5 class="mb-8 text-gray500 text-2xl tracking-wide dark:text-slate-50 md:text-4xl">Coffee. Code. Repeat</h5>
+                <p class="mb-6 text-gray300 dark:text-slate-300">Now your project is taking shape! You'll be kept up-to-date with regular progress reports</p>
 
                 <ul role="list" class=" flex flex-col items justify-center">
                   <div class="flex flex-col gap-2 md:gap-8 md:flex-row">
                     <div class="flex flex-col gap-2">
                       <li class="flex gap-3 items-center ">
                         <i class="ph ph-check-circle text-primary70  dark:text-primaryDark"></i>
-                        <p class="text-gray300 dark:text-bodyDark">Front-end development</p>
+                        <p class="text-gray300 dark:text-slate-300">Front-end development</p>
                       </li>
                       <li class="flex gap-3 items-center ">
                         <i class="ph ph-check-circle text-primary70  dark:text-primaryDark"></i>
-                        <p class="text-gray300 dark:text-bodyDark">Back-end development</p>
+                        <p class="text-gray300 dark:text-slate-300">Back-end development</p>
                       </li>
                       <li class="flex gap-3 items-center">
                         <i class="ph ph-check-circle text-primary70 dark:text-primaryDark"></i>
-                        <p class="text-gray300 dark:text-bodyDark">Performance optimization</p>
+                        <p class="text-gray300 dark:text-slate-300">Performance optimization</p>
                       </li>
                       <li class="flex gap-3 items-center">
                         <i class="ph ph-check-circle text-primary70 dark:text-primaryDark"></i>
-                        <p class="text-gray300 dark:text-bodyDark">Minify code</p>
+                        <p class="text-gray300 dark:text-slate-300">Minify code</p>
                       </li>
 
                     </div>
                     <div class="flex flex-col gap-2">
                       <li class="flex gap-3 items-center">
                         <i class="ph ph-check-circle text-primary70 dark:text-primaryDark"></i>
-                        <p class="text-gray300 dark:text-bodyDark">Compressing media</p>
+                        <p class="text-gray300 dark:text-slate-300">Compressing media</p>
                       </li>
                       <li class="flex gap-3 items-center">
                         <i class="ph ph-check-circle text-primary70 dark:text-primaryDark"></i>
-                        <p class="text-gray300 dark:text-bodyDark">Version control implementation</p>
+                        <p class="text-gray300 dark:text-slate-300">Version control implementation</p>
                       </li>
                       <li class="flex gap-3 items-center">
                         <i class="ph ph-check-circle text-primary70 dark:text-primaryDark"></i>
-                        <p class="text-gray300 dark:text-bodyDark">Social media integration</p>
+                        <p class="text-gray300 dark:text-slate-300">Social media integration</p>
                       </li>
                       <li class="flex gap-3 items-center">
                         <i class="ph ph-check-circle text-primary70 dark:text-primaryDark"></i>
-                        <p class="text-gray300 dark:text-bodyDark">Analytics tools installation </p>
+                        <p class="text-gray300 dark:text-slate-300">Analytics tools installation </p>
                       </li>
                     </div>
                   </div>
@@ -571,33 +593,33 @@
                 <p class="mb-4 text-xs md:text-sm text-primary70 dark:text-primaryDark uppercase tracking-widest ">
                   Testing
                 </p>
-                <h5 class="mb-8 text-gray500 text-2xl tracking-wide dark:text-onDarkBg md:text-4xl">Perform consistently</h5>
-                <p class="mb-6 text-gray300 dark:text-bodyDark">It's time to guarantee that your project performs as expected</p>
+                <h5 class="mb-8 text-gray500 text-2xl tracking-wide dark:text-slate-50 md:text-4xl">Perform consistently</h5>
+                <p class="mb-6 text-gray300 dark:text-slate-300">It's time to guarantee that your project performs as expected</p>
 
                 <ul role="list" class=" flex flex-col gap-2 items justify-center">
                   <li class="flex gap-3 items-center ">
                     <i class="ph ph-check-circle text-primary70  dark:text-primaryDark"></i>
-                    <p class="text-gray300 dark:text-bodyDark">Features and functionality</p>
+                    <p class="text-gray300 dark:text-slate-300">Features and functionality</p>
                   </li>
                   <li class="flex gap-3 items-center">
                     <i class="ph ph-check-circle text-primary70 dark:text-primaryDark"></i>
-                    <p class="text-gray300 dark:text-bodyDark">Responsiveness</p>
+                    <p class="text-gray300 dark:text-slate-300">Responsiveness</p>
                   </li>
                   <li class="flex gap-3 items-center">
                     <i class="ph ph-check-circle text-primary70 dark:text-primaryDark"></i>
-                    <p class="text-gray300 dark:text-bodyDark">Spelling and grammar</p>
+                    <p class="text-gray300 dark:text-slate-300">Spelling and grammar</p>
                   </li>
                   <li class="flex gap-3 items-center">
                     <i class="ph ph-check-circle text-primary70 dark:text-primaryDark"></i>
-                    <p class="text-gray300 dark:text-bodyDark">Broken links and design inconsistences</p>
+                    <p class="text-gray300 dark:text-slate-300">Broken links and design inconsistences</p>
                   </li>
                   <li class="flex gap-3 items-center">
                     <i class="ph ph-check-circle text-primary70 dark:text-primaryDark"></i>
-                    <p class="text-gray300 dark:text-bodyDark">Cross browser compatibility</p>
+                    <p class="text-gray300 dark:text-slate-300">Cross browser compatibility</p>
                   </li>
                   <li class="flex gap-3 items-center">
                     <i class="ph ph-check-circle text-primary70 dark:text-primaryDark"></i>
-                    <p class="text-gray300 dark:text-bodyDark">Load times</p>
+                    <p class="text-gray300 dark:text-slate-300">Load times</p>
                   </li>
                 </ul>
               </section>
@@ -614,25 +636,25 @@
                 <p class="mb-4 text-xs md:text-sm text-primary70 dark:text-primaryDark uppercase tracking-widest ">
                   Deployment
                 </p>
-                <h5 class="mb-8 text-gray500 text-2xl tracking-wide dark:text-onDarkBg md:text-4xl">Booster. Ignition. Liftoff</h5>
-                <p class="mb-6 text-gray300 dark:text-bodyDark">Once all testing is complete and you're satisfied with the results, it's time to launch and bring your website or app to life!</p>
+                <h5 class="mb-8 text-gray500 text-2xl tracking-wide dark:text-slate-50 md:text-4xl">Booster. Ignition. Liftoff</h5>
+                <p class="mb-6 text-gray300 dark:text-slate-300">Once all testing is complete and you're satisfied with the results, it's time to launch and bring your website or app to life!</p>
 
                 <ul role="list" class=" flex flex-col items justify-center gap-2">
                   <li class="flex gap-3 items-center ">
                     <i class="ph ph-check-circle text-primary70  dark:text-primaryDark"></i>
-                    <p class="text-gray300 dark:text-bodyDark">Select the perfect domain name</p>
+                    <p class="text-gray300 dark:text-slate-300">Select the perfect domain name</p>
                   </li>
                   <li class="flex gap-3 items-center">
                     <i class="ph ph-check-circle text-primary70 dark:text-primaryDark"></i>
-                    <p class="text-gray300 dark:text-bodyDark"> SSL certification installation</p>
+                    <p class="text-gray300 dark:text-slate-300"> SSL certification installation</p>
                   </li>
                   <li class="flex gap-3 items-center">
                     <i class="ph ph-check-circle text-primary70 dark:text-primaryDark"></i>
-                    <p class="text-gray300 dark:text-bodyDark">Publish to the web!</p>
+                    <p class="text-gray300 dark:text-slate-300">Publish to the web!</p>
                   </li>
                   <li class="flex gap-3 items-center">
                     <i class="ph ph-check-circle text-primary70 dark:text-primaryDark"></i>
-                    <p class="text-gray300 dark:text-bodyDark">Run tests to ensure everything is working as planned</p>
+                    <p class="text-gray300 dark:text-slate-300">Run tests to ensure everything is working as planned</p>
                   </li>
                 </ul>
               </section>
@@ -649,29 +671,29 @@
                 <p class="mb-4 text-xs md:text-sm text-primary70 dark:text-primaryDark uppercase tracking-widest ">
                   Maintenance
                 </p>
-                <h5 class="mb-8 text-gray500 text-2xl tracking-wide dark:text-onDarkBg md:text-4xl">Keep iterating</h5>
-                <p class="mb-6 text-gray300 dark:text-bodyDark">Now that your project is live, let's make sure it stays secure, functional, and up-to-date!</p>
+                <h5 class="mb-8 text-gray500 text-2xl tracking-wide dark:text-slate-50 md:text-4xl">Keep iterating</h5>
+                <p class="mb-6 text-gray300 dark:text-slate-300">Now that your project is live, let's make sure it stays secure, functional, and up-to-date!</p>
 
                 <ul role="list" class=" flex flex-col gap-2 items justify-center">
                   <li class="flex gap-3 items-center ">
                     <i class="ph ph-check-circle text-primary70  dark:text-primaryDark"></i>
-                    <p class="text-gray300 dark:text-bodyDark">Monitor performance and traffic </p>
+                    <p class="text-gray300 dark:text-slate-300">Monitor performance and traffic </p>
                   </li>
                   <li class="flex gap-3 items-center">
                     <i class="ph ph-check-circle text-primary70 dark:text-primaryDark"></i>
-                    <p class="text-gray300 dark:text-bodyDark">Provide the latest improvements for optimal performance</p>
+                    <p class="text-gray300 dark:text-slate-300">Provide the latest improvements for optimal performance</p>
                   </li>
                   <li class="flex gap-3 items-center">
                     <i class="ph ph-check-circle text-primary70 dark:text-primaryDark"></i>
-                    <p class="text-gray300 dark:text-bodyDark">Security verification</p>
+                    <p class="text-gray300 dark:text-slate-300">Security verification</p>
                   </li>
                   <li class="flex gap-3 items-center">
                     <i class="ph ph-check-circle text-primary70 dark:text-primaryDark"></i>
-                    <p class="text-gray300 dark:text-bodyDark">Content refreshment</p>
+                    <p class="text-gray300 dark:text-slate-300">Content refreshment</p>
                   </li>
                   <li class="flex gap-3 items-center">
                     <i class="ph ph-check-circle text-primary70 dark:text-primaryDark"></i>
-                    <p class="text-gray300 dark:text-bodyDark">Ensure regular backups to protect your data</p>
+                    <p class="text-gray300 dark:text-slate-300">Ensure regular backups to protect your data</p>
                   </li>
                 </ul>
               </section>
@@ -683,8 +705,8 @@
     </section>
 
     <!--------------------- CTA Section --------------------->
-    <section id="contact" class="py-32 dark:to-darkBg px-5">
-      <div class="container mx-auto max-w-7xl px-5 rounded-2xl flex flex-col items-center justify-between">
+    <section id="contact" class="py-32 dark:to-darkBg px-6">
+      <div class="container mx-auto max-w-7xl px-6 rounded-2xl flex flex-col items-center justify-between">
         <h6 class="text-4xl text-center text-secondary100 tracking-widexs md:text-6xl mb-12">Ready to bring your idea to life?</h6>
         <p class="text-secondary90 text-center md:text-xl max-w-lg mb-8">Enter your email for a step-by-step guide to getting started or contact me directly</p>
         <form action="" method="POST" class="flex w-full md:w-[448px] rounded-2xl bg-primary100 pl-6 pr-2 py-2 shadow-md mb-8">
@@ -722,26 +744,26 @@
 
 
     <!--------------------- About Me Section --------------------->
-    <section id="about" class="py-32 bg-[#FBFCF8 dark:bg-darkBg">
-      <section class="container mx-auto max-w-7xl px-5 md:px-0">
+    <section id="about" class="py-32 bg-[#FBFCF8 dark:bg-darkBg pattern-grid-xl text-slate-200 dark:text-slate-800">
+      <section class="container mx-auto max-w-7xl px-6 md:px-10">
         <div class="flex flex-col justify-center text-center">
           <h2 class="mx-auto px-2 rounded-sm text-sm text-primary70 bg-primary99 dark:text-primaryDark text-semibold uppercase tracking-wider dark:bg-transparent md:text-base">About Me</h2>
-          <h3 class="mx-auto text-center tracking-widexs text-gray500 dark:text-onDarkBg text-4xl md:text-5xl mt-4 max-w-2xl">From Blueprint to Coding</h3>
-          <p class="mx-auto text-center text-gray300 dark:text-bodyDark text-xl mt-5 max-w-lg">A Journey of Passion and Perseverance</p>
+          <h3 class="mx-auto text-center tracking-widexs text-gray500 dark:text-slate-50 text-4xl md:text-5xl mt-4 max-w-2xl">From Blueprint to Coding</h3>
+          <p class="mx-auto text-center text-gray300 dark:text-slate-300 text-xl mt-5 max-w-lg">A Journey of Passion and Perseverance</p>
         </div>
 
 
-        <section class="py-24 flex flex-col md:flex-row ">
+        <section class="py-24 flex flex-col items-center gap-8 lg:flex-row lg:gap-0">
           <section class="flex justify-center items-center md:w-1/2">
-            <div class="w-96 h-96">
+            <div class="w-64 h-64 md:w-96 md:h-96">
               <img src="/build/assets/about-image.png" alt="Patricio Mena photo" class="w-full" loading="lazy" width="384" height="384">
             </div>
           </section>
 
           <section class="flex flex-col gap-6 max-w-lg md:w-1/2">
-            <p class="text-center md:text-left text-gray300 dark:text-bodyDark">I was a civil engineer who worked as an operation manager overseeing installations and coordinating with sales team and customers, ensuring every project was completed on time and on budget. It was a challenging and rewarding job, but there was something missing. I’ve always loved the idea of creating new things and figuring out how things worked. That’s why when the pandemic hit I decided to take a leap of faith and pursue a new career in programming</p>
-            <p class="text-center md:text-left text-gray300 dark:text-bodyDark">At first, it was a daunting prospect but I was determined to succeed. Every day I spent hours studying HTML, CSS and JavaScript, trying out new coding challenges, and building small projects. With each new project I gained confidence and expertise. Soon enough I was building more complex projects</p>
-            <p class="text-center md:text-left text-gray300 dark:text-bodyDark">Today, I’m using my engineering background and programming skills to help companies thrive in the new digital landscape. I’m proud of my journey and where it has taken me, from civil to software engineer. I’m excited to see where my skills and expertise will take me in the future.</p>
+            <p class="text-center md:text-left text-gray300 dark:text-slate-300">I was a civil engineer who worked as an operation manager overseeing installations and coordinating with sales team and customers, ensuring every project was completed on time and on budget. It was a challenging and rewarding job, but there was something missing. I’ve always loved the idea of creating new things and figuring out how things worked. That’s why when the pandemic hit I decided to take a leap of faith and pursue a new career in programming</p>
+            <p class="text-center md:text-left text-gray300 dark:text-slate-300">At first, it was a daunting prospect but I was determined to succeed. Every day I spent hours studying HTML, CSS and JavaScript, trying out new coding challenges, and building small projects. With each new project I gained confidence and expertise. Soon enough I was building more complex projects</p>
+            <p class="text-center md:text-left text-gray300 dark:text-slate-300">Today, I’m using my engineering background and programming skills to help companies thrive in the new digital landscape. I’m proud of my journey and where it has taken me, from civil to software engineer. I’m excited to see where my skills and expertise will take me in the future.</p>
           </section>
         </section>
 
@@ -749,7 +771,7 @@
           <ul role="list" class="flex justify-center items-center gap-6" aria-label="Social media links">
             <li>
               <a href="https://github.com/PatricioMena" class="block text-center bg-primary70 p-3 rounded-full dark:bg-primary90 duration-200 ease-in hover:shadow-md hover:bg-opacity-80 hover:duration-[250ms] hover:ease-out hover:-translate-y-[1px] active:translate-y-0 active:bg-opacity-90 active:shadow-none">
-                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" class="fill-whiteOnPrimary dark:fill-primary10 w-8 h-8" viewBox="0 0 256 256">
+                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" class="fill-primary100 dark:fill-primary10 w-8 h-8" viewBox="0 0 256 256">
                   <path d="M208.31,75.68A59.78,59.78,0,0,0,202.93,28,8,8,0,0,0,196,24a59.75,59.75,0,0,0-48,24H124A59.75,59.75,0,0,0,76,24a8,8,0,0,0-6.93,4,59.78,59.78,0,0,0-5.38,47.68A58.14,58.14,0,0,0,56,104v8a56.06,56.06,0,0,0,48.44,55.47A39.8,39.8,0,0,0,96,192v8H72a24,24,0,0,1-24-24A40,40,0,0,0,8,136a8,8,0,0,0,0,16,24,24,0,0,1,24,24,40,40,0,0,0,40,40H96v16a8,8,0,0,0,16,0V192a24,24,0,0,1,48,0v40a8,8,0,0,0,16,0V192a39.8,39.8,0,0,0-8.44-24.53A56.06,56.06,0,0,0,216,112v-8A58.14,58.14,0,0,0,208.31,75.68ZM200,112a40,40,0,0,1-40,40H112a40,40,0,0,1-40-40v-8a41.74,41.74,0,0,1,6.9-22.48A8,8,0,0,0,80,73.83a43.81,43.81,0,0,1,.79-33.58,43.88,43.88,0,0,1,32.32,20.06A8,8,0,0,0,119.82,64h32.35a8,8,0,0,0,6.74-3.69,43.87,43.87,0,0,1,32.32-20.06A43.81,43.81,0,0,1,192,73.83a8.09,8.09,0,0,0,1,7.65A41.72,41.72,0,0,1,200,104Z"></path>
                 </svg>
                 <span class="sr-only">Github</span>
@@ -758,7 +780,7 @@
 
             <li>
               <a href="https://www.linkedin.com/in/patricio-mena-horn" class="block text-center bg-primary70 p-3 rounded-full dark:bg-primary90 duration-200 ease-in hover:shadow-md hover:bg-opacity-80 hover:duration-[250ms] hover:ease-out hover:-translate-y-[1px] active:translate-y-0 active:bg-opacity-90 active:shadow-none">
-                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" class="fill-whiteOnPrimary dark:fill-primary10 w-8 h-8" viewBox="0 0 256 256">
+                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" class="fill-primary100 dark:fill-primary10 w-8 h-8" viewBox="0 0 256 256">
                   <path d="M216,24H40A16,16,0,0,0,24,40V216a16,16,0,0,0,16,16H216a16,16,0,0,0,16-16V40A16,16,0,0,0,216,24Zm0,192H40V40H216V216ZM96,112v64a8,8,0,0,1-16,0V112a8,8,0,0,1,16,0Zm88,28v36a8,8,0,0,1-16,0V140a20,20,0,0,0-40,0v36a8,8,0,0,1-16,0V112a8,8,0,0,1,15.79-1.78A36,36,0,0,1,184,140ZM100,84A12,12,0,1,1,88,72,12,12,0,0,1,100,84Z"></path>
                 </svg>
                 <span class="sr-only">Linkedin</span>
@@ -767,7 +789,7 @@
 
             <li>
               <a href="#" class="block text-center bg-primary70 p-3 rounded-full dark:bg-primary90 duration-200 ease-in hover:shadow-md hover:bg-opacity-80 hover:duration-[250ms] hover:ease-out hover:-translate-y-[1px] active:translate-y-0 active:bg-opacity-90 active:shadow-none">
-                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" class="fill-whiteOnPrimary dark:fill-primary10 w-8 h-8" viewBox="0 0 256 256">
+                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" class="fill-primary100 dark:fill-primary10 w-8 h-8" viewBox="0 0 256 256">
                   <path d="M247.39,68.94A8,8,0,0,0,240,64H209.57A48.66,48.66,0,0,0,168.1,40a46.91,46.91,0,0,0-33.75,13.7A47.9,47.9,0,0,0,120,88v6.09C79.74,83.47,46.81,50.72,46.46,50.37a8,8,0,0,0-13.65,4.92c-4.31,47.79,9.57,79.77,22,98.18a110.93,110.93,0,0,0,21.88,24.2c-15.23,17.53-39.21,26.74-39.47,26.84a8,8,0,0,0-3.85,11.93c.75,1.12,3.75,5.05,11.08,8.72C53.51,229.7,65.48,232,80,232c70.67,0,129.72-54.42,135.75-124.44l29.91-29.9A8,8,0,0,0,247.39,68.94Zm-45,29.41a8,8,0,0,0-2.32,5.14C196,166.58,143.28,216,80,216c-10.56,0-18-1.4-23.22-3.08,11.51-6.25,27.56-17,37.88-32.48A8,8,0,0,0,92,169.08c-.47-.27-43.91-26.34-44-96,16,13,45.25,33.17,78.67,38.79A8,8,0,0,0,136,104V88a32,32,0,0,1,9.6-22.92A30.94,30.94,0,0,1,167.9,56c12.66.16,24.49,7.88,29.44,19.21A8,8,0,0,0,204.67,80h16Z"></path>
                 </svg>
                 <span class="sr-only">Twitter</span>
@@ -781,7 +803,7 @@
 
     <!--------------------- Footer --------------------->
     <footer class="py-20 bg-secondary10 dark:bg-darkSurface">
-      <div class="container mx-auto max-w-7xl px-5 md:px-0">
+      <div class="container mx-auto max-w-7xl px-6 md:px-0">
         <section class="flex flex-col">
           <nav class="flex flex-col items-center justify-between gap-8 md:flex-row">
             <a href="#">

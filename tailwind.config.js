@@ -119,6 +119,8 @@ module.exports = {
         surface: 'hsl(60, 7%, 100%)',
         surfaceTwo: 'hsl(288, 56%, 98%)',
         surfaceBlack: 'hsl(240,0%, 15%) ',
+        surfaceBlack: 'hsl(214, 8%, 17%)',
+        surfaceBlack: 'hsl(192, 7%, 14%)',
 
         // Accents
         accentLight: 'hsl(167, 100%, 38%)',
