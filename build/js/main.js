@@ -1,15 +1,32 @@
 const initApp = () => {
-  const hamburgerBtn = document.getElementById('hamburger-button');
-  const mobileMenu = document.getElementById('mobile-menu');
+  // const hamburgerBtn = document.getElementById('hamburger-button');
+  // const mobileMenu = document.getElementById('mobile-menu');
+  // const toggleMenu = () => {
+  //   mobileMenu.classList.toggle('hidden');
+  //   mobileMenu.classList.toggle('flex');
+  //   hamburgerBtn.classList.toggle('toggle-btn');
+  // };
+  // hamburgerBtn.addEventListener('click', toggleMenu);
+  // mobileMenu.addEventListener('click', toggleMenu);
+  // When user clicks on open mobile nav button, I want to set 'open' attribute on main-navigation
+  const mainNav = document.getElementById('main-navigation');
+  const navItems = document.getElementById('navigation-items');
+  const mobileBtn = document.getElementById('mobile-nav-toggle');
 
   const toggleMenu = () => {
-    mobileMenu.classList.toggle('hidden');
-    mobileMenu.classList.toggle('flex');
-    hamburgerBtn.classList.toggle('toggle-btn');
+    mainNav.toggleAttribute('open');
+    const visibility = navItems.getAttribute('data-visible');
+
+    if (visibility === 'false') {
+      navItems.setAttribute('data-visible', true);
+      mobileBtn.setAttribute('aria-expanded', true);
+    } else if (visibility === 'true') {
+      navItems.setAttribute('data-visible', false);
+      mobileBtn.setAttribute('aria-expanded', false);
+    }
   };
 
-  hamburgerBtn.addEventListener('click', toggleMenu);
-  mobileMenu.addEventListener('click', toggleMenu);
+  mobileBtn.addEventListener('click', toggleMenu);
 };
 
 document.addEventListener('DOMContentLoaded', initApp);

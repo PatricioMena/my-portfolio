@@ -93,6 +93,31 @@
     --swiper-pagination-bullet-width: 10px;
     --swiper-pagination-bullet-height: 10px;
   }
+
+  nav[open] {
+    pointer-events: auto;
+    visibility: visible;
+  }
+
+  nav[open]::before {
+    opacity: 1;
+  }
+
+  #navigation-items[data-visible='true'] {
+    transform: none;
+  }
+
+  #mobile-nav-toggle {
+    background-image: url(/build/assets/icons/list-bold.svg);
+    background-repeat: no-repeat;
+  }
+
+  #mobile-nav-toggle[aria-expanded='true'] {
+    background-image: url(/build/assets/icons/x-bold.svg);
+    position: fixed;
+    top: 1.25rem;
+    left: 1.5rem;
+  }
 }
 @layer utilities {
   .toggle-btn {

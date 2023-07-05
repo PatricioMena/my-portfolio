@@ -3,7 +3,10 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Patricio Mena</title>
+  <meta name="description" content="Customized web solutions to improve your brand perception and meet your business goals. Patricio Mena is a full stack developer who creates stunning and high performance digital experiences that are accesible, responsive and secure.">
+  <title>Patricio Mena - Software Engineer: Building tailored web experiences</title>
+  <link rel="icon" href="/build/favicon.png" type="image/png" sizes="'16x16">
+
   <!--------------------- Fonts --------------------->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -11,6 +14,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600&family=Poppins:wght@700&display=swap" rel="stylesheet">
+
 
   <link rel="stylesheet" href="/build/output.css">
 
@@ -28,16 +32,12 @@
 </head>
 <body class="text-base md:text-lg overflow-x-hidden">
   <!--------------------- Navbar --------------------->
-  <header class=" min-h-16 bg-[#FBFCF8] dark:bg-darkBg">
+  <header class="min-h-[4rem] bg-[#FBFCF8] dark:bg-darkBg z-[1000] sticky">
     <div class="container max-w-7xl mx-auto flex justify-between items-center px-6 md:px-10">
       <!-- Logo and Mobile Button-->
-      <div class="flex justify-between items-center flex-1 md:flex-initial">
-        <button id="hamburger-button" class="md:hidden inline-block bg-transparent border-none text-primary70 dark:text-primary90 p-0 cursor-pointer">
-          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 256 256" class="w-6 h-24 fill-current block">
-            <path d="M224,128a8,8,0,0,1-8,8H40a8,8,0,0,1,0-16H216A8,8,0,0,1,224,128ZM40,72H216a8,8,0,0,0,0-16H40a8,8,0,0,0,0,16ZM216,184H40a8,8,0,0,0,0,16H216a8,8,0,0,0,0-16Z"></path>
-          </svg>
-        </button>
-        <a href="/" class="">
+      <div class="flex justify-end w-full md:justify-start md:w-fit ">
+        <button id="mobile-nav-toggle" class="block absolute z-[9999] bg-transparent border-none w-6 h-6 top-5 left-6 md:hidden" aria-controls="main-navigation" aria-expanded="false"><span class="sr-only">Menu</span></button>
+        <a href="#" class="" title="Patricio Mena homepage">
           <span class="hidden sr-only">Patricio Mena</span>
           <svg width="147" height="63" viewBox="0 0 147 63" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path d="M17.6236 18.8255C15.5788 21.0556 15.5788 21.0556 15.5788 24.9451C15.5788 28.7828 15.5788 28.8347 13.6315 30.8572L11.6841 32.8798V37.0805V41.2813L13.7775 43.4594L15.8709 45.6376H21.6643H27.4578L29.5512 43.4594L31.6446 41.2813V37.0805V32.8798L29.6972 30.8572C27.7499 28.8347 27.7499 28.7828 27.7499 24.997C27.7499 21.3667 27.6525 21.0556 25.9972 18.8774C24.342 16.7511 24.0499 16.5955 21.9565 16.5955C19.9117 16.5955 19.4736 16.803 17.6236 18.8255ZM24.5854 19.1886L25.9972 20.7444H24.3907H22.7354L23.0275 23.0781C23.3196 25.2563 22.8815 26.1379 22.1512 24.8933C21.9078 24.4784 21.6157 24.5302 21.1288 24.9451C20.5446 25.4637 20.4472 25.1526 20.4472 23.13C20.4472 20.7963 20.3986 20.7444 18.8893 20.7444H17.3315L18.7433 19.1886C19.717 18.0995 20.5933 17.6327 21.6643 17.6327C22.7354 17.6327 23.6117 18.0995 24.5854 19.1886ZM19.4736 23.2856C19.4736 24.634 19.3275 24.7895 18.1591 24.6858C17.088 24.5821 16.7472 24.2191 16.6499 23.13C16.5038 21.9372 16.6499 21.7816 17.9643 21.7816C19.3275 21.7816 19.4736 21.9372 19.4736 23.2856ZM26.7762 23.2856C26.7762 24.634 26.5815 24.8414 25.5591 24.7377C24.8775 24.6858 24.342 24.4784 24.342 24.2191C24.342 24.0116 24.342 23.3893 24.342 22.8188C24.342 22.0409 24.6828 21.7816 25.5591 21.7816C26.5815 21.7816 26.7762 22.0409 26.7762 23.2856ZM18.4512 26.9158C16.9907 28.2642 16.5525 28.2642 16.5525 27.0196C16.5525 26.2935 16.942 25.9305 17.9157 25.8268C19.717 25.5674 19.8143 25.723 18.4512 26.9158ZM26.7762 27.0714C26.7762 28.0568 26.7275 28.0568 25.3157 26.9677C24.5367 26.3454 23.8551 25.7749 23.8551 25.723C23.8551 25.6712 24.5367 25.6712 25.3157 25.8268C26.3867 25.9823 26.7762 26.3454 26.7762 27.0714ZM23.8551 27.2789C26.0459 28.8347 25.9972 29.0421 23.4657 29.8719C22.0538 30.2868 21.1775 30.2349 19.5709 29.6644L17.4288 28.9384L19.5709 27.4344C20.7393 26.6047 21.713 25.9305 21.8104 25.9305C21.8591 25.9305 22.7841 26.5528 23.8551 27.2789ZM24.488 30.7017C28.3341 29.1458 28.7236 29.7163 28.7236 37.0805C28.7236 44.6004 28.7236 44.6004 21.9078 44.6004C14.9946 44.6004 14.9946 44.5485 14.9946 36.8212C14.9946 29.5089 15.1893 29.2496 18.9867 30.7017L21.8104 31.7907L24.488 30.7017ZM13.6315 37.1843C13.6315 39.6217 13.4854 41.5406 13.3393 41.385C13.1933 41.1775 13.0472 39.4661 13.0472 37.4954C13.0472 33.1391 13.0959 32.6724 13.388 32.6724C13.5341 32.6724 13.6315 34.6949 13.6315 37.1843ZM30.6709 37.0805C30.6709 39.2068 30.4762 41.0738 30.1841 41.2294C29.892 41.4368 29.6972 39.9329 29.6972 37.0805C29.6972 34.2282 29.892 32.7242 30.1841 32.9317C30.4762 33.0873 30.6709 34.9543 30.6709 37.0805Z" fill="#00C297" class="dark:fill-primary90" />
@@ -62,34 +62,18 @@
       </div>
 
       <!-- Main Navigation links -->
-      <nav aria-label="main-navigation" class="block h-full w-full pointer-events-none fixed top-0 left-0 z-100 before:content-[''] before:bloc before:absolute before:left-0 before:top-0 before:w-full before:h-full before:bg-black before:bg-opacity-40 before:backdrop-blur-sm opacity-1">
-        <ul class="transition-transform duration-200 ease-out relative h-full w-fit min-w-[256px] top-0 left-0 pt-20 shadow-md bg-slate-200 dark:bg-surfaceBlack | text-base text-gray300 dark:text-slate-100 md:flex md:gap-x-8">
-          <li class="py-6 px-5"><a href="/" class="main-nav-link | hover:text-primary70 dark:hover:text-primaryDark dark:after:bg-primaryDark">Home</a></li>
-          <li class="py-6 px-5"><a href="#projects" class="main-nav-link | hover:text-primary70 dark:hover:text-primaryDark dark:after:bg-primaryDark">Projects</a></li>
-          <li class="py-6 px-5"><a href="#about" class="main-nav-link | hover:text-primary70 dark:hover:text-primaryDark dark:after:bg-primaryDark">About</a></li>
-          <li class="py-6 px-5"><a href="" class="main-nav-link | hover:text-primary70 dark:hover:text-primaryDark dark:after:bg-primaryDark">Resume</a></li>
-          <button class="inline-block bg-transparent border-none cursor-pointer absolute z-[1] top-5 right-8  text-gray-300 dark:text-slate-100 w-4 h-4">
-
-            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 256 256" class="block w-6 h-6">
-              <path d=" M208.49,191.51a12,12,0,0,1-17,17L128,145,64.49,208.49a12,12,0,0,1-17-17L111,128,47.51,64.49a12,12,0,0,1,17-17L128,111l63.51-63.52a12,12,0,0,1,17,17L145,128Z"></path>
-            </svg></button>
+      <nav id="main-navigation" aria-label="main-navigation" class="fixed h-full w-full pointer-events-none top-0 left-0 shadow-xl before:content-[''] before:block before:absolute before:left-0 before:top-0 before:w-full before:h-full before:bg-black before:bg-opacity-40 before:backdrop-blur-sm before:opacity-0 md:w-auto md:static md:pointer-events-auto md:before:hidden">
+        <ul id="navigation-items" class="fixed flex flex-col top-0 left-0 pt-40 pl-6 bg-[#FBFCF8]  dark:bg-surfaceBlack w-fit min-w-[256px] h-full -translate-x-[110%] transition-transform duration-200 ease-linear text-gray300 dark:text-slate-200 text-base gap-8 md:flex-row md:static md:p-0 md:dark:bg-darkBg md:translate-x-0" data-visible="false">
+          <li class=""><a href="#benefits" class="main-nav-link | hover:text-primary70 dark:hover:text-primaryDark dark:after:bg-primaryDark">Benefits</a></li>
+          <li class=""><a href="#portfolio" class="main-nav-link | hover:text-primary70 dark:hover:text-primaryDark dark:after:bg-primaryDark">Portfolio</a></li>
+          <li class=""><a href="#process" class="main-nav-link | hover:text-primary70 dark:hover:text-primaryDark dark:after:bg-primaryDark">Process</a></li>
+          <li class=""><a href="#about" class="main-nav-link | hover:text-primary70 dark:hover:text-primaryDark dark:after:bg-primaryDark">About</a></li>
         </ul>
       </nav>
 
       <!-- Header Button  -->
-      <a href="#projects" class="hidden text-sm text-primary100 px-6 py-2 bg-primary70 tracking-wide rounded-lg transition duration-200 ease-in hover:bg-opacity-80 hover:shadow-md hover:transition hover:duration-[250ms] hover:ease-out hover:-translate-y-[1px] active:translate-y-0 active:shadow-none active:bg-opacity-90 dark:text-primary10 dark:bg-primary90 dark:hover:bg-onHoverDark md:block">Portfolio</a>
+      <a href="#contact" class="hidden text-sm text-primary100 px-6 py-2 bg-primary70 tracking-wide rounded-lg transition duration-200 ease-in hover:bg-opacity-80 hover:shadow-md hover:transition hover:duration-[250ms] hover:ease-out hover:-translate-y-[1px] active:translate-y-0 active:shadow-none active:bg-opacity-90 dark:text-primary10 dark:bg-primary90 dark:hover:bg-onHoverDark md:block">Contact Me</a>
     </div>
-
-    <!---------------------  Mobile Menu --------------------->
-    <!-- <nav id="mobile-menu" class="hidden w-full absolute origin-top transition-all ease-in duration-700 bg-[#FBFCF8] text-2xl text-primary70 flex-col animate-open-menu">
-      <ul class="flex flex-col items-center py-20 min-h-screen">
-        <li class="border rounded-2xl py"><a href="#" class="flex items-center gap-4"><i class="ph ph-house "></i>Home</a></li>
-        <li><a href="#projects"><span></span>Portfolio</a></li>
-        <li><a href="#how-it-works"><span>How It Works</span></a></li>
-        <li><a href="#about"><span></span>About</a></li>
-        <li><a href=""><span></span></a></li>
-      </ul>
-    </nav> -->
   </header>
 
   <main>
@@ -100,7 +84,7 @@
           <h1 class=" text-gray500 dark:text-slate-50 text-5xl leading-tight md:text-7xl text-center dark:text-textWhite">Innovative solutions tailored to grow your business</h1>
           <p class="text-xl text-center mt-8 max-w-2xl mx-auto text-gray300 dark:text-slate-300 ">I’m Patricio Mena. A creative full-stack developer committed to delivering products that delight your users and drive results</p>
           <div class="w-full flex flex-col justify-center mt-10 gap-4 md:flex-row md:items-center">
-            <a href="#projects" class="flex items-center justify-center text-primary100 bg-primary70 px-6 h-12 rounded-lg tracking-wide transition-color duration-200 ease-in hover:bg-opacity-80 hover:shadow-md hover:transition hover:duration-[250ms] hover:ease-out hover:-translate-y-[1px] active:translate-y-0 active:shadow-none active:bg-opacity-90 dark:bg-primary90 dark:text-primary10 dark:hover:bg-onHoverDark">Browse Projects</a>
+            <a href="#portfolio" class="flex items-center justify-center text-primary100 bg-primary70 px-6 h-12 rounded-lg tracking-wide transition-color duration-200 ease-in hover:bg-opacity-80 hover:shadow-md hover:transition hover:duration-[250ms] hover:ease-out hover:-translate-y-[1px] active:translate-y-0 active:shadow-none active:bg-opacity-90 dark:bg-primary90 dark:text-primary10 dark:hover:bg-onHoverDark">Browse Projects</a>
 
             <a href="#contact" class="flex items-center justify-center text-primary70 bg-neutral-50 bg-opacity-70 px-6 h-12 border rounded-lg border-outlineLight tracking-wide transition duration-200 ease-in hover:shadow-md active:shadow-none hover:bg-primary100 hover:transition hover:duration-[250ms] hover:ease-out hover:-translate-y-[1px] active:border-primary70 active:bg-primary99 active:bg-opacity-90 dark:bg-darkBg dark:text-primary90 dark:bg-opacity-40 dark:active:border-primary90 active:translate-y-0  dark:border-outlineDark dark:hover:bg-opacity-10 dark:active:bg-opacity-20 md:min-w-[178px]">Contact Me</a>
           </div>
@@ -110,7 +94,7 @@
 
     <!--------------------- Screenshots Section --------------------->
     <section class="bg-gradient-to-b from-[#FBFCF8] to-[#FFFEFC] dark:from-darkBg dark:to-darkBg grid content-center overflow-hidden pt-16 lg:pt-36">
-      <ul id="screenshots-gallery" class="flex gap-4 md:gap-6 relative md:left-[-6%]">
+      <ul id="screenshots-gallery" class="flex gap-4 md:gap-6  md:left-[-6%]">
         <li class="w-52 md:w-96 md:h-96"><img src="./assets/screenshot-placeholder.png" alt="" class="rounded-2xl border border-outlineLight shadow-md w-full" width="384" height="384"></li>
         <li class="w-52 md:w-96 md:h-96"><img src="./assets/screenshot-placeholder.png" alt="" class="rounded-2xl border border-outlineLight shadow-md w-full" width="384" height="384"></li>
         <li class="w-52 md:w-96 md:h-96"><img src="./assets/screenshot-placeholder.png" alt="" class="rounded-2xl border border-outlineLight shadow-md w-full" width="384" height="384"></li>
@@ -123,7 +107,7 @@
     </section>
 
     <!--------------------- Benefits Section --------------------->
-    <section id="benefits" class=" bg-[#FFFEFC] dark:bg-darkBg pt-24 pb-32">
+    <section id="benefits" class=" bg-[#FFFEFC] dark:bg-darkBg pt-24 pb-32 ">
       <div class="container mx-auto max-w-7xl px-6 md:px-10">
 
         <!--- Optimized --->
@@ -138,7 +122,7 @@
           <section class="flex flex-col justify-between mt-20 gap-6 md:flex-row xl:gap-12">
             <article class="p-4 flex flex-col justify-center text-center md:w-1/3 rounded-2xl bg-slate-300 bg-opacity-10  shadow-md border border-solid border-gray-200 dark:bg-surfaceBlack dark:bg-opacity-50 dark:shadow-dark dark:hover:shadow-darker dark:border-none">
               <div class="mx-auto">
-                <lord-icon src="https://cdn.lordicon.com/ysbeyrrl.json" trigger="loop" colors="primary:#00c297,secondary:#00c297" style="width:100px;height:100px">
+                <lord-icon src="https://cdn.lordicon.com/ysbeyrrl.json" trigger="loop" colors="primary:#00c297,secondary:#00c297" style="width:100px;height:100px" class="">
                 </lord-icon>
               </div>
               <h4 class="text-xl md:text-2xl tracking-wide text-gray500 dark:text-slate-50 mt-2.5">Fast Load Speed</h4>
@@ -250,17 +234,17 @@
     </section>
 
 
-    <!--------------------- Recent Work Section --------------------->
-    <section id="projects" class="bg-[#FBFCF8] dark:bg-darkBg py-32 pattern-grid-xl text-slate-200 dark:text-slate-800">
-      <div class="container mx-auto max-w-7xl px-6 relative md:px-10">
+    <!--------------------- Portfolio Section --------------------->
+    <section id="portfolio" class="bg-[#FBFCF8] dark:bg-darkBg py-32 pattern-grid-xl text-slate-200 dark:text-slate-800">
+      <div class="container mx-auto max-w-7xl px-6 z-10 md:px-10">
         <div class="flex flex-col justify-center text-center">
           <h2 class="mx-auto px-2 rounded-sm text-sm text-secondary20 bg-secondary90 text-semibold uppercase tracking-wider dark:bg-secondary20 dark:text-secondary90 md:text-base">Recent Work</h2>
           <h3 class="mx-auto text-center tracking-widexs text-gray500 dark:text-slate-50 text-4xl md:text-5xl mt-4 max-w-2xl">Elevate your brand</h3>
           <p class="mx-auto text-center text-gray300 dark:text-slate-300 text-xl mt-5 max-w-lg">Browse my projects and get inspired</p>
         </div>
 
-        <!-- Recent Work Carousel -->
-        <div class="relative mt-24">
+        <!-- Portfolio Carrousel -->
+        <div class="mt-24 relative">
           <div class="swiper">
             <div class="swiper-wrapper mb-16">
 
@@ -425,10 +409,10 @@
     </section>
 
     <!--------------------- How It Works Section --------------------->
-    <section id="how-it-works" class="py-32 bg-[#FFFEFC] dark:bg-darkBg">
-      <div class="container mx-auto max-w-7xl px-6 md:px-10 relative ">
+    <section id="process" class="py-32 bg-[#FFFEFC] dark:bg-darkBg">
+      <div class="container mx-auto max-w-7xl px-6 md:px-10">
         <div class="flex flex-col justify-center text-center">
-          <h2 class="mx-auto px-2 rounded-sm text-sm text-primary70 bg-primary99 dark:text-primaryDark text-semibold uppercase tracking-wider dark:bg-transparent md:text-base">How It Works</h2>
+          <h2 class="mx-auto px-2 rounded-sm text-sm text-primary70 bg-primary99 dark:text-primaryDark text-semibold uppercase tracking-wider dark:bg-transparent md:text-base">How it works</h2>
           <h3 class="mx-auto text-center tracking-widexs text-gray500 dark:text-slate-50 text-4xl md:text-5xl mt-4 max-w-2xl">From concept to launch</h3>
           <p class="mx-auto text-center text-gray300 dark:text-slate-300 text-xl mt-5 max-w-lg">Discover our streamlined process</p>
         </div>
@@ -705,7 +689,7 @@
     </section>
 
     <!--------------------- CTA Section --------------------->
-    <section id="contact" class="py-32 dark:to-darkBg px-6">
+    <section id="contact" class="py-32 dark:to-darkBg">
       <div class="container mx-auto max-w-7xl px-6 rounded-2xl flex flex-col items-center justify-between">
         <h6 class="text-4xl text-center text-secondary100 tracking-widexs md:text-6xl mb-12">Ready to bring your idea to life?</h6>
         <p class="text-secondary90 text-center md:text-xl max-w-lg mb-8">Enter your email for a step-by-step guide to getting started or contact me directly</p>
@@ -803,16 +787,18 @@
 
     <!--------------------- Footer --------------------->
     <footer class="py-20 bg-secondary10 dark:bg-darkSurface">
-      <div class="container mx-auto max-w-7xl px-6 md:px-0">
+      <div class="container mx-auto max-w-7xl px-6 md:px-10">
         <section class="flex flex-col">
           <nav class="flex flex-col items-center justify-between gap-8 md:flex-row">
             <a href="#">
-              <img src="/build/assets/logos/Dark-logo.svg" alt="Patricio Mena Logo" class="fill-white dark:fill-primaryDark">
+              <img src="/build/assets/logos/Dark-logo.svg" alt="Patricio Mena homepage" class="fill-white dark:fill-primaryDark">
             </a>
             <ul class="flex items-center text-sm tracking-wide text-whiteOnSecondary gap-6">
-              <li><a href="#projects" class="duration-200 ease-in hover:text-primary70 hover:duration-[250ms] hover:ease-out">Projects</a></li>
-              <li><a href="#how-it-works" class="duration-200 ease-in hover:text-primary70 hover:duration-[250ms] hover:ease-out">How It works</a></li>
+              <li><a href="#benefits" class="duration-200 ease-in hover:text-primary70 hover:duration-[250ms] hover:ease-out">Benefits</a></li>
+              <li><a href="#portfolio" class="duration-200 ease-in hover:text-primary70 hover:duration-[250ms] hover:ease-out">Portfolio</a></li>
+              <li><a href="#process" class="duration-200 ease-in hover:text-primary70 hover:duration-[250ms] hover:ease-out">Process</a></li>
               <li><a href="#contact" class="duration-200 ease-in hover:text-primary70 hover:duration-[250ms] hover:ease-out">Contact</a></li>
+              <li><a href="#about" class="duration-200 ease-in hover:text-primary70 hover:duration-[250ms] hover:ease-out">About</a></li>
               <li><a href="#" class="duration-200 ease-in hover:text-primary70 hover:duration-[250ms] hover:ease-out">Privacy</a></li>
             </ul>
           </nav>
