@@ -1,6 +1,7 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
   content: ['./build/*.html', './build/js/*.js'],
+  darkMode: 'class',
   theme: {
     screens: {
       sm: '480px',
@@ -94,17 +95,6 @@ module.exports = {
         secondary90: 'hsl(242, 100%, 94%)',
         secondary95: 'hsl(251, 100%, 97%)',
         secondary100: 'hsl(300, 100%, 99%)',
-
-        // primary100: 'hsl(177, 91%, 95%)',
-        // primary90: 'hsl(176, 92%, 86%)',
-        // primary80: 'hsl(176, 92%, 79%)',
-        // primary70: 'hsl(176, 92%, 70%)',
-        // primary60: 'hsl(176, 92%, 64%)',
-        // primary50: 'hsl(176, 92%, 55%)',
-        // primary40: 'hsl(176, 76%, 50%)',
-        // primary30: 'hsl(176, 76%, 39%)',
-        // primary20: 'hsl(176, 76%, 30%)',
-        // primary10: 'hsl(176, 76%, 23%)',
 
         gray200: 'hsl(240, 7%, 60%)',
         gray300: 'hsl(237, 9%, 42%)',
