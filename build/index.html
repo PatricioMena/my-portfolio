@@ -81,14 +81,13 @@
 
   <main>
     <!--------------------- Hero Section --------------------->
-    <section id="hero" class=" bg-[#FBFCF8] dark:bg-darkBg">
+    <section id="hero" class="bg-[#FBFCF8] dark:bg-darkBg">
       <div class="container mx-auto max-w-7xl px-6 md:px-10">
         <div class="flex flex-col items-center pt-20 md:pt-32">
           <h1 class=" text-gray500 dark:text-slate-50 text-5xl leading-tight md:text-7xl text-center dark:text-textWhite">Innovative solutions tailored to grow your business</h1>
           <p class="text-xl text-center mt-8 max-w-2xl mx-auto text-gray300 dark:text-slate-300 ">I’m Patricio Mena. A creative full-stack developer committed to delivering products that delight your users and drive results</p>
           <div class="w-full flex flex-col justify-center mt-10 gap-4 md:flex-row md:items-center">
             <a href="#portfolio" class="flex items-center justify-center text-primary100 bg-primary70 px-6 h-12 rounded-lg tracking-wide transition-color duration-200 ease-in hover:bg-opacity-80 hover:shadow-md hover:transition hover:duration-[250ms] hover:ease-out hover:-translate-y-[1px] active:translate-y-0 active:shadow-none active:bg-opacity-90 dark:bg-primary90 dark:text-primary10 dark:hover:bg-onHoverDark">Browse Projects</a>
-
             <a href="#contact" class="flex items-center justify-center text-primary70 bg-neutral-50 bg-opacity-70 px-6 h-12 border rounded-lg border-outlineLight tracking-wide transition duration-200 ease-in hover:shadow-md active:shadow-none hover:bg-primary100 hover:transition hover:duration-[250ms] hover:ease-out hover:-translate-y-[1px] active:border-primary70 active:bg-primary99 active:bg-opacity-90 dark:bg-darkBg dark:text-primary90 dark:bg-opacity-40 dark:active:border-primary90 active:translate-y-0  dark:border-outlineDark dark:hover:bg-opacity-10 dark:active:bg-opacity-20 md:min-w-[178px]">Contact Me</a>
           </div>
         </div>
@@ -96,7 +95,7 @@
     </section>
 
     <!--------------------- Screenshots Section --------------------->
-    <section class="bg-gradient-to-b from-[#FBFCF8] to-[#FFFEFC] dark:from-darkBg dark:to-darkBg grid content-center overflow-hidden pt-16 lg:pt-36">
+    <section class="bg-gradient-to-b from-[#FBFCF8] to-[#FFFEFC] dark:from-darkBg dark:to-darkBg grid content-center overflow-hidden pt-16">
       <ul id="screenshots-gallery" class="flex gap-4 md:gap-6  md:left-[-6%]">
         <li class="w-52 md:w-96 md:h-96"><img src="./assets/screenshot-placeholder.png" alt="" class="rounded-2xl border border-outlineLight shadow-md w-full" width="384" height="384"></li>
         <li class="w-52 md:w-96 md:h-96"><img src="./assets/screenshot-placeholder.png" alt="" class="rounded-2xl border border-outlineLight shadow-md w-full" width="384" height="384"></li>
@@ -116,34 +115,37 @@
         <!--- Optimized --->
         <section class="py-24">
           <div class="flex flex-col justify-center text-center">
-            <h2 class="mx-auto px-2 rounded-sm text-sm text-primary70 bg-primary99 dark:text-primaryDark text-semibold uppercase tracking-wider dark:bg-transparent md:text-base">Optimized</h2>
-            <h3 class="mx-auto tracking-widexs text-gray500 dark:text-slate-50 text-4xl md:text-5xl mt-4 max-w-2xl">Seamless User Experience</h3>
-            <p class="mx-auto text-gray300 dark:text-slate-300 text-xl mt-5 max-w-lg">Deliver fast and high-performing solutions that impress your visitors</p>
+            <h2 class="mx-auto px-2 rounded-sm text-sm text-primary70 bg-primary99 dark:text-primaryDark text-semibold uppercase tracking-wider dark:bg-transparent md:text-base anim" data-anim="fade-bottom" data-delay="0s">Optimized</h2>
+            <h3 class="mx-auto tracking-widexs text-gray500 dark:text-slate-50 text-4xl md:text-5xl mt-4 max-w-2xl anim" data-anim="fade-bottom" data-delay="0s">Seamless User Experience</h3>
+            <p class="mx-auto text-gray300 dark:text-slate-300 text-xl mt-5 max-w-lg anim" data-anim="fade-bottom" data-delay="0s">Deliver fast and high-performing solutions that impress your visitors</p>
           </div>
 
           <!--- Cards Row --->
           <section class="flex flex-col justify-between mt-20 gap-6 md:flex-row xl:gap-12">
-            <article class="p-4 flex flex-col justify-center text-center md:w-1/3 rounded-2xl bg-slate-300 bg-opacity-10  shadow-md border border-solid border-gray-200 dark:bg-surfaceBlack dark:bg-opacity-50 dark:shadow-dark dark:hover:shadow-darker dark:border-none">
+            <article class="p-4 flex flex-col justify-center text-center md:w-1/3 rounded-2xl bg-slate-300 bg-opacity-10  shadow-md border border-solid border-gray-200 dark:bg-surfaceBlack dark:bg-opacity-50 dark:shadow-dark dark:hover:shadow-darker dark:border-none anim" data-anim="fade-left" data-delay="0s">
               <div class="mx-auto">
-                <lord-icon src="https://cdn.lordicon.com/ysbeyrrl.json" trigger="loop" colors="primary:#00c297,secondary:#00c297" style="width:100px;height:100px" class="">
+                <lord-icon aria-labelledby="optimized-icon1" src="https://cdn.lordicon.com/ysbeyrrl.json" trigger="loop" colors="primary:#00c297,secondary:#00c297" style="width:100px;height:100px" class="">
+                  <title id="optimized-icon1">f1 car</title>
                 </lord-icon>
               </div>
               <h4 class="text-xl md:text-2xl tracking-wide text-gray500 dark:text-slate-50 mt-2.5">Fast Load Speed</h4>
               <p class="text-gray300 dark:text-slate-300 mt-2.5">Improve user experience and reduce bounce rate. Your visitor will stay longer in your site and engage with your content</p>
             </article>
 
-            <article class="p-4 flex flex-col justify-center text-center md:w-1/3 rounded-2xl bg-slate-300 bg-opacity-10 shadow-md border border-solid border-gray-200 dark:bg-surfaceBlack dark:bg-opacity-50 dark:shadow-dark dark:hover:shadow-darker dark:border-none">
+            <article class="p-4 flex flex-col justify-center text-center md:w-1/3 rounded-2xl bg-slate-300 bg-opacity-10 shadow-md border border-solid border-gray-200 dark:bg-surfaceBlack dark:bg-opacity-50 dark:shadow-dark dark:hover:shadow-darker dark:border-none anim" data-anim="fade-left" data-delay=".2s">
               <div class="mx-auto">
-                <lord-icon src="https://cdn.lordicon.com/urhcgqxz.json" trigger="loop" delay="500" colors="primary:#00c297,secondary:#00c297" style="width:100px;height:100px">
+                <lord-icon aria-labelledby="optimized-icon2" src="https://cdn.lordicon.com/urhcgqxz.json" trigger="loop" delay="500" colors="primary:#00c297,secondary:#00c297" style="width:100px;height:100px">
+                  <title id="optimized-icon2">Ascending web analytics bar graph</title>
                 </lord-icon>
               </div>
               <h4 class="text-xl md:text-2xl tracking-wide text-gray500 dark:text-slate-50 mt-2.5">Increase Conversions</h4>
               <p class="text-gray300 dark:text-slate-300 mt-2.5">With smooth browsing experience. Your visitors will be more likely to make a purchase or fill out a form</p>
             </article>
 
-            <article class="p-4 flex flex-col justify-center text-center md:w-1/3 rounded-2xl bg-slate-300 bg-opacity-10 shadow-md border border-solid border-gray-200 dark:bg-surfaceBlack dark:bg-opacity-50 dark:shadow-dark dark:hover:shadow-darker dark:border-none">
+            <article class="p-4 flex flex-col justify-center text-center md:w-1/3 rounded-2xl bg-slate-300 bg-opacity-10 shadow-md border border-solid border-gray-200 dark:bg-surfaceBlack dark:bg-opacity-50 dark:shadow-dark dark:hover:shadow-darker dark:border-none anim" data-anim="fade-left" data-delay=".5s">
               <div class="mx-auto">
-                <lord-icon src="https://cdn.lordicon.com/hbbeevsh.json" trigger="loop" delay="500" colors="primary:#00c297,secondary:#00c297" style="width:100px;height:100px">
+                <lord-icon aria-labelledby="optimized-icon3" src="https://cdn.lordicon.com/hbbeevsh.json" trigger="loop" delay="500" colors="primary:#00c297,secondary:#00c297" style="width:100px;height:100px">
+                  <title id="optimized-icon3">Growing plant</title>
                 </lord-icon>
               </div>
 
@@ -157,34 +159,37 @@
         <!--- Creative Design --->
         <section class="py-24">
           <div class="flex flex-col justify-center mx-auto text-center">
-            <h2 class="mx-auto px-2 rounded-sm text-sm text-primary70 bg-primary99 dark:text-primaryDark text-semibold uppercase tracking-wider dark:bg-transparent md:text-base">Creative design</h2>
-            <h3 class="mx-auto tracking-widexs text-gray500 dark:text-slate-50 text-4xl md:text-5xl mt-4 max-w-2xl">Attract more. Retain More. Stand Out</h3>
-            <p class="mx-auto text-gray300 dark:text-slate-300 text-xl mt-5 max-w-lg">Transform your online presence with designs that captivate your audience</p>
+            <h2 class="mx-auto px-2 rounded-sm text-sm text-primary70 bg-primary99 dark:text-primaryDark text-semibold uppercase tracking-wider dark:bg-transparent md:text-base anim" data-anim="fade-bottom" data-delay="0s">Creative design</h2>
+            <h3 class="mx-auto tracking-widexs text-gray500 dark:text-slate-50 text-4xl md:text-5xl mt-4 max-w-2xl anim" data-anim="fade-bottom" data-delay="0s">Attract more. Retain More. Stand Out</h3>
+            <p class="mx-auto text-gray300 dark:text-slate-300 text-xl mt-5 max-w-lg anim" data-anim="fade-bottom" data-delay="0s">Transform your online presence with designs that captivate your audience</p>
           </div>
 
           <!--- Cards Row --->
           <section class="flex flex-col justify-between mt-20 gap-6 md:flex-row xl:gap-12">
-            <article class="p-4 flex flex-col justify-center text-center md:w-1/3 rounded-2xl bg-slate-300 bg-opacity-10 shadow-md border border-solid border-gray-200 dark:bg-surfaceBlack dark:bg-opacity-50 dark:shadow-dark dark:hover:shadow-darker dark:border-none">
+            <article class="p-4 flex flex-col justify-center text-center md:w-1/3 rounded-2xl bg-slate-300 bg-opacity-10 shadow-md border border-solid border-gray-200 dark:bg-surfaceBlack dark:bg-opacity-50 dark:shadow-dark dark:hover:shadow-darker dark:border-none anim" data-anim="fade-left" data-delay="0s">
               <div class="mx-auto">
-                <lord-icon src="https://cdn.lordicon.com/gkeohday.json" trigger="loop" delay="500" colors="primary:#00c297,secondary:#00c297" style="width:100px;height:100px">
+                <lord-icon aria-labelledby="design-icon1" src="https://cdn.lordicon.com/gkeohday.json" trigger="loop" delay="500" colors="primary:#00c297,secondary:#00c297" style="width:100px;height:100px">
+                  <title id="design-icon1">Artist palette</title>
                 </lord-icon>
               </div>
               <h4 class="text-xl md:text-2xl tracking-wide text-gray500 dark:text-slate-50 mt-2.5">Visually Appealing</h4>
               <p class="text-gray300 dark:text-slate-300 mt-2.5">Improve user engagement, capture the attention of visitors, and encourage them to stay longer</p>
             </article>
 
-            <article class="p-4 flex flex-col justify-center text-center md:w-1/3 rounded-2xl bg-slate-300 bg-opacity-10 shadow-md border border-solid border-gray-200 dark:bg-surfaceBlack dark:bg-opacity-50 dark:shadow-dark dark:hover:shadow-darker dark:border-none">
+            <article class="p-4 flex flex-col justify-center text-center md:w-1/3 rounded-2xl bg-slate-300 bg-opacity-10 shadow-md border border-solid border-gray-200 dark:bg-surfaceBlack dark:bg-opacity-50 dark:shadow-dark dark:hover:shadow-darker dark:border-none anim" data-anim="fade-left" data-delay=".2s">
               <div class="mx-auto">
-                <lord-icon src="https://cdn.lordicon.com/ngrsltok.json" trigger="loop" delay="500" colors="primary:#00c297,secondary:#00c297" style="width:100px;height:100px">
+                <lord-icon aria-labelledby="design-icon2" src="https://cdn.lordicon.com/ngrsltok.json" trigger="loop" delay="500" colors="primary:#00c297,secondary:#00c297" style="width:100px;height:100px">
+                  <title id="design-icon2">Navigation path</title>
                 </lord-icon>
               </div>
               <h4 class="text-xl md:text-2xl tracking-wide text-gray500 dark:text-slate-50 mt-2.5">Intuitive</h4>
               <p class="text-gray300 dark:text-slate-300 mt-2.5">Easy to navigate, clear call to action, tailored user interface elements, and user experience</p>
             </article>
 
-            <article class="p-4 flex flex-col justify-center text-center md:w-1/3 rounded-2xl bg-slate-300 bg-opacity-10 shadow-md border border-solid border-gray-200 dark:bg-surfaceBlack dark:bg-opacity-50 dark:shadow-dark dark:hover:shadow-darker dark:border-none">
+            <article class="p-4 flex flex-col justify-center text-center md:w-1/3 rounded-2xl bg-slate-300 bg-opacity-10 shadow-md border border-solid border-gray-200 dark:bg-surfaceBlack dark:bg-opacity-50 dark:shadow-dark dark:hover:shadow-darker dark:border-none anim" data-anim="fade-left" data-delay=".5s">
               <div class="mx-auto">
-                <lord-icon src="https://cdn.lordicon.com/ajnotayw.json" trigger="loop" delay="500" colors="primary:#00c297,secondary:#00c297" style="width:100px;height:100px">
+                <lord-icon aria-labelledby="design-icon3" src="https://cdn.lordicon.com/ajnotayw.json" trigger="loop" delay="500" colors="primary:#00c297,secondary:#00c297" style="width:100px;height:100px">
+                  <title id="design-icon3">Bestseller brand medal ribbon</title>
                 </lord-icon>
               </div>
               <h4 class="text-xl md:text-2xl tracking-wide text-gray500 dark:text-slate-50 mt-2.5">Brand Perception</h4>
@@ -196,33 +201,36 @@
         <!--- Inclusive & Private --->
         <section class="pt-24">
           <div class="flex flex-col justify-center text-center">
-            <h2 class="mx-auto px-2 rounded-sm text-sm text-primary70 bg-primary99 dark:text-primaryDark text-semibold uppercase tracking-wider dark:bg-transparent md:text-base">Inclusive &amp; Private</h2>
-            <h3 class="mx-auto tracking-widexs text-gray500 dark:text-slate-50 text-4xl md:text-5xl mt-4 max-w-2xl">From everywhere. For everyone</h3>
-            <p class="mx-auto text-gray300 dark:text-slate-300 text-xl mt-5 max-w-lg">Create a visually engaging experience for all users</p>
+            <h2 class="mx-auto px-2 rounded-sm text-sm text-primary70 bg-primary99 dark:text-primaryDark text-semibold uppercase tracking-wider dark:bg-transparent md:text-base anim" data-anim="fade-bottom" data-delay="0s">Inclusive &amp; Private</h2>
+            <h3 class="mx-auto tracking-widexs text-gray500 dark:text-slate-50 text-4xl md:text-5xl mt-4 max-w-2xl anim" data-anim="fade-bottom" data-delay="0s">From everywhere. For everyone</h3>
+            <p class="mx-auto text-gray300 dark:text-slate-300 text-xl mt-5 max-w-lg anim" data-anim="fade-bottom" data-delay="0s">Create a visually engaging experience for all users</p>
           </div>
           <!-- Card Row -->
           <section class="flex flex-col justify-between mt-20  gap-6 md:flex-row xl:gap-12">
-            <article class="p-4 flex flex-col justify-center text-center md:w-1/3 rounded-2xl bg-slate-300 bg-opacity-10 shadow-md border border-solid border-gray-200 dark:bg-surfaceBlack dark:bg-opacity-50 dark:shadow-dark dark:hover:shadow-darker dark:border-none">
+            <article class="p-4 flex flex-col justify-center text-center md:w-1/3 rounded-2xl bg-slate-300 bg-opacity-10 shadow-md border border-solid border-gray-200 dark:bg-surfaceBlack dark:bg-opacity-50 dark:shadow-dark dark:hover:shadow-darker dark:border-none anim" data-anim="fade-left" data-delay="0s">
               <div class="mx-auto">
-                <lord-icon src="https://cdn.lordicon.com/xqfngtiz.json" trigger="loop" delay="500" colors="primary:#00c297,secondary:#00c297" style="width:100px;height:100px">
+                <lord-icon aria-labelledby="inclusive-icon1" src="https://cdn.lordicon.com/xqfngtiz.json" trigger="loop" delay="500" colors="primary:#00c297,secondary:#00c297" style="width:100px;height:100px">
+                  <title id="inclusive-icon1">Product morphing between monitor screen, mobile device,and tablet</title>
                 </lord-icon>
               </div>
               <h4 class="text-center text-xl md:text-2xl tracking-wide text-gray500 dark:text-slate-50 mt-2.5">All Devices</h4>
               <p class="text-center text-gray300 dark:text-slate-300 mt-2.5">Adaptable to any screen. Deliver consistent experience on all devices to attract more visitors and traffic</p>
             </article>
 
-            <article class="p-4 flex flex-col justify-center text-center md:w-1/3 rounded-2xl bg-slate-300 bg-opacity-10 shadow-md border border-solid border-gray-200 dark:bg-surfaceBlack dark:bg-opacity-50 dark:shadow-dark dark:hover:shadow-darker dark:border-none">
+            <article class="p-4 flex flex-col justify-center text-center md:w-1/3 rounded-2xl bg-slate-300 bg-opacity-10 shadow-md border border-solid border-gray-200 dark:bg-surfaceBlack dark:bg-opacity-50 dark:shadow-dark dark:hover:shadow-darker dark:border-none anim" data-anim="fade-left" data-delay=".2s">
               <div class="mx-auto">
-                <lord-icon src="https://cdn.lordicon.com/avyixiri.json" trigger="loop" delay="500" colors="primary:#00c297,secondary:#00c297" style="width:100px;height:100px">
+                <lord-icon aria-labelledby="inclusive-icon2" src="https://cdn.lordicon.com/avyixiri.json" trigger="loop" delay="500" colors="primary:#00c297,secondary:#00c297" style="width:100px;height:100px">
+                  <title id="iclusive-icon2">A globe that represents everyone can use the product</title>
                 </lord-icon>
               </div>
               <h4 class="text-center text-xl md:text-2xl tracking-wide text-gray500 dark:text-slate-50 mt-2.5">Accessible</h4>
               <p class="text-center text-gray300 dark:text-gray-300 mt-2.5">Following accessibility guidelines to provide equal access and opportunity to people with diverse abilities</p>
             </article>
 
-            <article class="p-4 flex flex-col justify-center text-center md:w-1/3 rounded-2xl bg-slate-300 bg-opacity-10 shadow-md border border-solid border-gray-200 dark:bg-surfaceBlack dark:bg-opacity-50 dark:shadow-dark dark:hover:shadow-darker dark:border-none">
+            <article class="p-4 flex flex-col justify-center text-center md:w-1/3 rounded-2xl bg-slate-300 bg-opacity-10 shadow-md border border-solid border-gray-200 dark:bg-surfaceBlack dark:bg-opacity-50 dark:shadow-dark dark:hover:shadow-darker dark:border-none anim" data-anim="fade-left" data-delay=".5s">
               <div class="mx-auto">
-                <lord-icon src="https://cdn.lordicon.com/ncgnxmig.json" trigger="loop" delay="500" colors="primary:#00c297,secondary:#00c297" style="width:100px;height:100px">
+                <lord-icon aria-labelledby="inclusive-icon3" src="https://cdn.lordicon.com/ncgnxmig.json" trigger="loop" delay="500" colors="primary:#00c297,secondary:#00c297" style="width:100px;height:100px">
+                  <title id="inclusive-icon3">A shield and sword that represents security</title>
                 </lord-icon>
               </div>
               <h4 class="text-center text-xl md:text-2xl tracking-wide text-gray500 dark:text-slate-50 mt-2.5">Secure</h4>
@@ -241,13 +249,13 @@
     <section id="portfolio" class="bg-[#FBFCF8] dark:bg-darkBg py-32 pattern-grid-xl text-slate-200 dark:text-slate-800">
       <div class="container mx-auto max-w-7xl px-6 z-10 md:px-10">
         <div class="flex flex-col justify-center text-center">
-          <h2 class="mx-auto px-2 rounded-sm text-sm text-secondary20 bg-secondary90 text-semibold uppercase tracking-wider dark:bg-secondary20 dark:text-secondary90 md:text-base">Recent Work</h2>
-          <h3 class="mx-auto text-center tracking-widexs text-gray500 dark:text-slate-50 text-4xl md:text-5xl mt-4 max-w-2xl">Elevate your brand</h3>
-          <p class="mx-auto text-center text-gray300 dark:text-slate-300 text-xl mt-5 max-w-lg">Browse my projects and get inspired</p>
+          <h2 class="mx-auto px-2 rounded-sm text-sm text-secondary20 bg-secondary90 text-semibold uppercase tracking-wider dark:bg-secondary20 dark:text-secondary90 md:text-base anim" data-anim="fade-bottom" data-delay="0s">Recent Work</h2>
+          <h3 class="mx-auto text-center tracking-widexs text-gray500 dark:text-slate-50 text-4xl md:text-5xl mt-4 max-w-2xl anim" data-anim="fade-bottom" data-delay="0s">Elevate your brand</h3>
+          <p class="mx-auto text-center text-gray300 dark:text-slate-300 text-xl mt-5 max-w-lg anim" data-anim="fade-bottom" data-delay="0s">Browse my projects and get inspired</p>
         </div>
 
         <!-- Portfolio Carrousel -->
-        <div class="mt-24 relative">
+        <div class="mt-24 relative ">
           <div class="swiper">
             <div class="swiper-wrapper mb-16">
 
@@ -415,9 +423,9 @@
     <section id="process" class="py-32 bg-[#FFFEFC] dark:bg-darkBg">
       <div class="container mx-auto max-w-7xl px-6 md:px-10">
         <div class="flex flex-col justify-center text-center">
-          <h2 class="mx-auto px-2 rounded-sm text-sm text-primary70 bg-primary99 dark:text-primaryDark text-semibold uppercase tracking-wider dark:bg-transparent md:text-base">How it works</h2>
-          <h3 class="mx-auto text-center tracking-widexs text-gray500 dark:text-slate-50 text-4xl md:text-5xl mt-4 max-w-2xl">From concept to launch</h3>
-          <p class="mx-auto text-center text-gray300 dark:text-slate-300 text-xl mt-5 max-w-lg">Discover our streamlined process</p>
+          <h2 class="mx-auto px-2 rounded-sm text-sm text-primary70 bg-primary99 dark:text-primaryDark text-semibold uppercase tracking-wider dark:bg-transparent md:text-base anim" data-anim="fade-bottom" data-delay="0s">How it works</h2>
+          <h3 class="mx-auto text-center tracking-widexs text-gray500 dark:text-slate-50 text-4xl md:text-5xl mt-4 max-w-2xl anim" data-anim="fade-bottom" data-delay="0s">From concept to launch</h3>
+          <p class="mx-auto text-center text-gray300 dark:text-slate-300 text-xl mt-5 max-w-lg anim" data-anim="fade-bottom" data-delay="0s">Discover our streamlined process</p>
         </div>
 
 
@@ -425,38 +433,38 @@
           <!-- Research -->
           <section class="py-14 md:pt-24 md:pb-20 md:20 min-h-[500px]">
             <section class="flex flex-col items-center justify-center gap-8 md:gap-12 md:flex-row ">
-              <section class="md:order-2 md:flex-1">
-                <img src="./assets/steps-images/Goals.svg" alt="Testing project on multiple devices" class="w-full" loading="lazy" width="660" height="554">
+              <section class="md:order-2 md:flex-1 anim" data-anim="fade-right" data-delay="0s">
+                <img src="./assets/steps-images/Goals.svg" alt="A man doing a presentation of goals to achieve in a project" class="w-full" loading="lazy" width="660" height="554">
               </section>
               <section class="flex-1 ">
-                <p class="mb-4 text-xs md:text-sm text-primary70 dark:text-primaryDark uppercase tracking-widest ">
+                <p class="mb-4 text-xs md:text-sm text-primary70 dark:text-primaryDark uppercase tracking-widest anim" data-anim="fade-bottom" data-delay=".5s">
                   Research
                 </p>
-                <h5 class="mb-8 text-gray500 text-2xl tracking-wide dark:text-slate-50 md:text-4xl">Setting goals and purpose</h5>
-                <p class="mb-6 text-gray300 dark:text-slate-300">Unlocking the potential of your business and creating a plan to help you reach your goals</p>
+                <h5 class="mb-8 text-gray500 text-2xl tracking-wide dark:text-slate-50 md:text-4xl anim" data-anim="fade-bottom" data-delay=".5s">Setting goals and purpose</h5>
+                <p class="mb-6 text-gray300 dark:text-slate-300 anim" data-anim="fade-bottom" data-delay=".5s">Unlocking the potential of your business and creating a plan to help you reach your goals</p>
 
                 <ul role="list" class=" flex flex-col gap-2 items justify-center">
-                  <li class="flex gap-3 items-center ">
+                  <li class="flex gap-3 items-center anim" data-anim="fade-bottom" data-delay=".5s">
                     <i class="ph ph-check-circle text-primary70  dark:text-primaryDark"></i>
                     <p class="text-gray300 dark:text-slate-300">Outline the project's needs and objectives</p>
                   </li>
-                  <li class="flex gap-3 items-center">
+                  <li class="flex gap-3 items-center anim" data-anim="fade-bottom" data-delay=".5s">
                     <i class="ph ph-check-circle text-primary70 dark:text-primaryDark"></i>
                     <p class="text-gray300 dark:text-slate-300">Define the purpose and set achievable goals</p>
                   </li>
-                  <li class="flex gap-3 items-center">
+                  <li class="flex gap-3 items-center anim" data-anim="fade-bottom" data-delay=".5s">
                     <i class="ph ph-check-circle text-primary70 dark:text-primaryDark"></i>
                     <p class="text-gray300 dark:text-slate-300">Examine competitors and identify target audience</p>
                   </li>
-                  <li class="flex gap-3 items-center">
+                  <li class="flex gap-3 items-center anim" data-anim="fade-bottom" data-delay=".5s">
                     <i class="ph ph-check-circle text-primary70 dark:text-primaryDark"></i>
                     <p class="text-gray300 dark:text-slate-300">Define technical requirements and desired features</p>
                   </li>
-                  <li class="flex gap-3 items-center">
+                  <li class="flex gap-3 items-center anim" data-anim="fade-bottom" data-delay=".5s">
                     <i class="ph ph-check-circle text-primary70 dark:text-primaryDark"></i>
                     <p class="text-gray300 dark:text-slate-300">Establish communication channels</p>
                   </li>
-                  <li class="flex gap-3 items-center">
+                  <li class="flex gap-3 items-center anim" data-anim="fade-bottom" data-delay=".5s">
                     <i class="ph ph-check-circle text-primary70 dark:text-primaryDark"></i>
                     <p class="text-gray300 dark:text-slate-300">Define the scope, timeline, budget and expected outcomes of the project</p>
                   </li>
@@ -468,38 +476,38 @@
           <!-- Design -->
           <section class="py-14 md:py-20 md:20 min-h-[500px]">
             <section class="flex flex-col items-center justify-center gap-8 md:gap-12 md:flex-row ">
-              <section class="mx-auto testing-image-box md:flex-1">
-                <img src="./assets/steps-images/design-image.svg" alt="Testing project on multiple devices" class="w-full mx-auto md:w-11/12" loading="lazy" width="677" height="391">
+              <section class="mx-auto testing-image-box md:flex-1 anim" data-anim="fade-left" data-delay="0s">
+                <img src="./assets/steps-images/design-image.svg" alt="Wireframe and prototype illustration" class="w-full mx-auto md:w-11/12" loading="lazy" width="677" height="391">
               </section>
               <section class="flex-1 ">
-                <p class="mb-4 text-xs md:text-sm text-primary70 dark:text-primaryDark uppercase tracking-widest ">
+                <p class="mb-4 text-xs md:text-sm text-primary70 dark:text-primaryDark uppercase tracking-widest anim" data-anim="fade-bottom" data-delay=".5s">
                   Design
                 </p>
-                <h5 class="mb-8 text-gray500 text-2xl tracking-wide dark:text-slate-50 md:text-4xl">Measure twice, cut once</h5>
-                <p class="mb-6 text-gray300 dark:text-slate-300">Crafting the visual and functional components, collaborating with you to reflect your brand identity</p>
+                <h5 class="mb-8 text-gray500 text-2xl tracking-wide dark:text-slate-50 md:text-4xl anim" data-anim="fade-bottom" data-delay=".5s">Measure twice, cut once</h5>
+                <p class="mb-6 text-gray300 dark:text-slate-300 anim" data-anim="fade-bottom" data-delay=".5s">Crafting the visual and functional components, collaborating with you to reflect your brand identity</p>
 
                 <ul role="list" class=" flex flex-col gap-2  items justify-center">
-                  <li class="flex gap-3 items-center ">
+                  <li class="flex gap-3 items-center anim" data-anim="fade-bottom" data-delay=".5s">
                     <i class="ph ph-check-circle text-primary70  dark:text-primaryDark"></i>
                     <p class="text-gray300 dark:text-slate-300">Wireframe design</p>
                   </li>
-                  <li class="flex gap-3 items-center">
+                  <li class="flex gap-3 items-center anim" data-anim="fade-bottom" data-delay=".5s">
                     <i class="ph ph-check-circle text-primary70 dark:text-primaryDark"></i>
                     <p class="text-gray300 dark:text-slate-300">Design system creation</p>
                   </li>
-                  <li class="flex gap-3 items-center">
+                  <li class="flex gap-3 items-center anim" data-anim="fade-bottom" data-delay=".5s">
                     <i class="ph ph-check-circle text-primary70 dark:text-primaryDark"></i>
                     <p class="text-gray300 dark:text-slate-300">User-friendly interface </p>
                   </li>
-                  <li class="flex gap-3 items-center">
+                  <li class="flex gap-3 items-center anim" data-anim="fade-bottom" data-delay=".5s">
                     <i class="ph ph-check-circle text-primary70 dark:text-primaryDark"></i>
                     <p class="text-gray300 dark:text-slate-300">Prototypes to test ideas and concepts quickly and efficiently</p>
                   </li>
-                  <li class="flex gap-3 items-center">
+                  <li class="flex gap-3 items-center anim" data-anim="fade-bottom" data-delay=".5s">
                     <i class="ph ph-check-circle text-primary70 dark:text-primaryDark"></i>
                     <p class="text-gray300 dark:text-slate-300">Visual content creation</p>
                   </li>
-                  <li class="flex gap-3 items-center">
+                  <li class="flex gap-3 items-center anim" data-anim="fade-bottom" data-delay=".5s">
                     <i class="ph ph-check-circle text-primary70 dark:text-primaryDark"></i>
                     <p class="text-gray300 dark:text-slate-300">Review and feedback</p>
                   </li>
@@ -511,51 +519,51 @@
           <!-- Development -->
           <section class="py-14 md:py-20 md:20 min-h-[500px]">
             <section class="flex flex-col items-center justify-center gap-8 md:gap-12 md:flex-row ">
-              <section class="md:order-2 md:flex-1">
-                <img src="./assets/steps-images/coding-image.svg" alt="Testing project on multiple devices" class="w-full" loading="lazy" width="822" height="391">
+              <section class="md:order-2 md:flex-1 anim" data-anim="fade-right" data-delay="0s">
+                <img src="./assets/steps-images/coding-image.svg" alt="Laptop with code editor on screen" class="w-full" loading="lazy" width="822" height="391">
               </section>
               <section class="flex-1 ">
-                <p class="mb-4 text-xs md:text-sm text-primary70 dark:text-primaryDark uppercase tracking-widest ">
+                <p class="mb-4 text-xs md:text-sm text-primary70 dark:text-primaryDark uppercase tracking-widest anim" data-anim="fade-bottom" data-delay=".5s">
                   Development
                 </p>
-                <h5 class="mb-8 text-gray500 text-2xl tracking-wide dark:text-slate-50 md:text-4xl">Coffee. Code. Repeat</h5>
-                <p class="mb-6 text-gray300 dark:text-slate-300">Now your project is taking shape! You'll be kept up-to-date with regular progress reports</p>
+                <h5 class="mb-8 text-gray500 text-2xl tracking-wide dark:text-slate-50 md:text-4xl anim" data-anim="fade-bottom" data-delay=".5s">Coffee. Code. Repeat</h5>
+                <p class="mb-6 text-gray300 dark:text-slate-300 anim" data-anim="fade-bottom" data-delay=".5s">Now your project is taking shape! You'll be kept up-to-date with regular progress reports</p>
 
                 <ul role="list" class=" flex flex-col items justify-center">
                   <div class="flex flex-col gap-2 md:gap-8 md:flex-row">
                     <div class="flex flex-col gap-2">
-                      <li class="flex gap-3 items-center ">
+                      <li class="flex gap-3 items-center anim" data-anim="fade-bottom" data-delay=".5s">
                         <i class="ph ph-check-circle text-primary70  dark:text-primaryDark"></i>
                         <p class="text-gray300 dark:text-slate-300">Front-end development</p>
                       </li>
-                      <li class="flex gap-3 items-center ">
+                      <li class="flex gap-3 items-center anim" data-anim="fade-bottom" data-delay=".5s">
                         <i class="ph ph-check-circle text-primary70  dark:text-primaryDark"></i>
                         <p class="text-gray300 dark:text-slate-300">Back-end development</p>
                       </li>
-                      <li class="flex gap-3 items-center">
+                      <li class="flex gap-3 items-center anim" data-anim="fade-bottom" data-delay=".5s">
                         <i class="ph ph-check-circle text-primary70 dark:text-primaryDark"></i>
                         <p class="text-gray300 dark:text-slate-300">Performance optimization</p>
                       </li>
-                      <li class="flex gap-3 items-center">
+                      <li class="flex gap-3 items-center anim" data-anim="fade-bottom" data-delay=".5s">
                         <i class="ph ph-check-circle text-primary70 dark:text-primaryDark"></i>
                         <p class="text-gray300 dark:text-slate-300">Minify code</p>
                       </li>
 
                     </div>
                     <div class="flex flex-col gap-2">
-                      <li class="flex gap-3 items-center">
+                      <li class="flex gap-3 items-center anim" data-anim="fade-bottom" data-delay=".5s">
                         <i class="ph ph-check-circle text-primary70 dark:text-primaryDark"></i>
                         <p class="text-gray300 dark:text-slate-300">Compressing media</p>
                       </li>
-                      <li class="flex gap-3 items-center">
+                      <li class="flex gap-3 items-center anim" data-anim="fade-bottom" data-delay=".5s">
                         <i class="ph ph-check-circle text-primary70 dark:text-primaryDark"></i>
                         <p class="text-gray300 dark:text-slate-300">Version control implementation</p>
                       </li>
-                      <li class="flex gap-3 items-center">
+                      <li class="flex gap-3 items-center anim" data-anim="fade-bottom" data-delay=".5s">
                         <i class="ph ph-check-circle text-primary70 dark:text-primaryDark"></i>
                         <p class="text-gray300 dark:text-slate-300">Social media integration</p>
                       </li>
-                      <li class="flex gap-3 items-center">
+                      <li class="flex gap-3 items-center anim" data-anim="fade-bottom" data-delay=".5s">
                         <i class="ph ph-check-circle text-primary70 dark:text-primaryDark"></i>
                         <p class="text-gray300 dark:text-slate-300">Analytics tools installation </p>
                       </li>
@@ -573,38 +581,38 @@
           <!-- Testing -->
           <section class="py-14 md:py-20 md:20 min-h-[500px]">
             <section class="flex flex-col items-center justify-center gap-8 md:gap-12 md:flex-row ">
-              <section class="md:flex-1 ">
-                <img src="./assets/steps-images/testing-image.svg" alt="Testing project on multiple devices" class="w-full mx-auto md:w-11/12" loading="lazy" width="677" height="392">
+              <section class="md:flex-1  anim" data-anim="fade-left" data-delay="0s">
+                <img src="./assets/steps-images/testing-image.svg" alt="Succesful test illustration" class="w-full mx-auto md:w-11/12" loading="lazy" width="677" height="392">
               </section>
               <section class="flex-1 ">
-                <p class="mb-4 text-xs md:text-sm text-primary70 dark:text-primaryDark uppercase tracking-widest ">
+                <p class="mb-4 text-xs md:text-sm text-primary70 dark:text-primaryDark uppercase tracking-widest anim" data-anim="fade-bottom" data-delay=".5s">
                   Testing
                 </p>
-                <h5 class="mb-8 text-gray500 text-2xl tracking-wide dark:text-slate-50 md:text-4xl">Perform consistently</h5>
-                <p class="mb-6 text-gray300 dark:text-slate-300">It's time to guarantee that your project performs as expected</p>
+                <h5 class="mb-8 text-gray500 text-2xl tracking-wide dark:text-slate-50 md:text-4xl anim" data-anim="fade-bottom" data-delay=".5s">Perform consistently</h5>
+                <p class="mb-6 text-gray300 dark:text-slate-300 anim" data-anim="fade-bottom" data-delay=".5s">It's time to guarantee that your project performs as expected</p>
 
                 <ul role="list" class=" flex flex-col gap-2 items justify-center">
-                  <li class="flex gap-3 items-center ">
+                  <li class="flex gap-3 items-center anim" data-anim="fade-bottom" data-delay=".5s">
                     <i class="ph ph-check-circle text-primary70  dark:text-primaryDark"></i>
                     <p class="text-gray300 dark:text-slate-300">Features and functionality</p>
                   </li>
-                  <li class="flex gap-3 items-center">
+                  <li class="flex gap-3 items-center anim" data-anim="fade-bottom" data-delay=".5s">
                     <i class="ph ph-check-circle text-primary70 dark:text-primaryDark"></i>
                     <p class="text-gray300 dark:text-slate-300">Responsiveness</p>
                   </li>
-                  <li class="flex gap-3 items-center">
+                  <li class="flex gap-3 items-center anim" data-anim="fade-bottom" data-delay=".5s">
                     <i class="ph ph-check-circle text-primary70 dark:text-primaryDark"></i>
                     <p class="text-gray300 dark:text-slate-300">Spelling and grammar</p>
                   </li>
-                  <li class="flex gap-3 items-center">
+                  <li class="flex gap-3 items-center anim" data-anim="fade-bottom" data-delay=".5s">
                     <i class="ph ph-check-circle text-primary70 dark:text-primaryDark"></i>
                     <p class="text-gray300 dark:text-slate-300">Broken links and design inconsistences</p>
                   </li>
-                  <li class="flex gap-3 items-center">
+                  <li class="flex gap-3 items-center anim" data-anim="fade-bottom" data-delay=".5s">
                     <i class="ph ph-check-circle text-primary70 dark:text-primaryDark"></i>
                     <p class="text-gray300 dark:text-slate-300">Cross browser compatibility</p>
                   </li>
-                  <li class="flex gap-3 items-center">
+                  <li class="flex gap-3 items-center anim" data-anim="fade-bottom" data-delay=".5s">
                     <i class="ph ph-check-circle text-primary70 dark:text-primaryDark"></i>
                     <p class="text-gray300 dark:text-slate-300">Load times</p>
                   </li>
@@ -616,30 +624,30 @@
           <!-- Deployment-->
           <section class="py-14 md:py-20 md:20 min-h-[500px]">
             <section class="flex flex-col items-center justify-center gap-8 md:gap-12 md:flex-row ">
-              <section class="md:order-2 md:flex-1">
-                <img src="./assets/steps-images/deployment-image.svg" alt="Testing project on multiple devices" class="w-full" loading="lazy" width="784" height="391">
+              <section class="md:order-2 md:flex-1 anim" data-anim="fade-right" data-delay="0s">
+                <img src="./assets/steps-images/deployment-image.svg" alt="Computer sending project to a server" class="w-full" loading="lazy" width="784" height="391">
               </section>
               <section class="flex-1 ">
-                <p class="mb-4 text-xs md:text-sm text-primary70 dark:text-primaryDark uppercase tracking-widest ">
+                <p class="mb-4 text-xs md:text-sm text-primary70 dark:text-primaryDark uppercase tracking-widest anim" data-anim="fade-bottom" data-delay=".5s">
                   Deployment
                 </p>
-                <h5 class="mb-8 text-gray500 text-2xl tracking-wide dark:text-slate-50 md:text-4xl">Booster. Ignition. Liftoff</h5>
-                <p class="mb-6 text-gray300 dark:text-slate-300">Once all testing is complete and you're satisfied with the results, it's time to launch and bring your website or app to life!</p>
+                <h5 class="mb-8 text-gray500 text-2xl tracking-wide dark:text-slate-50 md:text-4xl anim" data-anim="fade-bottom" data-delay=".5s">Booster. Ignition. Liftoff</h5>
+                <p class="mb-6 text-gray300 dark:text-slate-300 anim" data-anim="fade-bottom" data-delay=".5s">Once all testing is complete and you're satisfied with the results, it's time to launch and bring your website or app to life!</p>
 
                 <ul role="list" class=" flex flex-col items justify-center gap-2">
-                  <li class="flex gap-3 items-center ">
+                  <li class="flex gap-3 items-center anim" data-anim="fade-bottom" data-delay=".5s">
                     <i class="ph ph-check-circle text-primary70  dark:text-primaryDark"></i>
                     <p class="text-gray300 dark:text-slate-300">Select the perfect domain name</p>
                   </li>
-                  <li class="flex gap-3 items-center">
+                  <li class="flex gap-3 items-center anim" data-anim="fade-bottom" data-delay=".5s">
                     <i class="ph ph-check-circle text-primary70 dark:text-primaryDark"></i>
                     <p class="text-gray300 dark:text-slate-300"> SSL certification installation</p>
                   </li>
-                  <li class="flex gap-3 items-center">
+                  <li class="flex gap-3 items-center anim" data-anim="fade-bottom" data-delay=".5s">
                     <i class="ph ph-check-circle text-primary70 dark:text-primaryDark"></i>
                     <p class="text-gray300 dark:text-slate-300">Publish to the web!</p>
                   </li>
-                  <li class="flex gap-3 items-center">
+                  <li class="flex gap-3 items-center anim" data-anim="fade-bottom" data-delay=".5s">
                     <i class="ph ph-check-circle text-primary70 dark:text-primaryDark"></i>
                     <p class="text-gray300 dark:text-slate-300">Run tests to ensure everything is working as planned</p>
                   </li>
@@ -651,34 +659,35 @@
           <!-- Maintenance -->
           <section class="py-14 md:py-20 md:20 min-h-[500px]">
             <section class="flex flex-col items-center justify-center gap-8 md:gap-12 md:flex-row ">
-              <section class="testing-image-box md:flex-1">
-                <img src="./assets/steps-images/maintenance-image.svg" alt="Testing project on multiple devices" class="w-full" loading="lazy" width="677" height="391">
+              <section class="testing-image-box md:flex-1 anim" data-anim="fade-left" data-delay="0s">
+                <img src="./assets/steps-images/maintenance-image.svg" alt="A man monitoring performance and traffic on a project" class="w-full" loading="lazy" width="677" height="391">
               </section>
+
               <section class="flex-1 ">
-                <p class="mb-4 text-xs md:text-sm text-primary70 dark:text-primaryDark uppercase tracking-widest ">
+                <p class="mb-4 text-xs md:text-sm text-primary70 dark:text-primaryDark uppercase tracking-widest anim" data-anim="fade-bottom" data-delay=".5s">
                   Maintenance
                 </p>
-                <h5 class="mb-8 text-gray500 text-2xl tracking-wide dark:text-slate-50 md:text-4xl">Keep iterating</h5>
-                <p class="mb-6 text-gray300 dark:text-slate-300">Now that your project is live, let's make sure it stays secure, functional, and up-to-date!</p>
+                <h5 class="mb-8 text-gray500 text-2xl tracking-wide dark:text-slate-50 md:text-4xl anim" data-anim="fade-bottom" data-delay=".5s">Keep iterating</h5>
+                <p class="mb-6 text-gray300 dark:text-slate-300 anim" data-anim="fade-bottom" data-delay=".5s">Now that your project is live, let's make sure it stays secure, functional, and up-to-date!</p>
 
                 <ul role="list" class=" flex flex-col gap-2 items justify-center">
-                  <li class="flex gap-3 items-center ">
+                  <li class="flex gap-3 items-center anim" data-anim="fade-bottom" data-delay=".5s">
                     <i class="ph ph-check-circle text-primary70  dark:text-primaryDark"></i>
                     <p class="text-gray300 dark:text-slate-300">Monitor performance and traffic </p>
                   </li>
-                  <li class="flex gap-3 items-center">
+                  <li class="flex gap-3 items-center anim" data-anim="fade-bottom" data-delay=".5s">
                     <i class="ph ph-check-circle text-primary70 dark:text-primaryDark"></i>
                     <p class="text-gray300 dark:text-slate-300">Provide the latest improvements for optimal performance</p>
                   </li>
-                  <li class="flex gap-3 items-center">
+                  <li class="flex gap-3 items-center anim" data-anim="fade-bottom" data-delay=".5s">
                     <i class="ph ph-check-circle text-primary70 dark:text-primaryDark"></i>
                     <p class="text-gray300 dark:text-slate-300">Security verification</p>
                   </li>
-                  <li class="flex gap-3 items-center">
+                  <li class="flex gap-3 items-center anim" data-anim="fade-bottom" data-delay=".5s">
                     <i class="ph ph-check-circle text-primary70 dark:text-primaryDark"></i>
                     <p class="text-gray300 dark:text-slate-300">Content refreshment</p>
                   </li>
-                  <li class="flex gap-3 items-center">
+                  <li class="flex gap-3 items-center anim" data-anim="fade-bottom" data-delay=".5s">
                     <i class="ph ph-check-circle text-primary70 dark:text-primaryDark"></i>
                     <p class="text-gray300 dark:text-slate-300">Ensure regular backups to protect your data</p>
                   </li>
@@ -693,7 +702,7 @@
 
     <!--------------------- CTA Section --------------------->
     <section id="contact" class="py-32 dark:to-darkBg">
-      <div class="container mx-auto max-w-7xl px-6 rounded-2xl flex flex-col items-center justify-between">
+      <div class="container mx-auto max-w-7xl px-6 rounded-2xl flex flex-col items-center justify-between anim" data-anim="fade-bottom" data-delay="0s">
         <h6 class="text-4xl text-center text-secondary100 tracking-widexs md:text-6xl mb-12">Ready to bring your idea to life?</h6>
         <p class="text-secondary90 text-center md:text-xl max-w-lg mb-8">Enter your email for a step-by-step guide to getting started or contact me directly</p>
         <form action="" method="POST" class="flex w-full md:w-[448px] rounded-2xl bg-primary100 pl-6 pr-2 py-2 shadow-md mb-8">
@@ -703,21 +712,24 @@
         <ul role="list" class="flex justify-between gap-8" aria-label="Contact links">
           <li>
             <a href="" class="block bg-secondary  p-3 rounded-full duration-200 ease-in hover:bg-secondary10 hover:duration-[250ms] hover:ease-out hover:shadow-md  hover:-translate-y-[1px]  active:shadow-none active:translate-y-0 active:bg-opacity-90">
-              <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="fill-secondary90" viewBox="0 0 256 256">
+              <svg aria-labelledby="contact-icon1" xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="fill-secondary90" viewBox="0 0 256 256">
+                <title id="contact-icon1">Whatsapp icon</title>
                 <path d="M152.58,145.23l23,11.48A24,24,0,0,1,152,176a72.08,72.08,0,0,1-72-72A24,24,0,0,1,99.29,80.46l11.48,23L101,118a8,8,0,0,0-.73,7.51,56.47,56.47,0,0,0,30.15,30.15A8,8,0,0,0,138,155ZM232,128A104,104,0,0,1,79.12,219.82L45.07,231.17a16,16,0,0,1-20.24-20.24l11.35-34.05A104,104,0,1,1,232,128Zm-40,24a8,8,0,0,0-4.42-7.16l-32-16a8,8,0,0,0-8,.5l-14.69,9.8a40.55,40.55,0,0,1-16-16l9.8-14.69a8,8,0,0,0,.5-8l-16-32A8,8,0,0,0,104,64a40,40,0,0,0-40,40,88.1,88.1,0,0,0,88,88A40,40,0,0,0,192,152Z"></path>
               </svg>
               <span class="sr-only">Whatsapp</span>
             </a>
           </li>
           <li> <a href="" class="block bg-secondary p-3 rounded-full duration-200 ease-in hover:bg-secondary10 hover:duration-[250ms] hover:ease-out hover:shadow-md active:shadow-none  hover:-translate-y-[1px] active:translate-y-0 active:bg-opacity-90">
-              <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="fill-secondary90" viewBox="0 0 256 256">
+              <svg aria-labelledby="contact-icon2" xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="fill-secondary90" viewBox="0 0 256 256">
+                <title id="contact-icon2">Discord icon</title>
                 <path d="M247.51,174.39,218,58a16.08,16.08,0,0,0-13-11.88l-36.06-5.92a16.22,16.22,0,0,0-18.26,11.88l-.21.85a4,4,0,0,0,3.27,4.93,155.62,155.62,0,0,1,24.41,5.62,8.2,8.2,0,0,1,5.62,9.7,8,8,0,0,1-10.19,5.64,155.4,155.4,0,0,0-90.8-.1,8.22,8.22,0,0,1-10.28-4.81,8,8,0,0,1,5.08-10.33,156.85,156.85,0,0,1,24.72-5.72,4,4,0,0,0,3.27-4.93l-.21-.85A16.21,16.21,0,0,0,87.08,40.21L51,46.13A16.08,16.08,0,0,0,38,58L8.49,174.39a15.94,15.94,0,0,0,9.06,18.51l67,29.71a16.17,16.17,0,0,0,21.71-9.1l3.49-9.45a4,4,0,0,0-3.27-5.35,158.13,158.13,0,0,1-28.63-6.2,8.2,8.2,0,0,1-5.61-9.67,8,8,0,0,1,10.2-5.66,155.59,155.59,0,0,0,91.12,0,8,8,0,0,1,10.19,5.65,8.19,8.19,0,0,1-5.61,9.68,157.84,157.84,0,0,1-28.62,6.2,4,4,0,0,0-3.27,5.35l3.49,9.45a16.18,16.18,0,0,0,21.71,9.1l67-29.71A15.94,15.94,0,0,0,247.51,174.39ZM92,152a12,12,0,1,1,12-12A12,12,0,0,1,92,152Zm72,0a12,12,0,1,1,12-12A12,12,0,0,1,164,152Z"></path>
               </svg>
               <span class="sr-only">Discord</span>
             </a>
           </li>
           <li><a href="#" class="block bg-secondary p-3 rounded-full duration-200 ease-in hover:bg-secondary10 hover:duration-[250ms] hover:ease-out hover:shadow-md active:shadow-none  hover:-translate-y-[1px] active:translate-y-0 active:bg-opacity-90">
-              <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="fill-secondary90" viewBox="0 0 256 256">
+              <svg aria-labelledby="contact-icon3" xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="fill-secondary90" viewBox="0 0 256 256">
+                <title id="contact-icon3">Email icon</title>
                 <path d="M224,48H32a8,8,0,0,0-8,8V192a16,16,0,0,0,16,16H216a16,16,0,0,0,16-16V56A8,8,0,0,0,224,48ZM98.71,128,40,181.81V74.19Zm11.84,10.85,12,11.05a8,8,0,0,0,10.82,0l12-11.05,58,53.15H52.57ZM157.29,128,216,74.18V181.82Z"></path>
               </svg>
               <span class="sr-only">Email</span>
@@ -734,31 +746,32 @@
     <section id="about" class="py-32 bg-[#FBFCF8 dark:bg-darkBg pattern-grid-xl text-slate-200 dark:text-slate-800">
       <section class="container mx-auto max-w-7xl px-6 md:px-10">
         <div class="flex flex-col justify-center text-center">
-          <h2 class="mx-auto px-2 rounded-sm text-sm text-primary70 bg-primary99 dark:text-primaryDark text-semibold uppercase tracking-wider dark:bg-transparent md:text-base">About Me</h2>
-          <h3 class="mx-auto text-center tracking-widexs text-gray500 dark:text-slate-50 text-4xl md:text-5xl mt-4 max-w-2xl">From Blueprint to Coding</h3>
-          <p class="mx-auto text-center text-gray300 dark:text-slate-300 text-xl mt-5 max-w-lg">A Journey of Passion and Perseverance</p>
+          <h2 class="mx-auto px-2 rounded-sm text-sm text-primary70 bg-primary99 dark:text-primaryDark text-semibold uppercase tracking-wider dark:bg-transparent md:text-base anim" data-anim="fade-bottom" data-delay="0s">About Me</h2>
+          <h3 class="mx-auto text-center tracking-widexs text-gray500 dark:text-slate-50 text-4xl md:text-5xl mt-4 max-w-2xl anim" data-anim="fade-bottom" data-delay="0s">From Blueprint to Coding</h3>
+          <p class="mx-auto text-center text-gray300 dark:text-slate-300 text-xl mt-5 max-w-lg anim" data-anim="fade-bottom" data-delay="0s">A Journey of Passion and Perseverance</p>
         </div>
 
 
         <section class="py-24 flex flex-col items-center gap-8 lg:flex-row lg:gap-0">
-          <section class="flex justify-center items-center md:w-1/2">
+          <section class="flex justify-center items-center md:w-1/2 anim" data-anim="fade-left" data-delay=".5s">
             <div class="w-64 h-64 md:w-96 md:h-96">
-              <img src="/build/assets/about-image.png" alt="Patricio Mena photo" class="w-full" loading="lazy" width="384" height="384">
+              <img src="/build/assets/about-image.png" alt="Patricio Mena Software Engineer photo" class="w-full" loading="lazy" width="384" height="384">
             </div>
           </section>
 
-          <section class="flex flex-col gap-6 max-w-lg md:w-1/2">
-            <p class="text-center md:text-left text-gray300 dark:text-slate-300">I was a civil engineer who worked as an operation manager overseeing installations and coordinating with sales team and customers, ensuring every project was completed on time and on budget. It was a challenging and rewarding job, but there was something missing. I’ve always loved the idea of creating new things and figuring out how things worked. That’s why when the pandemic hit I decided to take a leap of faith and pursue a new career in programming</p>
-            <p class="text-center md:text-left text-gray300 dark:text-slate-300">At first, it was a daunting prospect but I was determined to succeed. Every day I spent hours studying HTML, CSS and JavaScript, trying out new coding challenges, and building small projects. With each new project I gained confidence and expertise. Soon enough I was building more complex projects</p>
-            <p class="text-center md:text-left text-gray300 dark:text-slate-300">Today, I’m using my engineering background and programming skills to help companies thrive in the new digital landscape. I’m proud of my journey and where it has taken me, from civil to software engineer. I’m excited to see where my skills and expertise will take me in the future.</p>
+          <section class="flex flex-col gap-6 max-w-lg md:w-1/2 ">
+            <p class="text-center md:text-left text-gray300 dark:text-slate-300 anim" data-anim="fade-bottom" data-delay="0s">I was a civil engineer who worked as an operation manager overseeing installations and coordinating with sales team and customers, ensuring every project was completed on time and on budget. It was a challenging and rewarding job, but there was something missing. I’ve always loved the idea of creating new things and figuring out how things worked. That’s why when the pandemic hit I decided to take a leap of faith and pursue a new career in programming</p>
+            <p class="text-center md:text-left text-gray300 dark:text-slate-300 anim" data-anim="fade-bottom" data-delay="0s">At first, it was a daunting prospect but I was determined to succeed. Every day I spent hours studying HTML, CSS and JavaScript, trying out new coding challenges, and building small projects. With each new project I gained confidence and expertise. Soon enough I was building more complex projects</p>
+            <p class="text-center md:text-left text-gray300 dark:text-slate-300 anim" data-anim="fade-bottom" data-delay="0s">Today, I’m using my engineering background and programming skills to help companies thrive in the new digital landscape. I’m proud of my journey and where it has taken me, from civil to software engineer. I’m excited to see where my skills and expertise will take me in the future.</p>
           </section>
         </section>
 
-        <div>
+        <div class="anim" data-anim="fade-bottom" data-delay="0s">
           <ul role="list" class="flex justify-center items-center gap-6" aria-label="Social media links">
             <li>
               <a href="https://github.com/PatricioMena" class="block text-center bg-primary70 p-3 rounded-full dark:bg-primary90 duration-200 ease-in hover:shadow-md hover:bg-opacity-80 hover:duration-[250ms] hover:ease-out hover:-translate-y-[1px] active:translate-y-0 active:bg-opacity-90 active:shadow-none">
-                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" class="fill-primary100 dark:fill-primary10 w-8 h-8" viewBox="0 0 256 256">
+                <svg aria-labelledby="about-social-icon1" xmlns="http://www.w3.org/2000/svg" width="32" height="32" class="fill-primary100 dark:fill-primary10 w-8 h-8" viewBox="0 0 256 256">
+                  <title id="about-social-icon1">Github icon</title>
                   <path d="M208.31,75.68A59.78,59.78,0,0,0,202.93,28,8,8,0,0,0,196,24a59.75,59.75,0,0,0-48,24H124A59.75,59.75,0,0,0,76,24a8,8,0,0,0-6.93,4,59.78,59.78,0,0,0-5.38,47.68A58.14,58.14,0,0,0,56,104v8a56.06,56.06,0,0,0,48.44,55.47A39.8,39.8,0,0,0,96,192v8H72a24,24,0,0,1-24-24A40,40,0,0,0,8,136a8,8,0,0,0,0,16,24,24,0,0,1,24,24,40,40,0,0,0,40,40H96v16a8,8,0,0,0,16,0V192a24,24,0,0,1,48,0v40a8,8,0,0,0,16,0V192a39.8,39.8,0,0,0-8.44-24.53A56.06,56.06,0,0,0,216,112v-8A58.14,58.14,0,0,0,208.31,75.68ZM200,112a40,40,0,0,1-40,40H112a40,40,0,0,1-40-40v-8a41.74,41.74,0,0,1,6.9-22.48A8,8,0,0,0,80,73.83a43.81,43.81,0,0,1,.79-33.58,43.88,43.88,0,0,1,32.32,20.06A8,8,0,0,0,119.82,64h32.35a8,8,0,0,0,6.74-3.69,43.87,43.87,0,0,1,32.32-20.06A43.81,43.81,0,0,1,192,73.83a8.09,8.09,0,0,0,1,7.65A41.72,41.72,0,0,1,200,104Z"></path>
                 </svg>
                 <span class="sr-only">Github</span>
@@ -767,7 +780,8 @@
 
             <li>
               <a href="https://www.linkedin.com/in/patricio-mena-horn" class="block text-center bg-primary70 p-3 rounded-full dark:bg-primary90 duration-200 ease-in hover:shadow-md hover:bg-opacity-80 hover:duration-[250ms] hover:ease-out hover:-translate-y-[1px] active:translate-y-0 active:bg-opacity-90 active:shadow-none">
-                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" class="fill-primary100 dark:fill-primary10 w-8 h-8" viewBox="0 0 256 256">
+                <svg aria-labelledby="about-social-icon2" xmlns="http://www.w3.org/2000/svg" width="32" height="32" class="fill-primary100 dark:fill-primary10 w-8 h-8" viewBox="0 0 256 256">
+                  <title id="about-social-icon2">Linkedin icon</title>
                   <path d="M216,24H40A16,16,0,0,0,24,40V216a16,16,0,0,0,16,16H216a16,16,0,0,0,16-16V40A16,16,0,0,0,216,24Zm0,192H40V40H216V216ZM96,112v64a8,8,0,0,1-16,0V112a8,8,0,0,1,16,0Zm88,28v36a8,8,0,0,1-16,0V140a20,20,0,0,0-40,0v36a8,8,0,0,1-16,0V112a8,8,0,0,1,15.79-1.78A36,36,0,0,1,184,140ZM100,84A12,12,0,1,1,88,72,12,12,0,0,1,100,84Z"></path>
                 </svg>
                 <span class="sr-only">Linkedin</span>
@@ -776,7 +790,8 @@
 
             <li>
               <a href="#" class="block text-center bg-primary70 p-3 rounded-full dark:bg-primary90 duration-200 ease-in hover:shadow-md hover:bg-opacity-80 hover:duration-[250ms] hover:ease-out hover:-translate-y-[1px] active:translate-y-0 active:bg-opacity-90 active:shadow-none">
-                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" class="fill-primary100 dark:fill-primary10 w-8 h-8" viewBox="0 0 256 256">
+                <svg aria-labelledby="about-social-icon3" xmlns="http://www.w3.org/2000/svg" width="32" height="32" class="fill-primary100 dark:fill-primary10 w-8 h-8" viewBox="0 0 256 256">
+                  <title id="about-social-icon3">Twitter</title>
                   <path d="M247.39,68.94A8,8,0,0,0,240,64H209.57A48.66,48.66,0,0,0,168.1,40a46.91,46.91,0,0,0-33.75,13.7A47.9,47.9,0,0,0,120,88v6.09C79.74,83.47,46.81,50.72,46.46,50.37a8,8,0,0,0-13.65,4.92c-4.31,47.79,9.57,79.77,22,98.18a110.93,110.93,0,0,0,21.88,24.2c-15.23,17.53-39.21,26.74-39.47,26.84a8,8,0,0,0-3.85,11.93c.75,1.12,3.75,5.05,11.08,8.72C53.51,229.7,65.48,232,80,232c70.67,0,129.72-54.42,135.75-124.44l29.91-29.9A8,8,0,0,0,247.39,68.94Zm-45,29.41a8,8,0,0,0-2.32,5.14C196,166.58,143.28,216,80,216c-10.56,0-18-1.4-23.22-3.08,11.51-6.25,27.56-17,37.88-32.48A8,8,0,0,0,92,169.08c-.47-.27-43.91-26.34-44-96,16,13,45.25,33.17,78.67,38.79A8,8,0,0,0,136,104V88a32,32,0,0,1,9.6-22.92A30.94,30.94,0,0,1,167.9,56c12.66.16,24.49,7.88,29.44,19.21A8,8,0,0,0,204.67,80h16Z"></path>
                 </svg>
                 <span class="sr-only">Twitter</span>
@@ -794,7 +809,7 @@
         <section class="flex flex-col">
           <nav class="flex flex-col items-center justify-between gap-8 md:flex-row">
             <a href="#">
-              <img src="/build/assets/logos/Dark-logo.svg" alt="Patricio Mena homepage" class="fill-white dark:fill-primaryDark">
+              <img src="/build/assets/logos/Dark-logo.svg" alt="Patricio Mena logo" class="fill-white dark:fill-primaryDark">
             </a>
             <ul class="flex items-center text-sm tracking-wide text-whiteOnSecondary gap-6">
               <li><a href="#benefits" class="duration-200 ease-in hover:text-primary70 hover:duration-[250ms] hover:ease-out">Benefits</a></li>
@@ -813,7 +828,8 @@
             <ul role="list" class="flex items-center gap-4 md:order-2" aria-label="Social media links">
               <li>
                 <a href="https://github.com/PatricioMena" class="block hover:fill-primary-90">
-                  <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" class="fill-whiteOnPrimary h-6 w-6 duration-200 ease-in hover:fill-primary70 hover:duration-[250ms] hover:ease-out" viewBox="0 0 256 256">
+                  <svg arialabelledby="footer-social-icon1" xmlns="http://www.w3.org/2000/svg" width="32" height="32" class="fill-whiteOnPrimary h-6 w-6 duration-200 ease-in hover:fill-primary70 hover:duration-[250ms] hover:ease-out" viewBox="0 0 256 256">
+                    <title id="footer-social-icon1">Github icon</title>
                     <path d="M208.31,75.68A59.78,59.78,0,0,0,202.93,28,8,8,0,0,0,196,24a59.75,59.75,0,0,0-48,24H124A59.75,59.75,0,0,0,76,24a8,8,0,0,0-6.93,4,59.78,59.78,0,0,0-5.38,47.68A58.14,58.14,0,0,0,56,104v8a56.06,56.06,0,0,0,48.44,55.47A39.8,39.8,0,0,0,96,192v8H72a24,24,0,0,1-24-24A40,40,0,0,0,8,136a8,8,0,0,0,0,16,24,24,0,0,1,24,24,40,40,0,0,0,40,40H96v16a8,8,0,0,0,16,0V192a24,24,0,0,1,48,0v40a8,8,0,0,0,16,0V192a39.8,39.8,0,0,0-8.44-24.53A56.06,56.06,0,0,0,216,112v-8A58.14,58.14,0,0,0,208.31,75.68ZM200,112a40,40,0,0,1-40,40H112a40,40,0,0,1-40-40v-8a41.74,41.74,0,0,1,6.9-22.48A8,8,0,0,0,80,73.83a43.81,43.81,0,0,1,.79-33.58,43.88,43.88,0,0,1,32.32,20.06A8,8,0,0,0,119.82,64h32.35a8,8,0,0,0,6.74-3.69,43.87,43.87,0,0,1,32.32-20.06A43.81,43.81,0,0,1,192,73.83a8.09,8.09,0,0,0,1,7.65A41.72,41.72,0,0,1,200,104Z"></path>
                   </svg>
                   <span class="sr-only">Github</span>
@@ -821,7 +837,8 @@
               </li>
               <li>
                 <a href="https://www.linkedin.com/in/patricio-mena-horn" class="block hover:fill-primary-90">
-                  <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" class="fill-whiteOnPrimary h-6 w-6 duration-200 ease-in hover:fill-primary70 hover:dark:fill-primary-90 hover:duration-[250ms] hover:ease-out" viewBox="0 0 256 256">
+                  <svg arialabelledby="footer-social-icon2" xmlns="http://www.w3.org/2000/svg" width="32" height="32" class="fill-whiteOnPrimary h-6 w-6 duration-200 ease-in hover:fill-primary70 hover:dark:fill-primary-90 hover:duration-[250ms] hover:ease-out" viewBox="0 0 256 256">
+                    <title id="footer-social-icon2">Linkedin icon</title>
                     <path d="M216,24H40A16,16,0,0,0,24,40V216a16,16,0,0,0,16,16H216a16,16,0,0,0,16-16V40A16,16,0,0,0,216,24Zm0,192H40V40H216V216ZM96,112v64a8,8,0,0,1-16,0V112a8,8,0,0,1,16,0Zm88,28v36a8,8,0,0,1-16,0V140a20,20,0,0,0-40,0v36a8,8,0,0,1-16,0V112a8,8,0,0,1,15.79-1.78A36,36,0,0,1,184,140ZM100,84A12,12,0,1,1,88,72,12,12,0,0,1,100,84Z"></path>
                   </svg>
                   <span class="sr-only">Linkedin</span>
@@ -829,7 +846,8 @@
               </li>
               <li>
                 <a href="https://www.linkedin.com/in/patricio-mena-horn" class="block hover:fill-primary-90">
-                  <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" class="fill-whiteOnPrimary h-6 w-6 duration-200 ease-in hover:fill-primary70 hover:dark:fill-primary-90 hover:duration-[250ms] hover:ease-out" viewBox="0 0 256 256">
+                  <svg arialabelledby="footer-social-icon3" xmlns="http://www.w3.org/2000/svg" width="32" height="32" class="fill-whiteOnPrimary h-6 w-6 duration-200 ease-in hover:fill-primary70 hover:dark:fill-primary-90 hover:duration-[250ms] hover:ease-out" viewBox="0 0 256 256">
+                    <title id="footer-social-icon3">Twitter icon</title>
                     <path d="M247.39,68.94A8,8,0,0,0,240,64H209.57A48.66,48.66,0,0,0,168.1,40a46.91,46.91,0,0,0-33.75,13.7A47.9,47.9,0,0,0,120,88v6.09C79.74,83.47,46.81,50.72,46.46,50.37a8,8,0,0,0-13.65,4.92c-4.31,47.79,9.57,79.77,22,98.18a110.93,110.93,0,0,0,21.88,24.2c-15.23,17.53-39.21,26.74-39.47,26.84a8,8,0,0,0-3.85,11.93c.75,1.12,3.75,5.05,11.08,8.72C53.51,229.7,65.48,232,80,232c70.67,0,129.72-54.42,135.75-124.44l29.91-29.9A8,8,0,0,0,247.39,68.94Zm-45,29.41a8,8,0,0,0-2.32,5.14C196,166.58,143.28,216,80,216c-10.56,0-18-1.4-23.22-3.08,11.51-6.25,27.56-17,37.88-32.48A8,8,0,0,0,92,169.08c-.47-.27-43.91-26.34-44-96,16,13,45.25,33.17,78.67,38.79A8,8,0,0,0,136,104V88a32,32,0,0,1,9.6-22.92A30.94,30.94,0,0,1,167.9,56c12.66.16,24.49,7.88,29.44,19.21A8,8,0,0,0,204.67,80h16Z"></path>
                   </svg>
                   <span class="sr-only">Twitter</span>

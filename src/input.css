@@ -118,7 +118,54 @@
     top: 1.25rem;
     left: 1.5rem;
   }
+
+  .anim {
+    opacity: 0;
+  }
+
+  @keyframes fade-bottom {
+    from {
+      transform: translateY(15px);
+      opacity: 0;
+    }
+
+    to {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+
+  @keyframes fade-left {
+    from {
+      transform: translateX(-15px);
+      opacity: 0;
+    }
+
+    to {
+      transform: translateX(0);
+      opacity: 1;
+    }
+  }
+
+  @keyframes fade-right {
+    from {
+      transform: translateX(15px);
+      opacity: 0;
+    }
+
+    to {
+      transform: translateX(0);
+      opacity: 1;
+    }
+  }
+
+  @media (prefers-reduced-motion) {
+    .hidden {
+      transition: none;
+    }
+  }
 }
+
 @layer utilities {
   .toggle-btn {
     @apply [&>div::before]:translate-y-0 [&>div::before]:rotate-45 [&>div::after]:translate-y-0 [&>div::after]:-rotate-45 [&>div]:bg-transparent;

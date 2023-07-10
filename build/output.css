@@ -530,6 +530,52 @@ nav[open]::before {
   left: 1.5rem;
 }
 
+.anim {
+  opacity: 0;
+}
+
+@keyframes fade-bottom {
+  from {
+    transform: translateY(15px);
+    opacity: 0;
+  }
+
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes fade-left {
+  from {
+    transform: translateX(-15px);
+    opacity: 0;
+  }
+
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes fade-right {
+  from {
+    transform: translateX(15px);
+    opacity: 0;
+  }
+
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@media (prefers-reduced-motion) {
+  .hidden {
+    transition: none;
+  }
+}
+
 *, ::before, ::after {
   --tw-border-spacing-x: 0;
   --tw-border-spacing-y: 0;
@@ -1482,6 +1528,10 @@ nav[open]::before {
   transition-timing-function: cubic-bezier(0.4, 0, 1, 1);
 }
 
+.ease-in-out {
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
 .ease-linear {
   transition-timing-function: linear;
 }
@@ -1507,6 +1557,19 @@ nav[open]::before {
   position: sticky;
   /* border-bottom: 1px solid hsl(0, 0%, 34%); */
   box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+}
+
+@media (min-width: 768px) {
+  @media (prefers-reduced-motion) {
+    .md\:hidden {
+      transition: none;
+    }
+
+    .md\:before\:hidden::before {
+      content: var(--tw-content);
+      transition: none;
+    }
+  }
 }
 
 .before\:absolute::before {
@@ -2141,10 +2204,6 @@ nav[open]::before {
 
   .lg\:gap-0 {
     gap: 0px;
-  }
-
-  .lg\:pt-36 {
-    padding-top: 9rem;
   }
 }
 

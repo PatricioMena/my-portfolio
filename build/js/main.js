@@ -1,4 +1,4 @@
-const initApp = () => {
+function initApp() {
   // const hamburgerBtn = document.getElementById('hamburger-button');
   // const mobileMenu = document.getElementById('mobile-menu');
   // const toggleMenu = () => {
@@ -27,7 +27,7 @@ const initApp = () => {
   };
 
   mobileBtn.addEventListener('click', toggleMenu);
-};
+}
 
 document.addEventListener('DOMContentLoaded', initApp);
 
@@ -123,3 +123,23 @@ requestAnimationFrame(moveGallery);
 //   autoplay: true,
 //   path: 'https://cdn.lordicon.com/ysbeyrrl.json'
 // });
+
+///////////////////////////////////////////////
+// Scroll Animations //
+//////////////////////////////////////////////
+const scrollObserver = new IntersectionObserver(
+  (entries) => {
+    entries.forEach((entry) => {
+      if (!entry.isIntersecting) return;
+      entry.target.style.animation = `${entry.target.dataset.anim} 500ms ${entry.target.dataset.delay} forwards ease-in-out`;
+      observer.unobserve(entry.target);
+    });
+  },
+  {
+    threshold: 0.5
+  }
+);
+
+const hidenSection = document.querySelectorAll('.anim');
+// Telling the observer what to observe
+hidenSection.forEach((el) => scrollObserver.observe(el));
