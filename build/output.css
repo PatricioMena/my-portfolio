@@ -722,6 +722,10 @@ nav[open]::before {
   position: relative;
 }
 
+.sticky {
+  position: sticky;
+}
+
 .-left-5 {
   left: -1.25rem;
 }
@@ -762,11 +766,6 @@ nav[open]::before {
 .my-6 {
   margin-top: 1.5rem;
   margin-bottom: 1.5rem;
-}
-
-.my-auto {
-  margin-top: auto;
-  margin-bottom: auto;
 }
 
 .mb-0 {
@@ -861,6 +860,10 @@ nav[open]::before {
   height: 3rem;
 }
 
+.h-16 {
+  height: 4rem;
+}
+
 .h-3 {
   height: 0.75rem;
 }
@@ -879,18 +882,6 @@ nav[open]::before {
 
 .h-full {
   height: 100%;
-}
-
-.h-4 {
-  height: 1rem;
-}
-
-.h-16 {
-  height: 4rem;
-}
-
-.min-h-\[4rem\] {
-  min-height: 4rem;
 }
 
 .min-h-\[500px\] {
@@ -1524,6 +1515,10 @@ nav[open]::before {
   transition-duration: 500ms;
 }
 
+.duration-\[400ms\] {
+  transition-duration: 400ms;
+}
+
 .ease-in {
   transition-timing-function: cubic-bezier(0.4, 0, 1, 1);
 }
@@ -1554,9 +1549,10 @@ nav[open]::before {
 
 .sticky-nav {
   background: hsl(210, 20%, 98%);
-  position: fixed;
+  /* background: red; */
+  /* position: sticky; */
   /* border-bottom: 1px solid hsl(0, 0%, 34%); */
-  box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+  box-shadow: 0 1px 12px hsla(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
 }
 
 @media (min-width: 768px) {
@@ -2103,6 +2099,11 @@ nav[open]::before {
 
   .md\:gap-8 {
     gap: 2rem;
+  }
+
+  .md\:bg-\[\#FBFCF8\] {
+    --tw-bg-opacity: 1;
+    background-color: rgb(251 252 248 / var(--tw-bg-opacity));
   }
 
   .md\:p-0 {

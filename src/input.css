@@ -4,9 +4,10 @@
 
 .sticky-nav {
   background: hsl(210, 20%, 98%);
-  position: fixed;
+  /* background: red; */
+  /* position: sticky; */
   /* border-bottom: 1px solid hsl(0, 0%, 34%); */
-  box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+  box-shadow: 0 1px 12px hsla(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
 }
 
 @layer base {

@@ -92,7 +92,7 @@ const stickyNav = (entries) => {
 };
 
 const observer = new IntersectionObserver(stickyNav, {
-  threshold: 0.5
+  threshold: 0.75
 });
 
 observer.observe(hero);
