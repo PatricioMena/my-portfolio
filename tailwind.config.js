@@ -24,6 +24,7 @@ module.exports = {
       light: '0px 0px 0px 1px inset rgba(0,0,0, 0.2)',
       dark: '0px 0px 0px 1px inset rgba(64,74,68, 0.5)',
       darker: '0px 0px 0px 1px inset rgba(64,74,68, 0.8)',
+      sm: '0 1px 2px 0 rgb(0 0 0 / 0.05);',
       md: '0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1)',
       xl: '0 25px 50px -12px rgb(0 0 0 / 0.25)',
       none: '0 0 #0000'

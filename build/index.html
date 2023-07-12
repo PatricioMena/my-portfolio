@@ -35,65 +35,66 @@
 </head>
 <body class="text-base md:text-lg overflow-x-hidden">
   <!--------------------- Navbar --------------------->
-  <header class="fixed top-0 left-0 w-full  bg-[#FBFCF8] dark:bg-darkBg z-[1000] duration-[400ms] ease-out">
-    <div class="container max-w-7xl mx-auto flex justify-between items-center px-6 md:px-10 h-16 py-4">
+  <header>
+    <div class="h-16">
+      <nav id="navbar" class="w-full bg-[#FBFCF8] dark:bg-darkBg h-16 z-[1000]">
+        <div class="flex justify-between items-center mx-auto container max-w-7xl px-6 p-4 md:px-10">
+          <button id="mobile-nav-toggle" class="block z-[9999] bg-transparent border-none w-6 h-6 md:hidden" aria-controls="main-navigation" aria-expanded="false"><span class="sr-only">Menu</span></button>
 
-      <button id="mobile-nav-toggle" class="block z-[9999] bg-transparent border-none w-6 h-6 md:hidden" aria-controls="main-navigation" aria-expanded="false"><span class="sr-only">Menu</span></button>
-      <a href="#" class="" title="Patricio Mena homepage">
-        <label class="hidden sr-only">Patricio Mena</label>
-        <svg width="121" height="34" viewBox="0 0 121 34" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <g clip-path="url(#clip0_605_5019)">
-            <path d="M6.51809 3.32554C4.47335 5.55556 4.47335 5.55556 4.47335 9.44512C4.47335 13.2828 4.47335 13.3347 2.52598 15.3572L0.578613 17.3798V21.5805V25.7813L2.67203 27.9594L4.76546 30.1376H10.5589H16.3523L18.4457 27.9594L20.5391 25.7813V21.5805V17.3798L18.5918 15.3572C16.6444 13.3347 16.6444 13.2828 16.6444 9.49698C16.6444 5.86672 16.547 5.55556 14.8918 3.37741C13.2365 1.25111 12.9444 1.09553 10.851 1.09553C8.80625 1.09553 8.36809 1.30297 6.51809 3.32554ZM13.4799 3.68857L14.8918 5.24439H13.2852H11.6299L11.922 7.57813C12.2141 9.75628 11.776 10.6379 11.0457 9.39326C10.8023 8.97837 10.5102 9.03023 10.0234 9.44512C9.43914 9.96373 9.34177 9.65256 9.34177 7.62999C9.34177 5.29626 9.29309 5.24439 7.78388 5.24439H6.22598L7.63782 3.68857C8.61151 2.59949 9.48782 2.13275 10.5589 2.13275C11.6299 2.13275 12.5062 2.59949 13.4799 3.68857ZM8.36809 7.78557C8.36809 9.13395 8.22203 9.28954 7.05361 9.18581C5.98256 9.08209 5.64177 8.71907 5.5444 7.62999C5.39835 6.43719 5.5444 6.28161 6.85888 6.28161C8.22203 6.28161 8.36809 6.43719 8.36809 7.78557ZM15.6707 7.78557C15.6707 9.13395 15.476 9.3414 14.4536 9.23767C13.772 9.18581 13.2365 8.97837 13.2365 8.71907C13.2365 8.51162 13.2365 7.88929 13.2365 7.31882C13.2365 6.54091 13.5773 6.28161 14.4536 6.28161C15.476 6.28161 15.6707 6.54091 15.6707 7.78557ZM7.34572 11.4158C5.88519 12.7642 5.44703 12.7642 5.44703 11.5196C5.44703 10.7935 5.83651 10.4305 6.81019 10.3268C8.61151 10.0674 8.70888 10.223 7.34572 11.4158ZM15.6707 11.5714C15.6707 12.5568 15.622 12.5568 14.2102 11.4677C13.4312 10.8454 12.7497 10.2749 12.7497 10.223C12.7497 10.1712 13.4312 10.1712 14.2102 10.3268C15.2812 10.4823 15.6707 10.8454 15.6707 11.5714ZM12.7497 11.7789C14.9405 13.3347 14.8918 13.5421 12.3602 14.3719C10.9484 14.7868 10.072 14.7349 8.46546 14.1644L6.32335 13.4384L8.46546 11.9344C9.63388 11.1047 10.6076 10.4305 10.7049 10.4305C10.7536 10.4305 11.6786 11.0528 12.7497 11.7789ZM13.3826 15.2017C17.2286 13.6458 17.6181 14.2163 17.6181 21.5805C17.6181 29.1004 17.6181 29.1004 10.8023 29.1004C3.88914 29.1004 3.88914 29.0485 3.88914 21.3212C3.88914 14.0089 4.08388 13.7496 7.88125 15.2017L10.7049 16.2907L13.3826 15.2017ZM2.52598 21.6843C2.52598 24.1217 2.37993 26.0406 2.23388 25.885C2.08782 25.6775 1.94177 23.9661 1.94177 21.9954C1.94177 17.6391 1.99046 17.1724 2.28256 17.1724C2.42861 17.1724 2.52598 19.1949 2.52598 21.6843ZM19.5655 21.5805C19.5655 23.7068 19.3707 25.5738 19.0786 25.7294C18.7865 25.9368 18.5918 24.4329 18.5918 21.5805C18.5918 18.7282 18.7865 17.2242 19.0786 17.4317C19.3707 17.5873 19.5655 19.4543 19.5655 21.5805Z" fill="#00C297" class="dark:fill-primary90" />
-            <path d="M57.2471 10.6897C57.0523 11.1564 57.1497 11.7788 57.4418 12.0899C58.2207 12.9197 59.73 12.3492 59.73 11.2083C59.73 9.8599 57.6852 9.44502 57.2471 10.6897Z" fill="#121330" class="dark:fill-gray-50" />
-            <path d="M68.9311 10.6897C68.7364 11.1564 68.8338 11.7788 69.1259 12.0899C69.9048 12.9197 71.414 12.3492 71.414 11.2083C71.414 9.8599 69.3693 9.44502 68.9311 10.6897Z" fill="#121330" class="dark:fill-gray-50" />
-            <path d="M45.4167 14.683C45.514 19.1949 46.3417 21.1656 48.3864 21.7361C50.2851 22.3066 50.7232 22.0991 50.7232 20.7508C50.7232 20.1284 50.3824 19.7654 49.8469 19.7654C48.6298 19.7654 47.8022 18.78 47.8022 17.3279C47.8022 16.3944 48.0943 16.1351 49.0193 16.1351C49.993 16.1351 50.2364 15.8758 50.2364 14.7868C50.2364 13.594 50.0903 13.4902 49.0193 13.7495C47.9482 14.0607 47.8022 13.9051 47.8022 12.7642C47.8022 11.727 47.5588 11.4677 46.5364 11.4677C45.368 11.4677 45.3193 11.5714 45.4167 14.683Z" fill="#121330" class="dark:fill-gray-50" />
-            <path d="M82.3682 16.6538V21.8398H83.5853C84.8024 21.8398 84.8024 21.788 84.5103 18.8838C84.1208 15.7203 84.705 15.4091 85.7761 18.2096C86.6037 20.3359 88.405 20.3359 89.4274 18.2614C90.5958 15.7721 90.9853 15.9796 90.7418 18.9875C90.5471 21.788 90.5471 21.8398 91.8129 21.8398H93.0787V16.6538V11.4677H91.8616C90.8392 11.4677 90.4011 11.9863 89.33 14.32C88.5997 15.8759 87.8695 17.1724 87.7234 17.1724C87.5774 17.1724 86.8471 15.8759 86.0195 14.32C84.9484 12.1419 84.3155 11.4677 83.4879 11.4677C82.4168 11.4677 82.3682 11.6233 82.3682 16.6538Z" fill="#121330" class="dark:fill-gray-50" />
-            <path d="M28.0853 14.8386C26.9655 15.9796 26.8682 16.4982 26.8682 20.8026V25.4701H28.134C29.3024 25.4701 29.3997 25.3145 29.205 23.4475L29.059 21.4768L31.055 21.7361C32.759 21.9436 33.1971 21.788 34.0734 20.5433C36.3129 17.5354 34.5603 13.5421 31.0063 13.5421C29.7892 13.5421 28.8642 13.957 28.0853 14.8386ZM32.1261 16.0833C32.5155 16.3426 32.7103 17.1724 32.6129 18.0021C32.4668 19.2987 32.2721 19.5061 31.0063 19.5061C29.7405 19.5061 29.5458 19.2987 29.3997 18.0021C29.2537 16.6019 29.8866 15.6165 31.0063 15.6165C31.2984 15.6165 31.7853 15.824 32.1261 16.0833Z" fill="#121330" class="dark:fill-gray-50" />
-            <path d="M37.1892 14.7349C35.7773 16.2907 35.7286 19.3505 37.0918 20.8026C38.1628 21.9435 40.9378 22.2028 41.8628 21.2175C42.301 20.7507 42.447 20.7507 42.447 21.2175C42.447 21.5805 42.9826 21.8398 43.6155 21.8398C44.8326 21.8398 44.7839 21.9954 44.151 17.5353C43.7615 14.8386 42.3984 13.5421 40.1102 13.5421C38.7957 13.5421 37.9194 13.9051 37.1892 14.7349ZM41.6681 16.7574C42.7878 18.7281 39.9155 20.7507 38.5523 18.9874C38.0655 18.3651 38.0655 17.8984 38.5036 16.8612C39.1365 15.3572 40.7918 15.3053 41.6681 16.7574Z" fill="#121330" class="dark:fill-gray-50" />
-            <path d="M52.9628 14.6312C51.8431 15.5647 51.697 16.0833 51.697 18.7801C51.697 21.6843 51.7457 21.8398 52.9141 21.8398C54.0825 21.8398 54.1312 21.6843 54.1312 19.0394C54.1312 16.4982 54.2286 16.2389 55.3483 15.9277C56.1273 15.7203 56.5654 15.2535 56.5654 14.5793C56.5654 13.1791 54.6668 13.231 52.9628 14.6312Z" fill="#121330" class="dark:fill-gray-50" />
-            <path d="M57.4417 17.691C57.2957 21.8398 57.2957 21.8398 58.5128 21.8398C59.7299 21.8398 59.7299 21.788 59.7299 17.691C59.7299 13.8014 59.6812 13.5421 58.6588 13.5421C57.6851 13.5421 57.5878 13.8533 57.4417 17.691Z" fill="#121330" class="dark:fill-gray-50" />
-            <path d="M62.1642 14.8386C60.655 16.3945 60.6063 18.6245 61.9695 20.4915C62.7971 21.6324 63.3327 21.8398 65.3774 21.8398C67.6169 21.8398 67.7629 21.7361 67.7629 20.5433C67.7629 19.4024 67.6169 19.2468 66.5945 19.558C64.7445 20.0247 63.3813 19.3505 63.3813 18.0021C63.3813 16.2907 64.4037 15.5647 66.2537 15.9277C67.6169 16.2389 67.7629 16.1352 67.7629 14.8905C67.7629 13.6458 67.6169 13.5421 65.5721 13.5421C63.8682 13.5421 63.0405 13.8533 62.1642 14.8386Z" fill="#121330" class="dark:fill-gray-50" />
-            <path d="M68.98 17.691C68.98 21.788 68.98 21.8398 70.1971 21.8398C71.4142 21.8398 71.4142 21.788 71.4142 17.691C71.4142 13.594 71.4142 13.5421 70.1971 13.5421C68.98 13.5421 68.98 13.594 68.98 17.691Z" fill="#121330" class="dark:fill-gray-50" />
-            <path d="M73.8483 14.8386C72.3391 16.3944 72.2904 18.6244 73.6536 20.4914C75.0654 22.4103 78.4733 22.4103 79.8852 20.4914C82.0759 17.5353 80.2746 13.5421 76.7694 13.5421C75.5523 13.5421 74.6273 13.9569 73.8483 14.8386ZM77.8891 16.0832C78.2786 16.3425 78.4733 17.1723 78.3759 18.0021C78.2299 19.2986 78.0352 19.5061 76.7694 19.5061C75.6009 19.5061 75.2602 19.2467 75.1628 18.3133C74.8707 16.2907 76.3799 15.046 77.8891 16.0832Z" fill="#121330" class="dark:fill-gray-50" />
-            <path d="M95.6103 14.7349C94.1985 16.2907 94.1498 19.3505 95.5129 20.8026C96.2432 21.5805 97.1195 21.8398 98.9208 21.8398C101.16 21.8398 101.355 21.7361 101.355 20.647C101.355 19.558 101.16 19.4024 99.359 19.4542C98.2392 19.5061 97.2169 19.2468 97.1195 18.9356C97.0221 18.5726 97.4603 18.4689 98.3853 18.6245C100.284 18.8838 101.842 17.9503 101.842 16.4463C101.842 13.594 97.6063 12.453 95.6103 14.7349ZM99.5537 16.3945C99.4077 17.0687 96.9735 17.4317 96.9735 16.7575C96.9735 15.9796 97.6063 15.5647 98.6774 15.7203C99.2129 15.824 99.6024 16.0833 99.5537 16.3945Z" fill="#121330" class="dark:fill-gray-50" />
-            <path d="M104.373 14.7349C103.546 15.6684 103.302 16.6019 103.302 18.8838C103.302 21.7361 103.351 21.8398 104.568 21.8398C105.736 21.8398 105.834 21.6843 105.639 19.8691C105.298 17.1205 105.98 15.5128 107.343 15.7203C108.268 15.8759 108.414 16.2389 108.56 18.8319C108.706 21.6324 108.804 21.8398 109.875 21.8398C110.994 21.8398 111.092 21.6843 111.092 19.0394C111.092 15.3572 109.826 13.5421 107.246 13.5421C105.98 13.5421 105.104 13.9051 104.373 14.7349Z" fill="#121330" class="dark:fill-gray-50" />
-            <path d="M113.867 14.1644C111.871 15.7202 112.163 20.647 114.256 21.5286C115.522 22.0472 117.177 21.8916 117.859 21.1656C118.394 20.647 118.54 20.647 118.735 21.1656C118.881 21.5286 119.465 21.8398 120.05 21.8398C121.267 21.8398 121.218 21.9435 120.585 17.5353C120.196 14.8385 118.833 13.542 116.544 13.542C115.522 13.542 114.305 13.8532 113.867 14.1644ZM117.908 16.3944C118.638 17.3279 118.394 18.7281 117.323 19.4542C115.619 20.5951 113.721 18.0539 114.987 16.3944C115.765 15.409 117.129 15.409 117.908 16.3944Z" fill="#121330" class="dark:fill-gray-50" />
-            <path d="M1.06543 33.5085C1.06543 34.1308 1.84438 34.2864 4.96017 34.2864C8.07596 34.2864 8.8549 34.1308 8.8549 33.5085C8.8549 32.8861 8.07596 32.7306 4.96017 32.7306C1.84438 32.7306 1.06543 32.8861 1.06543 33.5085Z" fill="#00C297" class="dark:fill-primary90" />
-            <path d="M12.2629 33.5085C12.2629 34.1308 13.0419 34.2864 16.1577 34.2864C19.2735 34.2864 20.0524 34.1308 20.0524 33.5085C20.0524 32.8861 19.2735 32.7306 16.1577 32.7306C13.0419 32.7306 12.2629 32.8861 12.2629 33.5085Z" fill="#00C297" class="dark:fill-primary90" />
-          </g>
-          <defs>
-            <clippath id="clip0_605_5019">
-              <rect width="121" height="33" fill="white" transform="translate(0 0.5)" />
-            </clippath>
-          </defs>
-        </svg>
-      </a>
+          <a href="#" title="Patricio Mena homepage">
+            <label class="hidden sr-only">Patricio Mena</label>
+            <svg width="121" height="34" viewBox="0 0 121 34" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <g clip-path="url(#clip0_605_5019)">
+                <path d="M6.51809 3.32554C4.47335 5.55556 4.47335 5.55556 4.47335 9.44512C4.47335 13.2828 4.47335 13.3347 2.52598 15.3572L0.578613 17.3798V21.5805V25.7813L2.67203 27.9594L4.76546 30.1376H10.5589H16.3523L18.4457 27.9594L20.5391 25.7813V21.5805V17.3798L18.5918 15.3572C16.6444 13.3347 16.6444 13.2828 16.6444 9.49698C16.6444 5.86672 16.547 5.55556 14.8918 3.37741C13.2365 1.25111 12.9444 1.09553 10.851 1.09553C8.80625 1.09553 8.36809 1.30297 6.51809 3.32554ZM13.4799 3.68857L14.8918 5.24439H13.2852H11.6299L11.922 7.57813C12.2141 9.75628 11.776 10.6379 11.0457 9.39326C10.8023 8.97837 10.5102 9.03023 10.0234 9.44512C9.43914 9.96373 9.34177 9.65256 9.34177 7.62999C9.34177 5.29626 9.29309 5.24439 7.78388 5.24439H6.22598L7.63782 3.68857C8.61151 2.59949 9.48782 2.13275 10.5589 2.13275C11.6299 2.13275 12.5062 2.59949 13.4799 3.68857ZM8.36809 7.78557C8.36809 9.13395 8.22203 9.28954 7.05361 9.18581C5.98256 9.08209 5.64177 8.71907 5.5444 7.62999C5.39835 6.43719 5.5444 6.28161 6.85888 6.28161C8.22203 6.28161 8.36809 6.43719 8.36809 7.78557ZM15.6707 7.78557C15.6707 9.13395 15.476 9.3414 14.4536 9.23767C13.772 9.18581 13.2365 8.97837 13.2365 8.71907C13.2365 8.51162 13.2365 7.88929 13.2365 7.31882C13.2365 6.54091 13.5773 6.28161 14.4536 6.28161C15.476 6.28161 15.6707 6.54091 15.6707 7.78557ZM7.34572 11.4158C5.88519 12.7642 5.44703 12.7642 5.44703 11.5196C5.44703 10.7935 5.83651 10.4305 6.81019 10.3268C8.61151 10.0674 8.70888 10.223 7.34572 11.4158ZM15.6707 11.5714C15.6707 12.5568 15.622 12.5568 14.2102 11.4677C13.4312 10.8454 12.7497 10.2749 12.7497 10.223C12.7497 10.1712 13.4312 10.1712 14.2102 10.3268C15.2812 10.4823 15.6707 10.8454 15.6707 11.5714ZM12.7497 11.7789C14.9405 13.3347 14.8918 13.5421 12.3602 14.3719C10.9484 14.7868 10.072 14.7349 8.46546 14.1644L6.32335 13.4384L8.46546 11.9344C9.63388 11.1047 10.6076 10.4305 10.7049 10.4305C10.7536 10.4305 11.6786 11.0528 12.7497 11.7789ZM13.3826 15.2017C17.2286 13.6458 17.6181 14.2163 17.6181 21.5805C17.6181 29.1004 17.6181 29.1004 10.8023 29.1004C3.88914 29.1004 3.88914 29.0485 3.88914 21.3212C3.88914 14.0089 4.08388 13.7496 7.88125 15.2017L10.7049 16.2907L13.3826 15.2017ZM2.52598 21.6843C2.52598 24.1217 2.37993 26.0406 2.23388 25.885C2.08782 25.6775 1.94177 23.9661 1.94177 21.9954C1.94177 17.6391 1.99046 17.1724 2.28256 17.1724C2.42861 17.1724 2.52598 19.1949 2.52598 21.6843ZM19.5655 21.5805C19.5655 23.7068 19.3707 25.5738 19.0786 25.7294C18.7865 25.9368 18.5918 24.4329 18.5918 21.5805C18.5918 18.7282 18.7865 17.2242 19.0786 17.4317C19.3707 17.5873 19.5655 19.4543 19.5655 21.5805Z" fill="#00C297" class="dark:fill-primary90" />
+                <path d="M57.2471 10.6897C57.0523 11.1564 57.1497 11.7788 57.4418 12.0899C58.2207 12.9197 59.73 12.3492 59.73 11.2083C59.73 9.8599 57.6852 9.44502 57.2471 10.6897Z" fill="#121330" class="dark:fill-gray-50" />
+                <path d="M68.9311 10.6897C68.7364 11.1564 68.8338 11.7788 69.1259 12.0899C69.9048 12.9197 71.414 12.3492 71.414 11.2083C71.414 9.8599 69.3693 9.44502 68.9311 10.6897Z" fill="#121330" class="dark:fill-gray-50" />
+                <path d="M45.4167 14.683C45.514 19.1949 46.3417 21.1656 48.3864 21.7361C50.2851 22.3066 50.7232 22.0991 50.7232 20.7508C50.7232 20.1284 50.3824 19.7654 49.8469 19.7654C48.6298 19.7654 47.8022 18.78 47.8022 17.3279C47.8022 16.3944 48.0943 16.1351 49.0193 16.1351C49.993 16.1351 50.2364 15.8758 50.2364 14.7868C50.2364 13.594 50.0903 13.4902 49.0193 13.7495C47.9482 14.0607 47.8022 13.9051 47.8022 12.7642C47.8022 11.727 47.5588 11.4677 46.5364 11.4677C45.368 11.4677 45.3193 11.5714 45.4167 14.683Z" fill="#121330" class="dark:fill-gray-50" />
+                <path d="M82.3682 16.6538V21.8398H83.5853C84.8024 21.8398 84.8024 21.788 84.5103 18.8838C84.1208 15.7203 84.705 15.4091 85.7761 18.2096C86.6037 20.3359 88.405 20.3359 89.4274 18.2614C90.5958 15.7721 90.9853 15.9796 90.7418 18.9875C90.5471 21.788 90.5471 21.8398 91.8129 21.8398H93.0787V16.6538V11.4677H91.8616C90.8392 11.4677 90.4011 11.9863 89.33 14.32C88.5997 15.8759 87.8695 17.1724 87.7234 17.1724C87.5774 17.1724 86.8471 15.8759 86.0195 14.32C84.9484 12.1419 84.3155 11.4677 83.4879 11.4677C82.4168 11.4677 82.3682 11.6233 82.3682 16.6538Z" fill="#121330" class="dark:fill-gray-50" />
+                <path d="M28.0853 14.8386C26.9655 15.9796 26.8682 16.4982 26.8682 20.8026V25.4701H28.134C29.3024 25.4701 29.3997 25.3145 29.205 23.4475L29.059 21.4768L31.055 21.7361C32.759 21.9436 33.1971 21.788 34.0734 20.5433C36.3129 17.5354 34.5603 13.5421 31.0063 13.5421C29.7892 13.5421 28.8642 13.957 28.0853 14.8386ZM32.1261 16.0833C32.5155 16.3426 32.7103 17.1724 32.6129 18.0021C32.4668 19.2987 32.2721 19.5061 31.0063 19.5061C29.7405 19.5061 29.5458 19.2987 29.3997 18.0021C29.2537 16.6019 29.8866 15.6165 31.0063 15.6165C31.2984 15.6165 31.7853 15.824 32.1261 16.0833Z" fill="#121330" class="dark:fill-gray-50" />
+                <path d="M37.1892 14.7349C35.7773 16.2907 35.7286 19.3505 37.0918 20.8026C38.1628 21.9435 40.9378 22.2028 41.8628 21.2175C42.301 20.7507 42.447 20.7507 42.447 21.2175C42.447 21.5805 42.9826 21.8398 43.6155 21.8398C44.8326 21.8398 44.7839 21.9954 44.151 17.5353C43.7615 14.8386 42.3984 13.5421 40.1102 13.5421C38.7957 13.5421 37.9194 13.9051 37.1892 14.7349ZM41.6681 16.7574C42.7878 18.7281 39.9155 20.7507 38.5523 18.9874C38.0655 18.3651 38.0655 17.8984 38.5036 16.8612C39.1365 15.3572 40.7918 15.3053 41.6681 16.7574Z" fill="#121330" class="dark:fill-gray-50" />
+                <path d="M52.9628 14.6312C51.8431 15.5647 51.697 16.0833 51.697 18.7801C51.697 21.6843 51.7457 21.8398 52.9141 21.8398C54.0825 21.8398 54.1312 21.6843 54.1312 19.0394C54.1312 16.4982 54.2286 16.2389 55.3483 15.9277C56.1273 15.7203 56.5654 15.2535 56.5654 14.5793C56.5654 13.1791 54.6668 13.231 52.9628 14.6312Z" fill="#121330" class="dark:fill-gray-50" />
+                <path d="M57.4417 17.691C57.2957 21.8398 57.2957 21.8398 58.5128 21.8398C59.7299 21.8398 59.7299 21.788 59.7299 17.691C59.7299 13.8014 59.6812 13.5421 58.6588 13.5421C57.6851 13.5421 57.5878 13.8533 57.4417 17.691Z" fill="#121330" class="dark:fill-gray-50" />
+                <path d="M62.1642 14.8386C60.655 16.3945 60.6063 18.6245 61.9695 20.4915C62.7971 21.6324 63.3327 21.8398 65.3774 21.8398C67.6169 21.8398 67.7629 21.7361 67.7629 20.5433C67.7629 19.4024 67.6169 19.2468 66.5945 19.558C64.7445 20.0247 63.3813 19.3505 63.3813 18.0021C63.3813 16.2907 64.4037 15.5647 66.2537 15.9277C67.6169 16.2389 67.7629 16.1352 67.7629 14.8905C67.7629 13.6458 67.6169 13.5421 65.5721 13.5421C63.8682 13.5421 63.0405 13.8533 62.1642 14.8386Z" fill="#121330" class="dark:fill-gray-50" />
+                <path d="M68.98 17.691C68.98 21.788 68.98 21.8398 70.1971 21.8398C71.4142 21.8398 71.4142 21.788 71.4142 17.691C71.4142 13.594 71.4142 13.5421 70.1971 13.5421C68.98 13.5421 68.98 13.594 68.98 17.691Z" fill="#121330" class="dark:fill-gray-50" />
+                <path d="M73.8483 14.8386C72.3391 16.3944 72.2904 18.6244 73.6536 20.4914C75.0654 22.4103 78.4733 22.4103 79.8852 20.4914C82.0759 17.5353 80.2746 13.5421 76.7694 13.5421C75.5523 13.5421 74.6273 13.9569 73.8483 14.8386ZM77.8891 16.0832C78.2786 16.3425 78.4733 17.1723 78.3759 18.0021C78.2299 19.2986 78.0352 19.5061 76.7694 19.5061C75.6009 19.5061 75.2602 19.2467 75.1628 18.3133C74.8707 16.2907 76.3799 15.046 77.8891 16.0832Z" fill="#121330" class="dark:fill-gray-50" />
+                <path d="M95.6103 14.7349C94.1985 16.2907 94.1498 19.3505 95.5129 20.8026C96.2432 21.5805 97.1195 21.8398 98.9208 21.8398C101.16 21.8398 101.355 21.7361 101.355 20.647C101.355 19.558 101.16 19.4024 99.359 19.4542C98.2392 19.5061 97.2169 19.2468 97.1195 18.9356C97.0221 18.5726 97.4603 18.4689 98.3853 18.6245C100.284 18.8838 101.842 17.9503 101.842 16.4463C101.842 13.594 97.6063 12.453 95.6103 14.7349ZM99.5537 16.3945C99.4077 17.0687 96.9735 17.4317 96.9735 16.7575C96.9735 15.9796 97.6063 15.5647 98.6774 15.7203C99.2129 15.824 99.6024 16.0833 99.5537 16.3945Z" fill="#121330" class="dark:fill-gray-50" />
+                <path d="M104.373 14.7349C103.546 15.6684 103.302 16.6019 103.302 18.8838C103.302 21.7361 103.351 21.8398 104.568 21.8398C105.736 21.8398 105.834 21.6843 105.639 19.8691C105.298 17.1205 105.98 15.5128 107.343 15.7203C108.268 15.8759 108.414 16.2389 108.56 18.8319C108.706 21.6324 108.804 21.8398 109.875 21.8398C110.994 21.8398 111.092 21.6843 111.092 19.0394C111.092 15.3572 109.826 13.5421 107.246 13.5421C105.98 13.5421 105.104 13.9051 104.373 14.7349Z" fill="#121330" class="dark:fill-gray-50" />
+                <path d="M113.867 14.1644C111.871 15.7202 112.163 20.647 114.256 21.5286C115.522 22.0472 117.177 21.8916 117.859 21.1656C118.394 20.647 118.54 20.647 118.735 21.1656C118.881 21.5286 119.465 21.8398 120.05 21.8398C121.267 21.8398 121.218 21.9435 120.585 17.5353C120.196 14.8385 118.833 13.542 116.544 13.542C115.522 13.542 114.305 13.8532 113.867 14.1644ZM117.908 16.3944C118.638 17.3279 118.394 18.7281 117.323 19.4542C115.619 20.5951 113.721 18.0539 114.987 16.3944C115.765 15.409 117.129 15.409 117.908 16.3944Z" fill="#121330" class="dark:fill-gray-50" />
+                <path d="M1.06543 33.5085C1.06543 34.1308 1.84438 34.2864 4.96017 34.2864C8.07596 34.2864 8.8549 34.1308 8.8549 33.5085C8.8549 32.8861 8.07596 32.7306 4.96017 32.7306C1.84438 32.7306 1.06543 32.8861 1.06543 33.5085Z" fill="#00C297" class="dark:fill-primary90" />
+                <path d="M12.2629 33.5085C12.2629 34.1308 13.0419 34.2864 16.1577 34.2864C19.2735 34.2864 20.0524 34.1308 20.0524 33.5085C20.0524 32.8861 19.2735 32.7306 16.1577 32.7306C13.0419 32.7306 12.2629 32.8861 12.2629 33.5085Z" fill="#00C297" class="dark:fill-primary90" />
+              </g>
+              <defs>
+                <clippath id="clip0_605_5019">
+                  <rect width="121" height="33" fill="white" transform="translate(0 0.5)" />
+                </clippath>
+              </defs>
+            </svg>
+          </a>
 
+          <!-- Main Navigation links -->
+          <div id="main-navigation" aria-label="main-navigation" class="z-[2000] fixed h-full w-full pointer-events-none top-0 left-0 shadow-xl before:content-[''] before:block before:absolute before:left-0 before:top-0 before:w-full before:h-full before:bg-black before:bg-opacity-40 before:backdrop-blur-sm before:opacity-0 md:w-auto md:static md:pointer-events-auto md:before:hidden">
+            <ul id="navigation-items" class="fixed flex flex-col top-0 left-0 pt-40 pl-6 bg-[#FBFCF8]  dark:bg-surfaceBlack w-fit min-w-[256px] h-full -translate-x-[110%] transition-transform duration-200 ease-out text-gray300 dark:text-slate-200 text-base gap-8 md:flex-row md:static md:p-0 md:bg-transparent md:dark:bg-transparent md:translate-x-0" data-visible="false">
+              <li class=""><a href="#benefits" class="main-nav-link | hover:text-primary70 dark:hover:text-primaryDark dark:after:bg-primaryDark">Benefits</a></li>
+              <li class=""><a href="#portfolio" class="main-nav-link | hover:text-primary70 dark:hover:text-primaryDark dark:after:bg-primaryDark">Portfolio</a></li>
+              <li class=""><a href="#process" class="main-nav-link | hover:text-primary70 dark:hover:text-primaryDark dark:after:bg-primaryDark">Process</a></li>
+              <li class=""><a href="#about" class="main-nav-link | hover:text-primary70 dark:hover:text-primaryDark dark:after:bg-primaryDark">About</a></li>
+            </ul>
+          </div>
 
-      <!-- Main Navigation links -->
-      <nav id="main-navigation" aria-label="main-navigation" class="fixed h-full w-full pointer-events-none top-0 left-0 shadow-xl before:content-[''] before:block before:absolute before:left-0 before:top-0 before:w-full before:h-full before:bg-black before:bg-opacity-40 before:backdrop-blur-sm before:opacity-0 md:w-auto md:static md:pointer-events-auto md:before:hidden">
-        <ul id="navigation-items" class="fixed flex flex-col top-0 left-0 pt-40 pl-6 bg-[#FBFCF8]  dark:bg-surfaceBlack w-fit min-w-[256px] h-full -translate-x-[110%] transition-transform duration-200 ease-out text-gray300 dark:text-slate-200 text-base gap-8 md:flex-row md:static md:p-0 md:dark:bg-darkBg md:translate-x-0" data-visible="false">
-          <li class=""><a href="#benefits" class="main-nav-link | hover:text-primary70 dark:hover:text-primaryDark dark:after:bg-primaryDark">Benefits</a></li>
-          <li class=""><a href="#portfolio" class="main-nav-link | hover:text-primary70 dark:hover:text-primaryDark dark:after:bg-primaryDark">Portfolio</a></li>
-          <li class=""><a href="#process" class="main-nav-link | hover:text-primary70 dark:hover:text-primaryDark dark:after:bg-primaryDark">Process</a></li>
-          <li class=""><a href="#about" class="main-nav-link | hover:text-primary70 dark:hover:text-primaryDark dark:after:bg-primaryDark">About</a></li>
-        </ul>
+          <div class="flex gap-6 items-center">
+            <!-- Light / Dark Mode icons -->
+            <button id="theme-switch" class="block hover:bg-slate-100 rounded-full p-1 w-8 h-8 hover:transition-colors hover:duration-200 hover:ease-out dark:hover:bg-slate-700 active:bg-slate-200 dark:active:bg-slate-800">
+              <label class="hidden sr-only">Theme</label>
+              <img src="./assets/icons/moon-light.svg" alt="" class="moon cursor-pointer">
+              <img src="./assets/icons/sun-light.svg" alt="" class="sun cursor-pointer">
+            </button>
+
+            <!-- Header Button  -->
+            <a href="#contact" class="hidden text-sm text-primary100 px-6 py-2 bg-primary70 tracking-wide rounded-lg transition duration-200 ease-in hover:bg-opacity-80 hover:shadow-md hover:transition hover:duration-[250ms] hover:ease-out hover:-translate-y-[1px] active:translate-y-0 active:shadow-none active:bg-opacity-90 dark:text-primary10 dark:bg-primary90 dark:hover:bg-opacity-80 dark:active:bg-opacity-90 md:block">Contact Me</a>
+
+          </div>
+        </div>
       </nav>
-
-      <div class="flex gap-6">
-        <!-- Light / Dark Mode icons -->
-        <button id="theme-switch" class="block">
-          <label class="hidden sr-only">Theme</label>
-          <img src="./assets/icons/moon-light.svg" alt="" class="moon cursor-pointer">
-          <img src="./assets/icons/sun-light.svg" alt="" class="sun cursor-pointer">
-        </button>
-
-        <!-- Header Button  -->
-        <a href="#contact" class="hidden text-sm text-primary100 px-6 py-2 bg-primary70 tracking-wide rounded-lg transition duration-200 ease-in hover:bg-opacity-80 hover:shadow-md hover:transition hover:duration-[250ms] hover:ease-out hover:-translate-y-[1px] active:translate-y-0 active:shadow-none active:bg-opacity-90 dark:text-primary10 dark:bg-primary90 dark:hover:bg-opacity-80 dark:active:bg-opacity-90 md:block">Contact Me</a>
-
-
-      </div>
-
     </div>
   </header>
 
@@ -113,7 +114,7 @@
     </section>
 
     <!--------------------- Screenshots Section --------------------->
-    <section class="bg-gradient-to-b from-[#FBFCF8] to-[#FFFEFC] dark:from-darkBg dark:to-darkBg grid content-center overflow-hidden pt-16">
+    <section class="bg-gradient-to-b from-[#FBFCF8] to-[#FFFEFC] dark:bg-gradient-to-b dark:from-darkBg dark:to-darkBg grid content-center overflow-hidden pt-16">
       <ul id="screenshots-gallery" class="flex gap-4 md:gap-6  md:left-[-6%]">
         <li class="w-52 md:w-96 md:h-96"><img src="./assets/screenshot-placeholder.png" alt="" class="rounded-2xl border border-outlineLight shadow-md w-full" width="384" height="384"></li>
         <li class="w-52 md:w-96 md:h-96"><img src="./assets/screenshot-placeholder.png" alt="" class="rounded-2xl border border-outlineLight shadow-md w-full" width="384" height="384"></li>
@@ -278,7 +279,7 @@
             <div class="swiper-wrapper mb-16">
 
               <!-- Project 1-->
-              <div class="swiper-slide bg-surface bg-opacity-70 shadow-lighter rounded-2xl transition-[background-color] duration-200 ease-in hover:duration-[250ms] hover:ease-out hover:bg-surface hover:shadow-light dark:bg-surfaceBlack hover:dark:bg-surfaceBlack dark:shadow-dark dark:hover:shadow-darker">
+              <div class="swiper-slide bg-surface bg-opacity-70 shadow-lighter rounded-2xl transition-colors duration-200 ease-in hover:duration-[250ms] hover:ease-out hover:bg-surface hover:shadow-light dark:bg-surfaceBlack hover:dark:bg-surfaceBlack dark:shadow-dark dark:hover:shadow-darker">
 
                 <figure class="overflow-hidden rounded-t-2xl">
                   <img src="./assets/projects/ConstruMax.png" alt="" class="rounded-t-2xl w-full transition-transform duration-500 ease-in hover:duration-[550ms] hover:ease-out hover:scale-110" loading="lazy" width="368" height="192">
@@ -449,7 +450,7 @@
 
         <section>
           <!-- Research -->
-          <section class="py-14 md:pt-24 md:pb-20 md:20 min-h-[500px]">
+          <section class="py-14 md:pt-24 md:pb-20 min-h-[500px]">
             <section class="flex flex-col items-center justify-center gap-8 md:gap-12 md:flex-row ">
               <section class="md:order-2 md:flex-1 anim" data-anim="fade-right" data-delay="0s">
                 <img src="./assets/steps-images/Goals.svg" alt="A man doing a presentation of goals to achieve in a project" class="w-full" loading="lazy" width="660" height="554">
@@ -461,7 +462,7 @@
                 <h5 class="mb-8 text-gray500 text-2xl tracking-wide dark:text-slate-50 md:text-4xl anim" data-anim="fade-bottom" data-delay=".2s">Setting goals and purpose</h5>
                 <p class="mb-6 text-gray300 dark:text-slate-300 anim" data-anim="fade-bottom" data-delay="0s">Unlocking the potential of your business and creating a plan to help you reach your goals</p>
 
-                <ul role="list" class=" flex flex-col gap-2 items justify-center">
+                <ul role="list" class=" flex flex-col gap-2 justify-center">
                   <li class="flex gap-3 items-center anim" data-anim="fade-bottom" data-delay="0s">
                     <i class="ph ph-check-circle text-primary70  dark:text-primaryDark"></i>
                     <p class="text-gray300 dark:text-slate-300">Outline the project's needs and objectives</p>
@@ -492,9 +493,9 @@
           </section>
 
           <!-- Design -->
-          <section class="py-14 md:py-20 md:20 min-h-[500px]">
+          <section class="py-14 md:py-20 min-h-[500px]">
             <section class="flex flex-col items-center justify-center gap-8 md:gap-12 md:flex-row ">
-              <section class="mx-auto testing-image-box md:flex-1 anim" data-anim="fade-left" data-delay="0s">
+              <section class="mx-auto md:flex-1 anim" data-anim="fade-left" data-delay="0s">
                 <img src="./assets/steps-images/design-image.svg" alt="Wireframe and prototype illustration" class="w-full mx-auto md:w-11/12" loading="lazy" width="677" height="391">
               </section>
               <section class="flex-1 ">
@@ -504,7 +505,7 @@
                 <h5 class="mb-8 text-gray500 text-2xl tracking-wide dark:text-slate-50 md:text-4xl anim" data-anim="fade-bottom" data-delay=".2s">Measure twice, cut once</h5>
                 <p class="mb-6 text-gray300 dark:text-slate-300 anim" data-anim="fade-bottom" data-delay="0s">Crafting the visual and functional components, collaborating with you to reflect your brand identity</p>
 
-                <ul role="list" class=" flex flex-col gap-2  items justify-center">
+                <ul role="list" class=" flex flex-col gap-2 justify-center">
                   <li class="flex gap-3 items-center anim" data-anim="fade-bottom" data-delay="0s">
                     <i class="ph ph-check-circle text-primary70  dark:text-primaryDark"></i>
                     <p class="text-gray300 dark:text-slate-300">Wireframe design</p>
@@ -535,7 +536,7 @@
           </section>
 
           <!-- Development -->
-          <section class="py-14 md:py-20 md:20 min-h-[500px]">
+          <section class="py-14 md:py-20 min-h-[500px]">
             <section class="flex flex-col items-center justify-center gap-8 md:gap-12 md:flex-row ">
               <section class="md:order-2 md:flex-1 anim" data-anim="fade-right" data-delay="0s">
                 <img src="./assets/steps-images/coding-image.svg" alt="Laptop with code editor on screen" class="w-full" loading="lazy" width="822" height="391">
@@ -547,7 +548,7 @@
                 <h5 class="mb-8 text-gray500 text-2xl tracking-wide dark:text-slate-50 md:text-4xl anim" data-anim="fade-bottom" data-delay=".2s">Coffee. Code. Repeat</h5>
                 <p class="mb-6 text-gray300 dark:text-slate-300 anim" data-anim="fade-bottom" data-delay="0s">Now your project is taking shape! You'll be kept up-to-date with regular progress reports</p>
 
-                <ul role="list" class=" flex flex-col items justify-center">
+                <ul role="list" class=" flex flex-col justify-center">
                   <div class="flex flex-col gap-2 md:gap-8 md:flex-row">
                     <div class="flex flex-col gap-2">
                       <li class="flex gap-3 items-center anim" data-anim="fade-bottom" data-delay="0s">
@@ -587,17 +588,13 @@
                       </li>
                     </div>
                   </div>
-
-
-
-
                 </ul>
               </section>
             </section>
           </section>
 
           <!-- Testing -->
-          <section class="py-14 md:py-20 md:20 min-h-[500px]">
+          <section class="py-14 md:py-20 min-h-[500px]">
             <section class="flex flex-col items-center justify-center gap-8 md:gap-12 md:flex-row ">
               <section class="md:flex-1  anim" data-anim="fade-left" data-delay="0s">
                 <img src="./assets/steps-images/testing-image.svg" alt="Succesful test illustration" class="w-full mx-auto md:w-11/12" loading="lazy" width="677" height="392">
@@ -609,7 +606,7 @@
                 <h5 class="mb-8 text-gray500 text-2xl tracking-wide dark:text-slate-50 md:text-4xl anim" data-anim="fade-bottom" data-delay=".2s">Perform consistently</h5>
                 <p class="mb-6 text-gray300 dark:text-slate-300 anim" data-anim="fade-bottom" data-delay="0s">It's time to guarantee that your project performs as expected</p>
 
-                <ul role="list" class=" flex flex-col gap-2 items justify-center">
+                <ul role="list" class=" flex flex-col gap-2 justify-center">
                   <li class="flex gap-3 items-center anim" data-anim="fade-bottom" data-delay="0s">
                     <i class="ph ph-check-circle text-primary70  dark:text-primaryDark"></i>
                     <p class="text-gray300 dark:text-slate-300">Features and functionality</p>
@@ -640,7 +637,7 @@
           </section>
 
           <!-- Deployment-->
-          <section class="py-14 md:py-20 md:20 min-h-[500px]">
+          <section class="py-14 md:py-20 min-h-[500px]">
             <section class="flex flex-col items-center justify-center gap-8 md:gap-12 md:flex-row ">
               <section class="md:order-2 md:flex-1 anim" data-anim="fade-right" data-delay="0s">
                 <img src="./assets/steps-images/deployment-image.svg" alt="Computer sending project to a server" class="w-full" loading="lazy" width="784" height="391">
@@ -652,7 +649,7 @@
                 <h5 class="mb-8 text-gray500 text-2xl tracking-wide dark:text-slate-50 md:text-4xl anim" data-anim="fade-bottom" data-delay=".2s">Booster. Ignition. Liftoff</h5>
                 <p class="mb-6 text-gray300 dark:text-slate-300 anim" data-anim="fade-bottom" data-delay="0s">Once all testing is complete and you're satisfied with the results, it's time to launch and bring your website or app to life!</p>
 
-                <ul role="list" class=" flex flex-col items justify-center gap-2">
+                <ul role="list" class=" flex flex-col justify-center gap-2">
                   <li class="flex gap-3 items-center anim" data-anim="fade-bottom" data-delay="0s">
                     <i class="ph ph-check-circle text-primary70  dark:text-primaryDark"></i>
                     <p class="text-gray300 dark:text-slate-300">Select the perfect domain name</p>
@@ -675,9 +672,9 @@
           </section>
 
           <!-- Maintenance -->
-          <section class="py-14 md:py-20 md:20 min-h-[500px]">
+          <section class="py-14 md:py-20 min-h-[500px]">
             <section class="flex flex-col items-center justify-center gap-8 md:gap-12 md:flex-row ">
-              <section class="testing-image-box md:flex-1 anim" data-anim="fade-left" data-delay="0s">
+              <section class="md:flex-1 anim" data-anim="fade-left" data-delay="0s">
                 <img src="./assets/steps-images/maintenance-image.svg" alt="A man monitoring performance and traffic on a project" class="w-full" loading="lazy" width="677" height="391">
               </section>
 
@@ -688,7 +685,7 @@
                 <h5 class="mb-8 text-gray500 text-2xl tracking-wide dark:text-slate-50 md:text-4xl anim" data-anim="fade-bottom" data-delay=".2s">Keep iterating</h5>
                 <p class="mb-6 text-gray300 dark:text-slate-300 anim" data-anim="fade-bottom" data-delay="0s">Now that your project is live, let's make sure it stays secure, functional, and up-to-date!</p>
 
-                <ul role="list" class=" flex flex-col gap-2 items justify-center">
+                <ul role="list" class=" flex flex-col gap-2 justify-center">
                   <li class="flex gap-3 items-center anim" data-anim="fade-bottom" data-delay="0s">
                     <i class="ph ph-check-circle text-primary70  dark:text-primaryDark"></i>
                     <p class="text-gray300 dark:text-slate-300">Monitor performance and traffic </p>
@@ -719,8 +716,8 @@
     </section>
 
     <!--------------------- CTA Section --------------------->
-    <section id="contact" class="py-24 dark:to-darkBg">
-      <div class="container mx-auto max-w-7xl px-6 rounded-2xl flex flex-col items-center justify-between anim" data-anim="fade-bottom" data-delay="0s">
+    <section id="contact" class="py-24">
+      <div class="container mx-auto max-w-7xl px-6 flex flex-col items-center justify-between anim" data-anim="fade-bottom" data-delay="0s">
         <h6 class="text-4xl text-center text-secondary100 tracking-widexs md:text-6xl mb-12">Ready to bring your idea to life?</h6>
         <p class="text-secondary90 text-center md:text-xl max-w-lg mb-8">Enter your email for a step-by-step guide to getting started or contact me directly</p>
         <form action="" method="POST" class="flex w-full md:w-[448px] rounded-2xl bg-primary100 pl-6 pr-2 py-2 shadow-md mb-8">
@@ -829,7 +826,7 @@
             <a href="#">
               <img src="/build/assets/logos/Dark-logo.svg" alt="Patricio Mena logo" class="fill-white dark:fill-primaryDark">
             </a>
-            <ul class="flex items-center text-sm tracking-wide text-whiteOnSecondary gap-6">
+            <ul class="flex flex-wrap justify-center items-center text-sm tracking-wide text-whiteOnSecondary gap-6">
               <li><a href="#benefits" class="duration-200 ease-in hover:text-primary70 hover:duration-[250ms] hover:ease-out">Benefits</a></li>
               <li><a href="#portfolio" class="duration-200 ease-in hover:text-primary70 hover:duration-[250ms] hover:ease-out">Portfolio</a></li>
               <li><a href="#process" class="duration-200 ease-in hover:text-primary70 hover:duration-[250ms] hover:ease-out">Process</a></li>
@@ -845,7 +842,7 @@
           <div class="flex flex-col items-center justify-between gap-6 md:flex-row">
             <ul role="list" class="flex items-center gap-4 md:order-2" aria-label="Social media links">
               <li>
-                <a href="https://github.com/PatricioMena" class="block hover:fill-primary-90">
+                <a href="https://github.com/PatricioMena" class="block hover:fill-primary90">
                   <svg arialabelledby="footer-social-icon1" xmlns="http://www.w3.org/2000/svg" width="32" height="32" class="fill-whiteOnPrimary h-6 w-6 duration-200 ease-in hover:fill-primary70 hover:duration-[250ms] hover:ease-out" viewBox="0 0 256 256">
                     <title id="footer-social-icon1">Github icon</title>
                     <path d="M208.31,75.68A59.78,59.78,0,0,0,202.93,28,8,8,0,0,0,196,24a59.75,59.75,0,0,0-48,24H124A59.75,59.75,0,0,0,76,24a8,8,0,0,0-6.93,4,59.78,59.78,0,0,0-5.38,47.68A58.14,58.14,0,0,0,56,104v8a56.06,56.06,0,0,0,48.44,55.47A39.8,39.8,0,0,0,96,192v8H72a24,24,0,0,1-24-24A40,40,0,0,0,8,136a8,8,0,0,0,0,16,24,24,0,0,1,24,24,40,40,0,0,0,40,40H96v16a8,8,0,0,0,16,0V192a24,24,0,0,1,48,0v40a8,8,0,0,0,16,0V192a39.8,39.8,0,0,0-8.44-24.53A56.06,56.06,0,0,0,216,112v-8A58.14,58.14,0,0,0,208.31,75.68ZM200,112a40,40,0,0,1-40,40H112a40,40,0,0,1-40-40v-8a41.74,41.74,0,0,1,6.9-22.48A8,8,0,0,0,80,73.83a43.81,43.81,0,0,1,.79-33.58,43.88,43.88,0,0,1,32.32,20.06A8,8,0,0,0,119.82,64h32.35a8,8,0,0,0,6.74-3.69,43.87,43.87,0,0,1,32.32-20.06A43.81,43.81,0,0,1,192,73.83a8.09,8.09,0,0,0,1,7.65A41.72,41.72,0,0,1,200,104Z"></path>
@@ -854,7 +851,7 @@
                 </a>
               </li>
               <li>
-                <a href="https://www.linkedin.com/in/patricio-mena-horn" class="block hover:fill-primary-90">
+                <a href="https://www.linkedin.com/in/patricio-mena-horn" class="block hover:fill-primary90">
                   <svg arialabelledby="footer-social-icon2" xmlns="http://www.w3.org/2000/svg" width="32" height="32" class="fill-whiteOnPrimary h-6 w-6 duration-200 ease-in hover:fill-primary70 hover:dark:fill-primary-90 hover:duration-[250ms] hover:ease-out" viewBox="0 0 256 256">
                     <title id="footer-social-icon2">Linkedin icon</title>
                     <path d="M216,24H40A16,16,0,0,0,24,40V216a16,16,0,0,0,16,16H216a16,16,0,0,0,16-16V40A16,16,0,0,0,216,24Zm0,192H40V40H216V216ZM96,112v64a8,8,0,0,1-16,0V112a8,8,0,0,1,16,0Zm88,28v36a8,8,0,0,1-16,0V140a20,20,0,0,0-40,0v36a8,8,0,0,1-16,0V112a8,8,0,0,1,15.79-1.78A36,36,0,0,1,184,140ZM100,84A12,12,0,1,1,88,72,12,12,0,0,1,100,84Z"></path>
@@ -863,7 +860,7 @@
                 </a>
               </li>
               <li>
-                <a href="https://www.linkedin.com/in/patricio-mena-horn" class="block hover:fill-primary-90">
+                <a href="https://www.linkedin.com/in/patricio-mena-horn" class="block hover:fill-primary90">
                   <svg arialabelledby="footer-social-icon3" xmlns="http://www.w3.org/2000/svg" width="32" height="32" class="fill-whiteOnPrimary h-6 w-6 duration-200 ease-in hover:fill-primary70 hover:dark:fill-primary-90 hover:duration-[250ms] hover:ease-out" viewBox="0 0 256 256">
                     <title id="footer-social-icon3">Twitter icon</title>
                     <path d="M247.39,68.94A8,8,0,0,0,240,64H209.57A48.66,48.66,0,0,0,168.1,40a46.91,46.91,0,0,0-33.75,13.7A47.9,47.9,0,0,0,120,88v6.09C79.74,83.47,46.81,50.72,46.46,50.37a8,8,0,0,0-13.65,4.92c-4.31,47.79,9.57,79.77,22,98.18a110.93,110.93,0,0,0,21.88,24.2c-15.23,17.53-39.21,26.74-39.47,26.84a8,8,0,0,0-3.85,11.93c.75,1.12,3.75,5.05,11.08,8.72C53.51,229.7,65.48,232,80,232c70.67,0,129.72-54.42,135.75-124.44l29.91-29.9A8,8,0,0,0,247.39,68.94Zm-45,29.41a8,8,0,0,0-2.32,5.14C196,166.58,143.28,216,80,216c-10.56,0-18-1.4-23.22-3.08,11.51-6.25,27.56-17,37.88-32.48A8,8,0,0,0,92,169.08c-.47-.27-43.91-26.34-44-96,16,13,45.25,33.17,78.67,38.79A8,8,0,0,0,136,104V88a32,32,0,0,1,9.6-22.92A30.94,30.94,0,0,1,167.9,56c12.66.16,24.49,7.88,29.44,19.21A8,8,0,0,0,204.67,80h16Z"></path>

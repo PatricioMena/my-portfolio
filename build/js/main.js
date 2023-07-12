@@ -78,21 +78,21 @@ const swiper = new Swiper('.swiper', {
 ///////////////////////////////////////////////
 // Sticky Navigation //
 //////////////////////////////////////////////
-const header = document.querySelector('header');
+const navBar = document.getElementById('navbar');
 const hero = document.getElementById('hero');
 
 const stickyNav = (entries) => {
   entries.forEach((entry) => {
     if (!entry.isIntersecting) {
-      header.classList.add('sticky-nav');
+      navBar.classList.add('sticky-nav');
     } else {
-      header.classList.remove('sticky-nav');
+      navBar.classList.remove('sticky-nav');
     }
   });
 };
 
 const observer = new IntersectionObserver(stickyNav, {
-  threshold: 0.75
+  threshold: 0.5
 });
 
 observer.observe(hero);

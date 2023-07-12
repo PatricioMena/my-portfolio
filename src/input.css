@@ -2,14 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-.sticky-nav {
-  background: hsl(210, 20%, 98%);
-  /* background: red; */
-  /* position: sticky; */
-  /* border-bottom: 1px solid hsl(0, 0%, 34%); */
-  box-shadow: 0 1px 12px hsla(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
-}
-
 @layer base {
   @font-face {
     font-family: 'Grifter';
@@ -86,12 +78,12 @@
     --swiper-pagination-bullet-height: 10px;
   }
 
-  nav[open] {
+  #main-navigation[open] {
     pointer-events: auto;
     visibility: visible;
   }
 
-  nav[open]::before {
+  #main-navigation[open]::before {
     opacity: 1;
   }
 
@@ -156,72 +148,18 @@
       transition: none;
     }
   }
-
-  .toggle-switch {
-    position: relative;
-    width: 100px;
-    height: 50px;
-    --light: #d8dbe0;
-    --dark: #28292c;
-    --link: rgb(27, 129, 112);
-    --link-hover: rgb(24, 94, 82);
-  }
-
-  .switch-label {
-    position: absolute;
-    width: 100%;
-    height: 50px;
-    background-color: var(--dark);
-    border-radius: 25px;
-    cursor: pointer;
-    border: 3px solid var(--dark);
-  }
-
-  .checkbox {
-    position: absolute;
-    display: none;
-  }
-
-  .slider {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    border-radius: 25px;
-    -webkit-transition: 0.3s;
-    transition: 0.3s;
-  }
-
-  .checkbox:checked ~ .slider {
-    background-color: var(--light);
-  }
-
-  .slider::before {
-    content: '';
-    position: absolute;
-    top: 10px;
-    left: 10px;
-    width: 25px;
-    height: 25px;
-    border-radius: 50%;
-    -webkit-box-shadow: inset 12px -4px 0px 0px var(--light);
-    box-shadow: inset 12px -4px 0px 0px var(--light);
-    background-color: var(--dark);
-    -webkit-transition: 0.3s;
-    transition: 0.3s;
-  }
-
-  .checkbox:checked ~ .slider::before {
-    -webkit-transform: translateX(50px);
-    -ms-transform: translateX(50px);
-    transform: translateX(50px);
-    background-color: var(--dark);
-    -webkit-box-shadow: none;
-    box-shadow: none;
-  }
 }
 
 @layer utilities {
   .toggle-btn {
     @apply [&>div::before]:translate-y-0 [&>div::before]:rotate-45 [&>div::after]:translate-y-0 [&>div::after]:-rotate-45 [&>div]:bg-transparent;
+  }
+
+  .sticky-nav {
+    @apply md:dark:bg-surfaceBlack !important;
+    @apply fixed;
+    @apply md:shadow-sm;
+    @apply md:backdrop-blur;
+    @apply md:bg-opacity-90;
   }
 }

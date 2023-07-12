@@ -495,12 +495,12 @@ h1,
   --swiper-pagination-bullet-height: 10px;
 }
 
-nav[open] {
+#main-navigation[open] {
   pointer-events: auto;
   visibility: visible;
 }
 
-nav[open]::before {
+#main-navigation[open]::before {
   opacity: 1;
 }
 
@@ -722,10 +722,6 @@ nav[open]::before {
   position: relative;
 }
 
-.sticky {
-  position: sticky;
-}
-
 .-left-5 {
   left: -1.25rem;
 }
@@ -752,6 +748,10 @@ nav[open]::before {
 
 .z-\[1000\] {
   z-index: 1000;
+}
+
+.z-\[2000\] {
+  z-index: 2000;
 }
 
 .z-\[9999\] {
@@ -968,6 +968,10 @@ nav[open]::before {
 
 .flex-col {
   flex-direction: column;
+}
+
+.flex-wrap {
+  flex-wrap: wrap;
 }
 
 .content-center {
@@ -1209,6 +1213,10 @@ nav[open]::before {
   fill: #EAEAEA;
 }
 
+.p-1 {
+  padding: 0.25rem;
+}
+
 .p-3 {
   padding: 0.75rem;
 }
@@ -1279,11 +1287,6 @@ nav[open]::before {
 .py-32 {
   padding-top: 8rem;
   padding-bottom: 8rem;
-}
-
-.py-4 {
-  padding-top: 1rem;
-  padding-bottom: 1rem;
 }
 
 .pb-32 {
@@ -1497,6 +1500,12 @@ nav[open]::before {
   transition-duration: 150ms;
 }
 
+.transition-colors {
+  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+}
+
 .transition-transform {
   transition-property: transform;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -1513,10 +1522,6 @@ nav[open]::before {
 
 .duration-500 {
   transition-duration: 500ms;
-}
-
-.duration-\[400ms\] {
-  transition-duration: 400ms;
 }
 
 .ease-in {
@@ -1547,15 +1552,28 @@ nav[open]::before {
   background-color: transparent;
 }
 
+@media (min-width: 768px) {
+  :is(.dark .sticky-nav) {
+    --tw-bg-opacity: 1 !important;
+    background-color: hsl(192 7% 14% / var(--tw-bg-opacity)) !important;
+  }
+}
+
 .sticky-nav {
-  background: hsl(210, 20%, 98%);
-  /* background: red; */
-  /* position: sticky; */
-  /* border-bottom: 1px solid hsl(0, 0%, 34%); */
-  box-shadow: 0 1px 12px hsla(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+  position: fixed;
 }
 
 @media (min-width: 768px) {
+  .sticky-nav {
+    --tw-shadow: 0 1px 2px 0 rgb(0 0 0 / 0.05);;
+    --tw-shadow-colored: 0 1px 2px 0 var(--tw-shadow-color);
+    box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+    --tw-backdrop-blur: blur(8px);
+    -webkit-backdrop-filter: var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia);
+            backdrop-filter: var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia);
+    --tw-bg-opacity: 0.9;
+  }
+
   @media (prefers-reduced-motion) {
     .md\:hidden {
       transition: none;
@@ -1662,6 +1680,11 @@ nav[open]::before {
   background-color: hsl(242 87% 21% / var(--tw-bg-opacity));
 }
 
+.hover\:bg-slate-100:hover {
+  --tw-bg-opacity: 1;
+  background-color: rgb(241 245 249 / var(--tw-bg-opacity));
+}
+
 .hover\:bg-surface:hover {
   --tw-bg-opacity: 1;
   background-color: hsl(60 7% 100% / var(--tw-bg-opacity));
@@ -1677,6 +1700,10 @@ nav[open]::before {
 
 .hover\:fill-primary70:hover {
   fill: hsl(167, 100%, 38%);
+}
+
+.hover\:fill-primary90:hover {
+  fill: hsl(165, 100%, 59%);
 }
 
 .hover\:text-primary70:hover {
@@ -1700,6 +1727,12 @@ nav[open]::before {
   transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, -webkit-backdrop-filter;
   transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter;
   transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter, -webkit-backdrop-filter;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+}
+
+.hover\:transition-colors:hover {
+  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition-duration: 150ms;
 }
@@ -1742,6 +1775,11 @@ nav[open]::before {
 .active\:bg-primary99:active {
   --tw-bg-opacity: 1;
   background-color: hsl(156 100% 94% / var(--tw-bg-opacity));
+}
+
+.active\:bg-slate-200:active {
+  --tw-bg-opacity: 1;
+  background-color: rgb(226 232 240 / var(--tw-bg-opacity));
 }
 
 .active\:bg-opacity-20:active {
@@ -1836,6 +1874,10 @@ nav[open]::before {
 
 :is(.dark .dark\:bg-opacity-50) {
   --tw-bg-opacity: 0.5;
+}
+
+:is(.dark .dark\:bg-gradient-to-b) {
+  background-image: linear-gradient(to bottom, var(--tw-gradient-stops));
 }
 
 :is(.dark .dark\:from-darkBg) {
@@ -1960,6 +2002,11 @@ nav[open]::before {
   background-color: hsl(165 100% 59% / var(--tw-bg-opacity));
 }
 
+:is(.dark .dark\:hover\:bg-slate-700:hover) {
+  --tw-bg-opacity: 1;
+  background-color: rgb(51 65 85 / var(--tw-bg-opacity));
+}
+
 :is(.dark .hover\:dark\:bg-surfaceBlack):hover {
   --tw-bg-opacity: 1;
   background-color: hsl(192 7% 14% / var(--tw-bg-opacity));
@@ -1992,6 +2039,11 @@ nav[open]::before {
 :is(.dark .dark\:active\:border-primary90:active) {
   --tw-border-opacity: 1;
   border-color: hsl(165 100% 59% / var(--tw-border-opacity));
+}
+
+:is(.dark .dark\:active\:bg-slate-800:active) {
+  --tw-bg-opacity: 1;
+  background-color: rgb(30 41 59 / var(--tw-bg-opacity));
 }
 
 :is(.dark .dark\:active\:bg-opacity-20:active) {
@@ -2101,9 +2153,8 @@ nav[open]::before {
     gap: 2rem;
   }
 
-  .md\:bg-\[\#FBFCF8\] {
-    --tw-bg-opacity: 1;
-    background-color: rgb(251 252 248 / var(--tw-bg-opacity));
+  .md\:bg-transparent {
+    background-color: transparent;
   }
 
   .md\:p-0 {
@@ -2186,9 +2237,8 @@ nav[open]::before {
     display: none;
   }
 
-  :is(.dark .md\:dark\:bg-darkBg) {
-    --tw-bg-opacity: 1;
-    background-color: hsl(240 7% 11% / var(--tw-bg-opacity));
+  :is(.dark .md\:dark\:bg-transparent) {
+    background-color: transparent;
   }
 }
 
