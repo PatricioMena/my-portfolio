@@ -22,6 +22,8 @@
     font-family: 'Grifter', 'Poppins', sans-serif;
   }
 
+  /* Main Nav Hover Animation */
+
   .main-nav-link {
     position: relative;
   }
@@ -55,6 +57,8 @@
     transform-origin: left;
   }
 
+  /* Section Backgrounds */
+
   #benefits,
   #how-it-works {
     background-image: url(/build/assets/backgrounds/bbblurry.svg);
@@ -71,12 +75,16 @@
     background-position: left;
   }
 
+  /* Swiper */
+
   .swiper-pagination {
     --swiper-theme-color: hsl(167, 100%, 38%);
     --swiper-pagination-bullet-inactive-color: hsl(167, 100%, 40%);
     --swiper-pagination-bullet-width: 10px;
     --swiper-pagination-bullet-height: 10px;
   }
+
+  /* Mobile Navigation */
 
   #main-navigation[open] {
     pointer-events: auto;
@@ -103,6 +111,85 @@
     left: 1.5rem;
   }
 
+  /* Tooltips */
+
+  #theme-toggle::before,
+  #theme-toggle::after,
+  .social-icon::before,
+  .social-icon::after {
+    --scale: 0;
+    --arrow-size: 10px;
+    --tooltip-color: #333;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%) translateY(var(--translate-y, 0)) scale(var(--scale));
+    transition: 150ms transform;
+  }
+
+  #theme-toggle::before,
+  #theme-toggle::after {
+    bottom: -1rem;
+    transform-origin: top center;
+  }
+
+  .social-icon::before,
+  .social-icon::after {
+    top: -0.25rem;
+    transform-origin: bottom center;
+  }
+
+  #theme-toggle::before,
+  .social-icon::before {
+    content: attr(data-tooltip);
+    color: white;
+    font-size: 14px;
+    width: max-content;
+    text-align: center;
+    padding: 0.5rem 0.75rem;
+    border-radius: 8px;
+    background: var(--tooltip-color);
+  }
+
+  #theme-toggle::before {
+    --translate-y: calc(100% - var(--arrow-size));
+  }
+
+  .social-icon::before {
+    --translate-y: calc(-100% - var(--arrow-size));
+  }
+
+  #theme-toggle:hover::before,
+  #theme-toggle:hover::after,
+  .social-icon:hover::before,
+  .social-icon:hover::after {
+    --scale: 1;
+  }
+
+  #theme-toggle::after,
+  .social-icon::after {
+    content: '';
+    border: var(--arrow-size) solid transparent;
+  }
+
+  #theme-toggle::after {
+    --translate-y: calc(-0.9 * var(--arrow-size));
+  }
+
+  .social-icon::after {
+    --translate-y: calc(-1.1 * var(--arrow-size));
+  }
+
+  #theme-toggle::after {
+    border-bottom-color: var(--tooltip-color);
+    transform-origin: bottom center;
+  }
+
+  .social-icon::after {
+    border-top-color: var(--tooltip-color);
+    transform-origin: top center;
+  }
+
+  /* Scroll Animations */
   .anim {
     opacity: 0;
   }

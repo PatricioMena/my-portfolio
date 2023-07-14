@@ -149,8 +149,9 @@ hidenSection.forEach((el) => scrollObserver.observe(el));
 //////////////////////////////////////////////
 
 // Icons
-const sunIcon = document.querySelector('.sun');
-const moonIcon = document.querySelector('.moon');
+const sunIcon = document.getElementById('theme-toggle-dark-icon');
+const moonIcon = document.getElementById('theme-toggle-light-icon');
+const themeToggle = document.getElementById('theme-toggle');
 
 // Theme Vars
 const userTheme = localStorage.getItem('theme');
@@ -186,8 +187,9 @@ const themeSwitch = () => {
 };
 
 // call theme switch on clickin buttons
-sunIcon.addEventListener('click', themeSwitch);
-moonIcon.addEventListener('click', themeSwitch);
+// sunIcon.addEventListener('click', themeSwitch);
+// moonIcon.addEventListener('click', themeSwitch);
+themeToggle.addEventListener('click', themeSwitch);
 
 // invoke theme check on initial load;
 themeCheck();
