@@ -36,9 +36,9 @@
 <body class="text-base md:text-lg overflow-x-hidden">
   <!--------------------- Navbar --------------------->
   <header>
-    <div class="h-16">
-      <nav id="navbar" class="w-full bg-[#FBFCF8] dark:bg-darkBg h-16 z-[1000]">
-        <div class="flex justify-between items-center mx-auto container max-w-7xl px-6 p-4 md:px-10">
+    <div class="min-h-[64px]">
+      <nav id="navbar" class="w-full bg-[#FBFCF8] dark:bg-darkBg min-h-[64px] z-[1000] px-6 py-4 md:px-10">
+        <div class="flex justify-between items-center mx-auto container max-w-7xl">
 
           <button id="mobile-nav-toggle" class="block z-[9999] bg-transparent border-none w-6 h-6 md:hidden" aria-controls="main-navigation" aria-expanded="false"><span class="sr-only">Menu</span></button>
           <a href="#" title="Patricio Mena homepage" class="md:mr-12">
@@ -874,7 +874,7 @@
                 </a>
               </li>
             </ul>
-            <p class="text-whiteOnSecondary text-sm tracking-wide">&copy; 2023 Patricio Mena. All Rights Reserved</p>
+            <p class="text-whiteOnSecondary text-sm tracking-wide">&copy; <span class="year">2023</span> Patricio Mena. All Rights Reserved</p>
 
           </div>
 
@@ -884,7 +884,7 @@
 
   </main>
 
-  <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
-  <script src="/./build/js/main.js"></script>
+  <script defer src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+  <script defer src="/build/js/main.js"></script>
 </body>
 </html>

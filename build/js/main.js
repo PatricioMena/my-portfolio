@@ -98,8 +98,7 @@ const observer = new IntersectionObserver(stickyNav, {
 observer.observe(hero);
 
 ///////////////////////////////////////////////
-// Parallex Cards //
-//////////////////////////////////////////////
+// Parallex Cards
 let gallery = document.getElementById('screenshots-gallery');
 let moveVal = 0;
 
@@ -125,8 +124,7 @@ requestAnimationFrame(moveGallery);
 // });
 
 ///////////////////////////////////////////////
-// Scroll Animations //
-//////////////////////////////////////////////
+// Scroll Animations
 const scrollObserver = new IntersectionObserver(
   (entries) => {
     entries.forEach((entry) => {
@@ -140,13 +138,12 @@ const scrollObserver = new IntersectionObserver(
   }
 );
 
-const hidenSection = document.querySelectorAll('.anim');
+const hiddenSection = document.querySelectorAll('.anim');
 // Telling the observer what to observe
-hidenSection.forEach((el) => scrollObserver.observe(el));
+hiddenSection.forEach((el) => scrollObserver.observe(el));
 
 ///////////////////////////////////////////////
-// Dark Mode Switch  //
-//////////////////////////////////////////////
+// Dark Mode Switch
 
 // Icons
 const sunIcon = document.getElementById('theme-toggle-dark-icon');
@@ -193,3 +190,10 @@ themeToggle.addEventListener('click', themeSwitch);
 
 // invoke theme check on initial load;
 themeCheck();
+
+///////////////////////////////////////////////////////////
+// Set current year
+
+const yearEl = document.querySelector('.year');
+const currentYear = new Date().getFullYear();
+yearEl.textContent = currentYear;

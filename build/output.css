@@ -981,6 +981,10 @@ h1,
   min-height: 500px;
 }
 
+.min-h-\[64px\] {
+  min-height: 64px;
+}
+
 .w-10 {
   width: 2.5rem;
 }
@@ -1389,6 +1393,11 @@ h1,
 .py-32 {
   padding-top: 8rem;
   padding-bottom: 8rem;
+}
+
+.py-4 {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
 }
 
 .pb-32 {
