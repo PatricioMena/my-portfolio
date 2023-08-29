@@ -191,9 +191,7 @@ themeToggle.addEventListener('click', themeSwitch);
 // invoke theme check on initial load;
 themeCheck();
 
-///////////////////////////////////////////////////////////
-// Set current year
-
+// set current year
 const yearEl = document.querySelector('.year');
 const currentYear = new Date().getFullYear();
 yearEl.textContent = currentYear;

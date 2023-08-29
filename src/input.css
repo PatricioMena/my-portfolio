@@ -235,6 +235,17 @@
       transition: none;
     }
   }
+
+  .project-image-container:hover img {
+    animation: moveSlideshow 12s linear;
+    animation-fill-mode: forwards;
+  }
+
+  @keyframes moveSlideshow {
+    100% {
+      transform: translateY(calc(-100% + 220px));
+    }
+  }
 }
 
 @layer utilities {
