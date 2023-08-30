@@ -237,7 +237,7 @@
   }
 
   .project-image-container:hover img {
-    animation: moveSlideshow 12s linear;
+    animation: moveSlideshow 10s linear;
     animation-fill-mode: forwards;
   }
 
