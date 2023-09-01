@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="es" class="scroll-smooth">
+<html lang="en" class="scroll-smooth">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,6 +9,7 @@
   <link rel="alternate" hreflang="en" href="http://www.example.com/">
   <link rel="alternate" hreflang="es" href="http://www.example.com/es">
   <link rel="alternate" hreflang="es-MX" href="http://www.example.com/es">
+
 
   <link rel="apple-touch-icon" sizes="180x180" href="/build/assets/favicon/apple-touch-icon.png">
   <link rel="icon" href="/build/assets/favicon/favicon-16x16.png" type="image/png" sizes="'16x16">
@@ -38,7 +39,7 @@
   <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.12.2/lottie.min.js" integrity="sha512-jEnuDt6jfecCjthQAJ+ed0MTVA++5ZKmlUcmDGBv2vUI/REn6FuIdixLNnQT+vKusE2hhTk2is3cFvv5wA+Sgg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script> -->
   <script src="https://cdn.lordicon.com/bhenfmcm.js"></script>
 </head>
-<body class="text-base md:text-lg overflow-x-hidden">
+<body class="text-base md:text-lg overflow-x-hidden" onload="translate('es', 'lng-tag')">
   <!--------------------- Navbar --------------------->
   <header>
     <div class="min-h-[64px]">
@@ -92,7 +93,6 @@
 
 
           <div class="flex items-center">
-            <!-- Light / Dark Mode icons -->
             <div class="flex items-center justify-center">
               <a class="py-2.5 px-2 text-gray-500 dark:text-gray-400 transition duration-150 ease-in-out hover:bg-gray-100 rounded-lg flex items-center gap-1" href="/build/index.html">
                 <img class="w-4 h-4 rounded-[0.25rem]" src="/build/assets/icons/us.svg" alt="">
@@ -103,8 +103,8 @@
                 <img class="w-4 h-4 rounded-[0.25rem]" src="/build/assets/icons/mx.svg" alt=""> <!-- <p class="text-xs">MX</p> -->
               </a>
             </div>
-
-            <button id="theme-toggle" class="inline-flex relative text-gray-500 items-center justify-center dark:text-gray-400 transition duration-150 ease-in-out hover:bg-gray-100 rounded-lg p-2.5 h-10 w-10  dark:hover:bg-gray-700 " data-tooltip="Toogle Dark Mode">
+            <!-- Light / Dark Mode icons -->
+            <button id="theme-toggle" class="inline-flex relative text-gray-500 items-center justify-center dark:text-gray-400 hover:bg-gray-100 rounded-lg p-2.5 h-10 w-10  dark:hover:bg-gray-700 " data-tooltip="Toogle Dark Mode">
               <svg id="theme-toggle-dark-icon" class="w-4 h-4" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 256 256">
                 <path d="M120,40V16a8,8,0,0,1,16,0V40a8,8,0,0,1-16,0Zm8,24a64,64,0,1,0,64,64A64.07,64.07,0,0,0,128,64ZM58.34,69.66A8,8,0,0,0,69.66,58.34l-16-16A8,8,0,0,0,42.34,53.66Zm0,116.68-16,16a8,8,0,0,0,11.32,11.32l16-16a8,8,0,0,0-11.32-11.32ZM192,72a8,8,0,0,0,5.66-2.34l16-16a8,8,0,0,0-11.32-11.32l-16,16A8,8,0,0,0,192,72Zm5.66,114.34a8,8,0,0,0-11.32,11.32l16,16a8,8,0,0,0,11.32-11.32ZM48,128a8,8,0,0,0-8-8H16a8,8,0,0,0,0,16H40A8,8,0,0,0,48,128Zm80,80a8,8,0,0,0-8,8v24a8,8,0,0,0,16,0V216A8,8,0,0,0,128,208Zm112-88H216a8,8,0,0,0,0,16h24a8,8,0,0,0,0-16Z"></path>
               </svg>
@@ -128,8 +128,8 @@
     <section id="hero" class="bg-[#FBFCF8] dark:bg-darkBg">
       <div class="container mx-auto max-w-7xl px-6 md:px-10">
         <div class="flex flex-col items-center pt-20 md:pt-32">
-          <h1 class=" text-gray500 dark:text-slate-50 text-5xl leading-[1.1] md:text-7xl text-center dark:text-textWhite max-w-[18ch]">Take Your Business to the Next Level</h1>
-          <p class="text-xl text-center mt-8 max-w-2xl mx-auto text-gray300 dark:text-slate-300 ">Tailored web experiences designed to increase your audience, make powerful first impressions, and set the stage to grow your brand</p>
+          <h1 class="text-gray500 dark:text-slate-50 text-5xl leading-[1.1] md:text-7xl text-center dark:text-textWhite max-w-[20ch]">Lleva tu Negocio al Siguiente Nivel</h1>
+          <p class="text-xl text-center mt-8 max-w-2xl mx-auto text-gray300 dark:text-slate-300 ">Tailored web experiences designed to increase your audience, make powerful first impressions, and set the stage to grow your business</p>
           <div class="w-full flex flex-col justify-center mt-10 gap-4 md:flex-row md:items-center">
             <a href="#portfolio" class="inline-flex items-center justify-center text-primary100 bg-primary70 px-5 py-2.5 rounded-lg tracking-wide transition-color duration-200 ease-in hover:bg-opacity-80 hover:shadow-md hover:transition hover:duration-[250ms] hover:ease-out hover:-translate-y-[1px] active:translate-y-0 active:shadow-none active:bg-opacity-90 dark:bg-primary90 dark:text-primary10 dark:hover:bg-opacity-80 dark:active:bg-opacity-90">Browse Projects</a>
             <a href="#contact" class="inline-flex items-center justify-center text-primary70 bg-neutral-50 bg-opacity-70 px-5 py-2.5 border rounded-lg border-outlineLight tracking-wide transition duration-200 ease-in hover:shadow-md active:shadow-none hover:bg-primary100 hover:transition hover:duration-[250ms] hover:ease-out hover:-translate-y-[1px] active:border-primary70 active:bg-primary99 active:bg-opacity-90 dark:bg-darkBg dark:text-primary90 dark:bg-opacity-40 dark:active:border-primary90 active:translate-y-0  dark:border-outlineDark dark:hover:bg-opacity-10 dark:active:bg-opacity-20 md:min-w-[178px]">Contact Me</a>
@@ -141,13 +141,13 @@
     <!--------------------- Screenshots Section --------------------->
     <section class="bg-gradient-to-b from-[#FBFCF8] to-[#FFFEFC] dark:bg-gradient-to-b dark:from-darkBg dark:to-darkBg grid content-center overflow-hidden pt-16">
       <ul id="screenshots-gallery" class="flex gap-4 md:gap-6  md:left-[-6%]">
-        <li class="w-52 md:w-96 md:h-80"><img src="./assets/shot-2.png" alt="" class="rounded-2xl border-none shadow-md w-full" width="384" height="320"></li>
-        <li class="w-52 md:w-96 md:h-80"><img src="./assets/shot-3.png" alt="" class="rounded-2xl border-none shadow-md w-full" width="384" height="320"></li>
-        <li class="w-52 md:w-96 md:h-80"><img src="./assets/shot-1.png" alt="" class="rounded-2xl border-none shadow-md w-full" width="384" height="320"></li>
-        <li class="w-52 md:w-96 md:h-80"><img src="./assets/shot-4.png" alt="" class="rounded-2xl border-none shadow-md w-full" width="384" height="320"></li>
-        <li class="w-52 md:w-96 md:h-80"><img src="./assets/shot-5.png" alt="" class="rounded-2xl border-none shadow-md w-full" width="384" height="320"></li>
-        <li class="w-52 md:w-96 md:h-80"><img src="./assets/shot-1.png" alt="" class="rounded-2xl border-none shadow-md w-full" width="384" height="320"></li>
-        <li class="w-52 md:w-96 md:h-80"><img src="./assets/shot-1.png" alt="" class="rounded-2xl border-none shadow-md w-full" width="384" height="320"></li>
+        <li class="w-52 md:w-96 md:h-80"><img src="../assets/shot-2.png" alt="" class="rounded-2xl border-none shadow-md w-full" width="384" height="320"></li>
+        <li class="w-52 md:w-96 md:h-80"><img src="../assets/shot-3.png" alt="" class="rounded-2xl border-none shadow-md w-full" width="384" height="320"></li>
+        <li class="w-52 md:w-96 md:h-80"><img src="../assets/shot-1.png" alt="" class="rounded-2xl border-none shadow-md w-full" width="384" height="320"></li>
+        <li class="w-52 md:w-96 md:h-80"><img src="../assets/shot-4.png" alt="" class="rounded-2xl border-none shadow-md w-full" width="384" height="320"></li>
+        <li class="w-52 md:w-96 md:h-80"><img src="../assets/shot-5.png" alt="" class="rounded-2xl border-none shadow-md w-full" width="384" height="320"></li>
+        <li class="w-52 md:w-96 md:h-80"><img src="../assets/shot-1.png" alt="" class="rounded-2xl border-none shadow-md w-full" width="384" height="320"></li>
+        <li class="w-52 md:w-96 md:h-80"><img src="../assets/shot-1.png" alt="" class="rounded-2xl border-none shadow-md w-full" width="384" height="320"></li>
       </ul>
     </section>
 
