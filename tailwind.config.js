@@ -1,8 +1,13 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  content: ['./build/*.html', './build/js/*.js'],
+  content: ['./build/*.html', './build/js/*.js', './build/blog/*.html'],
   darkMode: 'class',
   theme: {
+    fontFamily: {
+      display: ['Grifter'],
+      body: ['"Plus Jakarta Sans"']
+    },
+
     screens: {
       sm: '480px',
       md: '768px',

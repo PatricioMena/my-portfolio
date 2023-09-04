@@ -75,6 +75,10 @@
     background-position: left;
   }
 
+  .blog-img-wrapper:hover img {
+    transform: scale(1.1);
+  }
+
   /* Swiper */
 
   .swiper-pagination {
@@ -237,7 +241,7 @@
   }
 
   .project-image-container:hover img {
-    animation: moveSlideshow 10s linear;
+    animation: moveSlideshow 12s linear;
     animation-fill-mode: forwards;
   }
 
