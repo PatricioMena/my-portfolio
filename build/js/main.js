@@ -195,3 +195,9 @@ themeCheck();
 const yearEl = document.querySelector('.year');
 const currentYear = new Date().getFullYear();
 yearEl.textContent = currentYear;
+
+class MyThing {
+  constructor(passThisIn) {
+    this.passThisIn = passThisIn;
+  }
+}
