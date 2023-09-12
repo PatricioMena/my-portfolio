@@ -22,12 +22,15 @@
 
   <link rel="stylesheet" href="/build/output.css">
 
+  <!--------------------- Patterns --------------------->
+  <link href="https://unpkg.com/pattern.css" rel="stylesheet">
+
 </head>
-<body class="bg-darkSurface md:text-xl text-gray-100 leading-8">
+<body class="bg-darkBg text-xl text-gray-100 leading-8 pattern-grid-xl bg-fixed">
   <header class="pt-10 mb-10">
     <div class="container max-w-4xl mx-auto px-6 md:px-10">
-      <section class="bg-gradient-to-tr from-secondary10 to-secondary50 p-8 rounded-xl shadow-xl">
-        <h1 class=" text-3xl font-bold leading-[1.1] md:text-4xl mb-3 text-secondary100">MVC Architecture: Understanding the Model-View-Controller (MVC)</h1>
+      <section class="bg-gradient-to-br from-secondary10 via-secondary20 to-secondary50 p-8 rounded-xl shadow-xl">
+        <h1 class=" text-3xl font-bold leading-[1.1] md:text-4xl mb-3 text-secondary100">MVC Architecture: Understanding the Model-View-Controller (MVC) pattern</h1>
         <div class="relative">
           <p class="ml-6 text-sm text-secondary90 mb-0.5 before:content-['|'] before:text-[2rem] before:absolute before:top-2 before:left-0 before:text-secondary90">Patricio Mena</p>
           <p class="ml-6 text-sm text-secondary90">September 03, 2023</p>
@@ -38,11 +41,11 @@
   </header>
   <main>
     <div class="containter max-w-4xl mx-auto px-6 md:px-10">
-      <article>
+      <article class="mb-16">
         <img class="w-full rounded-xl mb-10 shadow-xl" src="../assets/blog-image-3.jpg" alt="">
         <p class="mb-4">In software development, creating robust and maintainable application is a top priority. To achieve this, developers often rely on architectural patterns that guide them in organizing their code effectively.</p>
 
-        <p class="mb-4">One of the most popular architecture patterns is the Model-View-Controller (MVC) architecture</p>
+        <p class="mb-8">One of the most popular architecture patterns is the Model-View-Controller (MVC) architecture</p>
         <img class="mx-auto mb-8 rounded-lg" src="./assets/seinfeld-george.gif" alt="seinfeld-george-gif">
 
         <!-- What is MVC -->
@@ -61,7 +64,7 @@
         </div>
 
         <!-- Why MVC -->
-        <div class="mb-8">
+        <div class="mb-16">
           <h2 class="font-display text-4xl font-bold text text-secondary70 mb-8">Why MVC?</h2>
           <img class="mx-auto rounded-lg mb-8" src="./assets/blueprint.gif" alt="blueprint-gif">
           <p class="mb-4">MVC architecture works as a blueprint for our application that will help us and our team to have a more organized, cleaner, and flexible code</p>
@@ -69,7 +72,7 @@
 
           <ul class="mb-6">
             <li class="ml-6 mb-4">
-              <h3 class="font-body font-bold flex gap-2 items-center mb-1 text-secondary70">
+              <h3 class="font-body font-bold flex gap-2 items-center text-secondary70">
                 <i class="ph-fill ph-check-circle">
                 </i>
                 Separation of Concerns
@@ -77,7 +80,7 @@
               <p class="ml-7">Makes easier to manage and maintain our code</p>
             </li>
             <li class="ml-6 mb-4">
-              <h3 class="font-body font-bold flex gap-2 items-center mb-1 text-secondary70">
+              <h3 class="font-body font-bold flex gap-2 items-center text-secondary70">
                 <i class="ph-fill ph-check-circle">
                 </i>
                 Reusability
@@ -85,7 +88,7 @@
               <p class="ml-7">We can reuse these components across different parts of our application or even in another projects</p>
             </li>
             <li class="ml-6 mb-4">
-              <h3 class="font-body font-bold flex gap-2 items-center mb-1 text-secondary70">
+              <h3 class="font-body font-bold flex gap-2 items-center text-secondary70">
                 <i class="ph-fill ph-check-circle">
                 </i>
                 Scalability
@@ -96,13 +99,13 @@
         </div>
 
         <!-- Analogy -->
-        <div class="mb-8">
+        <div class="mb-16">
           <h2 class="font-display text-4xl font-bold text text-secondary70 mb-6">MVC as a Blueprint for a House 🏠</h2>
           <p class="mb-4">I like to think of MVC as building a house from scratch. You wouldn't start hammering nails and stacking bricks randomly. Instead, you'd begin with a detailed blueprint, that outlines every aspect of the house's design.</p>
-          <p class="mb-4">This blueprint serves as a guide through the construction process, ensuring that everything is well-organized, efficient, and built to last</p>
-          <ul class="mb-6">
+          <p class="mb-8">This blueprint serves as a guide through the construction process, ensuring that everything is well-organized, efficient, and built to last</p>
+          <ul class="mb-8">
             <li class="ml-6 mb-4">
-              <p class="font-body font-bold flex gap-2 items-center mb-1 text-secondary70">
+              <p class="font-body font-bold flex gap-2 items-center text-secondary70">
                 <i class="ph-fill ph-check-circle">
                 </i>
                 Model as the Foundation
@@ -110,7 +113,7 @@
               <p class="ml-7">Just as the foundation determines the house's stability, the <span class="text-yellow-100">MODEL</span> defines the logic and data structure of the application</p>
             </li>
             <li class="ml-6 mb-4">
-              <h3 class="font-body font-bold flex gap-2 items-center mb-1 text-secondary70">
+              <h3 class="font-body font-bold flex gap-2 items-center text-secondary70">
                 <i class="ph-fill ph-check-circle">
                 </i>
                 View as the Aesthetic Design
@@ -118,7 +121,7 @@
               <p class="ml-7">It's what make the house visually appealing, the interior design and exterior appearance. The <span class="text-yellow-100">VIEW</span> is responsible for presenting data to the user in an aesthetically and user-friendly manner</p>
             </li>
             <li class="ml-6 mb-4">
-              <h3 class="font-body font-bold flex gap-2 items-center mb-1 text-secondary70">
+              <h3 class="font-body font-bold flex gap-2 items-center text-secondary70">
                 <i class="ph-fill ph-check-circle">
                 </i>
                 Controller as the Builder
@@ -133,7 +136,7 @@
         </div>
 
         <!-- Figure 1 -->
-        <div class="mb-8">
+        <div class="mb-16">
           <figure id="figure1" class="flex flex-col justify-center">
             <img class="rounded-lg mb-2" src="./assets/MVC ARCHITECTURE.png" alt="MVC architectur diagram">
             <figcaption class="leading-6 text-sm text-center md:text w-3/4 mx-auto"><span class="text-primaryDark">Figure 1.</span> MVC architecture diagram</figcaption>
@@ -141,7 +144,7 @@
         </div>
 
         <!-- Model -->
-        <div class="mb-8">
+        <div class="mb-16">
           <h2 class="font-display text-4xl font-bold text text-secondary70 mb-6">Model</h2>
           <img class="mx-auto rounded-lg mb-8 max-w-xs" src="./assets/model.gif" alt="blueprint-gif">
           <p class="mb-4">This is where we write the code that talks to the database. As we use MongoDB as our database, we can use mongoose to help us build the boilerplate for the logic of our application data. <a href="https://mongoosejs.com/" class="text-primary50 underline hover:text-primary60">Mongoose</a> provides a straight-forward, schema based solution to model our application</p>
@@ -155,7 +158,7 @@
         </div>
 
         <!-- View -->
-        <div class="mb-8">
+        <div class="mb-16">
           <h2 class="font-display text-4xl font-bold text text-secondary70 mb-6">View</h2>
           <img class="mx-auto rounded-lg mb-8 max-w-xs" src="./assets/view.gif" alt="blueprint-gif">
           <p class="mb-4">The <span class="text-yellow-100">VIEW</span> is what the user sees on their browser</p>
@@ -182,9 +185,9 @@
             </img>
           </figure>
         </div>
-        <p class="mb-8">Implementing MVC depends on the programming language and framework you're using. However, the basic principle remain the same, Here is a diagram of how the components interact: </p>
+        <p class="mb-16">Implementing MVC depends on the programming language and framework you're using. However, the basic principle remain the same, Here is a diagram of how the components interact: </p>
         <!-- Figure 5 -->
-        <div class="mb-8">
+        <div class="mb-16">
           <figure class="flex flex-col justify-center">
             <img class="rounded-lg mb-2" src="./assets/MVC components.png" alt="MVC architectur diagram">
             <figcaption class="leading-6 text-sm text-center md:text w-3/4 mx-auto"><span class="text-primaryDark">Figure 5.</span> MVC components diagram</figcaption>
@@ -192,17 +195,17 @@
         </div>
 
         <!-- Router -->
-        <div class="py-10">
+        <div class="mb-16">
           <h2 class="font-display text-4xl font-bold text text-secondary70 mb-8">What about the router?</h2>
           <img class="mx-auto rounded-lg mb-8 max-w-sm" src="./assets/router.gif" alt="controller-gif">
-          <p class="mb-4">In the <a class="text-primary50 underline hover:text-primary60" href="#figure1"> figure 1</a> we saw that before the <span class="text-yellow-100">CONTROLLER</span> we have a <span class="text-yellow-100">ROUTER</span>. The <span class="text-yellow-100">ROUTER</span> is the first touch point that listen the request that comes from the client side
+          <p class="mb-4">In the <a class="text-primary50 underline duration-200 ease-in-out hover:text-primary60" href="#figure1"> figure 1</a> we saw that before the <span class="text-yellow-100">CONTROLLER</span> we have a <span class="text-yellow-100">ROUTER</span>. The <span class="text-yellow-100">ROUTER</span> is the first touch point that listen the request that comes from the client side
           </p>
           <p class="mb-8">This adds a level of abstraction where we can handle the user requests and know to what controller send those requests. YES ! we can have multiple controllers, so the <span class="text-yellow-100">ROUTER</span> help us to have the separation of concern we talk about at the beginning</p>
         </div>
 
 
         <!-- Summary -->
-        <div class="mb-8">
+        <div class="mb-16">
           <h2 class="font-display text-4xl font-bold text text-secondary70 mb-8">Summary</h2>
           <figure class="flex flex-col justify-center w-full mx-auto mb-8">
             <img class="rounded-lg mb-4" src="./assets/MVC-flow diagram.png" alt="mvc flow summary">
@@ -249,14 +252,18 @@
         </div>
 
         <!-- Conclusion -->
-        <div class="mb-8">
+        <div class="mb-16">
           <h2 class="font-display text-4xl font-bold text text-secondary70 mb-6">Conclusion</h2>
           <p class="mb-8">By understanding and implementing MVC in our projects, we can build more maintainable and robust applications that stand the test of time. Its clear separation of concerns, reusability, testability, and scalability benefits continue to make it a popular choice among developers.</p>
           <img class="mx-auto rounded-lg mb-8 max-w-sm" src="./assets/conclusion.gif" alt="goodbye gif">
         </div>
+      </article>
+      <div class="mb-10 w-full flex flex-col justify-between mt-10 gap-4 md:flex-row md:items-center">
+        <a href="../index.html" class="inline-flex items-center bg-primary70 text-primary10 justify-center px-5 py-2.5 rounded-lg tracking-wide transition-color duration-200 ease-in hover:shadow-md hover:transition hover:duration-[250ms] hover:ease-out active:shadow-none hover:bg-opacity-80 active:bg-opacity-90">Back to Home</a>
+        <a href="../blog/post-1.html" class="inline-flex items-center justify-center text-primary70 bg-darkSurface border border-outlineDark bg-opacity-40 px-5 py-2.5 rounded-lg tracking-wide transition duration-200 ease-in hover:shadow-md active:shadow-none hover:transition hover:duration-[250ms] hover:ease-out hover:border-outlineLight active:border-primary70">Next Article</a>
+      </div>
     </div>
 
-    </article>
     </div>
   </main>
 </body>

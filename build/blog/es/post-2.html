@@ -23,11 +23,14 @@
 
   <link rel="stylesheet" href="/build/output.css">
 
+  <!--------------------- Patterns --------------------->
+  <link href="https://unpkg.com/pattern.css" rel="stylesheet">
+
 </head>
-<body class="bg-darkSurface text-xl text-gray-100 leading-8">
+<body class="bg-darkSurface text-xl text-gray-100 leading-8 pattern-grid-xl bg-fixed">
   <header class="pt-10 mb-10">
     <div class="container max-w-4xl mx-auto px-6 md:px-10">
-      <section class="bg-gradient-to-tr from-secondary10 to-secondary50 p-8 rounded-xl shadow-xl">
+      <section class="bg-gradient-to-br from-secondary10 via-secondary20 to-secondary50 p-8 rounded-xl shadow-xl">
         <h1 class=" text-3xl font-bold leading-[1.1] md:text-4xl mb-3 text-secondary100">Más Allá de lo Estético: Cómo el diseño UI/UX aumenta las tasas de conversión y hace que tus visitantes actúen</h1>
         <div class="relative">
           <p class="ml-6 text-sm text-secondary90 mb-0.5 before:content-['|'] before:text-[2rem] before:absolute before:top-2 before:left-0 before:text-secondary90">Patricio Mena</p>
@@ -39,160 +42,157 @@
   </header>
   <main>
     <div class="containter max-w-4xl mx-auto px-6 md:px-10">
-      <article>
+      <article class="mb-10">
         <img class="w-full rounded-xl mb-10 shadow-xl" src="../../assets/blog-image-2.jpg" alt="">
-        <p class="mb-8">When it comes to designing a website or a web application, many businesses focus primarily on aesthetics. While a visually appealing design is essential, there's much more to it. User Interface (UI) and User Experience (UX) design play a critical role in determining whether visitors take the desired actions on your site, ultimately affecting conversion rates. In this article, we'll explore how UI/UX can go beyond aesthetics to significantly impact your conversion rates</p>
-        <div class="mb-8">
-          <h2 class="font-display text-4xl font-bold text text-secondary70 mb-6">Understanding UI and UX</h2>
-          <p class="leading-8 mb-4">Before diving into the relationship between UI/UX and conversion rates, let's clarify what these terms mean:</p>
-          <ul class="mb-6">
+        <p class="mb-4">Cuando se trata de diseñar un sitio web o una aplicación web, muchas empresas se centran principalmente en la estética del sitio. Si bien un diseño visualmente atractivo es esencial, hay mucho más que considerar</p>
+        <p class="mb-16">El diseño de la Interfaz de Usuario (UI) y la Experiencia del Usuario (UX) desempeñan un papel crítico en la determinación de si los visitantes realizan las acciones deseadas en tu sitio, lo que en última instancia afecta las tasas de conversión. En este artículo, exploraremos cómo UI/UX pueden ir más allá de lo estético para impactar significativamente en tus leads</p>
+        <div class="mb-16">
+          <h2 class="font-display text-4xl font-bold text text-secondary70 mb-6">Entendiendo UI y UX</h2>
+          <p class="leading-8 mb-4">Antes de adentrarnos en la relación entre UI/UX y las tasas de conversión, aclaremos qué significan estos términos:</p>
+          <ul class="mb-8">
             <li class="ml-6 mb-4">
               <h3 class="font-body font-bold flex gap-2 items-center mb-1 text-secondary70">
                 <i class="ph-fill ph-check-circle">
                 </i>
-                UI (User Interface)
+                UI (Interfaz de Usuario)
               </h3>
-              <p class="ml-7">UI design focuses on the visual aspects of your website or app, such as layout, colors, typography, and interactive elements. It's essentially the "look and feel" of your digital product</p>
+              <p class="ml-7">El diseño de UI se enfoca en los aspectos visuales de tu sitio web o aplicación, como el layout, los colores, la tipografía y los elementos interactivos. Básicamente, es la "apariencia y sensación" de tu producto digital</p>
             </li>
             <li class="ml-6 mb-4">
               <h3 class="font-body font-bold flex gap-2 items-center mb-1 text-secondary70">
                 <i class="ph-fill ph-check-circle">
                 </i>
-                UX (User Experience)
+                UX (Experiencia del Usuario)
               </h3>
-              <p class="ml-7">UX design goes deeper into how users interact with your site or app. It considers the user's journey, ease of navigation, accessibility, and overall satisfaction with their experience</p>
-            </li>
-            <li class="ml-6 mb-4">
-              <h3 class="font-body font-bold flex gap-2 items-center mb-1 text-secondary70">
-                <i class="ph-fill ph-check-circle">
-                </i>
-                Reduced Bounce Rate
-              </h3>
-              <p class="ml-7">A faster website keeps bounce rates low. Users are more likely to stick around, browse your products or services, and potentially convert into customers</p>
+              <p class="ml-7">El diseño de UX profundiza en cómo los usuarios interactúan con tu sitio o aplicación. Considera el recorrido del usuario, la facilidad de navegación, la accesibilidad y la satisfacción general con su experiencia</p>
             </li>
 
-            <li class="ml-6 mb-4">
-              <h3 class="font-body font-bold flex gap-2 items-center mb-1 text-secondary70">
-                <i class="ph-fill ph-check-circle">
-                </i>
-                Higher Search Engine Ranking:
-              </h3>
-              <p class="ml-7">Speed is one of the factors search engines consider when ranking websites. Faster websites tend to rank higher in search results, increasing your visibility and attracting more visitors</p>
-            </li>
           </ul>
           <!-- Stat -->
-          <blockquote class="mb-8 border-l-8 border-solid border-8 border-y-0 border-r-0 border-secondary50 text-xl bg-secondary80 py-8 px-6 rounded-md shadow-md">
-            <p class="text-secondary10"><span class="text-2xl font-black">89&percnt;</span> of consumers <a class="text-primary50 underline hover:text-primary60" href="https://www.webfx.com/blog/web-design/user-experience-matters-marketing/">shop with a competitor</a> after poor user experience</p>
+          <blockquote class="border-l-8 border-solid border-8 border-y-0 border-r-0 border-secondary50 text-xl bg-secondary80 py-8 px-6 rounded-md shadow-md">
+            <p class="text-secondary10"><span class="inline-block bg-gradient-to-r from-primaryDark  text-xl text-secondary10 font-black px-1 rounded-sm">89&percnt;</span> de los consumidores <a class="text-primary50 underline duration-200 ease-in-out hover:text-primary60" href="https://www.webfx.com/blog/web-design/user-experience-matters-marketing/">compran con un competidor</a> después de una mala experiencia de usuario</p>
           </blockquote>
         </div>
 
-        <div class="mb-8">
-          <h2 class="font-display text-4xl font-bold text text-secondary70 mb-6">The Connection Between UI/UX and Conversion Rates</h2>
-          <p class="mb-8"> If the site is slow to react to user interaction, or appears janky, it causes site visitors to lose interest and trust. To build websites and applications people want to use; to attract and retain site visitors, you need to create an accessible site that provides a good user experience.</p>
+        <div class="mb-16">
+          <h2 class="font-display text-4xl font-bold text text-secondary70 mb-6">La Conexión entre UI/UX y las Tasas de Conversión</h2>
+          <p class="mb-8">Un buen diseño UI/UX puede tener un impacto significativo en la tasa de conversión, que mide el porcentaje de visitantes o usuarios del sitio web que realizan acciones deseadas, como realizar una compra, registrarse en un servicio o completar un formulario</p>
 
           <!-- Stat -->
           <blockquote class="mb-8 border-l-8 border-solid border-8 border-y-0 border-r-0 border-secondary50 text-xl bg-secondary80 py-8 px-6 rounded-md shadow-md">
-            <p class="text-secondary10">According to a <a class="text-primary50 underline hover:text-primary60" href="https://www.forrester.com/report/The-Six-Steps-For-Justifying-Better-UX/RES117708">Study by Forester</a>, Good UI can raise a website’s conversion rate by up to <span class="text-2xl font-black">200&percnt;</span>, while a better UX design can raise the conversion rate by up to <span class="text-2xl font-black">400&percnt;</span></p>
+            <p class="text-secondary10">De acuerdo a <a class="text-primary50 underline duration-200 ease-in-out hover:text-primary60" href="https://www.forrester.com/report/The-Six-Steps-For-Justifying-Better-UX/RES117708">un estudio de Forrester</a>, una buena UI puede aumentar la tasa de conversión de un sitio web <span class="inline-block bg-gradient-to-r from-primaryDark  text-xl text-secondary10 font-black px-1 rounded-sm">hasta un 200&percnt;</span>, mientras que una mejora en el diseño UX puede incrementar la tasa de conversión <span class="inline-block bg-gradient-to-r from-primaryDark  text-xl text-secondary10 font-black px-1 rounded-sm">hasta un 400&percnt;</span></p>
           </blockquote>
 
-          <ul class="mb-6">
+          <ul class="mb-8">
             <li class="ml-6 mb-4">
-              <h3 class="font-body font-bold flex gap-2 items-center mb-1 text-secondary70">
+              <h3 class="font-body font-bold flex gap-2 items-center text-secondary70">
                 <i class="ph-fill ph-check-circle">
                 </i>
-                First Impression Matter
+                La Primera Impresión Cuenta
               </h3>
-              <p class="ml-7">When users land on your website or web app, they form an immediate impression based on its design and layout. An aesthetically pleasing and well-organized UI captures their attention and encourages them to explore further</p>
+              <p class="ml-7">Cuando los usuarios llegan a tu sitio web o aplicación web, forman una impresión inmediata basada en su diseño y layout. Una UI visualmente agradable y bien organizada capta su atención y los anima a explorar más</p>
             </li>
             <li class="ml-6 mb-4">
-              <h3 class="font-body font-bold flex gap-2 items-center mb-1 text-secondary70">
+              <h3 class="font-body font-bold flex gap-2 items-center text-secondary70">
                 <i class="ph-fill ph-check-circle">
                 </i>
-                Clarity and Navigation
+                Claridad y Navegación
               </h3>
-              <p class="ml-7">An intuitive UX design ensures that users can easily find what they're looking for. Clear navigation paths, well-structured content, and logical user flows guide them toward conversion actions</p>
+              <p class="ml-7">Un diseño de UX intuitivo garantiza que los usuarios puedan encontrar fácilmente lo que están buscando. Trayectorias de navegación claras, contenido bien estructurado y flujos de usuario lógicos los guían hacia las acciones de conversión</p>
             </li>
             <li class="ml-6 mb-4">
-              <h3 class="font-body font-bold flex gap-2 items-center mb-1 text-secondary70">
+              <h3 class="font-body font-bold flex gap-2 items-center text-secondary70">
                 <i class="ph-fill ph-check-circle">
                 </i>
-                Reducing Friction
+                Reduce Fricción
               </h3>
-              <p class="ml-7">UX design aims to minimize friction points in the user journey. This means fewer obstacles, easier form submissions, and streamlined checkout processes—all of which contribute to higher conversion rates</p>
+              <p class="ml-7">El diseño de UX tiene como objetivo minimizar los puntos de fricción en el recorrido del usuario. Esto significa menos obstáculos, formularios de envío más fáciles y procesos de pago simplificados, todo lo cual contribuye a tasas de conversión más altas</p>
             </li>
-            <li class="ml-6 mb-4">
-              <h3 class="font-body font-bold flex gap-2 items-center mb-1 text-secondary70">
+            <li class="ml-6">
+              <h3 class="font-body font-bold flex gap-2 items-center text-secondary70">
                 <i class="ph-fill ph-check-circle">
                 </i>
-                Trust and Credibility
+                Confianza y Credibilidad
               </h3>
-              <p class="ml-7">A well-designed UI and UX build trust. Users are more likely to engage with and convert on a site that appears professional and reliable</p>
+              <p class="ml-7">Una UI y UX bien diseñadas generan confianza. Los usuarios tienen más probabilidades de interactuar y convertirse en un sitio que parece profesional y confiable</p>
             </li>
           </ul>
         </div>
 
         <!-- Tips -->
-        <div class="mb-8">
-          <h2 class="font-display text-4xl font-bold text text-secondary70 mb-6">Practical Tips for Boosting Conversion Rates Through UI/UX</h2>
-          <p class="mb-4">Now that we understand the connection, here are some practical tips for leveraging UI/UX to drive conversion rates:</p>
-          <ul class="mb-6">
+        <div class="mb-16">
+          <h2 class="font-display text-4xl font-bold text text-secondary70 mb-6">Consejos Prácticos para Aumentar las Tasas de Conversión a través de UI/UX</h2>
+          <p class="mb-4">Ahora que comprendemos la conexión, aquí tienes algunos consejos prácticos para aprovechar el diseño UI/UX e impulsar las tasas de conversión:</p>
+          <ul class="mb-8">
             <li class="ml-6 mb-4">
-              <h3 class="font-body font-bold flex gap-2 items-center mb-1 text-secondary70">
+              <h3 class="font-body font-bold flex gap-2 items-center text-secondary70">
                 <i class="ph-fill ph-check-circle">
                 </i>
-                Responsive Design
+                Diseño Responsivo
               </h3>
-              <p class="ml-7">Ensure your site is responsive and works seamlessly on all devices. Mobile-friendly design is crucial as mobile users continue to grow</p>
+              <p class="ml-7">Asegúrate de que tu sitio sea responsivo y funcione sin problemas en todos los dispositivos. Un diseño que se adapte a dispositivos móviles es crucial a medida que el número de usuarios móviles continúa creciendo</p>
             </li>
             <li class="ml-6 mb-4">
-              <h3 class="font-body font-bold flex gap-2 items-center mb-1 text-secondary70">
+              <h3 class="font-body font-bold flex gap-2 items-center text-secondary70">
                 <i class="ph-fill ph-check-circle">
                 </i>
-                A/B Testing
+                Pruebas A/B
               </h3>
-              <p class="ml-7">Continuously test different UI/UX elements, such as button colors, call-to-action text, and form layouts, to determine what resonates best with your audience</p>
+              <p class="ml-7">Realiza pruebas continuas en diferentes elementos de UI/UX, como colores de botones, texto en CTA y disposición de formularios, para determinar qué tiene mayor impacto con tu audiencia</p>
             </li>
             <li class="ml-6 mb-4">
-              <h3 class="font-body font-bold flex gap-2 items-center mb-1 text-secondary70">
+              <h3 class="font-body font-bold flex gap-2 items-center text-secondary70">
                 <i class="ph-fill ph-check-circle">
                 </i>
-                Loading Speed
+                Velocidad de Carga
               </h3>
-              <p class="ml-7">A fast-loading site is essential for both UX and SEO. Slow sites can lead to high bounce rates and lost conversions</p>
+              <p class="ml-7">Un sitio que carga rápidamente es esencial tanto para la UX como para el SEO. Los sitios lentos pueden llevar a tasas de rebote altas y conversiones perdidas</p>
             </li>
             <li class="ml-6 mb-4">
-              <h3 class="font-body font-bold flex gap-2 items-center mb-1 text-secondary70">
+              <h3 class="font-body font-bold flex gap-2 items-center text-secondary70">
                 <i class="ph-fill ph-check-circle">
                 </i>
-                User Feedback
+                Opiniones de los Usuarios
               </h3>
-              <p class="ml-7">Actively gather feedback from users to identify pain points and areas for improvement in your UI/UX</p>
+              <p class="ml-7">Recopila activamente comentarios de los usuarios para identificar puntos problemáticos y áreas de mejora en tu UI/UX</p>
             </li>
             <li class="ml-6 mb-4">
-              <h3 class="font-body font-bold flex gap-2 items-center mb-1 text-secondary70">
+              <h3 class="font-body font-bold flex gap-2 items-center text-secondary70">
                 <i class="ph-fill ph-check-circle">
                 </i>
-                Accessibility
+                Accesibilidad
               </h3>
-              <p class="ml-7">Make your site accessible to all users, including those with disabilities. This not only improves UX but also expands your potential audience</p>
+              <p class="ml-7">Haz que tu sitio sea accesible para todos los usuarios, incluidos aquellos con discapacidades. Esto no solo mejora la UX, sino que también amplía tu audiencia potencial</p>
+            </li>
+            <li class="ml-6">
+              <h3 class="font-body font-bold flex gap-2 items-center text-secondary70">
+                <i class="ph-fill ph-check-circle">
+                </i>
+                Mapas de Calor
+              </h3>
+              <p class="ml-7">Los mapas de calor son una forma poderosa de comprender lo que hacen los usuarios en tu sitio web: dónde hacen clic, qué tan lejos se desplazan y qué es lo que ven o ignoran</p>
             </li>
           </ul>
           <!-- Stat -->
           <blockquote class="mb-8 border-l-8 border-solid border-8 border-y-0 border-r-0 border-secondary50 text-xl bg-secondary80 py-8 px-6 rounded-md shadow-md">
-            <p class="text-secondary10">This article by <a class="text-primary50 underline hover:text-primary60" href="https://www.webfx.com/blog/web-design/user-experience-matters-marketing/">WebFX</a> mentions that <span class="text-2xl font-black">88&percnt;</span> of online consumers are less likely to return to a site after poor user experience</p>
+            <p class="text-secondary10">Este artículo de <a class="text-primary50 underline duration-200 ease-in-out hover:text-primary60" href="https://www.webfx.com/blog/web-design/user-experience-matters-marketing/">WebFX</a> menciona que el <span class="inline-block bg-gradient-to-r from-primaryDark from-99% text-xl text-secondary10 font-black px-1 rounded-sm">88&percnt; de los consumidores en línea</span> son menos propensos a volver a un sitio después de una mala experiencia de usuario</p>
           </blockquote>
         </div>
 
         <!-- Conclusion -->
-        <div class="mb-8">
-          <h2 class="font-display text-4xl font-bold text text-secondary70 mb-6">Conclusion</h2>
-          <p class="mb-4">Beautiful design alone won't cut it. UI/UX are pivotal in driving conversion rates. By prioritizing user-centric design principles, you can create an environment that not only captures attention but also guides users toward the actions that matter most to your business</p>
+        <div class="mb-16">
+          <h2 class="font-display text-4xl font-bold text text-secondary70 mb-6">Conclusión</h2>
+          <p class="mb-4">Un diseño estético por sí solo no es suficiente. El diseño UI/UX son fundamentales para impulsar las tasas de conversión. Al priorizar los principios de diseño centrados en el usuario, puedes crear un entorno que no solo capture su atención, sino que también lo guíe hacia las acciones que más importan para tu negocio</p>
 
-          <p class="mb-4">A well-crafted UI/UX can be the difference between a bounce and a conversion, making it an investment that pays off in the long run</p>
+          <p class="mb-4">Una UI/UX bien elaborada puede marcar la diferencia entre un usuario abandonando tu sitio y una conversión <span class="text-2xl">🤑</span>, convirtiéndo el diseño UI/UX en una inversión que rinde frutos a largo plazo</p>
 
-          <p>If you're interested in improving your website's UI/UX to boost conversion rates, we're here to help. <a class="text-primary50 underline hover:text-primary60" href="">Contact us today</a> to explore how our web solutions can optimize your digital presence for maximum results</p>
+          <p>Si estás interesado en mejorar la UI/UX de tu sitio web para aumentar las tasas de conversión, estamos para ayudarte. <a class="text-primary70 underline duration-200 ease-in-out hover:text-primary60" href="../../es/index.html#contact">Contáctanos hoy</a> para explorar cómo nuestras soluciones web pueden optimizar tu presencia digital para obtener los resultados máximos</p>
         </div>
       </article>
+      <div class="mb-10 w-full flex flex-col justify-between mt-10 gap-4 md:flex-row md:items-center">
+        <a href="/build/index.html" class="inline-flex items-center bg-primary70 text-primary10 justify-center px-5 py-2.5 rounded-lg tracking-wide transition-color duration-200 ease-in hover:shadow-md hover:transition hover:duration-[250ms] hover:ease-out active:shadow-none hover:bg-opacity-80 active:bg-opacity-90">Volver a Inicio</a>
+        <a href="../es/post-3.html" class="inline-flex items-center justify-center text-primary70 bg-darkSurface border border-outlineDark bg-opacity-40 px-5 py-2.5 rounded-lg tracking-wide transition duration-200 ease-in hover:shadow-md active:shadow-none hover:transition hover:duration-[250ms] hover:ease-out hover:border-outlineLight active:border-primary70">Siguiente Artículo</a>
+      </div>
     </div>
   </main>
 </body>

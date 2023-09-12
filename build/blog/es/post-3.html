@@ -23,15 +23,19 @@
 
   <link rel="stylesheet" href="/build/output.css">
 
+
+  <!--------------------- Patterns --------------------->
+  <link href="https://unpkg.com/pattern.css" rel="stylesheet">
+
 </head>
-<body class="bg-darkSurface md:text-xl text-gray-100 leading-8">
+<body class="bg-darkBg text-xl text-gray-100 leading-8 pattern-grid-xl bg-fixed">
   <header class="pt-10 mb-10">
     <div class="container max-w-4xl mx-auto px-6 md:px-10">
-      <section class="bg-gradient-to-tr from-secondary10 to-secondary50 p-8 rounded-xl shadow-xl">
-        <h1 class=" text-3xl font-bold leading-[1.1] md:text-4xl mb-3 text-secondary100">Arquitectura MVC: Entendiendo la arquitectura Modelo-Vista-Controlador(MVC)</h1>
+      <section class="bg-gradient-to-br from-secondary10 via-secondary20 to-secondary50 p-8 rounded-xl shadow-xl">
+        <h1 class=" text-3xl font-bold leading-[1.1] md:text-4xl mb-3 text-secondary100">Arquitectura MVC: Entendiendo el patrón Modelo-Vista-Controlador(MVC)</h1>
         <div class="relative">
           <p class="ml-6 text-sm text-secondary90 mb-0.5 before:content-['|'] before:text-[2rem] before:absolute before:top-2 before:left-0 before:text-secondary90">Patricio Mena</p>
-          <p class="ml-6 text-sm text-secondary90">September 03, 2023</p>
+          <p class="ml-6 text-sm text-secondary90">Septiembre 03, 2023</p>
         </div>
 
       </section>
@@ -39,225 +43,233 @@
   </header>
   <main>
     <div class="containter max-w-4xl mx-auto px-6 md:px-10">
-      <article>
-        <img class="w-full rounded-xl mb-10 shadow-xl" src="../../assets/blog-image-3.jpg" alt="">
-        <p class="mb-4">In software development, creating robust and maintainable application is a top priority. To achieve this, developers often rely on architectural patterns that guide them in organizing their code effectively.</p>
+      <article class="mb-16">
+        <img class="w-full rounded-xl mb-10 shadow-xl" src="../../assets/blog-image-3.jpg" alt="edificio con arquitectura moderna">
+        <p class="mb-4">En el desarrollo de software, crear aplicaciones robustas y fáciles de mantener es una prioridad principal. Para lograr esto, los desarrolladores a menudo se basan en patrones arquitectónicos que los guían en la organización efectiva de su código</p>
 
-        <p class="mb-4">One of the most popular architecture patterns is the Model-View-Controller (MVC) architecture</p>
+        <p class="mb-8">Uno de los patrones de arquitectura más populares es la arquitectura Modelo-Vista-Controlador (MVC)</p>
         <img class="mx-auto mb-8 rounded-lg" src="../assets/seinfeld-george.gif" alt="seinfeld-george-gif">
 
         <!-- What is MVC -->
         <div class="mb-8">
-          <h2 class="font-display text-4xl font-bold text text-secondary70 mb-6">What is MVC?</h2>
-          <p class="leading-8 mb-4">MVC architecture separate our application into 3 main components</p>
+          <h2 class="font-display text-4xl font-bold text text-secondary70 mb-6">¿Qué es MVC?</h2>
+          <p class="leading-8 mb-4">La arquitectura MVC separa nuestra aplicación en 3 componentes principales:</p>
           <ul class="mb-4">
-            <li class="ml-6 font-body font-bold flex gap-2 items-center mb-1 text-secondary70"> 1. Model
+            <li class="ml-6 font-body font-bold flex gap-2 items-center mb-1 text-secondary70"> 1. Modelo
             </li>
-            <li class="ml-6 font-body font-bold flex gap-2 items-center mb-1 text-secondary70"> 2. View
+            <li class="ml-6 font-body font-bold flex gap-2 items-center mb-1 text-secondary70"> 2. Vista
             </li>
-            <li class="ml-6 font-body font-bold flex gap-2 items-center mb-1 text-secondary70"> 3. Controller
+            <li class="ml-6 font-body font-bold flex gap-2 items-center mb-1 text-secondary70"> 3. Controlador
             </li>
           </ul>
-          <p class="leading-8 mb-4">I'll explain each one of this components in a bit, for now let's see the benefits of using MVC architecture</p>
+          <p class="leading-8 mb-4">Explicaré cada uno de estos componentes en un momento; por ahora, veamos los beneficios de usar la arquitectura MVC</p>
         </div>
 
         <!-- Why MVC -->
-        <div class="mb-8">
-          <h2 class="font-display text-4xl font-bold text text-secondary70 mb-8">Why MVC?</h2>
+        <div class="mb-16">
+          <h2 class="font-display text-4xl font-bold text text-secondary70 mb-8">¿Por qué MVC?</h2>
           <img class="mx-auto rounded-lg mb-8" src="../assets/blueprint.gif" alt="blueprint-gif">
-          <p class="mb-4">MVC architecture works as a blueprint for our application that will help us and our team to have a more organized, cleaner, and flexible code</p>
-          <p class="mb-4">And yes... It will be easier to find and fix bugs 👾. Let's see what are some of the main advantages of using an MVC architecture pattern: </p>
+          <p class="mb-4">La arquitectura MVC funciona como un plano para nuestra aplicación que nos ayudará a nosotros y a nuestro equipo a tener un código más organizado, limpio y flexible</p>
+          <p class="mb-8">Y sí... será más fácil encontrar y corregir bugs<span class="text-2xl">👾</span>. Veamos cuáles son algunas de las principales ventajas de utilizar un patrón de arquitectura MVC </p>
 
           <ul class="mb-6">
             <li class="ml-6 mb-4">
-              <h3 class="font-body font-bold flex gap-2 items-center mb-1 text-secondary70">
+              <h3 class="font-body font-bold flex gap-2 items-center text-secondary70">
                 <i class="ph-fill ph-check-circle">
                 </i>
-                Separation of Concerns
+                Separación de Intereses
               </h3>
-              <p class="ml-7">Makes easier to manage and maintain our code</p>
+              <p class="ml-7">Facilita el control y mantenimiento de nuestro código</p>
             </li>
             <li class="ml-6 mb-4">
-              <h3 class="font-body font-bold flex gap-2 items-center mb-1 text-secondary70">
+              <h3 class="font-body font-bold flex gap-2 items-center text-secondary70">
                 <i class="ph-fill ph-check-circle">
                 </i>
-                Reusability
+                Reutilización
               </h3>
-              <p class="ml-7">We can reuse these components across different parts of our application or even in another projects</p>
+              <p class="ml-7">Podemos reutilizar estos componentes en diferentes partes de nuestra aplicación o incluso en otros proyectos</p>
             </li>
             <li class="ml-6 mb-4">
-              <h3 class="font-body font-bold flex gap-2 items-center mb-1 text-secondary70">
+              <h3 class="font-body font-bold flex gap-2 items-center text-secondary70">
                 <i class="ph-fill ph-check-circle">
                 </i>
-                Scalability
+                Escalabilidad
               </h3>
-              <p class="ml-7">Ass our application grows, we can add more <span class="text-yellow-100">VIEWS</span> or <span class="text-yellow-100">MODELS</span> without crashing the functionality</p>
+              <p class="ml-7">A medida que nuestra aplicación crece, podemos agregar más <span class="text-yellow-100">VISTAS</span> o <span class="text-yellow-100">MODELOS</span> sin afectar la funcionalidad</p>
             </li>
           </ul>
         </div>
 
         <!-- Analogy -->
-        <div class="mb-8">
-          <h2 class="font-display text-4xl font-bold text text-secondary70 mb-6">MVC as a Blueprint for a House 🏠</h2>
-          <p class="mb-4">I like to think of MVC as building a house from scratch. You wouldn't start hammering nails and stacking bricks randomly. Instead, you'd begin with a detailed blueprint, that outlines every aspect of the house's design.</p>
-          <p class="mb-4">This blueprint serves as a guide through the construction process, ensuring that everything is well-organized, efficient, and built to last</p>
-          <ul class="mb-6">
+        <div class="mb-16">
+          <h2 class="font-display text-4xl font-bold text text-secondary70 mb-6">MVC como el Plano de una Casa 🏠</h2>
+          <p class="mb-4">Me gusta pensar en la arquitectura MVC como la construcción de una casa desde cero. No empezarías a martillar clavos y colocar blocks al azar. En cambio, comenzarías con un plano detallado que describe cada aspecto del diseño de la casa</p>
+          <p class="mb-8">Este plano sirve como guía durante el proceso de construcción, asegurando que todo esté bien organizado, eficiente y construido para durar</p>
+          <ul class="mb-8">
             <li class="ml-6 mb-4">
-              <p class="font-body font-bold flex gap-2 items-center mb-1 text-secondary70">
+              <p class="font-body font-bold flex gap-2 items-center text-secondary70">
                 <i class="ph-fill ph-check-circle">
                 </i>
-                Model as the Foundation
+                Modelo como la Obra Civil
               </p>
-              <p class="ml-7">Just as the foundation determines the house's stability, the <span class="text-yellow-100">MODEL</span> defines the logic and data structure of the application</p>
+              <p class="ml-7">Así como la obra civil determina la estabilidad de una casa, el <span class="text-yellow-100">MODELO</span> define la lógica y la estructura de datos en una aplicación</p>
             </li>
             <li class="ml-6 mb-4">
-              <h3 class="font-body font-bold flex gap-2 items-center mb-1 text-secondary70">
+              <h3 class="font-body font-bold flex gap-2 items-center text-secondary70">
                 <i class="ph-fill ph-check-circle">
                 </i>
-                View as the Aesthetic Design
+                Vista como el Diseño Estético
               </h3>
-              <p class="ml-7">It's what make the house visually appealing, the interior design and exterior appearance. The <span class="text-yellow-100">VIEW</span> is responsible for presenting data to the user in an aesthetically and user-friendly manner</p>
+              <p class="ml-7">Es lo que hace que la casa sea visualmente atractiva, el diseño interior y la apariencia exteriorde la casa. La <span class="text-yellow-100">VISTA</span> se encarga de presentar datos al usuario de manera estética y amigable</p>
             </li>
             <li class="ml-6 mb-4">
-              <h3 class="font-body font-bold flex gap-2 items-center mb-1 text-secondary70">
+              <h3 class="font-body font-bold flex gap-2 items-center text-secondary70">
                 <i class="ph-fill ph-check-circle">
                 </i>
-                Controller as the Builder
+                Controlador como el Constructor
               </h3>
-              <p class="ml-7">Think of the <span class="text-yellow-100">CONTROLLER</span> as the builder who follow the instructions provided in the blueprint. Like the builder, receives input (blueprint) from the client (user) and coordinates the construction process. Interacts with the foundation<span class="text-yellow-100"> (MODEL) </span> and the design<span class="text-yellow-100"> (VIEW) </span>of the house</p>
+              <p class="ml-7">Piensa en el <span class="text-yellow-100">CONTROLADOR</span> como el constructor que sigue las instrucciones proporcionadas en el plano. Al igual que quien construye, recibe la entrada (el plano) del cliente (usuario) y coordina el proceso de construcción. Interactúa con la obra civil <span class="text-yellow-100"> (MODELO) </span> y el diseño <span class="text-yellow-100"> (VISTA) </span>de la casa</p>
             </li>
           </ul>
 
           <div class="mb-8 border-l-8 border-solid border-8 border-y-0 border-r-0 border-secondary50 text-xl bg-secondary80 py-8 px-6 rounded-md shadow-md">
-            <p class="text-secondary10">Just as the blueprint serves as the guiding plan for constructing the house, the MVC architecture acts as the guiding pattern for building software application</p>
+            <p class="text-secondary10">Así como el plano sirve como una guía para construir la casa, la arquitectura MVC actúa como una guía para construir aplicaciones de software</p>
           </div>
         </div>
 
         <!-- Figure 1 -->
-        <div class="mb-8">
+        <div class="mb-16">
           <figure id="figure1" class="flex flex-col justify-center">
-            <img class="rounded-lg mb-2" src="../assets/MVC COMPONENTS.png" alt="diagrama de arquitectura MVC">
-            <figcaption class="leading-6 text-sm text-center md:text w-3/4 mx-auto"><span class="text-primaryDark">Figure 1.</span> MVC architecture diagram</figcaption>
+            <img class="rounded-lg mb-2" src="../assets/MVC ARCHITECTURE.png" alt="diagrama de arquitectura MVC">
+            <figcaption class="leading-6 text-sm text-center md:text w-3/4 mx-auto"><span class="text-primaryDark">Figura 1.</span> Diagrama de arquitectura MVC</figcaption>
           </figure>
         </div>
 
         <!-- Model -->
-        <div class="mb-8">
-          <h2 class="font-display text-4xl font-bold text text-secondary70 mb-6">Model</h2>
+        <div class="mb-16">
+          <h2 class="font-display text-4xl font-bold text text-secondary70 mb-8">Modelo</h2>
           <img class="mx-auto rounded-lg mb-8 max-w-xs" src="../assets/model.gif" alt="blueprint-gif">
-          <p class="mb-4">This is where we write the code that talks to the database. As we use MongoDB as our database, we can use mongoose to help us build the boilerplate for the logic of our application data. <a href="https://mongoosejs.com/" class="text-primary50 underline hover:text-primary60">Mongoose</a> provides a straight-forward, schema based solution to model our application</p>
-          <p class="mb-8">The mongoose schema interface defines the structure of our document and the type of data we are storing. Let's see how to build a <span class="text-yellow-100">MODEL</span> for a simple todo application:</p>
+          <p class="mb-4">Aquí es donde escribimos el código que se comunica con la base de datos. Al utilizar MongoDB como nuestra base de datos, podemos utilizar Mongoose para ayudarnos a crear el esquema de la lógica de nuestros datos de aplicación.<a href="https://mongoosejs.com/" class="text-primary50 underline hover:text-primary60">Mongoose</a> proporciona una solución basada en esquemas para modelar nuestra aplicación</p>
+          <p class="mb-8">La interfaz de esquema de Mongoose define la estructura de nuestro documento y el tipo de datos que estamos almacenando. Veamos cómo construir un <span class="text-yellow-100">MODELO</span> para una simple aplicación de lista de tareas (todo):</p>
 
           <figure class="flex flex-col justify-center w-3/4 mx-auto">
             <img class="rounded-lg mb-2" src="../assets/model-code.png" alt="model code">
-            <figcaption class="leading-6 text-sm text-center md:text"><span class="text-primaryDark">Figure 2.</span> Defining the shape of our document. Each schema maps to a MongoDB collection</figcaption>
+            <figcaption class="leading-6 text-sm text-center md:text"><span class="text-primaryDark">Figura 2.</span> Definiendo la estrucutra de nuestro documento. Cada esquema se asigna a una colección de MongoDB</figcaption>
             </img>
           </figure>
         </div>
 
         <!-- View -->
-        <div class="mb-8">
-          <h2 class="font-display text-4xl font-bold text text-secondary70 mb-6">View</h2>
+        <div class="mb-16">
+          <h2 class="font-display text-4xl font-bold text text-secondary70 mb-6">Vista</h2>
           <img class="mx-auto rounded-lg mb-8 max-w-xs" src="../assets/view.gif" alt="blueprint-gif">
-          <p class="mb-4">The <span class="text-yellow-100">VIEW</span> is what the user sees on their browser</p>
-          <p class="mb-4">The <span class="text-yellow-100">CONTROLLER</span> pass the data into the <span class="text-yellow-100">VIEW</span>, then the <span class="text-yellow-100">VIEW</span> use that data to generate a dynamic HTML allowing interaction to the user</p>
-          <p class="mb-8">Here we make use of "template languages" like EJS / Handlebars / Nunjucks / React...etc., to display the application and its UI. For our simple todo list application, this is how we pass the data from the <span class="text-yellow-100">CONTROLLER</span> to the <span class="text-yellow-100">VIEW</span></p>
+          <p class="mb-4">La <span class="text-yellow-100">VISTA</span> es lo que el usuario ve en su navegador</p>
+          <p class="mb-4">El <span class="text-yellow-100">CONTROLLADOR</span> pasa los datos a la <span class="text-yellow-100">VISTA</span>, y luego la <span class="text-yellow-100">VISTA</span> utiliza esos datos para generar un HTML dinámico que permite la interacción del usuario</p>
+          <p class="mb-8">Aquí utilizamos "lenguajes de plantillas" como EJS / Handlebars / Nunjucks / React, etc., para mostrar la aplicación y su interfaz de usuario. Para nuestra sencilla aplicación de lista de tareas, así es como pasamos los datos del <span class="text-yellow-100">CONTROLADOR</span> a la <span class="text-yellow-100">VISTA</span></p>
 
           <figure class="flex flex-col justify-center w-full mx-auto">
-            <img class="rounded-lg mb-2" src="../assets/view-code.png" alt="model code">
-            <figcaption class="leading-6 text-sm text-center md:text w-3/4 mx-auto"><span class="text-primaryDark">Figure 3.</span> We're using EJS as a HTML template to dynamically insert the received data from ./controllers/todo.js into ./views/todo.ejs</figcaption>
+            <img class="rounded-lg mb-2" src="../assets/view-code.png" alt="view code">
+            <figcaption class="leading-6 text-sm text-center md:text w-3/4 mx-auto"><span class="text-primaryDark">Figura 3.</span> Utilizamos EJS como una plantilla HTML para insertar dinámicamente los datos recibidos de ./controllers/todo.js en ./views/todo.ejs</figcaption>
             </img>
           </figure>
         </div>
 
         <!-- Controller -->
-        <div class="mb-8">
-          <h2 class="font-display text-4xl font-bold text text-secondary70 mb-6">Controller</h2>
+        <div class="mb-80">
+          <h2 class="font-display text-4xl font-bold text text-secondary70 mb-8">Controlador</h2>
           <img class="mx-auto rounded-lg mb-8 max-w-sm" src="../assets/controller.gif" alt="controller-gif">
-          <p class="mb-4">The <span class="text-yellow-100">CONTROLLER</span> is the interface that updates the <span class="text-yellow-100">MODEL</span> and the <span class="text-yellow-100">VIEW</span>. We can think of it as the middle man that hears the request from the client side and knows how to process the GET / POST / PUT / DELETE request methods</p>
-          <p class="mb-8">It can talk to the database through the <span class="text-yellow-100">MODEL</span> if needed, and send the data to the <span class="text-yellow-100">VIEW</span> explaining how to present it to the user</p>
+          <p class="mb-4">El <span class="text-yellow-100">CONTROLADOR</span> es la interfaz que actualiza el <span class="text-yellow-100">MODELO</span> y la <span class="text-yellow-100">VISTA</span>. Podemos pensar en él como el intermediario que escucha la solicitud del cliente y sabe cómo procesar los métodos de solicitud GET / POST / PUT / DELETE</p>
+          <p class="mb-8">Puede comunicarse de ser necesario con la base de datos a través del <span class="text-yellow-100">MODELO</span>, y enviar los datos a la <span class="text-yellow-100">VISTA</span> explicando cómo presentarlos al usuario</p>
 
           <figure class="flex flex-col justify-center w-full mx-auto mb-8">
             <img class="rounded-lg mb-2" src="../assets/controller-code.png" alt="model code">
-            <figcaption class="leading-6 text-sm text-center md:text w-3/4 mx-auto"><span class="text-primaryDark">Figure 4.</span> In this <span class="text-yellow-100">CONTROLLER</span> we import the data from the <span class="text-yellow-100">MODEL</span> ( 1 ) and use the received data to send a response to our <span class="text-yellow-100">VIEW</span> ( 2 ) EJS file to render that data</figcaption>
+            <figcaption class="leading-6 text-sm text-center md:text w-3/4 mx-auto"><span class="text-primaryDark">Figura 4.</span> En este <span class="text-yellow-100">CONTROLADOR</span> importamos los datos desde el <span class="text-yellow-100">MODELO</span> ( 1 ) y utilizamos los datos recibidos para enviar una respuesta a nuestra <span class="text-yellow-100">VISTA</span> ( 2 ), siendo el archivo EJS para representar esos datos</figcaption>
             </img>
           </figure>
         </div>
-        <p class="mb-8">Implementing MVC depends on the programming language and framework you're using. However, the basic principle remain the same, Here is a diagram of how the components interact: </p>
+        <p class="mb-16">La implementación de la arquitectura MVC depende del lenguaje de programación y el framework que estés utilizando. Sin embargo, el principio básico sigue siendo el mismo. Aquí tienes un diagrama de cómo interactúan los componentes:</p>
         <!-- Figure 5 -->
-        <div class="mb-8">
+        <div class="mb-16">
           <figure class="flex flex-col justify-center">
             <img class="rounded-lg mb-2" src="../assets/MVC components.png" alt="MVC architecture diagram">
-            <figcaption class="leading-6 text-sm text-center md:text w-3/4 mx-auto"><span class="text-primaryDark">Figure 5.</span> MVC components diagram</figcaption>
+            <figcaption class="leading-6 text-sm text-center md:text w-3/4 mx-auto"><span class="text-primaryDark">Figura 5.</span> Diagrama de componentes del MVC</figcaption>
           </figure>
         </div>
 
         <!-- Router -->
-        <div class="py-10">
-          <h2 class="font-display text-4xl font-bold text text-secondary70 mb-8">What about the router?</h2>
+        <div class="mb-16">
+          <h2 class="font-display text-4xl font-bold text text-secondary70 mb-8">¿Qué es el router?</h2>
           <img class="mx-auto rounded-lg mb-8 max-w-sm" src="../assets/router.gif" alt="controller-gif">
-          <p class="mb-4">In the <a class="text-primary50 underline hover:text-primary60" href="#figure1"> figure 1</a> we saw that before the <span class="text-yellow-100">CONTROLLER</span> we have a <span class="text-yellow-100">ROUTER</span>. The <span class="text-yellow-100">ROUTER</span> is the first touch point that listen the request that comes from the client side
+          <p class="mb-4">En la <a class="text-primary50 underline duration-200 ease-in-out hover:text-primary60" href="#figure1"> figura 1</a> vimos que antes del <span class="text-yellow-100">CONTROLADOR</span> tenemos un <span class="text-yellow-100">ROUTER</span>. El <span class="text-yellow-100">ROUTER</span> es el primer punto de contacto que escucha las solicitudes que provienen del lado del cliente
           </p>
-          <p class="mb-8">This adds a level of abstraction where we can handle the user requests and know to what controller send those requests. YES ! we can have multiple controllers, so the <span class="text-yellow-100">ROUTER</span> help us to have the separation of concern we talk about at the beginning</p>
+          <p class="mb-8">Esto agrega un nivel extra de abstracción donde podemos manejar las solicitudes de los usuarios y saber a qué controlador enviar esas solicitudes. ¡Sí! podemos tener múltiples controladores, por lo que el <span class="text-yellow-100">ROUTER</span> nos ayuda a tener la separación de intereses de la que hablamos al principio</p>
         </div>
 
 
         <!-- Summary -->
-        <div class="mb-8">
-          <h2 class="font-display text-4xl font-bold text text-secondary70 mb-8">Summary</h2>
+        <div class="mb-16">
+          <h2 class="font-display text-4xl font-bold text text-secondary70 mb-8">Resumen</h2>
           <figure class="flex flex-col justify-center w-full mx-auto mb-8">
             <img class="rounded-lg mb-4" src="../assets/MVC-flow diagram.png" alt="mvc flow summary">
-            <figcaption class="leading-6 text-sm text-center md:text w-3/4 mx-auto"><span class="text-primaryDark">Figure 6.</span> MVC flow diagram</figcaption>
+            <figcaption class="leading-6 text-sm text-center md:text w-3/4 mx-auto"><span class="text-primaryDark">Figura 6.</span> Diagrama de flujo de MVC</figcaption>
             </img>
           </figure>
 
           <div class="mb-6">
             <ol class="list-decimal mb-4 ml-6">
-              <li class="gap-1 mb-4">Browser (Chrome / Firefox / Safari, etc) sends request to the <span class="text-yellow-100">ROUTER</span> who handles the request to the <span class="text-yellow-100">CONTROLLER</span>
+              <li class="gap-1 mb-4">El navegador (Chrome / Firefox / Safari, etc.) env[ia una solicitud al <span class="text-yellow-100">ROUTER</span> el cual envía la solicitud al <span class="text-yellow-100">CONTROLADOR</span>
               </li>
-              <li class="gap-1 mb-4">The <span class="text-yellow-100">CONTROLLER</span> interacts with the <span class="text-yellow-100">MODEL</span> to send and receive data
+              <li class="gap-1 mb-4">El <span class="text-yellow-100">CONTROLADOR</span> interactúa con el <span class="text-yellow-100">MODELO</span> para enviar y recibir datos
                 <div class="ml-4 flex gap-2 items-center mt-1.5">
                   <i class="text-sm ph-fill ph-check-circle text-secondary70"></i>
-                  <p class="text-sm text-secondary70">Process GET / POST / PUT / DELETE requests from the user</p>
+                  <p class="text-sm text-secondary70">Procesa las solicitudes GET / POST / PUT / DELETE del usuario</p>
                 </div>
               </li>
               <li class="gap-1 mb-4">
-                The <span class="text-yellow-100">MODEL</span> interacts with the database. It’s how we add and retrieve items from the database
+                El <span class="text-yellow-100">MODELO</span> interactúa con la base de datos. Es cómo agregamos y tomamos elementos de la base de datos
                 <div class="ml-4 flex gap-2 items-center mt-1.5">
                   <i class="text-sm  ph-fill ph-check-circle text-secondary70"></i>
-                  <p class="text-sm text-secondary70">We can use any databases: MongoDB / MySQL / Oracle, / PostgreSQL, etc …
+                  <p class="text-sm text-secondary70">Podemos utilizar cualquier base de datos: MongoDB / MySQL / Oracle / PostgreSQL, etc.
                   </p>
                 </div>
               </li>
               <li class=" gap-1 mb-4">
-                The <span class="text-yellow-100">CONTROLLER</span> send the data obtained from the <span class="text-yellow-100">MODEL</span> to the <span class="text-yellow-100">VIEW</span> to explain the presentation to the viewer
+                El <span class="text-yellow-100">CONTROLADOR</span> envía los datos obtenidos del <span class="text-yellow-100">MODELO</span> a la <span class="text-yellow-100">VISTA</span> para explicar la presentación al espectador
               </li>
               <li class="gap-1 mb-4">
-                The <span class="text-yellow-100">VIEW</span> renders the data based on what the <span class="text-yellow-100">CONTROLLER</span> sends (The view is the only thing the user ever sees)
+                La <span class="text-yellow-100">VISTA</span> renderiza los datos según lo que el <span class="text-yellow-100">CONTROLADOR</span> envía (la vista es lo único que el usuario ve).
                 <div class="ml-4 flex gap-2 items-start mt-1">
                   <i class="text-sm  ph-fill ph-check-circle text-secondary70"></i>
-                  <p class="text-sm text-secondary70">Generates dynamic HTML using the template language we choose: EJS / Handlebars / Pug / Nunjucks / React, etc …</p>
+                  <p class="text-sm text-secondary70">Genera un HTML dinámico utilizando el lenguaje de plantilla que elijamos: EJS / Handlebars / Pug / Nunjucks / React, etc.</p>
                 </div>
               </li>
               <li class=" gap-1 mb-4">
-                The <span class="text-yellow-100">VIEW</span> will send its final presentation to the <span class="text-yellow-100">CONTROLLER</span>
+                La <span class="text-yellow-100">VISTA</span> enviará su presentación final al <span class="text-yellow-100">CONTROLADOR</span>
               </li>
               <li class=" gap-1 mb-4">
-                The <span class="text-yellow-100">CONTROLLER</span> send that final data to the user output</span>
+                El <span class="text-yellow-100">CONTROLADOR</span> envía esos datos finales al usuario</span>
               </li>
             </ol>
           </div>
         </div>
 
         <!-- Conclusion -->
-        <div class="mb-8">
-          <h2 class="font-display text-4xl font-bold text text-secondary70 mb-6">Conclusion</h2>
+        <div class="mb-16">
+          <h2 class="font-display text-4xl font-bold text text-secondary70 mb-6">Conclusión</h2>
           <p class="mb-8">By understanding and implementing MVC in our projects, we can build more maintainable and robust applications that stand the test of time. Its clear separation of concerns, reusability, testability, and scalability benefits continue to make it a popular choice among developers.</p>
+          <p class="mb-8">Al comprender e implementar la arquitectura MVC en nuestros proyectos, podemos construir aplicaciones más robustas y fáciles de mantener que resisten la prueba del tiempo. Sus claras divisiones de intereses, reutilización, capacidad de prueba y ventajas de escalabilidad continúan haciéndolo una elección popular entre los desarrolladores</p>
           <img class="mx-auto rounded-lg mb-8 max-w-sm" src="../assets/conclusion.gif" alt="goodbye gif">
         </div>
+      </article>
+      <div class="mb-10 w-full flex flex-col justify-between mt-10 gap-4 md:flex-row md:items-center">
+        <a href="/build/index.html" class="inline-flex items-center bg-primary70 text-primary10 justify-center px-5 py-2.5 rounded-lg tracking-wide transition-color duration-200 ease-in hover:shadow-md hover:transition hover:duration-[250ms] hover:ease-out active:shadow-none hover:bg-opacity-80 active:bg-opacity-90">Volver a Inicio</a>
+        <a href="../es/post-1.html" class="inline-flex items-center justify-center text-primary70 bg-darkSurface border border-outlineDark bg-opacity-40 px-5 py-2.5 rounded-lg tracking-wide transition duration-200 ease-in hover:shadow-md active:shadow-none hover:transition hover:duration-[250ms] hover:ease-out hover:border-outlineLight active:border-primary70">Siguiente Artículo</a>
+      </div>
     </div>
 
-    </article>
+
+
+
     </div>
   </main>
 </body>
