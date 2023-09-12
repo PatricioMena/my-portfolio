@@ -3,7 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Blog Patricio Mena - MVC Architecture</title>
+  <title>Blog Patricio Mena - Arquitectura MVC</title>
+
   <link rel="apple-touch-icon" sizes="180x180" href="/build/assets/favicon/apple-touch-icon.png">
   <link rel="icon" href="/build/assets/favicon/favicon-16x16.png" type="image/png" sizes="'16x16">
   <link rel="icon" href="/build/assets/favicon/favicon-32x32.png" type="image/png" sizes="'32x32">
@@ -27,7 +28,7 @@
   <header class="pt-10 mb-10">
     <div class="container max-w-4xl mx-auto px-6 md:px-10">
       <section class="bg-gradient-to-tr from-secondary10 to-secondary50 p-8 rounded-xl shadow-xl">
-        <h1 class=" text-3xl font-bold leading-[1.1] md:text-4xl mb-3 text-secondary100">MVC Architecture: Understanding the Model-View-Controller (MVC)</h1>
+        <h1 class=" text-3xl font-bold leading-[1.1] md:text-4xl mb-3 text-secondary100">Arquitectura MVC: Entendiendo la arquitectura Modelo-Vista-Controlador(MVC)</h1>
         <div class="relative">
           <p class="ml-6 text-sm text-secondary90 mb-0.5 before:content-['|'] before:text-[2rem] before:absolute before:top-2 before:left-0 before:text-secondary90">Patricio Mena</p>
           <p class="ml-6 text-sm text-secondary90">September 03, 2023</p>
@@ -39,11 +40,11 @@
   <main>
     <div class="containter max-w-4xl mx-auto px-6 md:px-10">
       <article>
-        <img class="w-full rounded-xl mb-10 shadow-xl" src="../assets/blog-image-3.jpg" alt="">
+        <img class="w-full rounded-xl mb-10 shadow-xl" src="../../assets/blog-image-3.jpg" alt="">
         <p class="mb-4">In software development, creating robust and maintainable application is a top priority. To achieve this, developers often rely on architectural patterns that guide them in organizing their code effectively.</p>
 
         <p class="mb-4">One of the most popular architecture patterns is the Model-View-Controller (MVC) architecture</p>
-        <img class="mx-auto mb-8 rounded-lg" src="./assets/seinfeld-george.gif" alt="seinfeld-george-gif">
+        <img class="mx-auto mb-8 rounded-lg" src="../assets/seinfeld-george.gif" alt="seinfeld-george-gif">
 
         <!-- What is MVC -->
         <div class="mb-8">
@@ -63,7 +64,7 @@
         <!-- Why MVC -->
         <div class="mb-8">
           <h2 class="font-display text-4xl font-bold text text-secondary70 mb-8">Why MVC?</h2>
-          <img class="mx-auto rounded-lg mb-8" src="./assets/blueprint.gif" alt="blueprint-gif">
+          <img class="mx-auto rounded-lg mb-8" src="../assets/blueprint.gif" alt="blueprint-gif">
           <p class="mb-4">MVC architecture works as a blueprint for our application that will help us and our team to have a more organized, cleaner, and flexible code</p>
           <p class="mb-4">And yes... It will be easier to find and fix bugs 👾. Let's see what are some of the main advantages of using an MVC architecture pattern: </p>
 
@@ -135,7 +136,7 @@
         <!-- Figure 1 -->
         <div class="mb-8">
           <figure id="figure1" class="flex flex-col justify-center">
-            <img class="rounded-lg mb-2" src="./assets/MVC ARCHITECTURE.png" alt="MVC architectur diagram">
+            <img class="rounded-lg mb-2" src="../assets/MVC COMPONENTS.png" alt="diagrama de arquitectura MVC">
             <figcaption class="leading-6 text-sm text-center md:text w-3/4 mx-auto"><span class="text-primaryDark">Figure 1.</span> MVC architecture diagram</figcaption>
           </figure>
         </div>
@@ -143,12 +144,12 @@
         <!-- Model -->
         <div class="mb-8">
           <h2 class="font-display text-4xl font-bold text text-secondary70 mb-6">Model</h2>
-          <img class="mx-auto rounded-lg mb-8 max-w-xs" src="./assets/model.gif" alt="blueprint-gif">
+          <img class="mx-auto rounded-lg mb-8 max-w-xs" src="../assets/model.gif" alt="blueprint-gif">
           <p class="mb-4">This is where we write the code that talks to the database. As we use MongoDB as our database, we can use mongoose to help us build the boilerplate for the logic of our application data. <a href="https://mongoosejs.com/" class="text-primary50 underline hover:text-primary60">Mongoose</a> provides a straight-forward, schema based solution to model our application</p>
           <p class="mb-8">The mongoose schema interface defines the structure of our document and the type of data we are storing. Let's see how to build a <span class="text-yellow-100">MODEL</span> for a simple todo application:</p>
 
           <figure class="flex flex-col justify-center w-3/4 mx-auto">
-            <img class="rounded-lg mb-2" src="./assets/model-code.png" alt="model code">
+            <img class="rounded-lg mb-2" src="../assets/model-code.png" alt="model code">
             <figcaption class="leading-6 text-sm text-center md:text"><span class="text-primaryDark">Figure 2.</span> Defining the shape of our document. Each schema maps to a MongoDB collection</figcaption>
             </img>
           </figure>
@@ -157,13 +158,13 @@
         <!-- View -->
         <div class="mb-8">
           <h2 class="font-display text-4xl font-bold text text-secondary70 mb-6">View</h2>
-          <img class="mx-auto rounded-lg mb-8 max-w-xs" src="./assets/view.gif" alt="blueprint-gif">
+          <img class="mx-auto rounded-lg mb-8 max-w-xs" src="../assets/view.gif" alt="blueprint-gif">
           <p class="mb-4">The <span class="text-yellow-100">VIEW</span> is what the user sees on their browser</p>
           <p class="mb-4">The <span class="text-yellow-100">CONTROLLER</span> pass the data into the <span class="text-yellow-100">VIEW</span>, then the <span class="text-yellow-100">VIEW</span> use that data to generate a dynamic HTML allowing interaction to the user</p>
           <p class="mb-8">Here we make use of "template languages" like EJS / Handlebars / Nunjucks / React...etc., to display the application and its UI. For our simple todo list application, this is how we pass the data from the <span class="text-yellow-100">CONTROLLER</span> to the <span class="text-yellow-100">VIEW</span></p>
 
           <figure class="flex flex-col justify-center w-full mx-auto">
-            <img class="rounded-lg mb-2" src="./assets/view-code.png" alt="model code">
+            <img class="rounded-lg mb-2" src="../assets/view-code.png" alt="model code">
             <figcaption class="leading-6 text-sm text-center md:text w-3/4 mx-auto"><span class="text-primaryDark">Figure 3.</span> We're using EJS as a HTML template to dynamically insert the received data from ./controllers/todo.js into ./views/todo.ejs</figcaption>
             </img>
           </figure>
@@ -172,12 +173,12 @@
         <!-- Controller -->
         <div class="mb-8">
           <h2 class="font-display text-4xl font-bold text text-secondary70 mb-6">Controller</h2>
-          <img class="mx-auto rounded-lg mb-8 max-w-sm" src="./assets/controller.gif" alt="controller-gif">
+          <img class="mx-auto rounded-lg mb-8 max-w-sm" src="../assets/controller.gif" alt="controller-gif">
           <p class="mb-4">The <span class="text-yellow-100">CONTROLLER</span> is the interface that updates the <span class="text-yellow-100">MODEL</span> and the <span class="text-yellow-100">VIEW</span>. We can think of it as the middle man that hears the request from the client side and knows how to process the GET / POST / PUT / DELETE request methods</p>
           <p class="mb-8">It can talk to the database through the <span class="text-yellow-100">MODEL</span> if needed, and send the data to the <span class="text-yellow-100">VIEW</span> explaining how to present it to the user</p>
 
           <figure class="flex flex-col justify-center w-full mx-auto mb-8">
-            <img class="rounded-lg mb-2" src="./assets/controller-code.png" alt="model code">
+            <img class="rounded-lg mb-2" src="../assets/controller-code.png" alt="model code">
             <figcaption class="leading-6 text-sm text-center md:text w-3/4 mx-auto"><span class="text-primaryDark">Figure 4.</span> In this <span class="text-yellow-100">CONTROLLER</span> we import the data from the <span class="text-yellow-100">MODEL</span> ( 1 ) and use the received data to send a response to our <span class="text-yellow-100">VIEW</span> ( 2 ) EJS file to render that data</figcaption>
             </img>
           </figure>
@@ -186,7 +187,7 @@
         <!-- Figure 5 -->
         <div class="mb-8">
           <figure class="flex flex-col justify-center">
-            <img class="rounded-lg mb-2" src="./assets/MVC components.png" alt="MVC architectur diagram">
+            <img class="rounded-lg mb-2" src="../assets/MVC components.png" alt="MVC architecture diagram">
             <figcaption class="leading-6 text-sm text-center md:text w-3/4 mx-auto"><span class="text-primaryDark">Figure 5.</span> MVC components diagram</figcaption>
           </figure>
         </div>
@@ -194,7 +195,7 @@
         <!-- Router -->
         <div class="py-10">
           <h2 class="font-display text-4xl font-bold text text-secondary70 mb-8">What about the router?</h2>
-          <img class="mx-auto rounded-lg mb-8 max-w-sm" src="./assets/router.gif" alt="controller-gif">
+          <img class="mx-auto rounded-lg mb-8 max-w-sm" src="../assets/router.gif" alt="controller-gif">
           <p class="mb-4">In the <a class="text-primary50 underline hover:text-primary60" href="#figure1"> figure 1</a> we saw that before the <span class="text-yellow-100">CONTROLLER</span> we have a <span class="text-yellow-100">ROUTER</span>. The <span class="text-yellow-100">ROUTER</span> is the first touch point that listen the request that comes from the client side
           </p>
           <p class="mb-8">This adds a level of abstraction where we can handle the user requests and know to what controller send those requests. YES ! we can have multiple controllers, so the <span class="text-yellow-100">ROUTER</span> help us to have the separation of concern we talk about at the beginning</p>
@@ -205,7 +206,7 @@
         <div class="mb-8">
           <h2 class="font-display text-4xl font-bold text text-secondary70 mb-8">Summary</h2>
           <figure class="flex flex-col justify-center w-full mx-auto mb-8">
-            <img class="rounded-lg mb-4" src="./assets/MVC-flow diagram.png" alt="mvc flow summary">
+            <img class="rounded-lg mb-4" src="../assets/MVC-flow diagram.png" alt="mvc flow summary">
             <figcaption class="leading-6 text-sm text-center md:text w-3/4 mx-auto"><span class="text-primaryDark">Figure 6.</span> MVC flow diagram</figcaption>
             </img>
           </figure>
@@ -252,7 +253,7 @@
         <div class="mb-8">
           <h2 class="font-display text-4xl font-bold text text-secondary70 mb-6">Conclusion</h2>
           <p class="mb-8">By understanding and implementing MVC in our projects, we can build more maintainable and robust applications that stand the test of time. Its clear separation of concerns, reusability, testability, and scalability benefits continue to make it a popular choice among developers.</p>
-          <img class="mx-auto rounded-lg mb-8 max-w-sm" src="./assets/conclusion.gif" alt="goodbye gif">
+          <img class="mx-auto rounded-lg mb-8 max-w-sm" src="../assets/conclusion.gif" alt="goodbye gif">
         </div>
     </div>
 
