@@ -1121,6 +1121,10 @@ h1,
   max-width: 18ch;
 }
 
+.max-w-\[35em\] {
+  max-width: 35em;
+}
+
 .max-w-lg {
   max-width: 32rem;
 }
@@ -1739,10 +1743,6 @@ h1,
 
 .uppercase {
   text-transform: uppercase;
-}
-
-.capitalize {
-  text-transform: capitalize;
 }
 
 .leading-6 {
