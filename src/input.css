@@ -61,7 +61,7 @@
 
   #benefits,
   #how-it-works {
-    background-image: url(/build/assets/backgrounds/bbblurry.svg);
+    background-image: url(./assets/backgrounds/bbblurry.svg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -69,7 +69,7 @@
   }
 
   #contact {
-    background-image: url(/build/assets/backgrounds/rainbow-vortex.svg);
+    background-image: url(./assets/backgrounds/rainbow-vortex.svg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: left;
@@ -104,12 +104,12 @@
   }
 
   #mobile-nav-toggle {
-    background-image: url(/build/assets/icons/list-bold.svg);
+    background-image: url(./assets/icons/list-bold.svg);
     background-repeat: no-repeat;
   }
 
   #mobile-nav-toggle[aria-expanded='true'] {
-    background-image: url(/build/assets/icons/x-bold.svg);
+    background-image: url(./assets/icons/x-bold.svg);
     position: fixed;
     top: 1.25rem;
     left: 1.5rem;
