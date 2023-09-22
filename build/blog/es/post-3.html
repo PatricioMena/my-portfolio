@@ -48,32 +48,32 @@
         <p class="mb-4">En el desarrollo de software, crear aplicaciones robustas y fáciles de mantener es una prioridad principal. Para lograr esto, los desarrolladores a menudo se basan en patrones arquitectónicos que los guían en la organización efectiva de su código</p>
 
         <p class="mb-8">Uno de los patrones de arquitectura más populares es la arquitectura Modelo-Vista-Controlador (MVC)</p>
-        <img class="mx-auto mb-8 rounded-lg" src="../assets/seinfeld-george.gif" alt="seinfeld-george-gif">
+        <img class="mx-auto mb-16 rounded-lg w-full max-w-xs" src="../assets/seinfeld-george.gif" alt="seinfeld-george-gif">
 
         <!-- What is MVC -->
         <div class="mb-8">
           <h2 class="font-display text-4xl font-bold text text-secondary70 mb-6">¿Qué es MVC?</h2>
           <p class="leading-8 mb-4">La arquitectura MVC separa nuestra aplicación en 3 componentes principales:</p>
-          <ul class="mb-4">
+          <ol class="mb-4">
             <li class="ml-6 font-body font-bold flex gap-2 items-center mb-1 text-secondary70"> 1. Modelo
             </li>
             <li class="ml-6 font-body font-bold flex gap-2 items-center mb-1 text-secondary70"> 2. Vista
             </li>
             <li class="ml-6 font-body font-bold flex gap-2 items-center mb-1 text-secondary70"> 3. Controlador
             </li>
-          </ul>
+          </ol>
           <p class="leading-8 mb-4">Explicaré cada uno de estos componentes en un momento; por ahora, veamos los beneficios de usar la arquitectura MVC</p>
         </div>
 
         <!-- Why MVC -->
         <div class="mb-16">
           <h2 class="font-display text-4xl font-bold text text-secondary70 mb-8">¿Por qué MVC?</h2>
-          <img class="mx-auto rounded-lg mb-8" src="../assets/blueprint.gif" alt="blueprint-gif">
+          <img class="mx-auto rounded-lg mb-8 w-full max-w-md" src="../assets/blueprint.gif" alt="blueprint-gif">
           <p class="mb-4">La arquitectura MVC funciona como un plano para nuestra aplicación que nos ayudará a nosotros y a nuestro equipo a tener un código más organizado, limpio y flexible</p>
           <p class="mb-8">Y sí... será más fácil encontrar y corregir bugs<span class="text-2xl">👾</span>. Veamos cuáles son algunas de las principales ventajas de utilizar un patrón de arquitectura MVC </p>
 
           <ul class="mb-6">
-            <li class="ml-6 mb-4">
+            <li class=" mb-4">
               <h3 class="font-body font-bold flex gap-2 items-center text-secondary70">
                 <i class="ph-fill ph-check-circle">
                 </i>
@@ -81,7 +81,7 @@
               </h3>
               <p class="ml-7">Facilita el control y mantenimiento de nuestro código</p>
             </li>
-            <li class="ml-6 mb-4">
+            <li class=" mb-4">
               <h3 class="font-body font-bold flex gap-2 items-center text-secondary70">
                 <i class="ph-fill ph-check-circle">
                 </i>
@@ -89,7 +89,7 @@
               </h3>
               <p class="ml-7">Podemos reutilizar estos componentes en diferentes partes de nuestra aplicación o incluso en otros proyectos</p>
             </li>
-            <li class="ml-6 mb-4">
+            <li class=" mb-4">
               <h3 class="font-body font-bold flex gap-2 items-center text-secondary70">
                 <i class="ph-fill ph-check-circle">
                 </i>
@@ -102,11 +102,11 @@
 
         <!-- Analogy -->
         <div class="mb-16">
-          <h2 class="font-display text-4xl font-bold text text-secondary70 mb-6">MVC como el Plano de una Casa 🏠</h2>
+          <h2 class="font-display text-4xl font-bold text text-secondary70 mb-6">MVC como el Plano de una Casa </h2>
           <p class="mb-4">Me gusta pensar en la arquitectura MVC como la construcción de una casa desde cero. No empezarías a martillar clavos y colocar blocks al azar. En cambio, comenzarías con un plano detallado que describe cada aspecto del diseño de la casa</p>
           <p class="mb-8">Este plano sirve como guía durante el proceso de construcción, asegurando que todo esté bien organizado, eficiente y construido para durar</p>
           <ul class="mb-8">
-            <li class="ml-6 mb-4">
+            <li class=" mb-4">
               <p class="font-body font-bold flex gap-2 items-center text-secondary70">
                 <i class="ph-fill ph-check-circle">
                 </i>
@@ -114,7 +114,7 @@
               </p>
               <p class="ml-7">Así como la obra civil determina la estabilidad de una casa, el <span class="text-yellow-100">MODELO</span> define la lógica y la estructura de datos en una aplicación</p>
             </li>
-            <li class="ml-6 mb-4">
+            <li class=" mb-4">
               <h3 class="font-body font-bold flex gap-2 items-center text-secondary70">
                 <i class="ph-fill ph-check-circle">
                 </i>
@@ -122,7 +122,7 @@
               </h3>
               <p class="ml-7">Es lo que hace que la casa sea visualmente atractiva, el diseño interior y la apariencia exteriorde la casa. La <span class="text-yellow-100">VISTA</span> se encarga de presentar datos al usuario de manera estética y amigable</p>
             </li>
-            <li class="ml-6 mb-4">
+            <li class=" mb-4">
               <h3 class="font-body font-bold flex gap-2 items-center text-secondary70">
                 <i class="ph-fill ph-check-circle">
                 </i>
@@ -140,7 +140,7 @@
         <!-- Figure 1 -->
         <div class="mb-16">
           <figure id="figure1" class="flex flex-col justify-center">
-            <img class="rounded-lg mb-2" src="../assets/MVC ARCHITECTURE.png" alt="diagrama de arquitectura MVC">
+            <img class="rounded-lg mb-2 w-full" src="../assets/MVC ARCHITECTURE.png" alt="diagrama de arquitectura MVC">
             <figcaption class="leading-6 text-sm text-center md:text w-3/4 mx-auto"><span class="text-primaryDark">Figura 1.</span> Diagrama de arquitectura MVC</figcaption>
           </figure>
         </div>
@@ -148,9 +148,9 @@
         <!-- Model -->
         <div class="mb-16">
           <h2 class="font-display text-4xl font-bold text text-secondary70 mb-8">Modelo</h2>
-          <img class="mx-auto rounded-lg mb-8 max-w-xs" src="../assets/model.gif" alt="blueprint-gif">
+          <img class="mx-auto rounded-lg mb-8 w-full max-w-sm" src="../assets/model.gif" alt="blueprint-gif">
           <p class="mb-4">Aquí es donde escribimos el código que se comunica con la base de datos. Al utilizar MongoDB como nuestra base de datos, podemos utilizar Mongoose para ayudarnos a crear el esquema de la lógica de nuestros datos de aplicación.<a href="https://mongoosejs.com/" class="text-primary50 underline hover:text-primary60">Mongoose</a> proporciona una solución basada en esquemas para modelar nuestra aplicación</p>
-          <p class="mb-8">La interfaz de esquema de Mongoose define la estructura de nuestro documento y el tipo de datos que estamos almacenando. Veamos cómo construir un <span class="text-yellow-100">MODELO</span> para una simple aplicación de lista de tareas (todo):</p>
+          <p class="mb-16">La interfaz de esquema de Mongoose define la estructura de nuestro documento y el tipo de datos que estamos almacenando. Veamos cómo construir un <span class="text-yellow-100">MODELO</span> para una simple aplicación de lista de tareas (todo):</p>
 
           <figure class="flex flex-col justify-center w-3/4 mx-auto">
             <img class="rounded-lg mb-2" src="../assets/model-code.png" alt="model code">
@@ -162,10 +162,10 @@
         <!-- View -->
         <div class="mb-16">
           <h2 class="font-display text-4xl font-bold text text-secondary70 mb-6">Vista</h2>
-          <img class="mx-auto rounded-lg mb-8 max-w-xs" src="../assets/view.gif" alt="blueprint-gif">
+          <img class="mx-auto rounded-lg mb-8 w-full max-w-sm" src="../assets/view.gif" alt="blueprint-gif">
           <p class="mb-4">La <span class="text-yellow-100">VISTA</span> es lo que el usuario ve en su navegador</p>
           <p class="mb-4">El <span class="text-yellow-100">CONTROLLADOR</span> pasa los datos a la <span class="text-yellow-100">VISTA</span>, y luego la <span class="text-yellow-100">VISTA</span> utiliza esos datos para generar un HTML dinámico que permite la interacción del usuario</p>
-          <p class="mb-8">Aquí utilizamos "lenguajes de plantillas" como EJS / Handlebars / Nunjucks / React, etc., para mostrar la aplicación y su interfaz de usuario. Para nuestra sencilla aplicación de lista de tareas, así es como pasamos los datos del <span class="text-yellow-100">CONTROLADOR</span> a la <span class="text-yellow-100">VISTA</span></p>
+          <p class="mb-16">Aquí utilizamos "lenguajes de plantillas" como EJS / Handlebars / Nunjucks / React, etc., para mostrar la aplicación y su interfaz de usuario. Para nuestra sencilla aplicación de lista de tareas, así es como pasamos los datos del <span class="text-yellow-100">CONTROLADOR</span> a la <span class="text-yellow-100">VISTA</span></p>
 
           <figure class="flex flex-col justify-center w-full mx-auto">
             <img class="rounded-lg mb-2" src="../assets/view-code.png" alt="view code">
@@ -175,18 +175,19 @@
         </div>
 
         <!-- Controller -->
-        <div class="mb-80">
+        <div class="mb-8">
           <h2 class="font-display text-4xl font-bold text text-secondary70 mb-8">Controlador</h2>
-          <img class="mx-auto rounded-lg mb-8 max-w-sm" src="../assets/controller.gif" alt="controller-gif">
+          <img class="mx-auto rounded-lg mb-8 w-full max-w-sm" src="../assets/controller.gif" alt="controller-gif">
           <p class="mb-4">El <span class="text-yellow-100">CONTROLADOR</span> es la interfaz que actualiza el <span class="text-yellow-100">MODELO</span> y la <span class="text-yellow-100">VISTA</span>. Podemos pensar en él como el intermediario que escucha la solicitud del cliente y sabe cómo procesar los métodos de solicitud GET / POST / PUT / DELETE</p>
-          <p class="mb-8">Puede comunicarse de ser necesario con la base de datos a través del <span class="text-yellow-100">MODELO</span>, y enviar los datos a la <span class="text-yellow-100">VISTA</span> explicando cómo presentarlos al usuario</p>
+          <p class="mb-16">Puede comunicarse de ser necesario con la base de datos a través del <span class="text-yellow-100">MODELO</span>, y enviar los datos a la <span class="text-yellow-100">VISTA</span> explicando cómo presentarlos al usuario</p>
 
-          <figure class="flex flex-col justify-center w-full mx-auto mb-8">
+          <figure class="flex flex-col justify-center w-full mx-auto mb-16">
             <img class="rounded-lg mb-2" src="../assets/controller-code.png" alt="model code">
             <figcaption class="leading-6 text-sm text-center md:text w-3/4 mx-auto"><span class="text-primaryDark">Figura 4.</span> En este <span class="text-yellow-100">CONTROLADOR</span> importamos los datos desde el <span class="text-yellow-100">MODELO</span> ( 1 ) y utilizamos los datos recibidos para enviar una respuesta a nuestra <span class="text-yellow-100">VISTA</span> ( 2 ), siendo el archivo EJS para representar esos datos</figcaption>
             </img>
           </figure>
         </div>
+
         <p class="mb-16">La implementación de la arquitectura MVC depende del lenguaje de programación y el framework que estés utilizando. Sin embargo, el principio básico sigue siendo el mismo. Aquí tienes un diagrama de cómo interactúan los componentes:</p>
         <!-- Figure 5 -->
         <div class="mb-16">
@@ -196,10 +197,14 @@
           </figure>
         </div>
 
+        <figure class="mb-16">
+          <img class="mx-auto rounded-lg w-full max-w-md" src="../assets/router.gif" alt="controller-gif">
+        </figure>
+
+
         <!-- Router -->
         <div class="mb-16">
           <h2 class="font-display text-4xl font-bold text text-secondary70 mb-8">¿Qué es el router?</h2>
-          <img class="mx-auto rounded-lg mb-8 max-w-sm" src="../assets/router.gif" alt="controller-gif">
           <p class="mb-4">En la <a class="text-primary50 underline duration-200 ease-in-out hover:text-primary60" href="#figure1"> figura 1</a> vimos que antes del <span class="text-yellow-100">CONTROLADOR</span> tenemos un <span class="text-yellow-100">ROUTER</span>. El <span class="text-yellow-100">ROUTER</span> es el primer punto de contacto que escucha las solicitudes que provienen del lado del cliente
           </p>
           <p class="mb-8">Esto agrega un nivel extra de abstracción donde podemos manejar las solicitudes de los usuarios y saber a qué controlador enviar esas solicitudes. ¡Sí! podemos tener múltiples controladores, por lo que el <span class="text-yellow-100">ROUTER</span> nos ayuda a tener la separación de intereses de la que hablamos al principio</p>
@@ -221,15 +226,15 @@
               </li>
               <li class="gap-1 mb-4">El <span class="text-yellow-100">CONTROLADOR</span> interactúa con el <span class="text-yellow-100">MODELO</span> para enviar y recibir datos
                 <div class="ml-4 flex gap-2 items-center mt-1.5">
-                  <i class="text-sm ph-fill ph-check-circle text-secondary70"></i>
-                  <p class="text-sm text-secondary70">Procesa las solicitudes GET / POST / PUT / DELETE del usuario</p>
+                  <i class="text ph-fill ph-check-circle text-secondary70"></i>
+                  <p class="text text-secondary70">Procesa las solicitudes GET / POST / PUT / DELETE del usuario</p>
                 </div>
               </li>
               <li class="gap-1 mb-4">
                 El <span class="text-yellow-100">MODELO</span> interactúa con la base de datos. Es cómo agregamos y tomamos elementos de la base de datos
                 <div class="ml-4 flex gap-2 items-center mt-1.5">
-                  <i class="text-sm  ph-fill ph-check-circle text-secondary70"></i>
-                  <p class="text-sm text-secondary70">Podemos utilizar cualquier base de datos: MongoDB / MySQL / Oracle / PostgreSQL, etc.
+                  <i class="text  ph-fill ph-check-circle text-secondary70"></i>
+                  <p class="text text-secondary70">Podemos utilizar cualquier base de datos: MongoDB / MySQL / Oracle / PostgreSQL, etc.
                   </p>
                 </div>
               </li>
@@ -239,8 +244,8 @@
               <li class="gap-1 mb-4">
                 La <span class="text-yellow-100">VISTA</span> renderiza los datos según lo que el <span class="text-yellow-100">CONTROLADOR</span> envía (la vista es lo único que el usuario ve).
                 <div class="ml-4 flex gap-2 items-start mt-1">
-                  <i class="text-sm  ph-fill ph-check-circle text-secondary70"></i>
-                  <p class="text-sm text-secondary70">Genera un HTML dinámico utilizando el lenguaje de plantilla que elijamos: EJS / Handlebars / Pug / Nunjucks / React, etc.</p>
+                  <i class="text  ph-fill ph-check-circle text-secondary70"></i>
+                  <p class="text text-secondary70">Genera un HTML dinámico utilizando el lenguaje de plantilla que elijamos: EJS / Handlebars / Pug / Nunjucks / React, etc.</p>
                 </div>
               </li>
               <li class=" gap-1 mb-4">
@@ -258,7 +263,7 @@
           <h2 class="font-display text-4xl font-bold text text-secondary70 mb-6">Conclusión</h2>
           <p class="mb-8">By understanding and implementing MVC in our projects, we can build more maintainable and robust applications that stand the test of time. Its clear separation of concerns, reusability, testability, and scalability benefits continue to make it a popular choice among developers.</p>
           <p class="mb-8">Al comprender e implementar la arquitectura MVC en nuestros proyectos, podemos construir aplicaciones más robustas y fáciles de mantener que resisten la prueba del tiempo. Sus claras divisiones de intereses, reutilización, capacidad de prueba y ventajas de escalabilidad continúan haciéndolo una elección popular entre los desarrolladores</p>
-          <img class="mx-auto rounded-lg mb-8 max-w-sm" src="../assets/conclusion.gif" alt="goodbye gif">
+          <img class="mx-auto rounded-lg mb-8 w-full max-w-sm" src="../assets/conclusion.gif" alt="goodbye gif">
         </div>
       </article>
       <div class="mb-10 w-full flex flex-col justify-between mt-10 gap-4 md:flex-row md:items-center">
@@ -266,10 +271,6 @@
         <a href="../es/post-1.html" class="inline-flex items-center justify-center text-primary70 bg-darkSurface border border-outlineDark bg-opacity-40 px-5 py-2.5 rounded-lg tracking-wide transition duration-200 ease-in hover:shadow-md active:shadow-none hover:transition hover:duration-[250ms] hover:ease-out hover:border-outlineLight active:border-primary70">Siguiente Artículo</a>
       </div>
     </div>
-
-
-
-
     </div>
   </main>
 </body>

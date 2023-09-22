@@ -478,7 +478,7 @@ h1,
 
 #benefits,
   #how-it-works {
-  background-image: url(/build/assets/backgrounds/bbblurry.svg);
+  background-image: url(./assets/backgrounds/bbblurry.svg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -486,7 +486,7 @@ h1,
 }
 
 #contact {
-  background-image: url(/build/assets/backgrounds/rainbow-vortex.svg);
+  background-image: url(./assets/backgrounds/rainbow-vortex.svg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: left;
@@ -521,12 +521,12 @@ h1,
 }
 
 #mobile-nav-toggle {
-  background-image: url(/build/assets/icons/list-bold.svg);
+  background-image: url(./assets/icons/list-bold.svg);
   background-repeat: no-repeat;
 }
 
 #mobile-nav-toggle[aria-expanded='true'] {
-  background-image: url(/build/assets/icons/x-bold.svg);
+  background-image: url(./assets/icons/x-bold.svg);
   position: fixed;
   top: 1.25rem;
   left: 1.5rem;
@@ -933,10 +933,6 @@ h1,
   margin-bottom: 2rem;
 }
 
-.mb-80 {
-  margin-bottom: 20rem;
-}
-
 .ml-3 {
   margin-left: 0.75rem;
 }
@@ -1093,10 +1089,6 @@ h1,
   width: 1rem;
 }
 
-.w-52 {
-  width: 13rem;
-}
-
 .w-6 {
   width: 1.5rem;
 }
@@ -1152,6 +1144,10 @@ h1,
 
 .max-w-lg {
   max-width: 32rem;
+}
+
+.max-w-md {
+  max-width: 28rem;
 }
 
 .max-w-sm {
