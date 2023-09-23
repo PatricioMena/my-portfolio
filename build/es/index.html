@@ -23,7 +23,6 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600&family=Poppins:wght@700&display=swap" rel="stylesheet">
 
-
   <link rel="stylesheet" href="../output.css">
 
   <!--------------------- Patterns --------------------->
@@ -32,8 +31,6 @@
   <!--------------------- Swiper --------------------->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
 
-  <!--------------------- Lord Icon --------------------->
-  <script src="https://cdn.lordicon.com/bhenfmcm.js"></script>
 </head>
 <body class="text-base md:text-lg overflow-x-hidden">
   <!--------------------- Navbar --------------------->
@@ -81,11 +78,11 @@
             <div class="flex items-center justify-center">
               <!-- Language icons -->
               <a class="py-2.5 px-2 text-gray-500 dark:text-gray-400 transition duration-200 ease-in-out hover:bg-gray-100 rounded-lg flex items-center gap-1  dark:hover:bg-gray-700" href="../index.html">
-                <img class="w-4 h-4 rounded-[0.25rem]" src="../assets/icons/us.svg" alt="">
+                <img class="w-4 h-4 rounded-[0.25rem]" src="../assets/icons/us.svg" alt="Cmabiar idioma a inglés">
                 <!-- <p class="text-xs">US</p> -->
               </a>
               <a class="py-2.5 px-2 text-gray-500 dark:text-gray-400 transition duration-200 ease-in-out hover:bg-gray-100 rounded-lg flex items-center gap-1  dark:hover:bg-gray-700" href="./index.html">
-                <img class="w-4 h-4 rounded-[0.25rem]" src="../assets/icons/mx.svg" alt=""> <!-- <p class="text-xs">MX</p> -->
+                <img class="w-4 h-4 rounded-[0.25rem]" src="../assets/icons/mx.svg" alt="Cambiar idioma a español"> <!-- <p class="text-xs">MX</p> -->
               </a>
             </div>
 
@@ -128,15 +125,38 @@
 
     <!--------------------- Screenshots Section --------------------->
     <section class="bg-gradient-to-b from-[#FBFCF8] to-[#FFFEFC] dark:bg-gradient-to-b dark:from-darkBg dark:to-darkBg grid content-center overflow-hidden pt-32">
-      <ul id="screenshots-gallery" class="flex gap-4 md:gap-6  md:left-[-6%]">
-        <li class="w-64 md:w-96 md:h-80"><img src="../assets/shot-2.png" alt="" class="rounded-2xl border-none shadow-md w-full" width="384" height="320"></li>
-        <li class="w-64 md:w-96 md:h-80"><img src="../assets/shot-3.png" alt="" class="rounded-2xl border-none shadow-md w-full" width="384" height="320"></li>
-        <li class="w-64 md:w-96 md:h-80"><img src="../assets/shot-1.png" alt="" class="rounded-2xl border-none shadow-md w-full" width="384" height="320"></li>
-        <li class="w-64 md:w-96 md:h-80"><img src="../assets/shot-4.png" alt="" class="rounded-2xl border-none shadow-md w-full" width="384" height="320"></li>
-        <li class="w-64 md:w-96 md:h-80"><img src="../assets/shot-5.png" alt="" class="rounded-2xl border-none shadow-md w-full" width="384" height="320"></li>
-        <li class="w-64 md:w-96 md:h-80"><img src="../assets/shot-1.png" alt="" class="rounded-2xl border-none shadow-md w-full" width="384" height="320"></li>
-        <li class="w-64 md:w-96 md:h-80"><img src="../assets/shot-1.png" alt="" class="rounded-2xl border-none shadow-md w-full" width="384" height="320"></li>
-      </ul>
+      <div id="screenshots-gallery" class="flex gap-4 md:gap-6  md:left-[-6%]">
+        <picture class="w-64 md:w-96 md:h-80">
+          <source type="image/webp" srcset="../assets/shot-2.webp">
+          <source type="image/jpeg" srcset="../assets/shot-2.jpg">
+          <img src="../assets/shot-2.png" alt="components screenshots" class="rounded-2xl border-none shadow-md w-full" width="384" height="288">
+        </picture>
+        <picture class="w-64 md:w-96 md:h-80">
+          <source type="image/webp" srcset="../assets/shot-3.webp">
+          <source type="image/jpeg" srcset="../assets/shot-3.jpg">
+          <img src="../assets/shot-3.png" alt="mockup websites" class="rounded-2xl border-none shadow-md w-full" width="384" height="288">
+        </picture>
+        <picture class="w-64 md:w-96 md:h-80">
+          <source type="image/webp" srcset="../assets/shot-1.webp">
+          <source type="image/jpeg" srcset="../assets/shot-1.jpg">
+          <img src="../assets/shot-1.png" alt="websites screenshots" class="rounded-2xl border-none shadow-md w-full" width="384" height="288">
+        </picture>
+        <picture class="w-64 md:w-96 md:h-80">
+          <source type="image/webp" srcset="../assets/shot-4.webp">
+          <source type="image/jpeg" srcset="../assets/shot-4.jpg">
+          <img src="../assets/shot-4.png" alt="blue horizon website screenshot" class="rounded-2xl border-none shadow-md w-full" width="384" height="288">
+        </picture>
+        <picture class="w-64 md:w-96 md:h-80">
+          <source type="image/webp" srcset="../assets/shot-5.webp">
+          <source type="image/jpeg" srcset="../assets/shot-5.jpg">
+          <img src="../assets/shot-5.png" alt="blue horizon website screenshot" class="rounded-2xl border-none shadow-md w-full" width="384" height="288">
+        </picture>
+        <picture class="w-64 md:w-96 md:h-80">
+          <source type="image/webp" srcset="../assets/shot-1.webp">
+          <source type="image/jpeg" srcset="../assets/shot-1.jpg">
+          <img src="../assets/shot-1.png" alt="blue horizon website screenshot" class="rounded-2xl border-none shadow-md w-full" width="384" height="288">
+        </picture>
+      </div>
     </section>
 
     <!--------------------- Benefits Section --------------------->
@@ -144,7 +164,7 @@
       <div class="container mx-auto max-w-7xl px-6 md:px-10">
 
         <!--- Optimized --->
-        <section class="py-24">
+        <section class="pt-0 pb-16">
           <div class="flex flex-col justify-center text-center">
             <h2 class="mx-auto px-2 rounded-sm text-sm text-primary70 bg-primary99 dark:text-primaryDark text-semibold uppercase tracking-wider dark:bg-transparent md:text-base anim" data-anim="fade-bottom" data-delay="0s">Optimizado</h2>
             <h3 class="mx-auto tracking-widexs text-gray500 dark:text-slate-50 text-4xl md:text-5xl mt-4 max-w-2xl anim" data-anim="fade-bottom" data-delay="0s">Experiencias de usuario consistentes</h3>
@@ -155,7 +175,7 @@
           <section class="flex flex-col justify-between mt-20 gap-6 md:flex-row xl:gap-12">
             <article class="p-4 flex flex-col justify-center text-center md:w-1/3 rounded-2xl bg-slate-300 bg-opacity-10  shadow-md border border-solid border-gray-200 dark:bg-surfaceBlack dark:bg-opacity-50 dark:shadow-dark dark:hover:shadow-darker dark:border-none anim" data-anim="fade-left" data-delay="0s">
               <div class="mx-auto">
-                <lord-icon aria-labelledby="optimized-icon1" src="https://cdn.lordicon.com/ysbeyrrl.json" trigger="loop" colors="primary:#00c297,secondary:#00c297" style="width:100px;height:100px" class="">
+                <lord-icon src="https://cdn.lordicon.com/ysbeyrrl.json" trigger="loop" delay="1000" colors="primary:#00c297,secondary:#00c297" style="width:100px;height:100px" loading="lazy">
                   <title id="optimized-icon1">f1 car</title>
                 </lord-icon>
               </div>
@@ -165,7 +185,7 @@
 
             <article class="p-4 flex flex-col justify-center text-center md:w-1/3 rounded-2xl bg-slate-300 bg-opacity-10 shadow-md border border-solid border-gray-200 dark:bg-surfaceBlack dark:bg-opacity-50 dark:shadow-dark dark:hover:shadow-darker dark:border-none anim" data-anim="fade-left" data-delay=".2s">
               <div class="mx-auto">
-                <lord-icon aria-labelledby="optimized-icon2" src="https://cdn.lordicon.com/urhcgqxz.json" trigger="loop" delay="500" colors="primary:#00c297,secondary:#00c297" style="width:100px;height:100px">
+                <lord-icon src="https://cdn.lordicon.com/urhcgqxz.json" trigger="loop" delay="1000" colors="primary:#00c297,secondary:#00c297" style="width:100px;height:100px" loading="lazy">
                   <title id="optimized-icon2">Ascending web analytics bar graph</title>
                 </lord-icon>
               </div>
@@ -173,9 +193,9 @@
               <p class="text-gray300 dark:text-slate-300 mt-2.5">47% de los clientes espera que una página se cargue en <a class="text-primary70 underline visited:bg-primary50 hover:text-primary80" href="https://www.cloudflare.com/learning/performance/more/website-performance-conversion-rates/">2 segundos o menos</a></p>
             </article>
 
-            <article class="p-4 flex flex-col justify-center text-center md:w-1/3 rounded-2xl bg-slate-300 bg-opacity-10 shadow-md border border-solid border-gray-200 dark:bg-surfaceBlack dark:bg-opacity-50 dark:shadow-dark dark:hover:shadow-darker dark:border-none anim" data-anim="fade-left" data-delay=".5s">
+            <article class="p-4 flex flex-col justify-center text-center md:w-1/3 rounded-2xl bg-slate-300 bg-opacity-10 shadow-md border border-solid border-gray-200 dark:bg-surfaceBlack dark:bg-opacity-50 dark:shadow-dark dark:hover:shadow-darker dark:border-none anim" data-anim="fade-left" data-delay=".4s">
               <div class="mx-auto">
-                <lord-icon aria-labelledby="optimized-icon3" src="https://cdn.lordicon.com/hbbeevsh.json" trigger="loop" delay="500" colors="primary:#00c297,secondary:#00c297" style="width:100px;height:100px">
+                <lord-icon src="https://cdn.lordicon.com/hbbeevsh.json" trigger="loop" delay="1000" colors="primary:#00c297,secondary:#00c297" style="width:100px;height:100px" loading="lazy">
                   <title id="optimized-icon3">Growing plant</title>
                 </lord-icon>
               </div>
@@ -188,7 +208,7 @@
         </section>
 
         <!--- Creative Design --->
-        <section class="py-24">
+        <section class="py-16">
           <div class="flex flex-col justify-center mx-auto text-center">
             <h2 class="mx-auto px-2 rounded-sm text-sm text-primary70 bg-primary99 dark:text-primaryDark text-semibold uppercase tracking-wider dark:bg-transparent md:text-base anim" data-anim="fade-bottom" data-delay="0s">Diseño Creativo</h2>
             <h3 class="mx-auto tracking-widexs text-gray500 dark:text-slate-50 text-4xl md:text-5xl mt-4 max-w-2xl anim" data-anim="fade-bottom" data-delay="0s">Atrae más. Retén más. Destaca</h3>
@@ -199,7 +219,7 @@
           <section class="flex flex-col justify-between mt-20 gap-6 md:flex-row xl:gap-12">
             <article class="p-4 flex flex-col justify-center text-center md:w-1/3 rounded-2xl bg-slate-300 bg-opacity-10 shadow-md border border-solid border-gray-200 dark:bg-surfaceBlack dark:bg-opacity-50 dark:shadow-dark dark:hover:shadow-darker dark:border-none anim" data-anim="fade-left" data-delay="0s">
               <div class="mx-auto">
-                <lord-icon aria-labelledby="design-icon1" src="https://cdn.lordicon.com/gkeohday.json" trigger="loop" delay="500" colors="primary:#00c297,secondary:#00c297" style="width:100px;height:100px">
+                <lord-icon src="https://cdn.lordicon.com/gkeohday.json" trigger="loop" delay="1000" colors="primary:#00c297,secondary:#00c297" style="width:100px;height:100px" loading="lazy">
                   <title id="design-icon1">Artist palette</title>
                 </lord-icon>
               </div>
@@ -209,7 +229,7 @@
 
             <article class="p-4 flex flex-col justify-center text-center md:w-1/3 rounded-2xl bg-slate-300 bg-opacity-10 shadow-md border border-solid border-gray-200 dark:bg-surfaceBlack dark:bg-opacity-50 dark:shadow-dark dark:hover:shadow-darker dark:border-none anim" data-anim="fade-left" data-delay=".2s">
               <div class="mx-auto">
-                <lord-icon aria-labelledby="design-icon2" src="https://cdn.lordicon.com/ngrsltok.json" trigger="loop" delay="500" colors="primary:#00c297,secondary:#00c297" style="width:100px;height:100px">
+                <lord-icon src="https://cdn.lordicon.com/ngrsltok.json" trigger="loop" delay="1000" colors="primary:#00c297,secondary:#00c297" style="width:100px;height:100px" loading="lazy">
                   <title id="design-icon2">Navigation path</title>
                 </lord-icon>
               </div>
@@ -217,9 +237,9 @@
               <p class="text-gray300 dark:text-slate-300 mt-2.5">Fácil de navegar, atractivo llamado a la acción (CTA) e interfaz de usuario personalizada</p>
             </article>
 
-            <article class="p-4 flex flex-col justify-center text-center md:w-1/3 rounded-2xl bg-slate-300 bg-opacity-10 shadow-md border border-solid border-gray-200 dark:bg-surfaceBlack dark:bg-opacity-50 dark:shadow-dark dark:hover:shadow-darker dark:border-none anim" data-anim="fade-left" data-delay=".5s">
+            <article class="p-4 flex flex-col justify-center text-center md:w-1/3 rounded-2xl bg-slate-300 bg-opacity-10 shadow-md border border-solid border-gray-200 dark:bg-surfaceBlack dark:bg-opacity-50 dark:shadow-dark dark:hover:shadow-darker dark:border-none anim" data-anim="fade-left" data-delay=".4s">
               <div class="mx-auto">
-                <lord-icon aria-labelledby="design-icon3" src="https://cdn.lordicon.com/ajnotayw.json" trigger="loop" delay="500" colors="primary:#00c297,secondary:#00c297" style="width:100px;height:100px">
+                <lord-icon src="https://cdn.lordicon.com/ajnotayw.json" trigger="loop" delay="1000" colors="primary:#00c297,secondary:#00c297" style="width:100px;height:100px" loading="lazy">
                   <title id="design-icon3">Bestseller brand medal ribbon</title>
                 </lord-icon>
               </div>
@@ -230,7 +250,7 @@
         </section>
 
         <!--- Inclusive & Private --->
-        <section class="pt-24">
+        <section class="pt-16">
           <div class="flex flex-col justify-center text-center">
             <h2 class="mx-auto px-2 rounded-sm text-sm text-primary70 bg-primary99 dark:text-primaryDark text-semibold uppercase tracking-wider dark:bg-transparent md:text-base anim" data-anim="fade-bottom" data-delay="0s">Inclusivo &amp; Seguro</h2>
             <h3 class="mx-auto tracking-widexs text-gray500 dark:text-slate-50 text-4xl md:text-5xl mt-4 max-w-2xl anim" data-anim="fade-bottom" data-delay="0s">Desde cualquier parte. Para todos</h3>
@@ -240,7 +260,7 @@
           <section class="flex flex-col justify-between mt-20  gap-6 md:flex-row xl:gap-12">
             <article class="p-4 flex flex-col justify-center text-center md:w-1/3 rounded-2xl bg-slate-300 bg-opacity-10 shadow-md border border-solid border-gray-200 dark:bg-surfaceBlack dark:bg-opacity-50 dark:shadow-dark dark:hover:shadow-darker dark:border-none anim" data-anim="fade-left" data-delay="0s">
               <div class="mx-auto">
-                <lord-icon aria-labelledby="inclusive-icon1" src="https://cdn.lordicon.com/xqfngtiz.json" trigger="loop" delay="500" colors="primary:#00c297,secondary:#00c297" style="width:100px;height:100px">
+                <lord-icon src="https://cdn.lordicon.com/xqfngtiz.json" trigger="loop" delay="1000" colors="primary:#00c297,secondary:#00c297" style="width:100px;height:100px" loading="lazy">
                   <title id="inclusive-icon1">Product morphing between monitor screen, mobile device,and tablet</title>
                 </lord-icon>
               </div>
@@ -250,17 +270,17 @@
 
             <article class="p-4 flex flex-col justify-center text-center md:w-1/3 rounded-2xl bg-slate-300 bg-opacity-10 shadow-md border border-solid border-gray-200 dark:bg-surfaceBlack dark:bg-opacity-50 dark:shadow-dark dark:hover:shadow-darker dark:border-none anim" data-anim="fade-left" data-delay=".2s">
               <div class="mx-auto">
-                <lord-icon aria-labelledby="inclusive-icon2" src="https://cdn.lordicon.com/avyixiri.json" trigger="loop" delay="500" colors="primary:#00c297,secondary:#00c297" style="width:100px;height:100px">
+                <lord-icon src="https://cdn.lordicon.com/avyixiri.json" trigger="loop" delay="1000" colors="primary:#00c297,secondary:#00c297" style="width:100px;height:100px" loading="lazy">
                   <title id="iclusive-icon2">A globe that represents everyone can use the product</title>
                 </lord-icon>
               </div>
               <h4 class="text-center text-xl md:text-2xl tracking-wide text-gray500 dark:text-slate-50 mt-2.5">Accesible</h4>
-              <p class="text-center text-gray300 dark:text-gray-300 mt-2.5">Permitir igualdad de acceso para todos, siguiendo estándares W3C. Accesibilidad en su máxima expresión</p>
+              <p class="text-center text-gray300 dark:text-gray-300 mt-2.5">Permitiendo igualdad de acceso para todos, siguiendo estándares W3C. Accesibilidad en su máxima expresión</p>
             </article>
 
             <article class="p-4 flex flex-col justify-center text-center md:w-1/3 rounded-2xl bg-slate-300 bg-opacity-10 shadow-md border border-solid border-gray-200 dark:bg-surfaceBlack dark:bg-opacity-50 dark:shadow-dark dark:hover:shadow-darker dark:border-none anim" data-anim="fade-left" data-delay=".5s">
               <div class="mx-auto">
-                <lord-icon aria-labelledby="inclusive-icon3" src="https://cdn.lordicon.com/ncgnxmig.json" trigger="loop" delay="500" colors="primary:#00c297,secondary:#00c297" style="width:100px;height:100px">
+                <lord-icon src="https://cdn.lordicon.com/ncgnxmig.json" trigger="loop" delay="1000" colors="primary:#00c297,secondary:#00c297" style="width:100px;height:100px" loading="lazy">
                   <title id="inclusive-icon3">A shield and sword that represents security</title>
                 </lord-icon>
               </div>
@@ -292,7 +312,11 @@
               <div class="swiper-slide bg-surface bg-opacity-70 border border-solid border-gray-200	rounded-2xl hover:duration-[250ms] hover:bg-surface dark:bg-surfaceBlack hover:dark:bg-surfaceBlack dark:border-gray-700">
 
                 <figure class="project-image-container  | overflow-hidden rounded-t-2xl h-[220px]">
-                  <img src="../assets/projects/nutribox-screenshot.png" alt="" class="hover:animate-moveSlideshow | w-full" loading="lazy" width="377" height="1858">
+                  <picture>
+                    <source type="image/webp" srcset="../assets/projects/nutribox.webp">
+                    <source type="image/jpeg" srcset="../assets/projects/nutribox.jpg">
+                    <img src="../assets/projects/nutribox.jpg" alt="nutribox website screenshot" class="hover:animate-moveSlideshow | w-full" loading="lazy" width="378" height="1858">
+                  </picture>
                 </figure>
 
                 <div class="p-6">
@@ -330,7 +354,11 @@
               <div class="swiper-slide bg-surface bg-opacity-70 border border-solid border-gray-200	rounded-2xl hover:duration-[250ms] hover:bg-surface dark:bg-surfaceBlack hover:dark:bg-surfaceBlack dark:border-gray-700">
 
                 <figure class="project-image-container  | overflow-hidden rounded-t-2xl h-[220px]">
-                  <img src="../assets/projects/blue-horizon-screenshots.png" alt="" class="hover:animate-moveSlideshow | w-full" loading="lazy" width="377" height="1380">
+                  <picture>
+                    <source type="image/webp" srcset="../assets/projects/blue-horizon.webp">
+                    <source type="image/jpeg" srcset="../assets/projects/blue-horizon.jpg">
+                    <img src="../assets/projects/blue-horizon.jpg" alt="blue horizon website screenshot" class="hover:animate-moveSlideshow | w-full" loading="lazy" width="378" height="1338">
+                  </picture>
                 </figure>
 
                 <div class="p-6">
@@ -367,7 +395,11 @@
               <div class="swiper-slide bg-surface bg-opacity-70 border border-solid border-gray-200	rounded-2xl hover:duration-[250ms] hover:bg-surface dark:bg-surfaceBlack hover:dark:bg-surfaceBlack dark:border-gray-700">
 
                 <figure class="project-image-container  | overflow-hidden rounded-t-2xl h-[220px]">
-                  <img src="../assets/projects/umbrella-screenshot.png" alt="" class="hover:animate-moveSlideshow | w-full" loading="lazy" width="377" height="1415">
+                  <picture>
+                    <source type="image/webp" srcset="../assets/projects/umbrella.webp">
+                    <source type="image/jpeg" srcset="../assets/projects/umbrella.jpg">
+                    <img src="../assets/projects/umbrella.jpg" alt="umbrella website screenshot" class="hover:animate-moveSlideshow | w-full" loading="lazy" width="378" height="1301">
+                  </picture>
                 </figure>
 
                 <div class="p-6">
@@ -404,7 +436,11 @@
               <div class="swiper-slide bg-surface bg-opacity-70 border border-solid border-gray-200	rounded-2xl hover:duration-[250ms] hover:bg-surface dark:bg-surfaceBlack hover:dark:bg-surfaceBlack dark:border-gray-700">
 
                 <figure class="project-image-container  | overflow-hidden rounded-t-2xl h-[220px]">
-                  <img src="../assets/projects/harmony-screenshot.png" alt="" class="hover:animate-moveSlideshow | w-full" loading="lazy" width="377" height="1270">
+                  <picture>
+                    <source type="image/webp" srcset="../assets/projects/harmony.webp">
+                    <source type="image/jpeg" srcset="../assets/projects/harmony.jpg">
+                    <img src="../assets/projects/harmony.jpg" alt="harmony website screenshot" class="hover:animate-moveSlideshow | w-full" loading="lazy" width="378" height="1238">
+                  </picture>
                 </figure>
 
                 <div class="p-6">
@@ -441,7 +477,11 @@
               <div class="swiper-slide bg-surface bg-opacity-70 border border-solid border-gray-200	rounded-2xl hover:duration-[250ms] hover:bg-surface dark:bg-surfaceBlack hover:dark:bg-surfaceBlack dark:border-gray-700">
 
                 <figure class="project-image-container  | overflow-hidden rounded-t-2xl h-[220px]">
-                  <img src="../assets/projects/goat-screenshot.png" alt="" class="hover:animate-moveSlideshow | w-full" loading="lazy" width="377" height="1447">
+                  <picture>
+                    <source type="image/webp" srcset="../assets/projects/goat-studio.webp">
+                    <source type="image/jpeg" srcset="../assets/projects/goat-studio.jpg">
+                    <img src="../assets/projects/goat-studio.jpg" alt="umbrella website screenshot" class="hover:animate-moveSlideshow | w-full" loading="lazy" width="378" height="1450">
+                  </picture>
                 </figure>
 
                 <div class="p-6">
@@ -582,28 +622,24 @@
                 </p>
                 <h5 class="mb-8 text-gray500 text-2xl tracking-wide dark:text-slate-50 md:text-4xl anim" data-anim="fade-bottom" data-delay=".2s">Código / Desarrollo</h5>
                 <p class="mb-6 text-gray300 dark:text-slate-300 anim" data-anim="fade-bottom" data-delay="0s">¡Tu proyecto está tomando forma! En esta fase, escribimos el código para implementar el diseño y las características definidas en las fases anteriores</p>
-
                 <ul role="list" class=" flex flex-col justify-center">
-                  <div class="flex flex-col gap-2 md:gap-8 md:flex-row">
-                    <div class="flex flex-col gap-2">
-                      <li class="flex gap-3 items-center anim" data-anim="fade-bottom" data-delay="0s">
-                        <i class="ph ph-check-circle text-primary70  dark:text-primaryDark"></i>
-                        <p class="text-gray300 fark:text-slate-300">Desarrollo front-end y back-end</p>
-                      </li>
-                      <li class="flex gap-3 items-center anim" data-anim="fade-bottom" data-delay="0s">
-                        <i class="ph ph-check-circle text-primary70 dark:text-primaryDark"></i>
-                        <p class="text-gray300 dark:text-slate-300">Optimización de rendimiento</p>
-                      </li>
-                      <li class="flex gap-3 items-center anim" data-anim="fade-bottom" data-delay="0s">
-                        <i class="ph ph-check-circle text-primary70 dark:text-primaryDark"></i>
-                        <p class="text-gray300 dark:text-slate-300">Integración de redes sociales</p>
-                      </li>
-                      <li class="flex gap-3 items-center anim" data-anim="fade-bottom" data-delay="0s">
-                        <i class="ph ph-check-circle text-primary70 dark:text-primaryDark"></i>
-                        <p class="text-gray300 dark:text-slate-300">Instalación de herramientas de análisis</p>
-                      </li>
-                    </div>
-                  </div>
+                  <li class="flex gap-3 items-center anim" data-anim="fade-bottom" data-delay="0s">
+                    <i class="ph ph-check-circle text-primary70  dark:text-primaryDark"></i>
+                    <p class="text-gray300 dark:text-slate-300">Desarrollo front-end y back-end</p>
+                  </li>
+                  <li class="flex gap-3 items-center anim" data-anim="fade-bottom" data-delay="0s">
+                    <i class="ph ph-check-circle text-primary70 dark:text-primaryDark"></i>
+                    <p class="text-gray300 dark:text-slate-300">Optimización de rendimiento</p>
+                  </li>
+                  <li class="flex gap-3 items-center anim" data-anim="fade-bottom" data-delay="0s">
+                    <i class="ph ph-check-circle text-primary70 dark:text-primaryDark"></i>
+                    <p class="text-gray300 dark:text-slate-300">Integración de redes sociales</p>
+                  </li>
+                  <li class="flex gap-3 items-center anim" data-anim="fade-bottom" data-delay="0s">
+                    <i class="ph ph-check-circle text-primary70 dark:text-primaryDark"></i>
+                    <p class="text-gray300 dark:text-slate-300">Instalación de herramientas de análisis</p>
+                  </li>
+
                 </ul>
               </section>
             </section>
@@ -775,30 +811,42 @@
         <div class="grid gap-6 md:grid-flow-col md:auto-cols-[1fr]">
           <article class="anim" data-anim="fade-left" data-delay="0s">
             <figure class="blog-img-wrapper | rounded-2xl overflow-hidden mb-5">
-              <img class="w-full transition-transform duration-250 ease-in-out" src="../assets/blog-image-1.jpg" alt="" width="384" height="256">
+              <picture>
+                <source type="image/webp" srcset="../assets/blog-image-1.webp">
+                <source type="image/jpeg" srcset="../assets/blog-image-1.jpg">
+                <img class="w-full transition-transform duration-250 ease-in-out" src="../assets/blog-image-1.jpg" alt="fast car" width="384" height="256" loading="lazy">
+              </picture>
             </figure>
             <h5 class="mb-2 text-2xl font-bold tracking-wide text-gray500 dark:text-slate-50 dark:tracking-wider">Velocidad en un Sitio Web</h5>
             <p class="mb-4 text-base md:text-lg text-gray300 dark:text-slate-300">Cómo un sitio web más rápido aumenta la participación del usuario</p>
-            <a href="../blog/es/post-1.html" class="text-sm md:text-base rounded-lg text-primary100 bg-primary70 tracking-wide px-5 py-2.5 inline-flex items-center justify-center transition-color duration-200 ease-in hover:shadow-md hover:bg-opacity-80 dark:bg-primaryDark hover:duration-[250ms] hover:ease-out active:bg-opacity-90 active:shadow-none dark:text-onPrimaryDark dark:hover:bg-opacity-80 dark:active:bg-opacity-90">Leer más</a>
+            <a href="../blog/es/post-1.html" class="text-sm md:text-base rounded-lg text-primary100 bg-primary70 tracking-wide px-5 py-2.5 inline-flex items-center justify-center transition-color duration-200 ease-in hover:shadow-md hover:bg-opacity-80 dark:bg-primaryDark hover:duration-[250ms] hover:ease-out active:bg-opacity-90 active:shadow-none dark:text-onPrimaryDark dark:hover:bg-opacity-80 dark:active:bg-opacity-90">Leer Artículo</a>
           </article>
 
           <article class="anim" data-anim="fade-left" data-delay=".2s">
             <figure class="blog-img-wrapper | rounded-2xl overflow-hidden mb-5">
-              <img class="w-full transition-transform duration-250 ease-in-out" src="../assets/blog-image-2.jpg" alt="" width="384" height="256">
+              <picture>
+                <source type="image/webp" srcset="../assets/blog-image-2.webp">
+                <source type="image/jpeg" srcset="../assets/blog-image-2.jpg">
+                <img class="w-full transition-transform duration-250 ease-in-out" src="../assets/blog-image-2.jpg" alt="User interface design" width="384" height="256" loading="lazy">
+              </picture>
             </figure>
             <h5 class="mb-2 text-2xl font-bold tracking-wide text-gray500 dark:text-slate-50 dark:tracking-wider">Más Allá de lo Estético</h5>
             <p class="mb-4 text-base md:text-lg text-gray300 dark:text-slate-300">Cómo el diseño UI/UX aumenta las tasas de conversión y hace que tus visitantes actúen
             <p>
-              <a href="../blog/es/post-2.html" class="text-sm md:text-base rounded-lg text-primary100 bg-primary70 tracking-wide px-5 py-2.5 inline-flex items-center justify-center transition-color duration-200 ease-in hover:shadow-md hover:bg-opacity-80 dark:bg-primaryDark hover:duration-[250ms] hover:ease-out active:bg-opacity-90 active:shadow-none dark:text-onPrimaryDark dark:hover:bg-opacity-80 dark:active:bg-opacity-90">Leer más</a>
+              <a href="../blog/es/post-2.html" class="text-sm md:text-base rounded-lg text-primary100 bg-primary70 tracking-wide px-5 py-2.5 inline-flex items-center justify-center transition-color duration-200 ease-in hover:shadow-md hover:bg-opacity-80 dark:bg-primaryDark hover:duration-[250ms] hover:ease-out active:bg-opacity-90 active:shadow-none dark:text-onPrimaryDark dark:hover:bg-opacity-80 dark:active:bg-opacity-90">Leer Artículo</a>
           </article>
 
-          <article class="anim" data-anim="fade-left" data-delay=".5s">
+          <article class="anim" data-anim="fade-left" data-delay=".4s">
             <figure class="blog-img-wrapper | rounded-2xl overflow-hidden mb-5">
-              <img class="w-full transition-transform duration-250 ease-in-out" src="../assets/blog-image-3.jpg" alt="" width="384" height="256">
+              <picture>
+                <source type="image/webp" srcset="../assets/blog-image-3.webp">
+                <source type="image/jpeg" srcset="../assets/blog-image-3.jpg">
+                <img class="w-full transition-transform duration-250 ease-in-out" src="../assets/blog-image-3.jpg" alt="modern building" width="384" height="256" loading="lazy">
+              </picture>
             </figure>
             <h5 class="mb-2 text-2xl font-bold tracking-wide text-gray500 dark:text-slate-50 dark:tracking-wider">Arquitectura MVC</h5>
             <p class="mb-4 text-base md:text-lg text-gray300 dark:text-slate-300">Entendiendo la arquitectura Modelo-Vista-Controlador(MVC)</p>
-            <a href="../blog/es/post-3.html" class="text-sm md:text-base rounded-lg text-primary100 bg-primary70 tracking-wide px-5 py-2.5 inline-flex items-center justify-center transition-color duration-200 ease-in hover:shadow-md hover:bg-opacity-80 dark:bg-primaryDark hover:duration-[250ms] hover:ease-out active:bg-opacity-90 active:shadow-none dark:text-onPrimaryDark dark:hover:bg-opacity-80 dark:active:bg-opacity-90">Leer más</a>
+            <a href="../blog/es/post-3.html" class="text-sm md:text-base rounded-lg text-primary100 bg-primary70 tracking-wide px-5 py-2.5 inline-flex items-center justify-center transition-color duration-200 ease-in hover:shadow-md hover:bg-opacity-80 dark:bg-primaryDark hover:duration-[250ms] hover:ease-out active:bg-opacity-90 active:shadow-none dark:text-onPrimaryDark dark:hover:bg-opacity-80 dark:active:bg-opacity-90">Leer Artículo</a>
           </article>
         </div>
       </div>
@@ -817,7 +865,11 @@
         <section class="py-24 flex flex-col items-center gap-8 lg:flex-row lg:gap-0">
           <section class="flex justify-center items-center md:w-1/2 anim" data-anim="fade-left" data-delay=".5s">
             <div class="w-64 h-64 md:w-96 md:h-96 pattern-diagonal-lines-sm text-primary70 rounded-full anim" data-anim="fade-left" data-delay=".2s">
-              <img src="../assets/about-image-2.png" alt="Patricio Mena Software Engineer photo" class="w-full -translate-y-4 translate-x-4" loading="lazy" width="384" height="384">
+              <picture>
+                <source type="image/webp" srcset="../assets/about-me.webp">
+                <source type="image/jpeg" srcset="../assets/about-me.png">
+                <img class="w-full -translate-y-4 translate-x-4" src="../assets/about-me.png" alt="Patricio Mena Software Engineer photo" width="384" height="384" loading="lazy">
+              </picture>
             </div>
           </section>
 
@@ -925,9 +977,9 @@
       </section>
     </div>
   </footer>
-
   <script defer src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
-  <script src="https://unpkg.com/@phosphor-icons/web"></script>
+  <script defer src="https://unpkg.com/@phosphor-icons/web"></script>
+  <script defer src="https://cdn.lordicon.com/bhenfmcm.js"></script>
   <script defer src="../js/main.js"></script>
 </body>
 </html>

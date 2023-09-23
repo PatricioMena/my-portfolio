@@ -1,17 +1,8 @@
 function initApp() {
-  // const hamburgerBtn = document.getElementById('hamburger-button');
-  // const mobileMenu = document.getElementById('mobile-menu');
-  // const toggleMenu = () => {
-  //   mobileMenu.classList.toggle('hidden');
-  //   mobileMenu.classList.toggle('flex');
-  //   hamburgerBtn.classList.toggle('toggle-btn');
-  // };
-  // hamburgerBtn.addEventListener('click', toggleMenu);
-  // mobileMenu.addEventListener('click', toggleMenu);
-  // When user clicks on open mobile nav button, I want to set 'open' attribute on main-navigation
   const mainNav = document.getElementById('main-navigation');
   const navItems = document.getElementById('navigation-items');
   const mobileBtn = document.getElementById('mobile-nav-toggle');
+  const navLinks = document.querySelectorAll('.main-nav-link');
 
   const toggleMenu = () => {
     mainNav.toggleAttribute('open');
@@ -25,8 +16,8 @@ function initApp() {
       mobileBtn.setAttribute('aria-expanded', false);
     }
   };
-
   mobileBtn.addEventListener('click', toggleMenu);
+  navLinks.forEach((navLink) => navLink.addEventListener('click', toggleMenu));
 }
 
 document.addEventListener('DOMContentLoaded', initApp);
@@ -110,20 +101,6 @@ moveGallery = () => {
 
 requestAnimationFrame(moveGallery);
 
-///////////////////////////////////////////////
-// Lottie animations //
-//////////////////////////////////////////////
-// const fastIcon = document.getElementById('fast-icon');
-
-// const animItem = bodymovin.loadAnimation({
-//   wrapper: fastIcon,
-//   animType: 'svg',
-//   loop: true,
-//   autoplay: true,
-//   path: 'https://cdn.lordicon.com/ysbeyrrl.json'
-// });
-
-///////////////////////////////////////////////
 // Scroll Animations
 const scrollObserver = new IntersectionObserver(
   (entries) => {
@@ -195,9 +172,3 @@ themeCheck();
 const yearEl = document.querySelector('.year');
 const currentYear = new Date().getFullYear();
 yearEl.textContent = currentYear;
-
-class MyThing {
-  constructor(passThisIn) {
-    this.passThisIn = passThisIn;
-  }
-}
