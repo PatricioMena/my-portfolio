@@ -69,10 +69,12 @@
   }
 
   #contact {
-    background-image: url(./assets/backgrounds/rainbow-vortex.svg);
+    background-image: url(./assets/backgrounds/cta-colored-ya-2.svg);
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: left;
+
+    background-position: center;
+    background-attachment: fixed;
   }
 
   .blog-img-wrapper:hover img {
