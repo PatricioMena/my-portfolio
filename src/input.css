@@ -59,14 +59,14 @@
 
   /* Section Backgrounds */
 
-  #benefits,
+  /* #benefits,
   #how-it-works {
     background-image: url(./assets/backgrounds/bbblurry.svg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
-  }
+  } */
 
   #contact {
     background-image: url(./assets/backgrounds/cta-colored-ya-2.svg);
